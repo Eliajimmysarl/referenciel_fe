@@ -56,78 +56,128 @@
         {
             $page=$_GET['page'];
            
-            if($page=='ajouter_un')
+            if($page=='ajouter_application')
                 {
                     require_once('composant/ajout_un/view/demande_ajout.php');
                 }
-            else  if($page=='nombre_ligne')
+            else  if($page=='modifier_application')
                 {
                     require_once('composant/ajout_plusieurs/view/nombre_ligne.php'); 
                 }
-            else if($page=='ajouter_un_avec_dependance')
+            else if($page=='supprimer_application')
                 {
                     require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
                 }
-            else  if($page=='ajouter_plusieurs')
+            else  if($page=='recuperes_applications')
                 {
                     require_once('composant/ajout_plusieurs/view/demande_ajout.php'); 
                 } 
-            else  if($page=='recuperer_plusieurs')
+            else  if($page=='recuperer_application')
+                {
+                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
+                }
+            else  if($page=='ajouter_composant')
+                {
+                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
+                }
+            else  if($page=='modifier_composant')
+                {
+                    require_once('composant/ajout_plusieurs/view/nombre_ligne.php'); 
+                }
+            else if($page=='supprimer_composant')
+                {
+                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
+                }
+            else  if($page=='recuperes_composants')
+                {
+                    require_once('composant/ajout_plusieurs/view/demande_ajout.php'); 
+                } 
+            else  if($page=='recuperer_composant')
+                {
+
+                }
+            else  if($page=='ajouter_service')
+                {
+                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
+                }
+            else  if($page=='modifier_service')
+                {
+                    require_once('composant/ajout_plusieurs/view/nombre_ligne.php'); 
+                }
+            else if($page=='supprimer_service')
+                {
+                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
+                }
+            else  if($page=='recuperes_services')
+                {
+                    require_once('composant/ajout_plusieurs/view/demande_ajout.php'); 
+                } 
+            else  if($page=='recuperer_service')
+                {
+                } 
+            else  if($page=='ajouter_donnee_echange')
+                {
+                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
+                }
+            else  if($page=='modifier_donnee_echange')
+                {
+                    require_once('composant/ajout_plusieurs/view/nombre_ligne.php'); 
+                }
+            else if($page=='supprimer_donnee_echange')
+                {
+                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
+                }
+            else  if($page=='recuperes_donnee_echanges')
+                {
+                    require_once('composant/ajout_plusieurs/view/demande_ajout.php'); 
+                } 
+            else  if($page=='recuperer_donnee_echange')
                 {
                     require_once('composant/recuperation_plusieurs/model/recuperer_plusieurs.php'); 
                 }
-            else  if($page=='recuperer_avec_dependance')
+            else  if($page=='ajouter_donnee_persistante')
                 {
-                    require_once('composant/recuperation_plusieurs_avec_dependance/model/recuperer_liste.php'); 
+                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
                 }
-            else  if($page=='recuperes_modification')
+            else  if($page=='modifier_donnee_persistante')
                 {
-                    require_once('composant/modification_un/model/recuperer_plusieurs.php'); 
+                    require_once('composant/ajout_plusieurs/view/nombre_ligne.php'); 
                 }
-            else  if($page=='recuperer_supprimer')
+            else if($page=='supprimer_donnee_persistante')
                 {
-                    require_once('composant/suppression_un/model/recuperer_plusieurs.php'); 
+                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
                 }
-            else  if($page=='demande_supprimer')
+            else  if($page=='recuperes_donnee_persistantes')
                 {
-                    require_once('composant/suppression_un/model/recuperer_un.php'); 
-                }
-            else  if($page=='recuperer_un')
-                {
-                    require_once('composant/recuperation_un/model/recuperer_plusieurs.php'); 
-                }
-            else  if($page=='recuperation_un')
-                {
-                    require_once('composant/recuperation_un/model/recuperer_un.php'); 
-                }
-            else  if($page=='modification')
-                {
-                    require_once('composant/modification_un/model/recuperer_un.php'); 
-                }
-            else  if($page=='modification_plusieurs')
-                {
-                    require_once('composant/modification_plusieurs/view/modification_plusieurs.php');  
-                }
-            else  if($page=='modifier_plusieurs')
-                {
-                    require_once('composant/modification_plusieurs/model/recuperation_plusieurs.php'); 
+                    require_once('composant/ajout_plusieurs/view/demande_ajout.php'); 
                 } 
-            else  if($page=='suppression_plusieurs')
+            else  if($page=='recuperer_donnee_persistante')
                 {
-                    require_once('composant/suppression_plusieurs/view/suppression_plusieurs.php');  
+                    require_once('composant/recuperation_plusieurs/model/recuperer_plusieurs.php'); 
                 }
-            else  if($page=='supprimer_plusieurs')
+
+            else  if($page=='ajouter_api')
                 {
-                    require_once('composant/suppression_plusieurs/model/recuperation_plusieurs.php'); 
-                }            
-            else  if($page=='importer_excel')
-                {
-                    require_once('composant/import_excel/view/demande_importation.php'); 
+                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
                 }
-            else  if($page=='importer_image')
+            else  if($page=='modifier_api')
                 {
-                    require_once('composant/import_image/view/demande_importation.php'); 
+                    require_once('composant/ajout_plusieurs/view/nombre_ligne.php'); 
                 }
+            else if($page=='supprimer_api')
+                {
+                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
+                }
+            else  if($page=='recuperes_apis')
+                {
+                    require_once('composant/ajout_plusieurs/view/demande_ajout.php'); 
+                } 
+            else  if($page=='recuperer_api')
+                {
+                    require_once('composant/recuperation_plusieurs/model/recuperer_plusieurs.php'); 
+                }
+
+
         }
     else   
         {
