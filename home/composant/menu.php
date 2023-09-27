@@ -59,7 +59,7 @@
 
 						<li>
 							<a href="?page=recuperes_applications">
-								<span class="title">Recuperer</span>
+								<span class="title">Recuperers</span>
 							</a>
 						</li>
 												
@@ -79,6 +79,18 @@
 						</li>
 
 						<li>
+							<a href="?page=ajouter_composant_plusieurs">
+								<span class="title">Ajouter plusieurs </span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=modifier_composant">
+								<span class="title">Importer diagramme</span>
+							</a>
+						</li>
+
+						<li>
 							<a href="?page=modifier_composant">
 								<span class="title">Modifier</span>
 							</a>
@@ -93,7 +105,19 @@
 
 						<li>
 							<a href="?page=recuperes_composants">
-								<span class="title">Recuperer</span>
+								<span class="title">Recuperers</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=recuperes_composants_couche">
+								<span class="title">Recuperers par couche</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=recuperes_composants_plateforme">
+								<span class="title">Recuperers par  plateforme</span>
 							</a>
 						</li>
 												
@@ -103,31 +127,46 @@
 				<li class="has-sub">
 					<a href="?page=ajouter_un">
 					<i class="fa fa-users"></i>
-						<span class="title">Service</span>
+						<span class="title">Entite</span>
 					</a>
 					<ul >
 						<li>
-							<a href="?page=ajouter_service">
+							<a href="?page=ajouter_entite">
 								<span class="title">Ajouter </span>
 							</a>
 						</li>
 
+						
+
 						<li>
-							<a href="?page=modifier_service">
+							<a href="?page=modifier_entite">
 								<span class="title">Modifier</span>
 							</a>
 						</li>
 
 						
 						<li>
-							<a href="?page=supprimer_service">
+							<a href="?page=supprimer_entite">
 								<span class="title">Supprimer</span>
 							</a>
 						</li>
 
 						<li>
-							<a href="?page=recuperes_services">
-								<span class="title">Recuperer</span>
+							<a href="?page=recuperes_plusieurs_entite_composant">
+								<span class="title">Recuperers par composant</span>
+							</a>
+						</li>
+
+						
+						<li>
+							<a href="?page=recuperes_plusieurs_entite_application">
+								<span class="title">Recuperers par application</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=recuperes_entites">
+								<span class="title">Recuperers</span>
 							</a>
 						</li>
 												
@@ -161,7 +200,19 @@
 
 						<li>
 							<a href="?page=recuperes_donnee_echanges">
-								<span class="title">Recuperer</span>
+								<span class="title">Recuperers plusieurs</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=recuperes_donnee_echanges_composant">
+								<span class="title">Recuperers par composant</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=recuperes_donnee_echanges_application">
+								<span class="title">Recuperers application</span>
 							</a>
 						</li>
 												
@@ -195,7 +246,19 @@
 
 						<li>
 							<a href="?page=recuperes_donnee_persistantes">
-								<span class="title">Recuperer</span>
+								<span class="title">Recuperers plusieurs</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=recuperes_donnee_persistantes_application">
+								<span class="title">Recuperers par application</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=recuperes_donnee_persistantes_composant">
+								<span class="title">Recuperers par composant</span>
 							</a>
 						</li>
 												
@@ -223,11 +286,23 @@
 							<a href="?page=supprimer_api">
 								<span class="title">Supprimer</span>
 							</a>
-						</li>
+						</li> 
 
 						<li>
 							<a href="?page=recuperes_apis">
-								<span class="title">Recuperer</span>
+								<span class="title">Recuperers plusieurs</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=recuperes_apis_composant">
+								<span class="title">Recuperers par composant</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=recuperes_apis_application">
+								<span class="title">Recuperers par application</span>
 							</a>
 						</li>
 												
