@@ -4,27 +4,16 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=importer_agents">Agent</a>
+		<a href="?page=recuperer_agents">Agent</a>
 	</li>
 	<li class="active">
-		<strong>Importer</strong>
+		<strong>Recuperer</strong>
 	</li>
 </ol>
-
 
 								
 		
 		<br />
-
-	
-
-<div class="col-md-12">
-
-	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande d'importation des agents ci-dessous est executée avec success. </div>
-
-</div>
-
-
 		
 		<script type="text/javascript">
 		jQuery( document ).ready( function( $ ) {
@@ -46,14 +35,17 @@
 		<table class="table table-bordered datatable" id="table-1">
 			<thead>
 				<tr>
-				    <TH></TH>
+				    <TH>#</TH>
 					
 					<th>Prenom</th>
 					<th>Nom</th>
-					<th>Postnom</th>
+					<th >Sexe</th>
 					<th>Telephone</th>
 					<th >E-mail</th>
-					<th>Sexe</th>
+					<th >Direction</th>
+					<th >Departement</th>
+					<th >Fonction</th>
+					<th></th>
 	
 				</tr>
 			</thead>
@@ -61,24 +53,41 @@
 				
 			<?php
 							
-			for($i=0; $i < count($clients); $i++)
+			for($i=0; $i < count($agents); $i++)
 				{         
 					echo"                         
                			 <tr class='odd gradeX'>
 								<td>$i</td>
-				
-					<td>". $clients[$i]->nom ."</td>
-					<td > " . $clients[$i]->prenom ."</td>
-					<td >". $clients[$i]->postnom."</td>
-					<td >". $clients[$i]->email."</td>
-					<td > ". $clients[$i]->telephone ." </td>
-					<td > ". $clients[$i]->sexe ." </td>
-				
-		
+					<td > " . $agents[$i]->prenom ."</td>
+					<td>". $agents[$i]->nom ."</td>
+					<td>". $agents[$i]->sexe ."</td>
+					<td > ". $agents[$i]->telephone ." </td>
+					<td >". $agents[$i]->email."</td>
+					<td > ". $agents[$i]->direction ." </td>
+					<td>". $agents[$i]->departement."</td>
+					<td>". $agents[$i]->fonction ."</td>
+					<td> <a href='?page=modifier_agent&id=". $agents[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> <a href='?page=supprimer_agent&id=". $agents[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> <a href='?page=recuperer_agent&id=". $agents[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
 				</tr>";
 						         
 				}
 				?>
+
+               <thead>
+				<tr>
+				<TH>#</TH>
+					
+					<th>Prenom</th>
+					<th>Nom</th>
+					<th >Sexe</th>
+					<th>Telephone</th>
+					<th >E-mail</th>
+					<th >Direction</th>
+					<th >Departement</th>
+					<th >Fonction</th>
+					<th></th>
+	
+				</tr>
+			</thead>
 		</table>
 		
 		<br />
