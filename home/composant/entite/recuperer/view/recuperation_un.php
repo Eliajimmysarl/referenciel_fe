@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperer">texte</a>
+		<a href="?page=recuperer">Entite</a>
 	</li>
 	<li class="active">
 		<strong>Recuperer</strong>
@@ -24,25 +24,22 @@
 							<?php
 							
 								
-										echo"
+									echo"
 										<tr>
 										
-										<td>Text :</td><td>". $texte ." </td>
-										<tr><td>Select : </td><td> " . $selec." </td>
-		
-										<tr><td>Date : </td><td> ". $dates." </td>
-										<tr><td>Telephone : </td><td> ". $telephone." </td>
-										<tr><td>Email : </td><td> ". $email." </td>
-										<tr><td>radio: </td><td> ". $optionsRadios." </td>
+											<td>Application :</td><td>". $application_id ." </td>
+											
+											<tr><td>Nom : </td><td> " . $nom." </td>
+			
+											<tr><td>Description : </td><td> ". $description." </td>
+										
 										
 										
 										</tr>
-										";
+									";
 								
 							?>
-						
-					
-						
+							
 					</tbody>
 				</table>
 				

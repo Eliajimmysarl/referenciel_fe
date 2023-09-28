@@ -34,7 +34,7 @@
 				<form method="POST" action="index.php?demande=recuperation_avec_dependance"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">select <abbr style="color:green; font-size:15px;">**</abbr></label>			
+						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>

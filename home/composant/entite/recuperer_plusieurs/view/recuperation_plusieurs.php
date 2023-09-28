@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperer_modeles">textes</a>
+		<a href="?page=recuperer_modeles">Entite</a>
 	</li>
 	<li class="active">
 		<strong>Recuperer</strong>
@@ -36,36 +36,31 @@
 			<thead>
 				<tr>
 				    <TH>#</TH>
-					
-					<th>text</th>
-					<th>Select</th>
-					<th >date</th>
-					<th >Telephone</th>
-					<th >Email</th>
-					<th >Radio</th>
-				
-	
+					<TH>Application</TH>
+					<TH>Nom</TH>
+					<TH>Description</TH>
 				</tr>
 			</thead>
 			<tbody>
 				
 			<?php
 							
-			for($i=0; $i <   count($entites); $i++)
-				{    
-
+			for($i=0; $i < count($entites); $i++)
+				{ 
+					
 					$j = $i + 1;
 					echo"                         
                			 <tr class='odd gradeX'>
-								<td>$j</td>
-					<td > " . $entites[$i]->texte ."</td>
-					<td>". $entites[$i]->selec ."</td>
-					<td>". $entites[$i]->dates ."</td>
-					<td>". $entites[$i]->telephone ."</td>
-					<td>". $entites[$i]->email ."</td>
-					<td>". $entites[$i]->optionsRadios ."</td>
-					
-					
+
+							<td>$j</td>
+
+							<td > " . $entites[$i]->application_id."</td>
+
+							<td>". $entites[$i]->nom ."</td>
+
+							<td>". $entites[$i]->description ."</td>
+							
+				 		
 						</tr>";
 						         
 				}
@@ -73,19 +68,11 @@
 
                <thead>
 				<tr>
-                <TH>#</TH>
-					
-				
-					
-					<th>text</th>
-					<th>Select</th>
-					<th >date</th>
-					<th >Telephone</th>
-					<th >Email</th>
-					<th >Radio</th>
-					
-	
-	
+					<TH>#</TH>
+					<TH>Application</TH>
+					<TH>Nom</TH>
+					<TH>Description</TH>
+
 				</tr>
 			</thead>
 		</table>

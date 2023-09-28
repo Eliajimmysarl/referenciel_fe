@@ -6,7 +6,7 @@
 		</li>
 	
 		<li>
-			<a href="?page=recuperer_modeles">Texte</a>
+			<a href="?page=recuperer_modeles">Entite</a>
 		</li>
 	
 		<li class="active">
@@ -38,14 +38,14 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="selec" id="selec"  class="form-control" required="required">
-									<option value="" selected>Select</option>
+									<select  name="application_id" id="selec"  class="form-control" required="required">
+									<option value="" selected>application</option>
 									
 										<?php
-											for($i=0; $i < count($selections); $i++)
+											for($i=0; $i < count($applications); $i++)
 												{         
 													echo"  
-															<option value=". $selections[$i]->id ."> ". $selections[$i]->nom ."</option>                       
+															<option value=". $applications[$i]->id ."> ". $applications[$i]->nom ."</option>                       
 															
 													";
 																
@@ -60,31 +60,6 @@
 
                     
 
-
-                    <div class="form-group"> 
-                        
-						<div class="col-sm-offset-3 col-sm-5"> 
-							
-							<?php
-								for($i=0; $i < count($options); $i++)
-									{         
-										echo"  
-												<div class='radio'> 
-													<label> 
-
-														<input type='radio' name='optionsRadios' id='optionsRadios1' value=". $options[$i]->id ." >".$options[$i]->nom."
-													
-													</label> 
-												</div>		
-			
-											";
-																
-									}
-							?>
-												
-                		</div>
-                         
-					</div>
 
 					<div class="form-group">
 						

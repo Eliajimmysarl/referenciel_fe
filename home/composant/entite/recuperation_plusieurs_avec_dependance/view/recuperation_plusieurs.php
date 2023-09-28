@@ -36,15 +36,9 @@
 			<thead>
 				<tr>
 				    <TH>#</TH>
-					
-					<th>text</th>
-					<th>Select</th>
-					<th >date</th>
-					<th >Telephone</th>
-					<th >Email</th>
-					<th >Radio</th>
-					<th></th>
-	
+					<TH>Application</TH>
+					<TH>Nom</TH>
+					<TH>Description</TH>
 				</tr>
 			</thead>
 			<tbody>
@@ -57,36 +51,29 @@
 					$j = $i + 1;
 					echo"                         
                			 <tr class='odd gradeX'>
-								<td>$j</td>
-					<td > " . $entites[$i]->texte ."</td>
-					<td>". $entites[$i]->selec ."</td>
-					<td>". $entites[$i]->dates ."</td>
-					<td>". $entites[$i]->telephone ."</td>
-					<td>". $entites[$i]->email ."</td>
-					<td>". $entites[$i]->optionsRadios ."</td>
-					
-					
-					<td><a href='?page=recuperation_un&id=". $entites[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
-				</tr>";
+
+							<td>$j</td>
+
+							<td > " . $entites[$i]->application_id."</td>
+
+							<td>". $entites[$i]->nom ."</td>
+
+							<td>". $entites[$i]->description ."</td>
+							
+							<td><a href='?page=recuperation_un&id=". $entites[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
+				 		
+						</tr>";
 						         
 				}
 				?>
 
                <thead>
 				<tr>
-                <TH>#</TH>
-					
-				
-					
-					<th>text</th>
-					<th>Select</th>
-					<th >date</th>
-					<th >Telephone</th>
-					<th >Email</th>
-					<th >Radio</th>
-					<th></th>
-	
-	
+					<TH>#</TH>
+					<TH>Application</TH>
+					<TH>Nom</TH>
+					<TH>Description</TH>
+
 				</tr>
 			</thead>
 		</table>
