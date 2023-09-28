@@ -58,7 +58,7 @@
            
             if($page=='ajouter_application')
                 {
-                    require_once('composant/ajout_un/view/demande_ajout.php');
+                    require_once('composant/application/ajouter/view/demande_ajout.php');
                 }
             else  if($page=='modifier_application')
                 {

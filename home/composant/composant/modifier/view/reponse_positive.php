@@ -5,7 +5,7 @@
 	</li>
 	<li>
 
-		<a href="?page=recuperer_agents">Agent</a>
+		<a href="?page=recuperers">Texte</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -17,7 +17,7 @@
 
 <div class="col-md-12">
 
-	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de modification d'agent ci-dessous est executée avec success. <br><br> <?php require_once('composant/agent/importer_photo/ihm/ajout_photo.php');?></div>
+	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de modification du texte ci-dessous est executée avec success. <br><br> </div>
 
 </div>
 
