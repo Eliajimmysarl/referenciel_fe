@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperer_equipes">Texte</a>
+		<a href="?page=recuperer_">Application</a>
 	</li>
 	<li class="active">
 		<strong>Supprimer</strong>
@@ -13,7 +13,7 @@
 
 
 <div class="col-md-12">
-	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de suppression de text est executée avec success.</div>
+	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de suppression d'application est executée avec success.</div>
 </div>
 
 						
