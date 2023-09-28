@@ -35,13 +35,15 @@
 		<table class="table table-bordered datatable" id="table-1">
 			<thead>
 				<tr>
-					<TH>#</TH>
-					<TH>text</TH>
-					<TH>Select</TH>
-					<TH>date</TH>
-					<TH>Telephone</TH>
-					<TH>Email</TH>
-					<TH>Radio</TH>
+				    <TH>#</TH>
+					<TH>Nom app</TH>
+					<TH>Description</TH>
+					<TH>Lien web</TH>
+					<TH>Lien android</TH>
+					<TH>Lien Ios</TH>
+					<TH>Ussd vodacom</TH>
+					<TH>Ussd africell</TH>
+					<TH>Ussd orange</TH>
 					<TH></TH>
 	
 				</tr>
@@ -50,27 +52,33 @@
 				
 				<?php
 								
-				for($i=0; $i < count($entites); $i++)
+				for($i=0; $i < count($applications); $i++)
 				{ 
 					$j = $i + 1;
 				echo"                         
 					<tr class='odd gradeX'>
 
-						<td>$j</td>
+						
+					<td>$j</td>
 
-						<td > " . $entites[$i]->texte ."</td>
+					<td > " . $applications[$i]->nom ."</td>
 
-						<td>". $entites[$i]->selec ."</td>
+					<td>". $applications[$i]->desciption ."</td>
 
-						<td>". $entites[$i]->dates ."</td>
+					<td>". $applications[$i]->lien_web ."</td>
 
-						<td>". $entites[$i]->telephone ."</td>
+					<td>". $applications[$i]->lien_android ."</td>
 
-						<td>". $entites[$i]->email ."</td>
+					<td>". $applications[$i]->lien_ios ."</td>
 
-						<td>". $entites[$i]->optionsRadios ."</td>
+					<td>". $applications[$i]->ussd_vodacom ."</td>
+
+					<td>". $applications[$i]->ussd_africell ."</td>
+
+					<td>". $applications[$i]->ussd_orange ."</td>
+	
 		
-						<td> <a href='?page=demande_supprimer&id=". $entites[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
+						<td> <a href='?page=demande_supprimer&id=". $applications[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
 					</tr>";
 						         
 				}
@@ -78,13 +86,15 @@
             </tbody>
             <thead>
 				<tr>
-                    <TH>#</TH>
-					<TH>text</TH>
-					<TH>Select</TH>
-					<TH>date</TH>
-					<TH>Telephone</TH>
-					<TH>Email</TH>
-					<TH>Radio</TH>
+				<TH>#</TH>
+					<TH>Nom app</TH>
+					<TH>Description</TH>
+					<TH>Lien web</TH>
+					<TH>Lien android</TH>
+					<TH>Lien Ios</TH>
+					<TH>Ussd vodacom</TH>
+					<TH>Ussd africell</TH>
+					<TH>Ussd orange</TH>
 					<TH></TH>
 	
 				</tr>

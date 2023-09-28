@@ -35,36 +35,47 @@
 		<table class="table table-bordered datatable" id="table-1">
 			<thead>
 				<tr>
-				    <TH>#</TH>
-					
-					<th>text</th>
-					<th>Select</th>
-					<th >date</th>
-					<th >Telephone</th>
-					<th >Email</th>
-					<th >Radio</th>
+
+				     <TH>#</TH>
+					<TH>Nom app</TH>
+					<TH>Description</TH>
+					<TH>Lien web</TH>
+					<TH>Lien android</TH>
+					<TH>Lien Ios</TH>
+					<TH>Ussd vodacom</TH>
+					<TH>Ussd africell</TH>
+					<TH>Ussd orange</TH>
 				
-	
 				</tr>
 			</thead>
 			<tbody>
 				
 			<?php
 							
-			for($i=0; $i <   count($entites); $i++)
+			for($i=0; $i <   count($applications); $i++)
 				{    
 
 					$j = $i + 1;
 					echo"                         
                			 <tr class='odd gradeX'>
-								<td>$j</td>
-					<td > " . $entites[$i]->texte ."</td>
-					<td>". $entites[$i]->selec ."</td>
-					<td>". $entites[$i]->dates ."</td>
-					<td>". $entites[$i]->telephone ."</td>
-					<td>". $entites[$i]->email ."</td>
-					<td>". $entites[$i]->optionsRadios ."</td>
-					
+
+							<td>$j</td>
+
+							<td > " . $applications[$i]->nom ."</td>
+	
+							<td>". $applications[$i]->desciption ."</td>
+	
+							<td>". $applications[$i]->lien_web ."</td>
+	
+							<td>". $applications[$i]->lien_android ."</td>
+	
+							<td>". $applications[$i]->lien_ios ."</td>
+	
+							<td>". $applications[$i]->ussd_vodacom ."</td>
+	
+							<td>". $applications[$i]->ussd_africell ."</td>
+	
+							<td>". $applications[$i]->ussd_orange ."</td>
 					
 						</tr>";
 						         
@@ -73,18 +84,16 @@
 
                <thead>
 				<tr>
-                <TH>#</TH>
-					
-				
-					
-					<th>text</th>
-					<th>Select</th>
-					<th >date</th>
-					<th >Telephone</th>
-					<th >Email</th>
-					<th >Radio</th>
-					
-	
+
+                    <TH>#</TH>
+					<TH>Nom app</TH>
+					<TH>Description</TH>
+					<TH>Lien web</TH>
+					<TH>Lien android</TH>
+					<TH>Lien Ios</TH>
+					<TH>Ussd vodacom</TH>
+					<TH>Ussd africell</TH>
+					<TH>Ussd orange</TH>
 	
 				</tr>
 			</thead>

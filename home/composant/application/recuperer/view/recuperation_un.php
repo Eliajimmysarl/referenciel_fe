@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperer">texte</a>
+		<a href="?page=recuperer">Detail</a>
 	</li>
 	<li class="active">
 		<strong>Recuperer</strong>
@@ -27,14 +27,15 @@
 										echo"
 										<tr>
 										
-										<td>Text :</td><td>". $texte ." </td>
-										<tr><td>Select : </td><td> " . $selec." </td>
+										<td>Nom app :</td><td>". $nom ." </td>
+										<tr><td>Description : </td><td> " . $description." </td>
 		
-										<tr><td>Date : </td><td> ". $dates." </td>
-										<tr><td>Telephone : </td><td> ". $telephone." </td>
-										<tr><td>Email : </td><td> ". $email." </td>
-										<tr><td>radio: </td><td> ". $optionsRadios." </td>
-										
+										<tr><td>Lien web: </td><td> ". $lien_web." </td>
+										<tr><td>Lien android : </td><td> ". $lien_android." </td>
+										<tr><td>Lien ios : </td><td> ". $lien_ios." </td>
+										<tr><td>Ussd vodacom: </td><td> ". $ussd_vodacom." </td>
+										<tr><td>Ussd africell: </td><td> ". $ussd_africel." </td>
+										<tr><td>Ussd orange: </td><td> ". $ussd_orange." </td>
 										
 										</tr>
 										";
