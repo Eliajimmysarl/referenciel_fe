@@ -37,116 +37,108 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="texte" value="<?php echo $texte;?>"  class="form-control">
+
+									<input type="text" name="texte" value="<?php echo $nom;?>"  class="form-control">
+									
 									<span class="input-group-addon"><i class=""></i></span>
 								</div>
 							</div>
 					</div>
 
-				
-					
-
-
-					
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Select<abbr style="color:green; font-size:15px;">**</abbr></label>			
+						<label class="col-sm-3 control-label">Description<abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="selec" id="monselect"  class="form-control" value="<?php echo $selec;?>" required="required">
-									<option value="" selected>Select</option>
-										<option value="1">Select1</option>
-										<option value="2">Select2</option>
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					   </div>
-
-                       <div class="form-group">		
-						<label class="col-sm-3 control-label">Date<abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-									<input type="date" name="dates" class="form-control" placeholder=" date" value=<?php echo $dates;?> required="required">
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div> 
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Telephone<abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-phone"></i></span>
-									<input type="text" name="telephone" value="<?php echo $telephone;?>" id=numero class="form-control">
-									<span style='' id=avnum> </span>
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
-
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">E-mail<abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-mail"></i></span>
-									<input type="email" name="email"  value="<?php echo $email;?>" class="form-control">
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
-                
-
-
-                
-					<div class="form-group">	
-							<div  >
-                                <span id="msg"></span>
-								</div>	
-						<label class="col-sm-3 control-label">Mot de passe<abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-key"></i></span>
+ 
+									<textarea class="form-control" name="description" value="<?php echo $description;?>" id="textAreaExample6" rows="3"></textarea>
 									
-									<input type="password" name="password"  id=mdp  class="form-control">
-									<span class="input-group-addon"></span>
+									<span class="input-group-addon"><i class=""></i></span>
 								</div>
-
-								<div style='text-align:left;'>
-						    	    <input type="checkbox" onclick="voirpass()"> Afficher le mot de passe
-					    	</div>
-						</div>
+							</div>
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Confirmer<abbr style="color:green; font-size:15px;">**</abbr></label>	
+						<label class="col-sm-3 control-label">Lien web<abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-key"></i></span>
-									<input type="password" name="confirmPassword" id="confirmerpassword" class="form-control">
-									<span class="input-group-addon"></span>
-									<div id="cmp"></div>
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+
+									<input type="text" name="lien_web" value="<?php echo $lien_web;?>"  class="form-control">
+									
+									<span class="input-group-addon"><i class=""></i></span>
 								</div>
 							</div>
-							
+					</div>
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Lien android<abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+
+									<input type="text" name="lien_android" value="<?php echo $lien_android;?>"  class="form-control">
+									
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Lien ios<abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+
+									<input type="text" name="lien_ios" value="<?php echo $lien_ios;?>"  class="form-control">
+									
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Ussd vodacom<abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+
+									<input type="text" name="ussd_vodacom" value="<?php echo $ussd_vodacom;?>"  class="form-control">
+									
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Ussd africell<abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+
+									<input type="text" name="ussd_africell" value="<?php echo $ussd_africell;?>"  class="form-control">
+									
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Ussd orange<abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+
+									<input type="text" name="ussd_orange" value="<?php echo $ussd_orange;?>"  class="form-control">
+									
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
 					</div>
 
 
-
-
-                        <div class="form-group"> 
-                            <div class="col-sm-offset-3 col-sm-5"> 
-                                <div class="radio"> 
-                                    <label> <input type="radio" name="optionsRadios" id="optionsRadios1" value="1" checked="">Radio Input 1
-                             </label> 
-                        </div>
-                        <div class="radio">
-                            <label> <input type="radio" name="optionsRadios" id="optionsRadios2" value="2">Radio Input 2
-                          </label>   
-                          </div> 
-                         </div>
+				
+					
                         
 
 					<div class="form-group">
