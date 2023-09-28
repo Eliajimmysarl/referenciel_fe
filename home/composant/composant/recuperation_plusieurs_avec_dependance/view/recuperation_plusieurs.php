@@ -36,57 +36,59 @@
 			<thead>
 				<tr>
 				    <TH>#</TH>
-					
-					<th>text</th>
-					<th>Select</th>
-					<th >date</th>
-					<th >Telephone</th>
-					<th >Email</th>
-					<th >Radio</th>
-					<th></th>
-	
+					<TH>Application</TH>
+					<TH>Couche</TH>
+					<TH>Platforme</TH>
+					<TH>Entite</TH>
+					<TH>Nom</TH>
+					<TH>Description</TH>
+					<TH>Url code</TH>
 				</tr>
 			</thead>
 			<tbody>
 				
 			<?php
 							
-			for($i=0; $i < count($entites); $i++)
-				{ 
-					
+			for($i=0; $i <   count($composants); $i++)
+				{    
+
 					$j = $i + 1;
 					echo"                         
                			 <tr class='odd gradeX'>
-								<td>$j</td>
-					<td > " . $entites[$i]->texte ."</td>
-					<td>". $entites[$i]->selec ."</td>
-					<td>". $entites[$i]->dates ."</td>
-					<td>". $entites[$i]->telephone ."</td>
-					<td>". $entites[$i]->email ."</td>
-					<td>". $entites[$i]->optionsRadios ."</td>
-					
-					
-					<td><a href='?page=recuperation_un&id=". $entites[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
-				</tr>";
+
+							<td>$j</td>
+
+							<td > " . $composants[$i]->application_id ."</td>
+
+							<td>". $composants[$i]->couche ."</td>
+
+							<td>". $composants[$i]->platforme ."</td>
+
+							<td>". $composants[$i]->entite_id ."</td>
+
+							<td>". $composants[$i]->nom ."</td>
+
+							<td>". $composants[$i]->description ."</td>
+							
+							<td>". $composants[$i]->url_code ."</td>
+
+							<td><a href='?page=recuperation_un&id=". $composants[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
+		
+						</tr>";
 						         
 				}
 				?>
 
                <thead>
 				<tr>
-                <TH>#</TH>
-					
-				
-					
-					<th>text</th>
-					<th>Select</th>
-					<th >date</th>
-					<th >Telephone</th>
-					<th >Email</th>
-					<th >Radio</th>
-					<th></th>
-	
-	
+                    <TH>#</TH>
+					<TH>Application</TH>
+					<TH>Couche</TH>
+					<TH>Platforme</TH>
+					<TH>Entite</TH>
+					<TH>Nom</TH>
+					<TH>Description</TH>
+					<TH>Url code</TH>
 				</tr>
 			</thead>
 		</table>
@@ -123,3 +125,8 @@
 	<script src="assets/js/datatables/datatables.js"></script>
 	<script src="assets/js/select2/select2.min.js"></script>
 	<script src="assets/js/neon-chat.js"></script>
+
+
+
+
+

@@ -1,96 +1,94 @@
-<hr/>
+<hr />
+<ol class="breadcrumb bc-3" >
+	<li>
+		<a href="?home"><i class="fa fa-home"></i>Home</a>
+	</li>
+	<li>
+		<a href="?page=recuperer_modeles">Composant</a>
+	</li>
+	<li class="active">
+		<strong>Recuperer</strong>
+	</li>
+</ol>
 
-	<ol class="breadcrumb bc-3" >
-
-		<li>
-			<a href="?home"><i class="fa fa-home"></i>Home</a>
-		</li>
-
-		<li>
-			<a href="?page=recuperer_modeles">textes</a>
-		</li>
-
-		<li class="active">
-			<strong>Recuperer</strong>
-		</li>
-
-	</ol>
 								
-	<br/>
+		
+		<br />
 		
 		<script type="text/javascript">
-			jQuery( document ).ready( function( $ ) {
-				var $table1 = jQuery( '#table-1' );
-				
-				// Initialize DataTable
-				$table1.DataTable( {
-					"aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
-					"bStateSave": true
-				});
-				
-				// Initalize Select Dropdown after DataTables is created
-				$table1.closest( '.dataTables_wrapper' ).find( 'select' ).select2( {
-					minimumResultsForSearch: -1
-				});
-			} );
+		jQuery( document ).ready( function( $ ) {
+			var $table1 = jQuery( '#table-1' );
+			
+			// Initialize DataTable
+			$table1.DataTable( {
+				"aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+				"bStateSave": true
+			});
+			
+			// Initalize Select Dropdown after DataTables is created
+			$table1.closest( '.dataTables_wrapper' ).find( 'select' ).select2( {
+				minimumResultsForSearch: -1
+			});
+		} );
 		</script>
 		
 		<table class="table table-bordered datatable" id="table-1">
 			<thead>
 				<tr>
-					<TH>#</TH>
-					<TH>text</TH>
-					<TH>Select</TH>
-					<TH>date</TH>
-					<TH>Telephone</TH>
-					<TH>Email</TH>
-					<TH>Radio</TH>
-					<TH></TH>
+				    <TH>#</TH>
+					<TH>Application</TH>
+					<TH>Couche</TH>
+					<TH>Platforme</TH>
+					<TH>Entite</TH>
+					<TH>Nom</TH>
+					<TH>Description</TH>
+					<TH>Url code</TH>
 				</tr>
 			</thead>
 			<tbody>
 				
-				<?php
-								
-				for($i=0; $i < count($entites); $i++)
-				{ 
+			<?php
+							
+			for($i=0; $i <   count($composants); $i++)
+				{    
+
 					$j = $i + 1;
-				echo"                         
-					<tr class='odd gradeX'>
+					echo"                         
+               			 <tr class='odd gradeX'>
 
-						<td>$j</td>
+							<td>$j</td>
 
-						<td > " . $entites[$i]->texte ."</td>
+							<td > " . $composants[$i]->application_id ."</td>
 
-						<td>". $entites[$i]->selec ."</td>
+							<td>". $composants[$i]->couche ."</td>
 
-						<td>". $entites[$i]->dates ."</td>
+							<td>". $composants[$i]->platforme ."</td>
 
-						<td>". $entites[$i]->telephone ."</td>
+							<td>". $composants[$i]->entite_id ."</td>
 
-						<td>". $entites[$i]->email ."</td>
+							<td>". $composants[$i]->nom ."</td>
 
-						<td>". $entites[$i]->optionsRadios ."</td>
+							<td>". $composants[$i]->description ."</td>
+							
+							<td>". $composants[$i]->url_code ."</td>
+
+							<td><a href='?page=recuperation_un&id=". $composants[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
 		
-									
-					<td> <a href='?page=recuperation_un&id=". $entites[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
-			
-					</tr>";
+						</tr>";
 						         
 				}
 				?>
-            </tbody>
-            <thead>
+
+               <thead>
 				<tr>
                     <TH>#</TH>
-					<TH>text</TH>
-					<TH>Select</TH>
-					<TH>date</TH>
-					<TH>Telephone</TH>
-					<TH>Email</TH>
-					<TH>Radio</TH>
-					<TH></TH>
-	
+					<TH>Application</TH>
+					<TH>Couche</TH>
+					<TH>Platforme</TH>
+					<TH>Entite</TH>
+					<TH>Nom</TH>
+					<TH>Description</TH>
+					<TH>Url code</TH>
 				</tr>
 			</thead>
 		</table>
@@ -127,3 +125,8 @@
 	<script src="assets/js/datatables/datatables.js"></script>
 	<script src="assets/js/select2/select2.min.js"></script>
 	<script src="assets/js/neon-chat.js"></script>
+
+
+
+
+

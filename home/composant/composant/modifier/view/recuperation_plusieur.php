@@ -34,37 +34,46 @@
 		
 		<table class="table table-bordered datatable" id="table-1">
 			<thead>
-				<tr>
+			<tr>
 				    <TH>#</TH>
-					
-					<th>text</th>
-					<th>Select</th>
-					<th >date</th>
-					<th >Telephone</th>
-					<th >Email</th>
-					<th >Radio</th>
-					<th></th>
-	
+					<TH>Application</TH>
+					<TH>Couche</TH>
+					<TH>Platforme</TH>
+					<TH>Entite</TH>
+					<TH>Nom</TH>
+					<TH>Description</TH>
+					<TH>Url code</TH>
+					<TH></TH>
 				</tr>
 			</thead>
 			<tbody>
 				
 			<?php
 							
-			for($i=0; $i < count($entites); $i++)
-				{         
+			for($i=0; $i <   count($composants); $i++)
+				{    
+
+					$j = $i + 1;
 					echo"                         
                			 <tr class='odd gradeX'>
-								<td>$i</td>
-					<td > " . $entites[$i]->texte ."</td>
-					<td>". $entites[$i]->selec ."</td>
-					<td>". $entites[$i]->dates ."</td>
-					<td>". $entites[$i]->telephone ."</td>
-					<td>". $entites[$i]->email ."</td>
-					<td>". $entites[$i]->optionsRadios ."</td>
+
+							<td>$j</td>
+
+							<td > " . $composants[$i]->application_id ."</td>
+
+							<td>". $composants[$i]->couche ."</td>
+
+							<td>". $composants[$i]->platforme ."</td>
+
+							<td>". $composants[$i]->entite_id ."</td>
+
+							<td>". $composants[$i]->nom ."</td>
+
+							<td>". $composants[$i]->description ."</td>
+							
+							<td>". $composants[$i]->url_code ."</td>
 					
-					
-					<td> <a href='?page=modification&id=". $entites[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> </td>
+					<td> <a href='?page=modification&id=". $composants[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> </td>
 				</tr>";
 						         
 				}
@@ -72,18 +81,15 @@
 
                <thead>
 				<tr>
-                <TH>#</TH>
-					
-				
-					
-					<th>text</th>
-					<th>Select</th>
-					<th >date</th>
-					<th >Telephone</th>
-					<th >Email</th>
-					<th >Radio</th>
-					<th></th>
-	
+					<TH>#</TH>
+					<TH>Application</TH>
+					<TH>Couche</TH>
+					<TH>Platforme</TH>
+					<TH>Entite</TH>
+					<TH>Nom</TH>
+					<TH>Description</TH>
+					<TH>Url code</TH>
+					<TH></TH>
 	
 				</tr>
 			</thead>

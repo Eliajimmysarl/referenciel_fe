@@ -34,43 +34,46 @@
 		
 		<table class="table table-bordered datatable" id="table-1">
 			<thead>
-				<tr>
-					<TH>#</TH>
-					<TH>text</TH>
-					<TH>Select</TH>
-					<TH>date</TH>
-					<TH>Telephone</TH>
-					<TH>Email</TH>
-					<TH>Radio</TH>
+			<tr>
+				    <TH>#</TH>
+					<TH>Application</TH>
+					<TH>Couche</TH>
+					<TH>Platforme</TH>
+					<TH>Entite</TH>
+					<TH>Nom</TH>
+					<TH>Description</TH>
+					<TH>Url code</TH>
 					<TH></TH>
-	
 				</tr>
 			</thead>
 			<tbody>
 				
-				<?php
-								
-				for($i=0; $i < count($entites); $i++)
-				{ 
+			<?php
+							
+			for($i=0; $i <   count($composants); $i++)
+				{    
+
 					$j = $i + 1;
-				echo"                         
-					<tr class='odd gradeX'>
+					echo"                         
+               			 <tr class='odd gradeX'>
 
-						<td>$j</td>
+							<td>$j</td>
 
-						<td > " . $entites[$i]->texte ."</td>
+							<td > " . $composants[$i]->application_id ."</td>
 
-						<td>". $entites[$i]->selec ."</td>
+							<td>". $composants[$i]->couche ."</td>
 
-						<td>". $entites[$i]->dates ."</td>
+							<td>". $composants[$i]->platforme ."</td>
 
-						<td>". $entites[$i]->telephone ."</td>
+							<td>". $composants[$i]->entite_id ."</td>
 
-						<td>". $entites[$i]->email ."</td>
+							<td>". $composants[$i]->nom ."</td>
 
-						<td>". $entites[$i]->optionsRadios ."</td>
+							<td>". $composants[$i]->description ."</td>
+							
+							<td>". $composants[$i]->url_code ."</td>
 		
-						<td> <a href='?page=demande_supprimer&id=". $entites[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
+						<td> <a href='?page=demande_supprimer&id=". $composants[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
 					</tr>";
 						         
 				}
@@ -78,15 +81,15 @@
             </tbody>
             <thead>
 				<tr>
-                    <TH>#</TH>
-					<TH>text</TH>
-					<TH>Select</TH>
-					<TH>date</TH>
-					<TH>Telephone</TH>
-					<TH>Email</TH>
-					<TH>Radio</TH>
+                <TH>#</TH>
+					<TH>Application</TH>
+					<TH>Couche</TH>
+					<TH>Platforme</TH>
+					<TH>Entite</TH>
+					<TH>Nom</TH>
+					<TH>Description</TH>
+					<TH>Url code</TH>
 					<TH></TH>
-	
 				</tr>
 			</thead>
 		</table>
