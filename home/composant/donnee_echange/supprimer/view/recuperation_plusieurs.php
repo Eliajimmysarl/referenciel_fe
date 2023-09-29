@@ -1,56 +1,58 @@
-<hr />
-<ol class="breadcrumb bc-3" >
-	<li>
-		<a href="?home"><i class="fa fa-home"></i>Home</a>
-	</li>
-	<li>
-		<a href="?page=recuperer_modeles">textes</a>
-	</li>
-	<li class="active">
-		<strong>Recuperer</strong>
-	</li>
-</ol>
+<hr/>
 
+	<ol class="breadcrumb bc-3" >
+
+		<li>
+			<a href="?home"><i class="fa fa-home"></i>Home</a>
+		</li>
+
+		<li>
+			<a href="?page=recuperer_modeles">TDE</a>
+		</li>
+
+		<li class="active">
+			<strong>Recuperer</strong>
+		</li>
+
+	</ol>
 								
-		
-		<br />
+	<br/>
 		
 		<script type="text/javascript">
-		jQuery( document ).ready( function( $ ) {
-			var $table1 = jQuery( '#table-1' );
-			
-			// Initialize DataTable
-			$table1.DataTable( {
-				"aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
-				"bStateSave": true
-			});
-			
-			// Initalize Select Dropdown after DataTables is created
-			$table1.closest( '.dataTables_wrapper' ).find( 'select' ).select2( {
-				minimumResultsForSearch: -1
-			});
-		} );
+			jQuery( document ).ready( function( $ ) {
+				var $table1 = jQuery( '#table-1' );
+				
+				// Initialize DataTable
+				$table1.DataTable( {
+					"aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+					"bStateSave": true
+				});
+				
+				// Initalize Select Dropdown after DataTables is created
+				$table1.closest( '.dataTables_wrapper' ).find( 'select' ).select2( {
+					minimumResultsForSearch: -1
+				});
+			} );
 		</script>
 		
 		<table class="table table-bordered datatable" id="table-1">
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>text</TH>
-					<TH>Select</TH>
-					<TH>date</TH>
-					<TH>Telephone</TH>
-					<TH>Email</TH>
-					<TH>Radio</TH>
+					<TH>Application</TH>
+					<TH>Composant</TH>
+					<TH>Entite</TH>
+					<TH>Nom</TH>
+					<TH>Types</TH>
+					<TH>Description</TH>
 					<TH></TH>
-	
 				</tr>
 			</thead>
 			<tbody>
 				
 				<?php
 								
-				for($i=0; $i < count($entites); $i++)
+				for($i=0; $i < count($donnee_echanges); $i++)
 				{ 
 					$j = $i + 1;
 				echo"                         
@@ -58,19 +60,19 @@
 
 						<td>$j</td>
 
-						<td > " . $entites[$i]->texte ."</td>
+						<td > " . $donnee_echanges[$i]->application_id ."</td>
 
-						<td>". $entites[$i]->selec ."</td>
+						<td>". $donnee_echanges[$i]->composant_id ."</td>
 
-						<td>". $entites[$i]->dates ."</td>
+						<td>". $donnee_echanges[$i]->entite_id ."</td>
 
-						<td>". $entites[$i]->telephone ."</td>
+						<td>". $donnee_echanges[$i]->nom ."</td>
 
-						<td>". $entites[$i]->email ."</td>
+						<td>". $donnee_echangess[$i]->types ."</td>
 
-						<td>". $entites[$i]->optionsRadios ."</td>
+						<td>". $donnee_echanges[$i]->description ."</td>
 		
-						<td> <a href='?page=demande_supprimer&id=". $entites[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
+						<td> <a href='?page=demande_supprimer&id=". $donnee_echanges[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
 					</tr>";
 						         
 				}
@@ -78,15 +80,14 @@
             </tbody>
             <thead>
 				<tr>
-                    <TH>#</TH>
-					<TH>text</TH>
-					<TH>Select</TH>
-					<TH>date</TH>
-					<TH>Telephone</TH>
-					<TH>Email</TH>
-					<TH>Radio</TH>
+				    <TH>#</TH>
+					<TH>Application</TH>
+					<TH>Composant</TH>
+					<TH>Entite</TH>
+					<TH>Nom</TH>
+					<TH>Types</TH>
+					<TH>Description</TH>
 					<TH></TH>
-	
 				</tr>
 			</thead>
 		</table>

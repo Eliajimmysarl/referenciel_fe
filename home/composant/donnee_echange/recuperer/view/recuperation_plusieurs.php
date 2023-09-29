@@ -7,7 +7,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperer_modeles">textes</a>
+			<a href="?page=recuperer_modeles">TDE</a>
 		</li>
 
 		<li class="active">
@@ -39,12 +39,12 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>text</TH>
-					<TH>Select</TH>
-					<TH>date</TH>
-					<TH>Telephone</TH>
-					<TH>Email</TH>
-					<TH>Radio</TH>
+					<TH>Application</TH>
+					<TH>Composant</TH>
+					<TH>Entite</TH>
+					<TH>Nom</TH>
+					<TH>Types</TH>
+					<TH>Description</TH>
 					<TH></TH>
 				</tr>
 			</thead>
@@ -52,7 +52,7 @@
 				
 				<?php
 								
-				for($i=0; $i < count($entites); $i++)
+				for($i=0; $i < count($donnee_echanges); $i++)
 				{ 
 					$j = $i + 1;
 				echo"                         
@@ -60,20 +60,20 @@
 
 						<td>$j</td>
 
-						<td > " . $entites[$i]->texte ."</td>
+						<td > " . $donnee_echanges[$i]->application_id ."</td>
 
-						<td>". $entites[$i]->selec ."</td>
+						<td>". $donnee_echanges[$i]->composant_id ."</td>
 
-						<td>". $entites[$i]->dates ."</td>
+						<td>". $donnee_echanges[$i]->entite_id ."</td>
 
-						<td>". $entites[$i]->telephone ."</td>
+						<td>". $donnee_echanges[$i]->nom ."</td>
 
-						<td>". $entites[$i]->email ."</td>
+						<td>". $donnee_echangess[$i]->types ."</td>
 
-						<td>". $entites[$i]->optionsRadios ."</td>
+						<td>". $donnee_echanges[$i]->description ."</td>
 		
 									
-					<td> <a href='?page=recuperation_un&id=". $entites[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
+					<td> <a href='?page=recuperation_un&id=". $donnee_echanges[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
 			
 					</tr>";
 						         
@@ -82,13 +82,13 @@
             </tbody>
             <thead>
 				<tr>
-                    <TH>#</TH>
-					<TH>text</TH>
-					<TH>Select</TH>
-					<TH>date</TH>
-					<TH>Telephone</TH>
-					<TH>Email</TH>
-					<TH>Radio</TH>
+				    <TH>#</TH>
+					<TH>Application</TH>
+					<TH>Composant</TH>
+					<TH>Entite</TH>
+					<TH>Nom</TH>
+					<TH>Types</TH>
+					<TH>Description</TH>
 					<TH></TH>
 	
 				</tr>
