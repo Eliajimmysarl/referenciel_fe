@@ -6,7 +6,7 @@
 		</li>
 	
 		<li>
-			<a href="?page=recuperer_modeles">Ajouter modele</a>
+			<a href="?page=recuperer_modeles">TDE</a>
 		</li>
 	
 		<li class="active">
@@ -33,129 +33,90 @@
 						
 				<form method="POST" action="index.php?demande=ajouter_un_avec_dependance"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
-					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Text <abbr style="color:green; font-size:15px;">**</abbr></label>
+				<div class="form-group">		
+						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="text" class="form-control" placeholder="Prenom" required="required">
+									<select  name="application_id" id="monselect"  class="form-control" required="required">
+									<option value="" selected>Application</option>
+									
+										<?php
+											for($i=0; $i < count($applications); $i++)
+												{         
+													echo"  
+															<option value=". $applications[$i]->id ."> ". $applications[$i]->nom ."</option>                       
+															
+													";
+																
+												}
+										?>
+
+                                    </select>
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+					
+					
+				<div class="form-group">		
+						<label class="col-sm-3 control-label">Composant <abbr style="color:green; font-size:15px;">**</abbr></label>			
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<select  name="composant_id" id="monselect"  class="form-control" required="required">
+									<option value="" selected>Composant</option>
+									
+										<?php
+											for($i=0; $i < count($composants); $i++)
+												{         
+													echo"  
+															<option value=". $composants[$i]->id ."> ". $composants[$i]->nom ."</option>                       
+															
+													";
+																
+												}
+										?>
+
+                                    </select>
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+
+				
+				<div class="form-group">		
+						<label class="col-sm-3 control-label" >Couche <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="couche" class="form-control" placeholder="Nom" required="required">
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">select <abbr style="color:green; font-size:15px;">**</abbr></label>			
+						<label class="col-sm-3 control-label" >Methode <abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="selec" id="monselect"  class="form-control" required="required">
-									<option value="" selected>Select</option>
-									
-										<?php
-											for($i=0; $i < count($selections); $i++)
-												{         
-													echo"  
-															<option value=". $selections[$i]->id ."> ". $selections[$i]->nom ."</option>                       
-															
-													";
-																
-												}
-										?>
-
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
+									<input type="text" name="methode" class="form-control" placeholder="Methode" required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
 					</div>
-
-                    <div class="form-group">		
-						<label class="col-sm-3 control-label">Date <abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-									<input type="date" name="date" class="form-control" placeholder=" date" required="required">
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div> 
-   
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Telephone <abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-phone"></i></span>
-									<input type="text" name="telephone" id=numero class="form-control" placeholder=" Numero de telephone" required="required">
-									<span style='' id=avnum> </span>
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
-                    
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">E-mail <abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-mail"></i></span>
-									<input type="email" name="email" class="form-control" placeholder=" email@gmail.com" required="required">
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
-					            
-					<div class="form-group">	
-						<label class="col-sm-3 control-label">Mot de passe <abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-key"></i></span>
-									<div>
-                                <span id="msg"></span>
-								</div>
-									<input type="password" name="password"  id=mdp  class="form-control" placeholder=" mot de passe" required="required">
-									<span class="input-group-addon"></span>
-								</div>
-							</div>
-
-							<div style='text-align:left;'>
-						    	    <input type="checkbox" onclick="voirpass()"> Afficher le mot de passe
-					    	</div>
-					</div>
+			
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Confirmer <abbr style="color:green; font-size:15px;">**</abbr></label>	
+						<label class="col-sm-3 control-label" >Uri <abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-key"></i></span>
-									<input type="password" name="confirmPassword" id="confirmerpassword" class="form-control" placeholder=" confirmer le mot depasse" required="required">
-									<span class="input-group-addon"></span>
-									<div id="cmp"></div>
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="url_code" class="form-control" placeholder="Url code" required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
-							</div>	
-					</div>
-
-
-                    <div class="form-group"> 
-                        
-						<div class="col-sm-offset-3 col-sm-5"> 
-							
-						<select  name="optionsRadios" id="optionsRadios"  class="form-control" required="required">
-									<option value="" selected>item</option>
-									
-										<?php
-											for($i=0; $i < count($options); $i++)
-												{         
-													echo"  
-															<option value=". $options[$i]->id ."> ". $options[$i]->nom ."</option>                       
-															
-													";
-																
-												}
-										?>
-
-                                    </select>
-																		
-                		</div>
-                         
+							</div>
 					</div>
 
 					<div class="form-group">

@@ -7,7 +7,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperer_modeles">textes</a>
+			<a href="?page=recuperer_modeles">Api</a>
 		</li>
 
 		<li class="active">
@@ -39,12 +39,12 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>text</TH>
-					<TH>Select</TH>
-					<TH>date</TH>
-					<TH>Telephone</TH>
-					<TH>Email</TH>
-					<TH>Radio</TH>
+					<TH>Application</TH>
+					<TH>Composant</TH>
+					<TH>Couche</TH>
+					<TH>Methode</TH>
+					<TH>Uri</TH>
+					<TH>Code</TH>
 					<TH></TH>
 				</tr>
 			</thead>
@@ -52,7 +52,7 @@
 				
 				<?php
 								
-				for($i=0; $i < count($entites); $i++)
+				for($i=0; $i < count($apis); $i++)
 				{ 
 					$j = $i + 1;
 				echo"                         
@@ -60,20 +60,20 @@
 
 						<td>$j</td>
 
-						<td > " . $entites[$i]->texte ."</td>
+						<td > " . $apiss[$i]->application_id ."</td>
 
-						<td>". $entites[$i]->selec ."</td>
+						<td>". $apis[$i]->composant_id ."</td>
 
-						<td>". $entites[$i]->dates ."</td>
+						<td>". $apis[$i]->couche ."</td>
 
-						<td>". $entites[$i]->telephone ."</td>
+						<td>". $apis[$i]->methode ."</td>
 
-						<td>". $entites[$i]->email ."</td>
+						<td>". $apis[$i]->uri ."</td>
 
-						<td>". $entites[$i]->optionsRadios ."</td>
+						<td>". $apis[$i]->code ."</td>
 		
 									
-					<td> <a href='?page=recuperation_un&id=". $entites[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
+					<td> <a href='?page=recuperation_un&id=". $apis[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
 			
 					</tr>";
 						         
@@ -83,12 +83,12 @@
             <thead>
 				<tr>
                     <TH>#</TH>
-					<TH>text</TH>
-					<TH>Select</TH>
-					<TH>date</TH>
-					<TH>Telephone</TH>
-					<TH>Email</TH>
-					<TH>Radio</TH>
+					<TH>Application</TH>
+					<TH>Composant</TH>
+					<TH>Couche</TH>
+					<TH>Methode</TH>
+					<TH>Uri</TH>
+					<TH>Code</TH>
 					<TH></TH>
 	
 				</tr>

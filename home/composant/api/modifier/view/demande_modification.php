@@ -4,7 +4,7 @@
 	</li>
 	<li>
 
-		<a href="">Modifier</a>
+		<a href="">API</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -33,121 +33,109 @@
 					<input type="HIDDEN" name="id" value=<?php echo $_GET['id'];?>>	
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Text<abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="texte" value="<?php echo $texte;?>"  class="form-control">
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
+									<select  name="application_id" id="monselect"  class="form-control" required="required">
+									<option value="" selected>Application</option>
+									
+										<?php
+											for($i=0; $i < count($applications); $i++)
+												{         
+													echo"  
+															<option value=". $applications[$i]->id ."> ". $applications[$i]->nom ."</option>                       
+															
+													";
+																
+												}
+										?>
 
-				
-					
-
-
-					
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Select<abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="selec" id="monselect"  class="form-control" value="<?php echo $selec;?>" required="required">
-									<option value="" selected>Select</option>
-										<option value="1">Select1</option>
-										<option value="2">Select2</option>
                                     </select>
 									<span class="input-group-addon"><i class=""></i></span>
 								</div>
 							</div>
-					   </div>
-
-                       <div class="form-group">		
-						<label class="col-sm-3 control-label">Date<abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-									<input type="date" name="dates" class="form-control" placeholder=" date" value=<?php echo $dates;?> required="required">
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div> 
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Telephone<abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-phone"></i></span>
-									<input type="text" name="telephone" value="<?php echo $telephone;?>" id=numero class="form-control">
-									<span style='' id=avnum> </span>
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
 					</div>
-
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">E-mail<abbr style="color:green; font-size:15px;">**</abbr></label>			
+					
+					
+				<div class="form-group">		
+						<label class="col-sm-3 control-label">Composant <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-mail"></i></span>
-									<input type="email" name="email"  value="<?php echo $email;?>" class="form-control">
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
-                
-
-
-                
-					<div class="form-group">	
-							<div  >
-                                <span id="msg"></span>
-								</div>	
-						<label class="col-sm-3 control-label">Mot de passe<abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-key"></i></span>
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<select  name="composant_id" id="monselect"  class="form-control" required="required">
+									<option value="" selected>Composant</option>
 									
-									<input type="password" name="password"  id=mdp  class="form-control">
-									<span class="input-group-addon"></span>
-								</div>
+										<?php
+											for($i=0; $i < count($composants); $i++)
+												{         
+													echo"  
+															<option value=". $composants[$i]->id ."> ". $composants[$i]->nom ."</option>                       
+															
+													";
+																
+												}
+										?>
 
-								<div style='text-align:left;'>
-						    	    <input type="checkbox" onclick="voirpass()"> Afficher le mot de passe
-					    	</div>
-						</div>
+                                    </select>
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Couche<abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									
+									<input type="text" name="couche" value="<?php echo $couche;?>"  class="form-control">
+									
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Confirmer<abbr style="color:green; font-size:15px;">**</abbr></label>	
+						<label class="col-sm-3 control-label">Methode<abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-key"></i></span>
-									<input type="password" name="confirmPassword" id="confirmerpassword" class="form-control">
-									<span class="input-group-addon"></span>
-									<div id="cmp"></div>
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									
+									<input type="text" name="methode" value="<?php echo $methode;?>"  class="form-control">
+									
+									<span class="input-group-addon"><i class=""></i></span>
 								</div>
 							</div>
-							
 					</div>
 
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Uri<abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									
+									<input type="text" name="uri" value="<?php echo $uri;?>"  class="form-control">
+									
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
 
-
-
-                        <div class="form-group"> 
-                            <div class="col-sm-offset-3 col-sm-5"> 
-                                <div class="radio"> 
-                                    <label> <input type="radio" name="optionsRadios" id="optionsRadios1" value="1" checked="">Radio Input 1
-                             </label> 
-                        </div>
-                        <div class="radio">
-                            <label> <input type="radio" name="optionsRadios" id="optionsRadios2" value="2">Radio Input 2
-                          </label>   
-                          </div> 
-                         </div>
-                        
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Code<abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									
+									<input type="text" name="code" value="<?php echo $code;?>"  class="form-control">
+									
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+					
 
 					<div class="form-group">
 						<div class="col-sm-offset-3 col-sm-5">
