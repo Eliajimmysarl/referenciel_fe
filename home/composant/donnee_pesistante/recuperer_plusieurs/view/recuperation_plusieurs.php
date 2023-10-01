@@ -34,37 +34,44 @@
 		
 		<table class="table table-bordered datatable" id="table-1">
 			<thead>
+			<thead>
 				<tr>
-				    <TH>#</TH>
-					
-					<th>text</th>
-					<th>Select</th>
-					<th >date</th>
-					<th >Telephone</th>
-					<th >Email</th>
-					<th >Radio</th>
-				
-	
+					<TH>#</TH>
+					<TH>Nom</TH>
+					<TH>Type</TH>
+					<TH>Couche</TH>
+					<TH>Plate-forme</TH>
+					<TH>Application</TH>
+					<TH>Entite</TH>
+					<TH>Description</TH>
 				</tr>
 			</thead>
 			<tbody>
 				
-			<?php
-							
-			for($i=0; $i <   count($entites); $i++)
-				{    
-
+				<?php
+								
+				for($i=0; $i < count($donnee_persistantes); $i++)
+				{ 
 					$j = $i + 1;
-					echo"                         
-               			 <tr class='odd gradeX'>
-								<td>$j</td>
-					<td > " . $entites[$i]->texte ."</td>
-					<td>". $entites[$i]->selec ."</td>
-					<td>". $entites[$i]->dates ."</td>
-					<td>". $entites[$i]->telephone ."</td>
-					<td>". $entites[$i]->email ."</td>
-					<td>". $entites[$i]->optionsRadios ."</td>
-					
+				echo"                         
+					<tr class='odd gradeX'>
+
+						<td>$j</td>
+
+						<td > " . $donnee_persistantes[$i]->nom ."</td>
+
+						<td>". $donnee_persistantes[$i]->type ."</td>
+
+						<td>". $donnee_persistantes[$i]->couche ."</td>
+
+						<td>". $donnee_persistantes[$i]->plateforme ."</td>
+
+						<td>". $donnee_persistantes[$i]->application_id ."</td>
+
+						<td>". $donnee_persistantes[$i]->entite_id ."</td>
+
+						<td>". $donnee_persistantes[$i]->description ."</td>
+		
 					
 						</tr>";
 						         
@@ -73,19 +80,14 @@
 
                <thead>
 				<tr>
-                <TH>#</TH>
-					
-				
-					
-					<th>text</th>
-					<th>Select</th>
-					<th >date</th>
-					<th >Telephone</th>
-					<th >Email</th>
-					<th >Radio</th>
-					
-	
-	
+					<TH>#</TH>
+					<TH>Nom</TH>
+					<TH>Type</TH>
+					<TH>Couche</TH>
+					<TH>Plate-forme</TH>
+					<TH>Application</TH>
+					<TH>Entite</TH>
+					<TH>Description</TH>
 				</tr>
 			</thead>
 		</table>
