@@ -2,53 +2,42 @@
 
     $id=$_POST['id'];
 
-    $uri = $authority."/entites/".$id;
+    $uri = $authority."/api/".$id;
 
-        $texte=$_POST['texte'];
+    $application_id=$_POST['application_id'];
 
-        $selec=$_POST['selec'];
+    $couche=$_POST['couche'];
 
-        $dates=$_POST['dates'];
+    $composant_id=$_POST['composant_id'];
 
-        $email=$_POST['email'];
+    $methode=$_POST['methode'];
 
-        $telephone=$_POST['telephone'];
-
-        $optionsRadios=$_POST['optionsRadios'];
-        
-        $password=password_hash($_POST['password'], PASSWORD_DEFAULT);
-        
-        $mode="formulaire";
-
+    $uri=$_POST['uri'];
 
     $data = array(
-            
-            'texte' => $texte,
-            
-            'selec' => $selec,
+        
+        'application_id' => $application_id,
 
-            'dates' => $dates,
+        'couche'=> $couche,
 
-            'email'=> $email,
+        'composant_id'=> $composant_id,
 
-            'telephone'=> $telephone,
+        'methode'=> $methode,
 
-            'password'=> $password,
-
-            'optionsRadios'=> $optionsRadios
+        'uri'=> $uri
 
     );    
 
     $result=curl_put($uri, $token,$data);
         
-        $test=json_decode($result);
+        $apis=json_decode($result);
 
-        $code =  $test->code;
+        $code =  $apis->code;
 
         if($code ==200)
         
             {   
-                require_once('composant/modification_un/view/reponse_positive.php');
+                require_once('composant/api/modifier/view/reponse_positive.php');
             }
     
     

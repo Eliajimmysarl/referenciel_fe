@@ -1,16 +1,20 @@
 <?php
 
-    $uri =  $authority.'/entites/';
+    $uri =  $authority.'/api/';
 
-    $selec=$_POST['selec'];
+    $application_id=$_POST['application_id'];
 
-    $optionsRadios=$_POST['optionsRadios'];
+    $composant_id=$_POST['composant_id'];
+
+    $couche=$_POST['couche'];
     
     $data = array(
 
-        'selec'=> $selec,
+        'application_id'=> $application_id,
 
-        'optionsRadios'=> $optionsRadios
+        'composant_id'=> $composant_id,
+
+        'couche'=> $couche
     
     );
 
@@ -18,7 +22,7 @@
 
     $obj = json_decode($result);   
        
-    $entites= $obj->entite;
+    $apis= $obj->apis;
 
     $code = $obj->code;
 
@@ -26,7 +30,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/recuperation_plusieurs_avec_dependance/view/recuperation_plusieurs.php'); 
+            require_once('composant/api/recuperation_plusieurs_avec_dependance/view/recuperation_plusieurs.php'); 
         }
         else
         {

@@ -64,7 +64,7 @@
 
 						<td > " . $applications[$i]->nom ."</td>
 
-						<td>". $applications[$i]->desciption ."</td>
+						<td>". $applications[$i]->descriptions ."</td>
 
 						<td>". $applications[$i]->lien_web ."</td>
 
@@ -79,7 +79,7 @@
 						<td>". $applications[$i]->ussd_orange ."</td>
 		
 									
-					<td> <a href='?page=recuperation_un&id=". $applications[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
+					<td> <a href='?page=recuperation_application&id=". $applications[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
 			
 					</tr>";
 						         

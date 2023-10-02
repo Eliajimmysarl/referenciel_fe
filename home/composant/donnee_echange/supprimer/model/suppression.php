@@ -3,12 +3,12 @@
 $id=$_GET['id'];
 
 //URI
-$uri = $authority."/entites/".$id;
+$uri = $authority."/donnee_echange/".$id;
 
 $result=curl_delete($uri, $token);
 
     $obj = json_decode($result);                      
-    $entites= $obj->test;
+    $donnee_echanges= $obj->donnee_echanges;
 
     $code =  $obj->code;
 
@@ -16,7 +16,7 @@ $result=curl_delete($uri, $token);
         {    
              
             
-            require_once('composant/suppression_un/view/reponse_positive.php');
+            require_once('composant/donnee_echange/supprimer/view/reponse_positive.php');
         }
         else
         {

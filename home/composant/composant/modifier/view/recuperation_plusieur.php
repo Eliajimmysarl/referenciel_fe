@@ -63,7 +63,7 @@
 
 							<td>". $composants[$i]->couche ."</td>
 
-							<td>". $composants[$i]->platforme ."</td>
+							<td>". $composants[$i]->plate_forme ."</td>
 
 							<td>". $composants[$i]->entite_id ."</td>
 

@@ -58,6 +58,12 @@
 						</li>
 
 						<li>
+							<a href="?page=recuperer_un_application">
+								<span class="title">Recupere</span>
+							</a>
+						</li>
+
+						<li>
 							<a href="?page=recuperes_applications">
 								<span class="title">Recuperers</span>
 							</a>

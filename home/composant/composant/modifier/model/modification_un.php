@@ -2,53 +2,51 @@
 
     $id=$_POST['id'];
 
-    $uri = $authority."/entites/".$id;
+    $uri = $authority."/composant/".$id;
 
-        $texte=$_POST['texte'];
+    $application_id=$_POST['application_id'];
 
-        $selec=$_POST['selec'];
+    $couche=$_POST['couche'];
 
-        $dates=$_POST['dates'];
+    $plateforme=$_POST['plateforme'];
 
-        $email=$_POST['email'];
+    $entite_id=$_POST['entite_id'];
 
-        $telephone=$_POST['telephone'];
+    $nom=$_POST['nom'];
 
-        $optionsRadios=$_POST['optionsRadios'];
-        
-        $password=password_hash($_POST['password'], PASSWORD_DEFAULT);
-        
-        $mode="formulaire";
+    $descriptions=$_POST['description'];
+
+    $url_code=$_POST['url_code'];
 
 
     $data = array(
             
-            'texte' => $texte,
+            'application_id' => $application_id,
             
-            'selec' => $selec,
+            'couche' => $couche,
 
-            'dates' => $dates,
+            'plateforme' => $plateforme,
 
-            'email'=> $email,
+            'entite_id'=> $entite_id,
 
-            'telephone'=> $telephone,
+            'nom'=> $nom,
 
-            'password'=> $password,
+            'descriptions'=> $descriptions,
 
-            'optionsRadios'=> $optionsRadios
+            'url_code'=> $url_code
 
     );    
 
     $result=curl_put($uri, $token,$data);
         
-        $test=json_decode($result);
+        $composant=json_decode($result);
 
-        $code =  $test->code;
+        $code =  $composant->code;
 
         if($code ==200)
         
             {   
-                require_once('composant/modification_un/view/reponse_positive.php');
+                require_once('composant/composant/modifier/view/reponse_positive.php');
             }
     
     

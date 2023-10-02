@@ -1,19 +1,19 @@
 <?php
 
-$uri =  $authority.'/entites/';
+$uri =  $authority.'/donnee_echange/';
    
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
     
-    $entites= $obj->entite;
+    $donnee_echanges= $obj->donnee_echanges;
 
     $code = $obj->code;
 
     if($code ==200)
         {   
-            require_once('composant/recuperation_un/view/recuperation_plusieurs.php'); 
+            require_once('composant/donnee_echange/recuperer/view/recuperation_plusieurs.php'); 
         }
         else
         {

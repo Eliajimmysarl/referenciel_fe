@@ -8,31 +8,28 @@ $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $entites= $obj->test;
+    $apis= $obj->apis;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $texte=$entites[0]->texte; 
+            $application_id=$apis[0]->application_id; 
 
-            $selec=$entites[0]->selec;
+            $composant_id=$apis[0]->composant_id;
 
-            $dates=$entites[0]->dates;
+            $couche=$apis[0]->couche;
             
-            $telephone=$entites[0]->telephone;
+            $methode=$apis[0]->methode;
             
-            $email=$entites[0]->email;
-            
-            $optionsRadios=$entites[0]->optionsRadios;
-            
+            $uri=$apis[0]->uri;        
 
-            $id=$entites[0]->id;
+            $id=$apis[0]->id;
 
         
         
         
-        require_once('composant/modification_un/view/demande_modification.php'); 
+        require_once('composant/api/modifier/view/demande_modification.php'); 
     }
 else if ($code ==400)
     {

@@ -28,7 +28,7 @@
 										<tr>
 										
 										<td>Nom app :</td><td>". $nom ." </td>
-										<tr><td>Description : </td><td> " . $description." </td>
+										<tr><td>Description : </td><td> " . $descriptions." </td>
 		
 										<tr><td>Lien web: </td><td> ". $lien_web." </td>
 										<tr><td>Lien android : </td><td> ". $lien_android." </td>

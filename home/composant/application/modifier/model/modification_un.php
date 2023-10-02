@@ -2,40 +2,42 @@
 
     $id=$_POST['id'];
 
-    $uri = $authority."/entites/".$id;
+    $uri = $authority."/application/".$id;
 
-        $texte=$_POST['texte'];
+        $nom=$_POST['nom'];
 
-        $selec=$_POST['selec'];
+        $descriptions=$_POST['description'];
 
-        $dates=$_POST['dates'];
+        $lien_web=$_POST['lien_web'];
 
-        $email=$_POST['email'];
+        $lien_android=$_POST['lien_android'];
 
-        $telephone=$_POST['telephone'];
+        $lien_ios=$_POST['lien_ios'];
 
-        $optionsRadios=$_POST['optionsRadios'];
+        $ussd_vodacom=$_POST['ussd_vodacom'];
         
-        $password=password_hash($_POST['password'], PASSWORD_DEFAULT);
-        
-        $mode="formulaire";
+        $ussd_africell=$_POST['ussd_africell'];
+
+        $ussd_orange=$_POST['ussd_orange'];
 
 
     $data = array(
             
-            'texte' => $texte,
+            'nom' => $nom,
             
-            'selec' => $selec,
+            'descriptions' => $descriptions,
 
-            'dates' => $dates,
+            'lien_web' => $lien_web,
 
-            'email'=> $email,
+            'lien_android'=> $lien_android,
 
-            'telephone'=> $telephone,
+            'lien_ios'=> $lien_ios,
 
-            'password'=> $password,
+            'ussd_vodacom'=> $lien_vodacom,
 
-            'optionsRadios'=> $optionsRadios
+            'ussd_africell'=> $ussd_africell,
+
+            'ussd_orange'=> $ussd_orange
 
     );    
 

@@ -30,7 +30,7 @@
 					
 			<div class="panel-body">
 						
-				<form method="POST" action="index.php?demande=ajout_un"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
+				<form method="POST" action="index.php?demande=ajout_application"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
 					<div class="form-group">		
 						<label class="col-sm-3 control-label" >Nom application <abbr style="color:green; font-size:15px;">**</abbr></label>
@@ -48,7 +48,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-pencil"></i></span>
-									<textarea class="form-control" name="desciption" id="textAreaExample6" rows="3"></textarea>
+									<textarea class="form-control" name="description" id="textAreaExample6" rows="3"></textarea>
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>

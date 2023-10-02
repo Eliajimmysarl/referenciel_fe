@@ -82,7 +82,22 @@
 								</div>
 							</div>
 					</div>
-
+                    
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Couche <abbr style="color:green; font-size:15px;">**</abbr></label>			
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<select  name="couche" id="selec"  class="form-control" required="required">
+									<option value="" selected>couche</option>
+										<option value="interration">Interration</option>
+										<option value="processus">Processus</option>
+										<option value="entite">Entite</option>
+                                    </select>
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
 
                   
 					<div class="form-group">

@@ -1,52 +1,64 @@
 <?php
 
-    $uri =  $authority.'/entites/';
+    $uri =  $authority.'/donnee_pesistante/';
 
-    $texte=$_POST['text'];
+    $application_id=$_POST['application_id'];
 
-    $selec=$_POST['selec'];
+    $entite_id=$_POST['entite_id'];
 
-    $telephone=$_POST['telephone'];
+    $nom=$_POST['nom'];
 
-    $email=$_POST['email'];
+    $types=$_POST['types'];
 
-    $dates=$_POST['date'];
+    $taille=$_POST['taille'];
 
-    $passwords=$_POST['password'];
+    $defaut=$_POST['defaut'];
 
-    $optionsRadios=$_POST['optionsRadios'];
+    $valeur=$_POST['valeur'];
+
+    $indexe=$_POST['indexe'];
+
+    $cle_primaire=$_POST['cle_primaire'];
+
+    $descriptions=$_POST['descriptions'];
 
     $data = array(
         
-        'texte' => $texte,
+        'application_id' => $application_id,
 
-        'selec'=> $selec,
+        'entite_id' => $entite_id,
 
-        'telephone'=> $telephone,
+        'nom' => $nom,
 
-        'email'=> $email,
+        'types' => $types,
 
-        'dates'=> $dates,
+        'taille'=> $taille,
 
-        'passwords'=> $passwords,
+        'defaut'=> $defaut,
 
-        'optionsRadios'=> $optionsRadios
+        'valeur'=> $valeur,
+
+        'indexe'=> $indexe,
+
+        'cle_primaire'=> $cle_primaire,
+
+        'descriptions'=> $descriptions
     
     );
 
     $result=curl_post($uri, $token, $data);
   
-    $entites=json_decode($result);
+    $donnee_pesistantes=json_decode($result);
 
-    $code = $entites->code;
+    $code = $donnee_pesistantes->code;
         
     if($code ==201)
             {   
-                require_once('composant/ajout_un_avec_dependance/view/reponse_positive.php'); 
+                require_once('composant/donnee_pesistante/ajout_un/view/reponse_positive.php'); 
             }
         else    
             {
-                require_once('composant/ajout_un/view/reponse_negative.php');   
+                require_once('composant/donnee_pesistante/ajouter/view/reponse_negative.php');   
             }
 
 

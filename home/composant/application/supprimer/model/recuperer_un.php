@@ -2,32 +2,36 @@
 
 $id=$_GET['id'];
 
-$uri = $authority."/entites/".$id;
+$uri = $authority."/application/".$id;
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $entites= $obj->test;
+    $applications= $obj->application;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $texte=$entites[0]->texte; 
+            $nom=$applications[0]->nom; 
 
-            $selec=$entites[0]->selec;
+            $description=$applications[0]->descriptions;
 
-            $dates=$entites[0]->dates;
+            $lien_web=$applications[0]->lien_web;
             
-            $telephone=$entites[0]->telephone;
+            $lien_android=$applications[0]->lien_android;
             
-            $email=$entites[0]->email;
+            $lien_ios=$applications[0]->lien_ios;
             
-            $optionsRadios=$entites[0]->optionsRadios;
+            $ussd_vodacom=$applications[0]->ussd_vodacom;
+
+             $ussd_africell=$applications[0]->ussd_africell;
+
+             $ussd_orange=$applications[0]->ussd_orange;
             
 
-            $id=$entites[0]->id;
+            $id=$applications[0]->id;
         
             require_once('composant/suppression_un/view/demande_suppression.php'); 
     }

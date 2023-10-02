@@ -1,52 +1,50 @@
 <?php
 
-    $uri =  $authority.'/entites/';
+    $uri =  $authority.'/donnee_echange/';
 
-    $texte=$_POST['text'];
+    $nom=$_POST['nom'];
 
-    $selec=$_POST['selec'];
+    $type=$_POST['type'];
 
-    $telephone=$_POST['telephone'];
+    $application_id=$_POST['application_id'];
 
-    $email=$_POST['email'];
+    $composant_id=$_POST['composant_id'];
 
-    $dates=$_POST['date'];
+    $entite_id=$_POST['entite_id'];
 
-    $passwords=$_POST['password'];
+    $descriptions=$_POST['descriptions'];
 
-    $optionsRadios=$_POST['optionsRadios'];
 
     $data = array(
         
-        'texte' => $texte,
+        'nom' => $nom,
 
-        'selec'=> $selec,
+        'type'=> $type,
 
-        'telephone'=> $telephone,
+        'application_id'=> $application_id,
 
-        'email'=> $email,
+        'composant_id'=> $composant_id,
 
-        'dates'=> $dates,
+        'entite_id'=> $entite_id,
 
-        'passwords'=> $passwords,
+        'descriptions'=> $descriptions
 
-        'optionsRadios'=> $optionsRadios
     
     );
 
     $result=curl_post($uri, $token, $data);
   
-    $entites=json_decode($result);
+    $donnee_echanges=json_decode($result);
 
-    $code = $entites->code;
+    $code = $donnee_echanges->code;
         
     if($code ==201)
             {   
-                require_once('composant/ajout_un_avec_dependance/view/reponse_positive.php'); 
+                require_once('composant/donnee_echange/ajouter/view/reponse_positive.php'); 
             }
         else    
             {
-                require_once('composant/ajout_un/view/reponse_negative.php');   
+                require_once('composant/donnee_echange/ajouter/view/reponse_negative.php');   
             }
 
 

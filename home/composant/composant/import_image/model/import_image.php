@@ -1,6 +1,6 @@
 <?php
     
-    $uri =$authority.'/entites/image/';
+    $uri =$authority.'/composant/image/';
 
     $imageId=$_POST['id'];
 
@@ -45,7 +45,7 @@
 
             if($code ==201)
                 {   
-                    require_once('composant/import_image/view/reponse.php'); 
+                    require_once('composant/composant/import_image/view/reponse.php'); 
 
                 }
             else

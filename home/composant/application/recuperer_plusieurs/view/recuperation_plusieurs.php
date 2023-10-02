@@ -63,7 +63,7 @@
 
 							<td > " . $applications[$i]->nom ."</td>
 	
-							<td>". $applications[$i]->desciption ."</td>
+							<td>". $applications[$i]->descriptions ."</td>
 	
 							<td>". $applications[$i]->lien_web ."</td>
 	

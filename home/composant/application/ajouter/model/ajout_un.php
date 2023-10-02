@@ -1,52 +1,57 @@
+
 <?php
 
-    $uri =  $authority.'/entites/';
+    $uri =  $authority.'/application/';
 
-    $texte=$_POST['text'];
+    $nom=$_POST['nom'];
 
-    $selec=$_POST['selec'];
+    $descriptions=$_POST['description'];
 
-    $telephone=$_POST['telephone'];
+    $lien_web=$_POST['lien_web'];
 
-    $email=$_POST['email'];
+    $lien_android=$_POST['lien_android'];
 
-    $dates=$_POST['date'];
+    $lien_ios=$_POST['lien_ios'];
 
-    $passwords=$_POST['password'];
+    $ussd_vodacom=$_POST['ussd_vodacom'];
 
-    $optionsRadios=$_POST['optionsRadios'];
+    $ussd_orange=$_POST['ussd_orange'];
+
+    $ussd_africell=$_POST['ussd_africell'];
 
     $data = array(
         
-        'texte' => $texte,
+        'nom' => $nom,
 
-        'selec'=> $selec,
+        'descriptions'=> $descriptions,
 
-        'telephone'=> $telephone,
+        'lien_web'=> $lien_web,
 
-        'email'=> $email,
+        'lien_android'=> $lien_android,
 
-        'dates'=> $dates,
+        'lien_ios'=> $lien_ios,
 
-        'passwords'=> $passwords,
+        'ussd_vodacom'=> $ussd_vodacom,
 
-        'optionsRadios'=> $optionsRadios
+        'ussd_africell'=> $ussd_africell,
+
+        'ussd_orange'=> $ussd_orange
     
     );
 
     $result=curl_post($uri, $token, $data);
   
-    $entites=json_decode($result);
+    $application=json_decode($result);
 
-    $code = $entites->code;
+    $code = $application->code;
         
     if($code ==201)
             {   
-                require_once('composant/ajout_un/view/reponse_positive.php'); 
+                require_once('composant/application/ajouter/view/reponse_positive.php'); 
             }
         else    
             {
-                require_once('composant/ajout_un/view/reponse_negative.php');   
+                require_once('composant/application/ajouter/view/reponse_negative.php');   
             }
 
 

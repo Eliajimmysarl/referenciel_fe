@@ -2,53 +2,63 @@
 
     $id=$_POST['id'];
 
-    $uri = $authority."/entites/".$id;
+    $uri = $authority."/donnee_pesistante/".$id;
 
-        $texte=$_POST['texte'];
+    $application_id=$_POST['application_id'];
 
-        $selec=$_POST['selec'];
+    $entite_id=$_POST['entite_id'];
 
-        $dates=$_POST['dates'];
+    $nom=$_POST['nom'];
 
-        $email=$_POST['email'];
+    $types=$_POST['types'];
 
-        $telephone=$_POST['telephone'];
+    $taille=$_POST['taille'];
 
-        $optionsRadios=$_POST['optionsRadios'];
-        
-        $password=password_hash($_POST['password'], PASSWORD_DEFAULT);
-        
-        $mode="formulaire";
+    $defaut=$_POST['defaut'];
+
+    $valeur=$_POST['valeur'];
+
+    $indexe=$_POST['indexe'];
+
+    $cle_primaire=$_POST['cle_primaire'];
+
+    $descriptions=$_POST['descriptions'];
 
 
     $data = array(
             
-            'texte' => $texte,
-            
-            'selec' => $selec,
+        'application_id' => $application_id,
 
-            'dates' => $dates,
+        'entite_id' => $entite_id,
 
-            'email'=> $email,
+        'nom' => $nom,
 
-            'telephone'=> $telephone,
+        'types' => $types,
 
-            'password'=> $password,
+        'taille'=> $taille,
 
-            'optionsRadios'=> $optionsRadios
+        'defaut'=> $defaut,
+
+        'valeur'=> $valeur,
+
+        'indexe'=> $indexe,
+
+        'cle_primaire'=> $cle_primaire,
+
+        'descriptions'=> $descriptions
 
     );    
 
     $result=curl_put($uri, $token,$data);
         
-        $test=json_decode($result);
+        $donnee_pesistantes=json_decode($result);
 
-        $code =  $test->code;
+        $code =  $donnee_pesistantes->code;
 
         if($code ==200)
         
             {   
-                require_once('composant/modification_un/view/reponse_positive.php');
+                require_once('composant/donnee_pesistante/modifier/view/reponse_positive.php');
             }
     
     

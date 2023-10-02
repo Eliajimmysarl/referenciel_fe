@@ -1,6 +1,6 @@
 <?php 
     //Authority for URI
-    $authority="http://test.eliajimmy.net";
+    $authority="http://develop.eliajimmy.net/referentiel";
 
     //Import module Curl
     require_once('composant/curl.php'); 
@@ -9,9 +9,9 @@
         {
             $demande=$_GET['demande'];
 
-            if($demande=='ajout_un')
+            if($demande=='ajout_application')
                 {
-                    require_once('composant/ajout_un/model/ajout_un.php');  
+                    require_once('composant/application/ajouter/model/ajout_un.php');  
                 }
             else  if($demande=='ajout_plusieurs')
                 {
@@ -70,15 +70,19 @@
                 }
             else  if($page=='recuperes_applications')
                 {
-                    require_once('composant/ajout_plusieurs/view/demande_ajout.php'); 
+                    require_once('composant/application/recuperer_plusieurs/model/recuperer_plusieurs.php'); 
                 } 
-            else  if($page=='recuperer_application')
+            else  if($page=='recuperer_un_application')
                 {
-                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
+                    require_once('composant/application/recuperer/model/recuperer_plusieurs.php');
+                }
+            else  if($page=='recuperation_application')
+                {
+                    require_once('composant/application/recuperer/model/recuperer_un.php');
                 }
             else  if($page=='ajouter_composant')
                 {
-                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
+                    require_once('composant/composant/ajouter/model/recuperer_liste.php');
                 }
             else  if($page=='modifier_composant')
                 {
@@ -90,29 +94,29 @@
                 }
             else  if($page=='recuperes_composants')
                 {
-                    require_once('composant/ajout_plusieurs/view/demande_ajout.php'); 
+                    require_once('composant/composant/recuperer_plusieurs/model/recuperer_plusieurs.php'); 
                 } 
             else  if($page=='recuperer_composant')
                 {
 
                 }
-            else  if($page=='ajouter_service')
+            else  if($page=='ajouter_entite')
                 {
                     require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
                 }
-            else  if($page=='modifier_service')
+            else  if($page=='modifier_entite')
                 {
                     require_once('composant/ajout_plusieurs/view/nombre_ligne.php'); 
                 }
-            else if($page=='supprimer_service')
+            else if($page=='supprimer_entite')
                 {
                     require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
                 }
-            else  if($page=='recuperes_services')
+            else  if($page=='recuperes_entites')
                 {
                     require_once('composant/ajout_plusieurs/view/demande_ajout.php'); 
                 } 
-            else  if($page=='recuperer_service')
+            else  if($page=='recuperer_entite')
                 {
                 } 
             else  if($page=='ajouter_donnee_echange')
@@ -158,7 +162,7 @@
 
             else  if($page=='ajouter_api')
                 {
-                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
+                    require_once('composant/api/ajouter/model/recuperer_liste.php');
                 }
             else  if($page=='modifier_api')
                 {

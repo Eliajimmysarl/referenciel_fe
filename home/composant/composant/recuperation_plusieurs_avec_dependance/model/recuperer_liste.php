@@ -1,21 +1,21 @@
 <?php
 
-    $uri =  $authority.'/categorie1/';
+    $uri =  $authority.'/application/';
    
     $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
     
-    $selections= $obj->selections;
+    $applications= $obj->applications;
 
 
-    $uri =  $authority.'/categorie2/';
+    $uri =  $authority.'/entite/';
    
     $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
     
-    $options= $obj->options;
+    $entites= $obj->entites;
     
     
     $code = $obj->code;
@@ -24,7 +24,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/recuperation_plusieurs_avec_dependance/view/demande_recuperation.php'); 
+            require_once('composant/composant/recuperation_plusieurs_avec_dependance/view/demande_recuperation.php'); 
         }
     else
         {

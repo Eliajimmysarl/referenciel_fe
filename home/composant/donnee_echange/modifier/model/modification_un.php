@@ -2,53 +2,49 @@
 
     $id=$_POST['id'];
 
-    $uri = $authority."/entites/".$id;
+    $uri = $authority."/donnee_echange/".$id;
 
-        $texte=$_POST['texte'];
+    $nom=$_POST['nom'];
 
-        $selec=$_POST['selec'];
+    $type=$_POST['type'];
 
-        $dates=$_POST['dates'];
+    $application_id=$_POST['application_id'];
 
-        $email=$_POST['email'];
+    $composant_id=$_POST['composant_id'];
 
-        $telephone=$_POST['telephone'];
+    $entite_id=$_POST['entite_id'];
 
-        $optionsRadios=$_POST['optionsRadios'];
-        
-        $password=password_hash($_POST['password'], PASSWORD_DEFAULT);
-        
-        $mode="formulaire";
+    $descriptions=$_POST['descriptions'];
+
 
 
     $data = array(
             
-            'texte' => $texte,
+            'nom' => $nom,
             
-            'selec' => $selec,
+            'type' => $type,
 
-            'dates' => $dates,
+            'application_id' => $application_id,
 
-            'email'=> $email,
+            'composant_id'=> $composant_id,
 
-            'telephone'=> $telephone,
+            'entite_id'=> $entite_id,
 
-            'password'=> $password,
+            'descriptions'=> $descriptions
 
-            'optionsRadios'=> $optionsRadios
 
     );    
 
     $result=curl_put($uri, $token,$data);
         
-        $test=json_decode($result);
+        $donnee_echanges=json_decode($result);
 
-        $code =  $test->code;
+        $code =  $donnee_echanges->code;
 
         if($code ==200)
         
             {   
-                require_once('composant/modification_un/view/reponse_positive.php');
+                require_once('composant/donnee_echange/modifier/view/reponse_positive.php');
             }
     
     

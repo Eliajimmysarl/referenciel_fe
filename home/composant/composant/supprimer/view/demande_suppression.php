@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperer_supprimer">text</a>
+		<a href="?page=recuperer_supprimer">composant</a>
 	</li>
 	<li class="active">
 		<strong>Supprimer</strong>

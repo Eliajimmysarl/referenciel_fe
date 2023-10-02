@@ -1,20 +1,20 @@
 <?php
 
-    $uri =  $authority.'/entites/';
+    $uri =  $authority.'/composant/';
 
     $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
-    
-    $entites= $obj->entite;
-
+ 
+    $composants= $obj->composants;
+   
     $code = $obj->code;
 
     if($code ==200)
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/recuperation_plusieurs/view/recuperation_plusieurs.php'); 
+            require_once('composant/composant/recuperation_plusieurs/view/recuperation_plusieurs.php'); 
         }
         else
         {

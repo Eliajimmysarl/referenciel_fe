@@ -2,35 +2,37 @@
 
 $id=$_GET['id'];
 
-$uri = $authority."/entites/".$id;
+$uri = $authority."/composant/".$id;
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $entites= $obj->test;
+    $composants= $obj->composants;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $texte=$entites[0]->texte; 
+            $application_id=$composants[0]->application_id; 
 
-            $selec=$entites[0]->selec;
+            $couche=$composants[0]->couche;
 
-            $dates=$entites[0]->dates;
+            $plateforme=$composants[0]->plateforme;
             
-            $telephone=$entites[0]->telephone;
+            $entite=$composants[0]->entite;
             
-            $email=$entites[0]->email;
+            $nom=$composantss[0]->nom;
             
-            $optionsRadios=$entites[0]->optionsRadios;
+            $lien_code=$composants[0]->lien_code;
+
+            $descriptions=$composants[0]->descriptions;
             
 
-            $id=$entites[0]->id;
+            $id=$composants[0]->id;
 
           
-            require_once('composant/recuperation_un/view/recuperation_un.php'); 
+            require_once('composant/composant/recuperation_un/view/recuperation_un.php'); 
         }
     else
         {

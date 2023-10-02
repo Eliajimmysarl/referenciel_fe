@@ -2,37 +2,36 @@
 
 $id=$_GET['id'];
 
-$uri = $authority."/entites/".$id;
+$uri = $authority."/donnee_echange/".$id;
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $entites= $obj->test;
+    $donnee_echanges= $obj->donnee_echanges;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $texte=$entites[0]->texte; 
+            $nom=$donnee_echanges[0]->nom; 
 
-            $selec=$entites[0]->selec;
+            $type=$donnee_echanges[0]->type;
 
-            $dates=$entites[0]->dates;
-            
-            $telephone=$entites[0]->telephone;
-            
-            $email=$entites[0]->email;
-            
-            $optionsRadios=$entites[0]->optionsRadios;
-            
+            $application_id=$donnee_echanges[0]->application_id;
 
-            $id=$entites[0]->id;
+            $composant_id=$donnee_echanges[0]->composant_id;
+            
+            $entite_id=$donnee_echanges[0]->entite_id;
+            
+            $descriptions=$donnee_echanges[0]->descriptions;
+        
+            $id=$donnee_echanges[0]->id;
 
         
         
         
-        require_once('composant/modification_un/view/demande_modification.php'); 
+        require_once('composant/donnee_echange/modifier/view/demande_modification.php'); 
     }
 else if ($code ==400)
     {
