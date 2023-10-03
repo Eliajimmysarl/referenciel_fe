@@ -24,7 +24,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/recuperation_plusieurs_avec_dependance/view/demande_recuperation.php'); 
+            require_once('composant/donnee_pesistante/recuperation_plusieurs_avec_dependance/view/demande_recuperation.php'); 
         }
     else
         {

@@ -1,16 +1,16 @@
 <?php
 
-    $uri =  $authority.'/entites/';
+    $uri =  $authority.'/donnee_pesistante/';
 
-    $selec=$_POST['selec'];
+    $application_id=$_POST['application_id'];
 
-    $optionsRadios=$_POST['optionsRadios'];
+    $composant_id=$_POST['composant_id'];
     
     $data = array(
 
-        'selec'=> $selec,
+        'composant_id'=> $composant_id,
 
-        'optionsRadios'=> $optionsRadios
+        'application_id'=> $application_id
     
     );
 
@@ -18,7 +18,7 @@
 
     $obj = json_decode($result);   
        
-    $entites= $obj->entite;
+    $donnee_pesistantes= $obj->donnee_pesistantes;
 
     $code = $obj->code;
 
@@ -26,7 +26,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/recuperation_plusieurs_avec_dependance/view/recuperation_plusieurs.php'); 
+            require_once('composant/donnee_pesistante/recuperation_plusieurs_avec_dependance/view/recuperation_plusieurs.php'); 
         }
         else
         {

@@ -102,7 +102,7 @@
                 }
             else  if($page=='ajouter_entite')
                 {
-                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
+                    require_once('composant/entite/ajouter/model/recuperer_liste.php');
                 }
             else  if($page=='modifier_entite')
                 {

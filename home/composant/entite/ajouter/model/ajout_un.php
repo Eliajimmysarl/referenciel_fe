@@ -2,36 +2,21 @@
 
     $uri =  $authority.'/entites/';
 
-    $texte=$_POST['text'];
+    $application_id=$_POST['application_id'];
 
-    $selec=$_POST['selec'];
+    $nom=$_POST['nom'];
 
-    $telephone=$_POST['telephone'];
+    $descriptions=$_POST['descriptions'];
 
-    $email=$_POST['email'];
-
-    $dates=$_POST['date'];
-
-    $passwords=$_POST['password'];
-
-    $optionsRadios=$_POST['optionsRadios'];
 
     $data = array(
         
-        'texte' => $texte,
+        'application_id' => $application_id,
 
-        'selec'=> $selec,
+        'nom'=> $nom,
 
-        'telephone'=> $telephone,
+        'descriptions'=> $descriptions
 
-        'email'=> $email,
-
-        'dates'=> $dates,
-
-        'passwords'=> $passwords,
-
-        'optionsRadios'=> $optionsRadios
-    
     );
 
     $result=curl_post($uri, $token, $data);
@@ -42,7 +27,7 @@
         
     if($code ==201)
             {   
-                require_once('composant/ajout_un_avec_dependance/view/reponse_positive.php'); 
+                require_once('composant/entite/ajouter/view/reponse_positive.php'); 
             }
         else    
             {

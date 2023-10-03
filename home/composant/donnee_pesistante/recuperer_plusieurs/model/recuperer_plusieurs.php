@@ -1,12 +1,12 @@
 <?php
 
-    $uri =  $authority.'/entites/';
+    $uri =  $authority.'/donnee_pesistante/';
 
     $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
     
-    $entites= $obj->entite;
+    $donnee_pesistantes= $obj->donnee_pesistantes;
 
     $code = $obj->code;
 
@@ -14,7 +14,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/recuperation_plusieurs/view/recuperation_plusieurs.php'); 
+            require_once('composant/donnee_pesistante/recuperation_plusieurs/view/recuperation_plusieurs.php'); 
         }
         else
         {

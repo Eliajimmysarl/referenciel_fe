@@ -14,23 +14,18 @@ $result=curl_get($uri, $token);
 
     if($code ==200)
         {   
-            $texte=$entites[0]->texte; 
+            $application_id=$entites[0]->application_id; 
 
-            $selec=$entites[0]->selec;
+            $nom=$entites[0]->nom;
 
-            $dates=$entites[0]->dates;
-            
-            $telephone=$entites[0]->telephone;
-            
-            $email=$entites[0]->email;
-            
-            $optionsRadios=$entites[0]->optionsRadios;
+            $descriptions=$entites[0]->descriptions;
             
 
             $id=$entites[0]->id;
+        
 
           
-            require_once('composant/recuperation_un/view/recuperation_un.php'); 
+            require_once('composant/entite/recuperer/view/recuperation_un.php'); 
         }
     else
         {

@@ -6,7 +6,7 @@
 		</li>
 	
 		<li>
-			<a href="?page=recuperer_modeles">Entite</a>
+			<a href="?page=recuperer_modeles">Donne persistante</a>
 		</li>
 	
 		<li class="active">

@@ -2,35 +2,42 @@
 
 $id=$_GET['id'];
 
-$uri = $authority."/entites/".$id;
+$uri = $authority."/donnee_pesistante/".$id;
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $entites= $obj->test;
+    $donnee_pesistantes= $obj->donnee_pesistantes;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $texte=$entites[0]->texte; 
+            $application_id=$donnee_pesistantes[0]->application_id; 
 
-            $selec=$entites[0]->selec;
+            $entite_id=$donnee_pesistantes[0]->entite_id;
 
-            $dates=$entites[0]->dates;
+            $nom=$donnee_pesistantes[0]->nom;
             
-            $telephone=$entites[0]->telephone;
+            $types=$donnee_pesistantes[0]->types;
             
-            $email=$entites[0]->email;
+            $taille=$donnee_pesistantes[0]->taille;
+
+            $defaut=$donnee_pesistantes[0]->defaut;
+
+            $valeur=$donnee_pesistantes[0]->valeur;
+
+            $indexe=$donnee_pesistantes[0]->indexe;
+
+            $cle_primaire=$donnee_pesistantes[0]->cle_primaire;
             
-            $optionsRadios=$entites[0]->optionsRadios;
+            $descriptions=$donnee_pesistantes[0]->descriptions;
             
 
-            $id=$entites[0]->id;
-
+            $id=$donnee_pesistantes[0]->id;
           
-            require_once('composant/recuperation_un/view/recuperation_un.php'); 
+            require_once('composant/donnee_pesistante/recuperer/view/recuperation_un.php'); 
         }
     else
         {

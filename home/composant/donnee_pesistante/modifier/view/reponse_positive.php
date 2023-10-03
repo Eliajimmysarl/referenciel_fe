@@ -5,7 +5,7 @@
 	</li>
 	<li>
 
-		<a href="?page=recuperers">Texte</a>
+		<a href="?page=recuperers">Donnee_pesistanteTexte</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
