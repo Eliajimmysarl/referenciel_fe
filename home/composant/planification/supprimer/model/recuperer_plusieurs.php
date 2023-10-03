@@ -1,19 +1,19 @@
 <?php
 
-$uri =  $authority.'/entite/';
+$uri =  $authority.'/planification/';
    
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
     
-    $entites= $obj->entites;
+    $planifications= $obj->planifications;
 
     $code = $obj->code;
 
     if($code ==200)
         {   
-            require_once('composant/entite/supprimer/view/recuperation_plusieurs.php'); 
+            require_once('composant/planification/supprimer/view/recuperation_plusieurs.php'); 
         }
         else
         {
