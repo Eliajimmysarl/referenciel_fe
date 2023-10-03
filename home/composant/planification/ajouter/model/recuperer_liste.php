@@ -6,7 +6,7 @@
 
     $obj = json_decode($result);                      
     
-    $users= $obj->user;
+    $users= $obj->users;
 
 
     $uri =  $authority.'/composant/';

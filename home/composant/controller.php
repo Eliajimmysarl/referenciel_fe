@@ -121,7 +121,7 @@
                 } 
             else  if($page=='ajouter_donnee_echange')
                 {
-                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
+                    require_once('composant/donnee_echange/ajouter/model/recuperer_liste.php');
                 }
             else  if($page=='modifier_donnee_echange')
                 {
@@ -139,9 +139,10 @@
                 {
                     require_once('composant/recuperation_plusieurs/model/recuperer_plusieurs.php'); 
                 }
+
             else  if($page=='ajouter_donnee_persistante')
                 {
-                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
+                    require_once('composant/donnee_persistante/ajouter/model/recuperer_liste.php');
                 }
             else  if($page=='modifier_donnee_persistante')
                 {
@@ -177,6 +178,27 @@
                     require_once('composant/ajout_plusieurs/view/demande_ajout.php'); 
                 } 
             else  if($page=='recuperer_api')
+                {
+                    require_once('composant/recuperation_plusieurs/model/recuperer_plusieurs.php'); 
+                }
+
+                else  if($page=='ajouter_planification')
+                {
+                    require_once('composant/planification/ajouter/model/recuperer_liste.php');
+                }
+            else  if($page=='modifier_planification')
+                {
+                    require_once('composant/ajout_plusieurs/view/demande_modification.php'); 
+                }
+            else if($page=='supprimer_planification')
+                {
+                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
+                }
+            else  if($page=='recuperes_planifications')
+                {
+                    require_once('composant/ajout_plusieurs/view/demande_ajout.php'); 
+                } 
+            else  if($page=='recuperer_planification')
                 {
                     require_once('composant/recuperation_plusieurs/model/recuperer_plusieurs.php'); 
                 }

@@ -269,7 +269,10 @@
 						</li>
 												
 					</ul>
-				</li><li class="has-sub">
+
+				</li>
+				
+				<li class="has-sub">
 					<a href="?page=ajouter_un">
 					<i class="fa fa-users"></i>
 						<span class="title">Api</span>
@@ -313,6 +316,53 @@
 						</li>
 												
 					</ul>
+				</li>
+
+				<li class="has-sub">
+					<a href="">
+					<i class="fa fa-users"></i>
+						<span class="title">Planification</span>
+					</a>
+					<ul >
+						<li>
+							<a href="?page=ajouter_planification">
+								<span class="title">Ajouter </span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=modifier_planification">
+								<span class="title">Modifier</span>
+							</a>
+						</li>
+
+						
+						<li>
+							<a href="?page=supprimer_planification">
+								<span class="title">Supprimer</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=recuperes_planifications">
+								<span class="title">Recuperers plusieurs</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=recuperes_planification_application">
+								<span class="title">Recuperers par application</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=recuperes_planifications_composant">
+								<span class="title">Recuperers par composant</span>
+							</a>
+						</li>
+												
+					</ul>
+
 				</li>
 
 									
