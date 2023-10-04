@@ -31,7 +31,7 @@
 											
 											<tr><td>Nom : </td><td> " . $nom." </td>
 			
-											<tr><td>Description : </td><td> ". $description." </td>
+											<tr><td>Description : </td><td> ". $descriptions." </td>
 										
 										
 										

@@ -27,7 +27,7 @@
         
         $entite=json_decode($result);
 
-        $code =  $test->code;
+        $code =  $entite->code;
 
         if($code ==200)
         

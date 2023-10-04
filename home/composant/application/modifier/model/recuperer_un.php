@@ -8,7 +8,7 @@ $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $applications= $obj->application;
+    $applications= $obj->applications;
 
     $code =  $obj->code;
 
@@ -33,7 +33,7 @@ $result=curl_get($uri, $token);
 
             $id=$applications[0]->id;
             
-        require_once('composant/applicaton/modifier/view/demande_modification.php'); 
+        require_once('composant/application/modifier/view/demande_modification.php'); 
     }
 else if ($code ==400)
     {

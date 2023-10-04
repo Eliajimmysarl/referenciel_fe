@@ -29,12 +29,11 @@
 										
 										<td>Nom app :</td><td>". $nom ." </td>
 										<tr><td>Description : </td><td> " . $descriptions." </td>
-		
 										<tr><td>Lien web: </td><td> ". $lien_web." </td>
 										<tr><td>Lien android : </td><td> ". $lien_android." </td>
 										<tr><td>Lien ios : </td><td> ". $lien_ios." </td>
 										<tr><td>Ussd vodacom: </td><td> ". $ussd_vodacom." </td>
-										<tr><td>Ussd africell: </td><td> ". $ussd_africel." </td>
+										<tr><td>Ussd africell: </td><td> ". $ussd_africell." </td>
 										<tr><td>Ussd orange: </td><td> ". $ussd_orange." </td>
 										
 										</tr>

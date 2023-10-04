@@ -28,17 +28,17 @@
 					
 			<div class="panel-body">
 			
-				<form method="POST" action="index.php?demande=modification_un"   id="theForm"  role="form" class="form-horizontal form-groups-bordered">
+				<form method="POST" action="index.php?demande=modification_app"   id="theForm"  role="form" class="form-horizontal form-groups-bordered">
 						
 					<input type="HIDDEN" name="id" value=<?php echo $_GET['id'];?>>	
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Text<abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label">Nom<abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 
-									<input type="text" name="texte" value="<?php echo $nom;?>"  class="form-control">
+									<input type="text" name="nom" value="<?php echo $nom;?>"  class="form-control">
 									
 									<span class="input-group-addon"><i class=""></i></span>
 								</div>
@@ -51,7 +51,7 @@
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
  
-									<textarea class="form-control" name="description" value="<?php echo $description;?>" id="textAreaExample6" rows="3"></textarea>
+									<textarea class="form-control" name="description" value="<?php echo $descriptions;?>" id="textAreaExample6" rows="3"></textarea>
 									
 									<span class="input-group-addon"><i class=""></i></span>
 								</div>

@@ -33,7 +33,7 @@
 
             'lien_ios'=> $lien_ios,
 
-            'ussd_vodacom'=> $lien_vodacom,
+            'ussd_vodacom'=> $ussd_vodacom,
 
             'ussd_africell'=> $ussd_africell,
 
@@ -50,7 +50,7 @@
         if($code ==200)
         
             {   
-                require_once('composant/modification_un/view/reponse_positive.php');
+                require_once('composant/application/modifier/view/reponse_positive.php');
             }
     
     

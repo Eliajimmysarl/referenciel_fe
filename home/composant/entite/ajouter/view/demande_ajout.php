@@ -31,7 +31,7 @@
 					
 			<div class="panel-body">
 						
-				<form method="POST" action="index.php?demande=ajouter_un_avec_dependance"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
+				<form method="POST" action="index.php?demande=ajouter_entite"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
 
 					<div class="form-group">		
@@ -76,7 +76,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-pencil"></i></span>
-									<textarea class="form-control" name="description" id="textAreaExample6" rows="3"></textarea>
+									<textarea class="form-control" name="descriptions" id="textAreaExample6" rows="3"></textarea>
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>

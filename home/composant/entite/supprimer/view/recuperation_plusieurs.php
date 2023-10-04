@@ -59,13 +59,13 @@
 
 							<td>$j</td>
 
-							<td > " . $entites[$i]->appl_idication ."</td>
+							<td > " . $entites[$i]->application_id ."</td>
 
 							<td>". $entites[$i]->nom ."</td>
 
-							<td>". $entites[$i]->description ."</td>
+							<td>". $entites[$i]->descriptions ."</td>
 		
-							<td> <a href='?page=demande_supprimer&id=". $entites[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
+							<td> <a href='?page=demande_supprimer_entite&id=". $entites[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
 					</tr>";
 						         
 				}

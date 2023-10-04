@@ -58,14 +58,14 @@
 
 							<td>$j</td>
 
-							<td > " . $entites[$i]->appl_idication ."</td>
+							<td > " . $entites[$i]->application_id ."</td>
 
 							<td>". $entites[$i]->nom ."</td>
 
-							<td>". $entites[$i]->description ."</td>
+							<td>". $entites[$i]->descriptions ."</td>
 		
 									
-					<td> <a href='?page=recuperation_un&id=". $entites[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
+					<td> <a href='?page=recuperation_entite&id=". $entites[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
 			
 					</tr>";
 						         

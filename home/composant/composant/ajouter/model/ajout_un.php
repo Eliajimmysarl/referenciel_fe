@@ -12,7 +12,7 @@
 
     $nom=$_POST['nom'];
 
-    $descriptions=$_POST['description'];
+    $descriptions=$_POST['descriptions'];
 
     $url_code=$_POST['url_code'];
 

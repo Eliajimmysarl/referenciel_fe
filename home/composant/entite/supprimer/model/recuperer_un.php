@@ -8,7 +8,7 @@ $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $entites= $obj->entites;
+    $entites= $obj->entite;
 
     $code =  $obj->code;
 

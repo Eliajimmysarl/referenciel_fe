@@ -58,7 +58,7 @@
 
 							<td>". $entites[$i]->nom ."</td>
 
-							<td>". $entites[$i]->description ."</td>
+							<td>". $entites[$i]->descriptions ."</td>
 							
 				 		
 						</tr>";

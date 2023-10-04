@@ -158,6 +158,12 @@
 						</li>
 
 						<li>
+							<a href="?page=recuperer_un_entite">
+								<span class="title">Recupere</span>
+							</a>
+						</li>
+
+						<li>
 							<a href="?page=recuperes_plusieurs_entite_composant">
 								<span class="title">Recuperers par composant</span>
 							</a>

@@ -2,13 +2,13 @@
 
 $id=$_GET['id'];
 
-$uri = $authority."/entites/".$id;
+$uri = $authority."/entite/".$id;
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $entites= $obj->test;
+    $entites= $obj->entite;
 
     $code =  $obj->code;
 
@@ -25,7 +25,7 @@ $result=curl_get($uri, $token);
         
 
           
-            require_once('composant/entite/recuperer/view/recuperation_un.php'); 
+            require_once('composant\entite\recuperer\view\recuperation_un.php'); 
         }
     else
         {

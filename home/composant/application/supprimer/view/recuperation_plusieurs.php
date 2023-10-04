@@ -63,7 +63,7 @@
 
 					<td > " . $applications[$i]->nom ."</td>
 
-					<td>". $applications[$i]->desciption ."</td>
+					<td>". $applications[$i]->descriptions ."</td>
 
 					<td>". $applications[$i]->lien_web ."</td>
 
@@ -78,7 +78,7 @@
 					<td>". $applications[$i]->ussd_orange ."</td>
 	
 		
-						<td> <a href='?page=demande_supprimer&id=". $applications[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
+						<td> <a href='?page=demande_supprimer_app&id=". $applications[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
 					</tr>";
 						         
 				}

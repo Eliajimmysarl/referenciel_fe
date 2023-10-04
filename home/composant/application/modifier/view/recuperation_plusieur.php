@@ -61,7 +61,7 @@
 
 						<td > " . $applications[$i]->nom ."</td>
 
-						<td>". $applications[$i]->desciption ."</td>
+						<td>". $applications[$i]->descriptions ."</td>
 
 						<td>". $applications[$i]->lien_web ."</td>
 
@@ -75,7 +75,7 @@
 
 						<td>". $applications[$i]->ussd_orange ."</td>
 					
-					<td> <a href='?page=modification&id=". $applications[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> </td>
+					<td> <a href='?page=modification_app&id=". $applications[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> </td>
 				</tr>";
 						         
 				}

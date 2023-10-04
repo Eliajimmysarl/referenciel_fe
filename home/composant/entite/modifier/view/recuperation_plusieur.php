@@ -63,10 +63,10 @@
 
 							<td>". $entites[$i]->nom ."</td>
 
-							<td>". $entites[$i]->description ."</td>
+							<td>". $entites[$i]->descriptions ."</td>
 		
 					
-					<td> <a href='?page=modification&id=". $entites[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> </td>
+					<td> <a href='?page=modification_entite&id=". $entites[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> </td>
 				</tr>";
 						         
 				}

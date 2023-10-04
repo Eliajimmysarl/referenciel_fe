@@ -1,6 +1,6 @@
 <?php
 
-    $uri =  $authority.'/entites/';
+    $uri =  $authority.'/entite/';
 
     $application_id=$_POST['application_id'];
 
@@ -21,9 +21,9 @@
 
     $result=curl_post($uri, $token, $data);
   
-    $entites=json_decode($result);
+    $entite=json_decode($result);
 
-    $code = $entites->code;
+    $code = $entite->code;
         
     if($code ==201)
             {   
@@ -31,7 +31,7 @@
             }
         else    
             {
-                require_once('composant/ajout_un/view/reponse_negative.php');   
+                require_once('composant/entite/ajouter/view/reponse_negative.php');   
             }
 
 

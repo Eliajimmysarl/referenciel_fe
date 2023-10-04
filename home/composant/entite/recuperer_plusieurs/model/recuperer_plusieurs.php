@@ -5,8 +5,8 @@
     $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
-    
-    $entites= $obj->entites;
+  
+    $entites= $obj->entite;
 
     $code = $obj->code;
 
@@ -14,7 +14,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/entite/recuperation_plusieurs/view/recuperation_plusieurs.php'); 
+            require_once('composant\entite\recuperer_plusieurs\view\recuperation_plusieurs.php'); 
         }
         else
         {

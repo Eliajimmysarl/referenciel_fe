@@ -8,15 +8,6 @@
     
     $applications= $obj->applications;
 
-
-    $uri =  $authority.'/entite/';
-   
-   $result=curl_get($uri, $token);
-
-    $obj = json_decode($result);                      
-    
-    $entites= $obj->entite;
-    
     
     $code = $obj->code;
 
@@ -24,7 +15,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/composant/ajouter/view/demande_ajout.php'); 
+            require_once('composant/entite/modifier/view/demande_modification.php');  
         }
     else
         {

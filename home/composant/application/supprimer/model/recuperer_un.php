@@ -8,7 +8,7 @@ $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $applications= $obj->application;
+    $applications= $obj->applications;
 
     $code =  $obj->code;
 
@@ -16,7 +16,7 @@ $result=curl_get($uri, $token);
         {   
             $nom=$applications[0]->nom; 
 
-            $description=$applications[0]->descriptions;
+            $descriptions=$applications[0]->descriptions;
 
             $lien_web=$applications[0]->lien_web;
             
@@ -33,7 +33,7 @@ $result=curl_get($uri, $token);
 
             $id=$applications[0]->id;
         
-            require_once('composant/suppression_un/view/demande_suppression.php'); 
+            require_once('composant/application/supprimer/view/demande_suppression.php'); 
     }
 else if ($code ==400)
     {

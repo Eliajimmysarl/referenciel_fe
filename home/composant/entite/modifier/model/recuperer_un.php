@@ -8,7 +8,7 @@ $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $entites= $obj->entites;
+    $entites= $obj->entite;
 
     $code =  $obj->code;
 
@@ -26,7 +26,7 @@ $result=curl_get($uri, $token);
         
         
         
-        require_once('composant/entite/modifier/view/demande_modification.php'); 
+        require_once('composant/entite/modifier/model/recuperer_liste.php'); 
     }
 else if ($code ==400)
     {

@@ -8,7 +8,7 @@ $uri = $authority."/entite/".$id;
 $result=curl_delete($uri, $token);
 
     $obj = json_decode($result);                      
-    $entites= $obj->entites;
+    $entites= $obj->entite;
 
     $code =  $obj->code;
 

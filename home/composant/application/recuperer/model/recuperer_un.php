@@ -8,7 +8,6 @@ $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
 
-    echo"$result";
                       
     $applications= $obj->applications;
 
@@ -18,7 +17,7 @@ $result=curl_get($uri, $token);
         {   
             $nom=$applications[0]->nom; 
 
-            $description=$applications[0]->descriptions;
+            $descriptions=$applications[0]->descriptions;
 
             $lien_web=$applications[0]->lien_web;
             
