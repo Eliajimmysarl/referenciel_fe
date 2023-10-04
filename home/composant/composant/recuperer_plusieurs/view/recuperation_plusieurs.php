@@ -62,13 +62,13 @@
 
 							<td>". $composants[$i]->couche ."</td>
 
-							<td>". $composants[$i]->platforme ."</td>
+							<td>". $composants[$i]->plateforme ."</td>
 
 							<td>". $composants[$i]->entite_id ."</td>
 
 							<td>". $composants[$i]->nom ."</td>
 
-							<td>". $composants[$i]->description ."</td>
+							<td>". $composants[$i]->descriptions ."</td>
 							
 							<td>". $composants[$i]->url_code ."</td>
 		

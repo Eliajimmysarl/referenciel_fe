@@ -64,7 +64,7 @@
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 									<select  name="couche" id="selec"  class="form-control" required="required">
-									<option value="" selected>Select</option>
+									<option value="" selected>Couche</option>
 										<option value="interration">Interration</option>
 										<option value="processus">Processus</option>
 										<option value="entite">Entite</option>

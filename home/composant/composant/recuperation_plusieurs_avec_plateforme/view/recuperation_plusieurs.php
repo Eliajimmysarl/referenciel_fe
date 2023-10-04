@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperer_modeles">Composant</a>
+		<a href="?page=recuperer_modeles">textes</a>
 	</li>
 	<li class="active">
 		<strong>Recuperer</strong>
@@ -43,7 +43,6 @@
 					<TH>Nom</TH>
 					<TH>Description</TH>
 					<TH>Url code</TH>
-					<TH></TH>
 				</tr>
 			</thead>
 			<tbody>
@@ -63,17 +62,17 @@
 
 							<td>". $composants[$i]->couche ."</td>
 
-							<td>". $composants[$i]->plateforme ."</td>
+							<td>". $composants[$i]->platforme ."</td>
 
 							<td>". $composants[$i]->entite_id ."</td>
 
 							<td>". $composants[$i]->nom ."</td>
 
-							<td>". $composants[$i]->descriptions ."</td>
+							<td>". $composants[$i]->description ."</td>
 							
 							<td>". $composants[$i]->url_code ."</td>
 
-							<td><a href='?page=recuperation_un_composant&id=". $composants[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
+							<td><a href='?page=recuperation_un&id=". $composants[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
 		
 						</tr>";
 						         
@@ -90,7 +89,6 @@
 					<TH>Nom</TH>
 					<TH>Description</TH>
 					<TH>Url code</TH>
-					<TH></TH>
 				</tr>
 			</thead>
 		</table>

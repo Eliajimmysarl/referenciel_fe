@@ -34,18 +34,18 @@
 				<form method="POST" action="index.php?demande=recuperation_avec_dependance"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
+						<label class="col-sm-3 control-label">Couche <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="application_id" id="selec"  class="form-control" required="required">
-									<option value="" selected>application</option>
+									<select  name="couche" id="selec"  class="form-control" required="required">
+									<option value="" selected>Couche</option>
 									
 										<?php
-											for($i=0; $i < count($applications); $i++)
+											for($i=0; $i < count($composants); $i++)
 												{         
 													echo"  
-															<option value=". $applications[$i]->id ."> ". $applications[$i]->nom ."</option>                       
+															<option value=". $composants[$i]->couche ."> ". $composants[$i]->couche ."</option>                       
 															
 													";
 																
@@ -59,32 +59,6 @@
 					</div>
 
                     
-
-
-                    <div class="form-group"> 
-                        
-						<div class="col-sm-offset-3 col-sm-5"> 
-							
-							<?php
-								for($i=0; $i < count($options); $i++)
-									{         
-										echo"  
-												<div class='radio'> 
-													<label> 
-
-														<input type='radio' name='entite_id' id='optionsRadios1' value=". $entites[$i]->id ." >".$entites[$i]->nom."
-													
-													</label> 
-												</div>		
-			
-											";
-																
-									}
-							?>
-												
-                		</div>
-                         
-					</div>
 
 					<div class="form-group">
 						

@@ -63,17 +63,17 @@
 
 							<td>". $composants[$i]->couche ."</td>
 
-							<td>". $composants[$i]->platforme ."</td>
+							<td>". $composants[$i]->plateforme ."</td>
 
 							<td>". $composants[$i]->entite_id ."</td>
 
 							<td>". $composants[$i]->nom ."</td>
 
-							<td>". $composants[$i]->description ."</td>
+							<td>". $composants[$i]->descriptions ."</td>
 							
 							<td>". $composants[$i]->url_code ."</td>
 		
-						<td> <a href='?page=demande_supprimer&id=". $composants[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
+						<td> <a href='?page=demande_supprimer_composant&id=". $composants[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
 					</tr>";
 						         
 				}

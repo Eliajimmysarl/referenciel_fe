@@ -63,17 +63,17 @@
 
 							<td>". $composants[$i]->couche ."</td>
 
-							<td>". $composants[$i]->plate_forme ."</td>
+							<td>". $composants[$i]->plateforme ."</td>
 
 							<td>". $composants[$i]->entite_id ."</td>
 
 							<td>". $composants[$i]->nom ."</td>
 
-							<td>". $composants[$i]->description ."</td>
+							<td>". $composants[$i]->descriptions ."</td>
 							
 							<td>". $composants[$i]->url_code ."</td>
 					
-					<td> <a href='?page=modification&id=". $composants[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> </td>
+					<td> <a href='?page=modification_composant&id=". $composants[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> </td>
 				</tr>";
 						         
 				}

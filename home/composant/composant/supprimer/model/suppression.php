@@ -2,13 +2,12 @@
 
 $id=$_GET['id'];
 
-//URI
 $uri = $authority."/composant/".$id;
 
 $result=curl_delete($uri, $token);
 
     $obj = json_decode($result);                      
-    $composants= $obj->composants;
+    $composants= $obj->composant;
 
     $code =  $obj->code;
 

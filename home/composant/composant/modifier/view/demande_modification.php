@@ -28,7 +28,7 @@
 					
 			<div class="panel-body">
 			
-				<form method="POST" action="index.php?demande=modification_un"   id="theForm"  role="form" class="form-horizontal form-groups-bordered">
+				<form method="POST" action="index.php?demande=modification_un_composant"   id="theForm"  role="form" class="form-horizontal form-groups-bordered">
 						
 					<input type="HIDDEN" name="id" value=<?php echo $_GET['id'];?>>	
 
@@ -62,8 +62,8 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="selec" id="selec"  class="form-control" required="required">
-									<option value="" selected>Select</option>
+									<select  name="couche" id="selec"  class="form-control" required="required">
+									<option value="" selected>Couche</option>
 										<option value="interration">Interration</option>
 										<option value="processus">Processus</option>
 										<option value="entite">Entite</option>
@@ -93,16 +93,24 @@
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Entite<abbr style="color:green; font-size:15px;">**</abbr></label>			
+						<label class="col-sm-3 control-label">Entite <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="plateforme" id="selec"  class="form-control" required="required">
+									<select  name="entite_id" id="monselect"  class="form-control" required="required">
 									<option value="" selected>Entite</option>
-										<option value="joueur">Joueur</option>
-										<option value="equipe">Equipe</option>
-										<option value="match">Match</option>
-										<option value="non">Non</option>
+									
+										<?php
+											for($i=0; $i < count($entites); $i++)
+												{         
+													echo"  
+															<option value=". $entites[$i]->id ."> ". $entites[$i]->nom ."</option>                       
+															
+													";
+																
+												}
+										?>
+
                                     </select>
 									<span class="input-group-addon"><i class=""></i></span>
 								</div>
@@ -127,7 +135,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-pencil"></i></span>
-									<textarea class="form-control" name="description" id="textAreaExample6" value=<?php echo $description;?> rows="3"></textarea>
+									<textarea class="form-control" name="description" id="textAreaExample6" value="<?php echo $descriptions;?>" rows="3"></textarea>
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>

@@ -8,7 +8,7 @@ $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $composants= $obj->composants;
+    $composants= $obj->composant;
 
     $code =  $obj->code;
 
@@ -20,11 +20,11 @@ $result=curl_get($uri, $token);
 
             $plateforme=$composants[0]->plateforme;
             
-            $entite=$composants[0]->entite;
+            $entite_id=$composants[0]->entite_id;
             
-            $nom=$composantss[0]->nom;
+            $nom=$composants[0]->nom;
             
-            $lien_code=$composants[0]->lien_code;
+            $url_code=$composants[0]->url_code;
 
             $descriptions=$composants[0]->descriptions;
             
@@ -32,7 +32,7 @@ $result=curl_get($uri, $token);
             $id=$composants[0]->id;
 
           
-            require_once('composant/composant/recuperation_un/view/recuperation_un.php'); 
+            require_once('composant\composant\recuperer\view\recuperation_un.php'); 
         }
     else
         {

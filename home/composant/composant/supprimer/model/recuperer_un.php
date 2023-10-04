@@ -8,7 +8,7 @@ $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $composants= $obj->composants;
+    $composants= $obj->composant;
 
     $code =  $obj->code;
 
@@ -18,7 +18,7 @@ $result=curl_get($uri, $token);
 
             $couche=$composants[0]->couche;
 
-            $plate_forme=$composants[0]->plate_forme;
+            $plate_forme=$composants[0]->plateforme;
             
             $entite_id=$composants[0]->entite_id;
             

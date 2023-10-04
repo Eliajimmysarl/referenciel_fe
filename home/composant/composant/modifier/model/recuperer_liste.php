@@ -11,11 +11,11 @@
 
     $uri =  $authority.'/entite/';
    
-    $result=curl_get($uri, $token);
+   $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
     
-    $entites= $obj->entites;
+    $entites= $obj->entite;
     
     
     $code = $obj->code;
@@ -24,7 +24,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/composant/recuperation_plusieurs_avec_dependance/view/demande_recuperation.php'); 
+            require_once('composant/composant/modifier/model/recuperer_un.php'); 
         }
     else
         {

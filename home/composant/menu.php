@@ -110,6 +110,12 @@
 						</li>
 
 						<li>
+							<a href="?page=recuperer_composant">
+								<span class="title">Recuperer</span>
+							</a>
+						</li>
+
+						<li>
 							<a href="?page=recuperes_composants">
 								<span class="title">Recuperers</span>
 							</a>
