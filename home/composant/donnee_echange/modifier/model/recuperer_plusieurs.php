@@ -7,13 +7,13 @@ $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
     
-    $donnee_echanges= $obj->donnee_echanges;
+    $donnee_echanges= $obj->donnee_echange;
 
     $code = $obj->code;
 
     if($code ==200)
         {   
-            require_once('composant/donnee_echange/modifier/view/recuperation_plusieur.php'); 
+            require_once('composant\donnee_echange\modifier\view\recuperation_plusieur.php'); 
         }
         else
         {

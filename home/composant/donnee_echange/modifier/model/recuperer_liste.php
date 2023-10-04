@@ -15,7 +15,7 @@
 
     $obj = json_decode($result);                      
     
-    $composants= $obj->composants;
+    $composants= $obj->composant;
 
 
     $uri =  $authority.'/entite/';
@@ -24,7 +24,7 @@
 
     $obj = json_decode($result);                      
     
-    $entites= $obj->entites;
+    $entites= $obj->entite;
     
     
     $code = $obj->code;
@@ -33,7 +33,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/donnee_echange/recuperation_plusieurs_avec_dependance/view/demande_recuperation.php'); 
+            require_once('composant\donnee_echange\modifier\model\recuperer_un.php'); 
         }
     else
         {

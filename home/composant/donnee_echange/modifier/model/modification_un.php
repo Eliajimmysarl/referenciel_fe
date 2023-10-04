@@ -6,7 +6,7 @@
 
     $nom=$_POST['nom'];
 
-    $type=$_POST['type'];
+    $types=$_POST['types'];
 
     $application_id=$_POST['application_id'];
 
@@ -22,7 +22,7 @@
             
             'nom' => $nom,
             
-            'type' => $type,
+            'types' => $types,
 
             'application_id' => $application_id,
 
@@ -37,9 +37,9 @@
 
     $result=curl_put($uri, $token,$data);
         
-        $donnee_echanges=json_decode($result);
+        $donnee_echange=json_decode($result);
 
-        $code =  $donnee_echanges->code;
+        $code =  $donnee_echange->code;
 
         if($code ==200)
         

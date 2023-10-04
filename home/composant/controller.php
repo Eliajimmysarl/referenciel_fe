@@ -17,6 +17,11 @@
                 {
                     require_once('composant/composant/ajouter/model/ajout_un.php');  
                 }
+
+            else  if($demande=='ajouter_un_tde')
+                {
+                    require_once('composant/donnee_echange/ajouter/model/ajout_un.php');  
+                }
             else  if($demande=='ajouter_entite')
                 {
                     require_once('composant/entite/ajouter/model/ajout_un.php');  
@@ -39,10 +44,16 @@
                     require_once('composant/entite/modifier/model/modification_un.php');  
                 }
 
-                else  if($demande=='modification_un_composant')
+            else  if($demande=='modification_un_composant')
                 {
                     require_once('composant/composant/modifier/model/modification_un.php');  
                 }
+              
+            else  if($demande=='modification_un_tde')
+                {
+                    require_once('composant/donnee_echange/modifier/model/modification_un.php');  
+                }
+                
             else  if($demande=='suppression_application')
                 {
                     require_once('composant/application/supprimer/model/suppression.php');  
@@ -51,6 +62,11 @@
             else  if($demande=='suppression_un_composant')
                 {
                     require_once('composant/composant/supprimer/model/suppression.php');  
+                }
+
+            else  if($demande=='suppression_un_tde')
+                {
+                    require_once('composant/donnee_echange/supprimer/model/suppression.php');  
                 }
 
             else  if($demande=='suppression_entite')
@@ -148,6 +164,23 @@
                     require_once('composant/composant/supprimer/model/recuperer_un.php'); 
                 }
 
+            else  if($page=='demande_supprimer_tde')
+                {
+                    require_once('composant/donnee_echange/supprimer/model/recuperer_un.php'); 
+                }
+            else  if($page=='supprimer_donnee_echange')
+                {
+                    require_once('composant\donnee_echange\supprimer\model\recuperer_plusieurs.php'); 
+                }
+            else  if($page=='recuperer_donnee_echange')
+                {
+                    require_once('composant/donnee_echange/recuperer/model/recuperer_plusieurs.php'); 
+                }
+                
+            else  if($page=='recuperation_un_tde')
+                {
+                    require_once('composant\donnee_echange\recuperer\model\recuperer_un.php');
+                }
             else  if($page=='modification_composant')
                 {
                     require_once('composant\composant\modifier\model\recuperer_liste.php'); 
@@ -155,6 +188,15 @@
             else  if($page=='recuperes_composants_couche')
                 {
                     require_once('composant\composant\recuperation_plusieurs_avec_couche\model\recuperer_liste.php'); 
+                }
+            else  if($page=='recuperes_donnee_echanges_composant')
+                {
+                    require_once('composant\donnee_echange\recuperation_plusieurs_avec_composant\model\recuperer_liste.php'); 
+                }
+
+            else  if($page=='recuperes_donnee_echanges_application')
+                {
+                    require_once('composant\donnee_echange\recuperation_plusieurs_avec_application\model\recuperer_liste.php'); 
                 }
             else  if($page=='recuperation_un_composant')
                 {
@@ -209,16 +251,21 @@
                 }
             else  if($page=='modifier_donnee_echange')
                 {
-                    require_once('composant/ajout_plusieurs/view/nombre_ligne.php'); 
+                    require_once('composant\donnee_echange\modifier\model\recuperer_plusieurs.php'); 
                 }
+            else  if($page=='modification_tde')
+                {
+                    require_once('composant\donnee_echange\modifier\model\recuperer_liste.php'); 
+                }
+                
             else if($page=='supprimer_donnee_echange')
                 {
                     require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
                 }
             else  if($page=='recuperes_donnee_echanges')
                 {
-                    require_once('composant/ajout_plusieurs/view/demande_ajout.php'); 
-                } 
+                    require_once('composant\donnee_echange\recuperer_plusieurs\model\recuperer_plusieurs.php'); 
+                }  
             else  if($page=='recuperer_donnee_echange')
                 {
                     require_once('composant/recuperation_plusieurs/model/recuperer_plusieurs.php'); 

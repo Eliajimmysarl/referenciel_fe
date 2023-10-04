@@ -4,7 +4,7 @@
 
     $nom=$_POST['nom'];
 
-    $type=$_POST['type'];
+    $types=$_POST['types'];
 
     $application_id=$_POST['application_id'];
 
@@ -19,7 +19,7 @@
         
         'nom' => $nom,
 
-        'type'=> $type,
+        'types'=> $types,
 
         'application_id'=> $application_id,
 

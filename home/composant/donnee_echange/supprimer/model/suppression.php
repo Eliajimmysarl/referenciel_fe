@@ -2,13 +2,12 @@
 
 $id=$_GET['id'];
 
-//URI
 $uri = $authority."/donnee_echange/".$id;
 
 $result=curl_delete($uri, $token);
 
     $obj = json_decode($result);                      
-    $donnee_echanges= $obj->donnee_echanges;
+    $donnee_echanges= $obj->donnee_echange;
 
     $code =  $obj->code;
 

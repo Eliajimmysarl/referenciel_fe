@@ -31,7 +31,7 @@
 					
 			<div class="panel-body">
 						
-				<form method="POST" action="index.php?demande=ajouter_un_avec_dependance"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
+				<form method="POST" action="index.php?demande=ajouter_un_tde"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
 				
 				<div class="form-group">		
@@ -46,12 +46,16 @@
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Types <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label">Types<abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="types" class="form-control" placeholder="types" required="required">
-									<span class="input-group-addon"><i class="r"></i></span>
+									<select  name="types" id="selec"  class="form-control" required="required">
+									<option value="" selected>Types</option>
+										<option value="string">String</option>
+										<option value="int">Int</option>
+                                    </select>
+									<span class="input-group-addon"><i class=""></i></span>
 								</div>
 							</div>
 					</div>
@@ -62,7 +66,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-pencil"></i></span>
-									<textarea class="form-control" name="desciption" id="textAreaExample6" rows="3"></textarea>
+									<textarea class="form-control" name="descriptions" id="textAreaExample6" rows="3"></textarea>
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
@@ -120,11 +124,12 @@
 							</div>
 					</div>
 
-                    <div class="form-group"> 
-                        
-						<div class="col-sm-offset-3 col-sm-5"> 
-							
-						<select  name="entite_id" id="optionsRadios"  class="form-control" required="required">
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Entite <abbr style="color:green; font-size:15px;">**</abbr></label>			
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<select  name="entite_id" id="monselect"  class="form-control" required="required">
 									<option value="" selected>Entite</option>
 									
 										<?php
@@ -139,9 +144,9 @@
 										?>
 
                                     </select>
-																		
-                		</div>
-                         
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
 					</div>
 
 					

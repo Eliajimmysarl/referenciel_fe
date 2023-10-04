@@ -68,11 +68,11 @@
 
 						<td>". $donnee_echanges[$i]->nom ."</td>
 
-						<td>". $donnee_echangess[$i]->types ."</td>
+						<td>". $donnee_echanges[$i]->types ."</td>
 
-						<td>". $donnee_echanges[$i]->description ."</td>
+						<td>". $donnee_echanges[$i]->descriptions ."</td>
 		
-						<td> <a href='?page=modification&id=". $donnee_echanges[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> </td>
+						<td> <a href='?page=modification_tde&id=". $donnee_echanges[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> </td>
 				
 					</tr>";
 						         

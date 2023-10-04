@@ -9,22 +9,6 @@
     $applications= $obj->applications;
 
 
-    $uri =  $authority.'/composant/';
-   
-    $result=curl_get($uri, $token);
-
-    $obj = json_decode($result);                      
-    
-    $composants= $obj->composant;
-
-
-    $uri =  $authority.'/entite/';
-   
-    $result=curl_get($uri, $token);
-
-    $obj = json_decode($result);                      
-    
-    $entites= $obj->entite;
     
     
     $code = $obj->code;
@@ -33,7 +17,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/donnee_echange/ajouter/view/demande_ajout.php'); 
+            require_once('composant/donnee_echange/recuperation_plusieurs_avec_application/view/demande_recuperation.php'); 
         }
     else
         {

@@ -67,9 +67,9 @@
 
 						<td>". $donnee_echanges[$i]->nom ."</td>
 
-						<td>". $donnee_echangess[$i]->types ."</td>
+						<td>". $donnee_echanges[$i]->types ."</td>
 
-						<td>". $donnee_echanges[$i]->description ."</td>
+						<td>". $donnee_echanges[$i]->descriptions ."</td>
 		
 								
 					</tr>";

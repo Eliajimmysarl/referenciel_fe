@@ -8,7 +8,7 @@ $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $donnee_echanges= $obj->donnee_echanges;
+    $donnee_echanges= $obj->donnee_echange;
 
     $code =  $obj->code;
 
@@ -16,7 +16,7 @@ $result=curl_get($uri, $token);
         {   
             $nom=$donnee_echanges[0]->nom; 
 
-            $type=$donnee_echanges[0]->type;
+            $types=$donnee_echanges[0]->types;
 
             $application_id=$donnee_echanges[0]->application_id;
 

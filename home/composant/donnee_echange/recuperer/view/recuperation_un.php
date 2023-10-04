@@ -27,13 +27,13 @@
 										echo"
 										<tr>
 										
-										<td>Text :</td><td>". $texte ." </td>
-										<tr><td>Select : </td><td> " . $selec." </td>
+										<td>Application :</td><td>". $application_id ." </td>
+										<tr><td>Composant : </td><td> " . $composant_id." </td>
 		
-										<tr><td>Date : </td><td> ". $dates." </td>
-										<tr><td>Telephone : </td><td> ". $telephone." </td>
-										<tr><td>Email : </td><td> ". $email." </td>
-										<tr><td>radio: </td><td> ". $optionsRadios." </td>
+										<tr><td>Entite: </td><td> ". $entite_id." </td>
+										<tr><td>Types : </td><td> ". $types." </td>
+										<tr><td>Nom : </td><td> ". $nom." </td>
+										<tr><td>Description: </td><td> ". $descriptions." </td>
 										
 										
 										</tr>

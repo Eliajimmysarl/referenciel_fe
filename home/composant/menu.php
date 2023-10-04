@@ -217,6 +217,12 @@
 						</li>
 
 						<li>
+							<a href="?page=recuperer_donnee_echange">
+								<span class="title">Recuperer</span>
+							</a>
+						</li>
+
+						<li>
 							<a href="?page=recuperes_donnee_echanges">
 								<span class="title">Recuperers plusieurs</span>
 							</a>

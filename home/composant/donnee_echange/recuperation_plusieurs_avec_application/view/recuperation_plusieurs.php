@@ -68,12 +68,12 @@
 
 						<td>". $donnee_echanges[$i]->nom ."</td>
 
-						<td>". $donnee_echangess[$i]->types ."</td>
+						<td>". $donnee_echanges[$i]->types ."</td>
 
-						<td>". $donnee_echanges[$i]->description ."</td>
+						<td>". $donnee_echanges[$i]->descriptions ."</td>
 		
 									
-					<td> <a href='?page=recuperation_un&id=". $donnee_echanges[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
+					<td> <a href='?page=recuperation_un_tde&id=". $donnee_echanges[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
 			
 					</tr>";
 						         
