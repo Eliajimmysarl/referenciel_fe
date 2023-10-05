@@ -12,7 +12,7 @@
 
     $methode=$_POST['methode'];
 
-    $uri=$_POST['uri'];
+    $urir=$_POST['uri'];
 
     $data = array(
         
@@ -24,15 +24,13 @@
 
         'methode'=> $methode,
 
-        'uri'=> $uri
+        'uri'=> $urir
 
     );    
 
     $result=curl_put($uri, $token,$data);
         
     $api=json_decode($result);
-
-echo"$result salut $id";
 
     $code =  $api->code;
 

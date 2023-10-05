@@ -10,7 +10,7 @@
 
     $methode=$_POST['methode'];
 
-    $uri=$_POST['uri'];
+    $urir=$_POST['uri'];
 
 
     $data = array(
@@ -23,7 +23,7 @@
 
         'methode'=> $methode,
 
-        'uri'=> $uri
+        'uri'=> $urir
     
     );
     $result=curl_post($uri, $token, $data);
