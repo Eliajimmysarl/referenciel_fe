@@ -43,9 +43,9 @@
 
     $result=curl_put($uri, $token,$data);
         
-        $test=json_decode($result);
+        $applications=json_decode($result);
 
-        $code =  $test->code;
+        $code =  $applications->code;
 
         if($code ==200)
         

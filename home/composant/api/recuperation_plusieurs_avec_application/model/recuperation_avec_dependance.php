@@ -1,16 +1,14 @@
 <?php
 
-    $uri =  $authority.'/donnee_pesistante/';
+    $uri =  $authority.'/api/';
 
     $application_id=$_POST['application_id'];
-
-    $composant_id=$_POST['composant_id'];
     
     $data = array(
 
-        'composant_id'=> $composant_id,
-
         'application_id'=> $application_id
+
+
     
     );
 
@@ -18,7 +16,7 @@
 
     $obj = json_decode($result);   
        
-    $donnee_pesistantes= $obj->donnee_pesistantes;
+    $apis= $obj->api;
 
     $code = $obj->code;
 
@@ -26,7 +24,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/donnee_pesistante/recuperation_plusieurs_avec_dependance/view/recuperation_plusieurs.php'); 
+            require_once('composant/api/recuperation_plusieurs_avec_dependance/view/recuperation_plusieurs.php'); 
         }
         else
         {

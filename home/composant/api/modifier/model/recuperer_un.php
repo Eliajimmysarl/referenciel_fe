@@ -2,13 +2,13 @@
 
 $id=$_GET['id'];
 
-$uri = $authority."/entites/".$id;
+$uri = $authority."/api/".$id;
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $apis= $obj->apis;
+    $apis= $obj->api;
 
     $code =  $obj->code;
 
@@ -18,7 +18,7 @@ $result=curl_get($uri, $token);
 
             $composant_id=$apis[0]->composant_id;
 
-            $couche=$apis[0]->couche;
+            $couche=$apis[0]->entite_id;
             
             $methode=$apis[0]->methode;
             

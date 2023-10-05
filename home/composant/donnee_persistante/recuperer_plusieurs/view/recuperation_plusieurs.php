@@ -38,11 +38,12 @@
 				<tr>
 					<TH>#</TH>
 					<TH>Nom</TH>
-					<TH>Type</TH>
-					<TH>Couche</TH>
-					<TH>Plate-forme</TH>
+					<TH>Types</TH>
 					<TH>Application</TH>
 					<TH>Entite</TH>
+					<TH>Valeur</TH>
+					<TH>index</TH>
+					<TH>Cle primaire</TH>
 					<TH>Description</TH>
 				</tr>
 			</thead>
@@ -60,17 +61,19 @@
 
 						<td > " . $donnee_persistantes[$i]->nom ."</td>
 
-						<td>". $donnee_persistantes[$i]->type ."</td>
-
-						<td>". $donnee_persistantes[$i]->couche ."</td>
-
-						<td>". $donnee_persistantes[$i]->plateforme ."</td>
+						<td>". $donnee_persistantes[$i]->types ."</td>
 
 						<td>". $donnee_persistantes[$i]->application_id ."</td>
 
 						<td>". $donnee_persistantes[$i]->entite_id ."</td>
 
-						<td>". $donnee_persistantes[$i]->description ."</td>
+						<td>". $donnee_persistantes[$i]->valeur ."</td>
+
+						<td>". $donnee_persistantes[$i]->indexe ."</td>
+
+						<td>". $donnee_persistantes[$i]->cle_primaire ."</td>
+
+						<td>". $donnee_persistantes[$i]->descriptions ."</td>
 		
 					
 						</tr>";
@@ -80,13 +83,14 @@
 
                <thead>
 				<tr>
-					<TH>#</TH>
+				<TH>#</TH>
 					<TH>Nom</TH>
-					<TH>Type</TH>
-					<TH>Couche</TH>
-					<TH>Plate-forme</TH>
+					<TH>Types</TH>
 					<TH>Application</TH>
 					<TH>Entite</TH>
+					<TH>Valeur</TH>
+					<TH>index</TH>
+					<TH>Cle primaire</TH>
 					<TH>Description</TH>
 				</tr>
 			</thead>

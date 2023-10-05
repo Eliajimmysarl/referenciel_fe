@@ -2,7 +2,7 @@
 
     $id=$_POST['id'];
 
-    $uri = $authority."/donnee_pesistante/".$id;
+    $uri = $authority."/donnee_persistante/".$id;
 
     $application_id=$_POST['application_id'];
 
@@ -51,14 +51,14 @@
 
     $result=curl_put($uri, $token,$data);
         
-        $donnee_pesistantes=json_decode($result);
+        $donnee_persistante=json_decode($result);
 
-        $code =  $donnee_pesistantes->code;
+        $code =  $donnee_persistante->code;
 
         if($code ==200)
         
             {   
-                require_once('composant/donnee_pesistante/modifier/view/reponse_positive.php');
+                require_once('composant\donnee_persistante\modifier\view\reponse_positive.php');
             }
     
     

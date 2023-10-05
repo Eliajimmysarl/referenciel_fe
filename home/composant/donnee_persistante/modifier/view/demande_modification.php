@@ -28,20 +28,20 @@
 					
 			<div class="panel-body">
 			
-				<form method="POST" action="index.php?demande=modification_un"   id="theForm"  role="form" class="form-horizontal form-groups-bordered">
+				<form method="POST" action="index.php?demande=modification_un_donnee_persistance"   id="theForm"  role="form" class="form-horizontal form-groups-bordered">
 						
 					<input type="HIDDEN" name="id" value=<?php echo $_GET['id'];?>>	
 
-				<div class="form-group">		
+					<div class="form-group">		
 						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="application_id" id="selec"  value="<?php echo $application_id;?>" class="form-control" required="required">
-									<option value="" selected>Applicatin</option>
+									<select  name="application_id" id="selec" value="<?php echo $application_id;?>"  class="form-control" required="required">
+									<option value="" selected>Application</option>
 									
 										<?php
-											for($i=0; $i < count($selections); $i++)
+											for($i=0; $i < count($applications); $i++)
 												{         
 													echo"  
 															<option value=". $Applications[$i]->id ."> ". $applications[$i]->nom ."</option>                       
@@ -62,8 +62,8 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="entite_id" id="selec"  value="<?php echo $entite_id;?>" class="form-control" required="required">
-									<option value="" selected>Composant</option>
+									<select  name="entite_id" id="selec" value="<?php echo $entite_id;?>" class="form-control" required="required">
+									<option value="" selected>Entite</option>
 									
 										<?php
 											for($i=0; $i < count($entites); $i++)
@@ -82,13 +82,24 @@
 							</div>
 					</div>
 
-					
+					<div class="form-group">		
+						<label class="col-sm-3 control-label" >Nom <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="nom" class="form-control" value="<?php echo $nom;?>" required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
+								</div>
+							</div>
+					</div>
+
+
 					<div class="form-group">		
 						<label class="col-sm-3 control-label" >Taille <abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="number" name="taille" class="form-control" value="<?php echo $taille;?>"  required="required">
+									<input type="number" name="taille" class="form-control" value="<?php echo $taille;?>" required="required">
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
@@ -99,18 +110,45 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-pencil"></i></span>
-									<textarea class="form-control" name="description" id="textAreaExample6" value="<?php echo $description;?>" rows="3"></textarea>
+									<textarea class="form-control" name="descriptions" value="<?php echo $descriptions;?>" id="textAreaExample6" rows="3"></textarea>
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Valeur par defaut <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label">Types<abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="number" name="valeur_par_defaut" class="form-control" value="<?php echo $valeur_par_defaut;?>" placeholder="valeur par defaut" required="required">
+									<select  name="types" id="selec"  class="form-control" required="required">
+									<option value="" selected>Types</option>
+										<option value="string">String</option>
+										<option value="int">Int</option>
+                                    </select>
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label" >Valeur  <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="valeur" class="form-control" value="<?php echo $valeur;?>" required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
+								</div>
+							</div>
+					</div>
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label" >Defaut <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="number" name="defaut" class="form-control" value="<?php echo $defaut;?>" required="required">
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
@@ -121,7 +159,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="type" id="selec"  value="<?php echo $type;?>" class="form-control" required="required">
+									<select  name="type" id="selec"  class="form-control" required="required">
 									<option value="" selected>Type</option>
 										<option value="date">date</option>
 										<option value="INT">INT</option>
@@ -140,13 +178,13 @@
                         
 							<div class="radio"> 
 								<label> 
-									<input type="radio" name="oui" id="optionsRadios1" value="1" checked="">Oui
+									<input type="radio" name="cle_primaire" id="cle_primaire" value="1" checked="">Oui
 								</label> 
 							</div>
 
 							<div class="radio">
 								<label> 
-									<input type="radio" name="optionsRadios" id="optionsRadios2" value="2">Non
+									<input type="radio" name="cle_primaire" id="cle_primaire" value="1">Non
 								</label>   
 							</div> 
                          
@@ -162,21 +200,17 @@
                         
 							<div class="radio"> 
 								<label> 
-									<input type="radio" name="etrangere" id="optionsRadios1" value="1" checked="">Etrangere
+									<input type="radio" name="indexe" id="Index1" value="cle etrangeur" >Etrangere
 								</label> 
 							</div>
 
 							<div class="radio">
 								<label> 
-									<input type="radio" name="unique" id="optionsRadios2" value="2">Unique
+									<input type="radio" name="indexe" id="Index2" value="unique">Unique
 								</label>   
 							</div> 
 
-							<div class="radio">
-								<label> 
-									<input type="radio" name="index" id="optionsRadios3" value="2">Index
-								</label>   
-							</div> 
+							
                          
 						</div>
                          
@@ -184,25 +218,25 @@
 
 					<div class="form-group"> 
 
-<label class="col-sm-3 control-label">Null <abbr style="color:green; font-size:15px;">**</abbr></label>			
+			<label class="col-sm-3 control-label">Null <abbr style="color:green; font-size:15px;">**</abbr></label>			
 
-	<div class="col-sm-offset-3 col-sm-5"> 
+	  <div class="col-sm-offset-3 col-sm-5"> 
 	
 		<div class="radio"> 
 			<label> 
-				<input type="radio" name="yes" id="optionsRadios1" value="1" checked="">YES
+				<input type="radio" name="null" id="optionsRadios1" value="Yes" >YES
 			</label> 
 		</div>
 
 		<div class="radio">
-			<label> 
-				<input type="radio" name="no" id="optionsRadios2" value="2">No
-			</label>   
-		</div> 
-	 
-	</div>
-	 
-</div>
+					<label> 
+						<input type="radio" name="null" id="optionsRadios2" value="No">No
+					</label>   
+				</div> 
+			
+			</div>
+			
+		</div>
 
 
 					<div class="form-group">

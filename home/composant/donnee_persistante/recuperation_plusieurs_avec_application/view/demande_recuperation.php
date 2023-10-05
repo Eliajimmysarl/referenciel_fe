@@ -6,7 +6,7 @@
 		</li>
 	
 		<li>
-			<a href="?page=recuperer_modeles">Api</a>
+			<a href="?page=recuperer_modeles">Donne persistante</a>
 		</li>
 	
 		<li class="active">
@@ -38,14 +38,14 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="selec" id="selec"  class="form-control" required="required">
-									<option value="" selected>Applicatin</option>
+									<select  name="application_id" id="selec"  class="form-control" required="required">
+									<option value="" selected>Application</option>
 									
 										<?php
-											for($i=0; $i < count($selections); $i++)
+											for($i=0; $i < count($applications); $i++)
 												{         
 													echo"  
-															<option value=". $Applications[$i]->id ."> ". $applications[$i]->nom ."</option>                       
+															<option value=". $applications[$i]->id ."> ". $applications[$i]->nom ."</option>                       
 															
 													";
 																
@@ -58,48 +58,9 @@
 							</div>
 					</div>
 
-                    <div class="form-group">		
-						<label class="col-sm-3 control-label">Composant <abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="composant_id" id="selec"  class="form-control" required="required">
-									<option value="" selected>Composant</option>
-									
-										<?php
-											for($i=0; $i < count($composants); $i++)
-												{         
-													echo"  
-															<option value=". $composants[$i]->id ."> ". $composants[$i]->nom ."</option>                       
-															
-													";
-																
-												}
-										?>
-
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
+            
                     
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Couche <abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="couche" id="selec"  class="form-control" required="required">
-									<option value="" selected>couche</option>
-										<option value="interration">Interration</option>
-										<option value="processus">Processus</option>
-										<option value="entite">Entite</option>
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
 
-                  
 					<div class="form-group">
 						
 						<div class="col-sm-offset-3 col-sm-5">

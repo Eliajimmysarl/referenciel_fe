@@ -8,7 +8,7 @@ $uri = $authority."/api/".$id;
 $result=curl_delete($uri, $token);
 
     $obj = json_decode($result);                      
-    $apis= $obj->apis;
+    $apis= $obj->api;
 
     $code =  $obj->code;
 
@@ -16,7 +16,7 @@ $result=curl_delete($uri, $token);
         {    
              
             
-            require_once('composant/composant/supprimer/view/reponse_positive.php');
+            require_once('composant/api/supprimer/view/reponse_positive.php');
         }
         else
         {

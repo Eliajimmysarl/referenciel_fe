@@ -27,14 +27,16 @@
 										echo"
 										<tr>
 										
-											<td>Nom :</td><td>". $nom ." </td>
-											<tr><td>Type : </td><td> " . $type." </td>
-											<tr><td>Couche : </td><td> ". $couche." </td>
-											<tr><td>Plate forme : </td><td> ". $plateforme." </td>
-											<tr><td>Description : </td><td> ". $description." </td>
-											<tr><td>Code : </td><td> ". $code." </td>
-											<tr><td>Application: </td><td> ". $application_id." </td>
-											<tr><td>Composant: </td><td> ". $composant_id." </td>
+											<td>Nom :</td><td>". $noms ." </td>
+											<tr><td>Type : </td><td> " . $types." </td>
+											<tr><td>Entite : </td><td> ". $entite_id." </td>
+											<tr><td>Application : </td><td> ". $application_id." </td>
+											<tr><td>Valeur : </td><td> ". $valeur." </td>
+											<tr><td>Description : </td><td> ". $descriptions." </td>
+											<tr><td>Index : </td><td> ". $indexe." </td>
+											<tr><td>Taille : </td><td> ". $taille." </td>
+											<tr><td>Defaut: </td><td> ". $defaut." </td>
+											<tr><td>Cle primaire: </td><td> ". $cle_primaire." </td>
 										
 										</tr>
 										";

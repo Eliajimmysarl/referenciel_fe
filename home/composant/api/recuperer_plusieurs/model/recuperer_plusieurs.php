@@ -6,7 +6,7 @@
 
     $obj = json_decode($result);                      
     
-    $apis= $obj->apis;
+    $apis= $obj->api;
 
     $code = $obj->code;
 
@@ -14,7 +14,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/api/recuperation_plusieurs/view/recuperation_plusieurs.php'); 
+            require_once('composant\api\recuperer_plusieurs\view\recuperation_plusieurs.php'); 
         }
         else
         {

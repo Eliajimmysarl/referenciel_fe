@@ -2,13 +2,12 @@
 
 $id=$_GET['id'];
 
-//URI
-$uri = $authority."/donnee_pesistante/".$id;
+$uri = $authority."/donnee_persistante/".$id;
 
 $result=curl_delete($uri, $token);
 
     $obj = json_decode($result);                      
-    $donnee_pesistantes= $obj->donnee_pesistantes;
+    $donnee_persistantes= $obj->donnee_persistante;
 
     $code =  $obj->code;
 
@@ -16,7 +15,7 @@ $result=curl_delete($uri, $token);
         {    
              
             
-            require_once('composant/donnee_pesistante/supprimer/view/reponse_positive.php');
+            require_once('composant/donnee_persistante/supprimer/view/reponse_positive.php');
         }
         else
         {

@@ -41,10 +41,9 @@
 					<TH>#</TH>
 					<TH>Application</TH>
 					<TH>Composant</TH>
-					<TH>Couche</TH>
+					<TH>entite</TH>
 					<TH>Methode</TH>
 					<TH>Uri</TH>
-					<TH>Code</TH>
 				
 				</tr>
 			</thead>
@@ -60,17 +59,17 @@
 
 						<td>$j</td>
 
-						<td > " . $apiss[$i]->application_id ."</td>
+						<td > " . $apis[$i]->application_id ."</td>
 
 						<td>". $apis[$i]->composant_id ."</td>
 
-						<td>". $apis[$i]->couche ."</td>
+						<td>". $apis[$i]->entite_id ."</td>
 
 						<td>". $apis[$i]->methode ."</td>
 
 						<td>". $apis[$i]->uri ."</td>
 
-						<td>". $apis[$i]->code ."</td>
+					
 		
 						</tr>";
 						         
@@ -82,10 +81,10 @@
                 	<TH>#</TH>
 					<TH>Application</TH>
 					<TH>Composant</TH>
-					<TH>Couche</TH>
+					<TH>Entite</TH>
 					<TH>Methode</TH>
 					<TH>Uri</TH>
-					<TH>Code</TH>
+					
 					
 	
 	

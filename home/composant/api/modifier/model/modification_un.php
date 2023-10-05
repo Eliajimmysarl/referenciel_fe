@@ -6,7 +6,7 @@
 
     $application_id=$_POST['application_id'];
 
-    $couche=$_POST['couche'];
+    $entite_id=$_POST['entite_id'];
 
     $composant_id=$_POST['composant_id'];
 
@@ -18,7 +18,7 @@
         
         'application_id' => $application_id,
 
-        'couche'=> $couche,
+        'entite_id'=> $entite_id,
 
         'composant_id'=> $composant_id,
 
@@ -30,11 +30,13 @@
 
     $result=curl_put($uri, $token,$data);
         
-        $apis=json_decode($result);
+    $api=json_decode($result);
 
-        $code =  $apis->code;
+echo"$result salut $id";
 
-        if($code ==200)
+    $code =  $api->code;
+
+    if($code ==200)
         
             {   
                 require_once('composant/api/modifier/view/reponse_positive.php');

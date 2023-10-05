@@ -269,6 +269,12 @@
 						</li>
 
 						<li>
+							<a href="?page=recuperer_donnee_persistante">
+								<span class="title">Recuperer</span>
+							</a>
+						</li>
+
+						<li>
 							<a href="?page=recuperes_donnee_persistantes">
 								<span class="title">Recuperers plusieurs</span>
 							</a>
@@ -316,19 +322,25 @@
 						</li> 
 
 						<li>
+							<a href="?page=recuperer_api">
+								<span class="title">Recuperer</span>
+							</a>
+						</li> 
+
+						<li>
 							<a href="?page=recuperes_apis">
 								<span class="title">Recuperers plusieurs</span>
 							</a>
 						</li>
 
 						<li>
-							<a href="?page=recuperes_apis_composant">
+							<a href="?page=recuperes_api_composant">
 								<span class="title">Recuperers par composant</span>
 							</a>
 						</li>
 
 						<li>
-							<a href="?page=recuperes_apis_application">
+							<a href="?page=recuperes_api_application">
 								<span class="title">Recuperers par application</span>
 							</a>
 						</li>

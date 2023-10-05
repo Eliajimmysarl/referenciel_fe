@@ -1,6 +1,6 @@
 <?php
 
-    $uri =  $authority.'/donnee_pesistante/';
+    $uri =  $authority.'/donnee_persistante/';
 
     $application_id=$_POST['application_id'];
 
@@ -48,17 +48,17 @@
 
     $result=curl_post($uri, $token, $data);
   
-    $donnee_pesistantes=json_decode($result);
-
-    $code = $donnee_pesistantes->code;
+    $donnee_persistante=json_decode($result);
+echo"$result";
+    $code = $donnee_persistante->code;
         
     if($code ==201)
             {   
-                require_once('composant/donnee_pesistante/ajout_un/view/reponse_positive.php'); 
+                require_once('composant/donnee_persistante/ajout_un/view/reponse_positive.php'); 
             }
         else    
             {
-                require_once('composant/donnee_pesistante/ajouter/view/reponse_negative.php');   
+                require_once('composant/donnee_persistante/ajouter/view/reponse_negative.php');   
             }
 
 

@@ -15,7 +15,7 @@
 
     $obj = json_decode($result);                      
     
-    $entites= $obj->entites;
+    $entites= $obj->entite;
 
 
     $uri =  $authority.'/composant/';
@@ -24,7 +24,7 @@
 
     $obj = json_decode($result);                      
     
-    $composants= $obj->composants;
+    $composants= $obj->composant;
     
     
     

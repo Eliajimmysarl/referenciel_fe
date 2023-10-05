@@ -8,7 +8,7 @@ $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $apis= $obj->apis;
+    $apis= $obj->api;
 
     $code =  $obj->code;
 
@@ -24,9 +24,9 @@ $result=curl_get($uri, $token);
             
             $uri=$apis[0]->uri;
 
-            $code=$apis[0]->code;
+       
             
-            $id=$entites[0]->id;
+            $id=$apis[0]->id;
 
           
             require_once('composant/api/recuperer/view/recuperation_un.php'); 

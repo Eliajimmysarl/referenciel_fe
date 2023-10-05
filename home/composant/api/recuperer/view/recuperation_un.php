@@ -29,11 +29,11 @@
 										
 										<td>Application :</td><td>". $application_id ." </td>
 										<tr><td>Composant : </td><td> " . $composant_id." </td>
-		
+										<tr><td>Couche : </td><td> ". $entite_id." </td>
 										<tr><td>Methode : </td><td> ". $methode." </td>
 										<tr><td>Uri : </td><td> ". $uri." </td>
-										<tr><td>Couche : </td><td> ". $couche." </td>
-										<tr><td>Code: </td><td> ". $code." </td>
+										
+										
 										
 										
 										</tr>

@@ -7,7 +7,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperer_modeles">Donnee persistante</a>
+			<a href="?page=recuperer_modeles">Api</a>
 		</li>
 
 		<li class="active">
@@ -39,13 +39,12 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Nom</TH>
-					<TH>Type</TH>
-					<TH>Couche</TH>
-					<TH>Plate-forme</TH>
 					<TH>Application</TH>
-					<TH>Entite</TH>
-					<TH>Description</TH>
+					<TH>Composant</TH>
+					<TH>Couche</TH>
+					<TH>Methode</TH>
+					<TH>Uri</TH>
+					
 					<TH></TH>
 				</tr>
 			</thead>
@@ -53,7 +52,7 @@
 				
 				<?php
 								
-				for($i=0; $i < count($donnee_persistantes); $i++)
+				for($i=0; $i < count($apis); $i++)
 				{ 
 					$j = $i + 1;
 				echo"                         
@@ -61,22 +60,20 @@
 
 						<td>$j</td>
 
-						<td > " . $donnee_persistantes[$i]->nom ."</td>
+						<td > " . $apiss[$i]->application_id ."</td>
 
-						<td>". $donnee_persistantes[$i]->type ."</td>
+						<td>". $apis[$i]->composant_id ."</td>
 
-						<td>". $donnee_persistantes[$i]->couche ."</td>
+						<td>". $apis[$i]->entite_id ."</td>
 
-						<td>". $donnee_persistantes[$i]->plateforme ."</td>
+						<td>". $apis[$i]->methode ."</td>
 
-						<td>". $donnee_persistantes[$i]->description ."</td>
+						<td>". $apis[$i]->uri ."</td>
 
-						<td>". $donnee_persistantes[$i]->application_id ."</td>
-
-						<td>". $donnee_persistantes[$i]->entite_id ."</td>
+						
 		
 									
-					<td> <a href='?page=recuperation_un&id=". $donnee_persistantes[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
+					<td> <a href='?page=recuperation_un&id=". $apis[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
 			
 					</tr>";
 						         
@@ -85,14 +82,13 @@
             </tbody>
             <thead>
 				<tr>
-				    <TH>#</TH>
-					<TH>Nom</TH>
-					<TH>Type</TH>
-					<TH>Couche</TH>
-					<TH>Plate-forme</TH>
+                    <TH>#</TH>
 					<TH>Application</TH>
-					<TH>Entite</TH>
-					<TH>Description</TH>
+					<TH>Composant</TH>
+					<TH>Couche</TH>
+					<TH>Methode</TH>
+					<TH>Uri</TH>
+				
 					<TH></TH>
 	
 				</tr>

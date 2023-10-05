@@ -31,7 +31,7 @@
 					
 			<div class="panel-body">
 						
-				<form method="POST" action="index.php?demande=ajouter_un_avec_dependance"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
+				<form method="POST" action="index.php?demande=ajouter_un_api"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
 				<div class="form-group">		
 						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
@@ -85,16 +85,26 @@
 					</div>
 
 				
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Couche <abbr style="color:green; font-size:15px;">**</abbr></label>			
+						
+				<div class="form-group">		
+						<label class="col-sm-3 control-label">Entite <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="couche" id="selec"  class="form-control" required="required">
-									<option value="" selected>couche</option>
-										<option value="interration">Interration</option>
-										<option value="processus">Processus</option>
-										<option value="entite">Entite</option>
+									<select  name="entite_id" id="monselect"  class="form-control" required="required">
+									<option value="" selected>Entite</option>
+									
+										<?php
+											for($i=0; $i < count($entites); $i++)
+												{         
+													echo"  
+															<option value=". $entites[$i]->id ."> ". $entites[$i]->nom ."</option>                       
+															
+													";
+																
+												}
+										?>
+
                                     </select>
 									<span class="input-group-addon"><i class=""></i></span>
 								</div>
@@ -118,7 +128,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="url_code" class="form-control" placeholder="Url code" required="required">
+									<input type="text" name="uri" class="form-control" placeholder="Url code" required="required">
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>

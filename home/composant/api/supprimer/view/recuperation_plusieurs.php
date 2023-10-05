@@ -41,10 +41,9 @@
 					<TH>#</TH>
 					<TH>Application</TH>
 					<TH>Composant</TH>
-					<TH>Couche</TH>
+					<TH>Entite</TH>
 					<TH>Methode</TH>
 					<TH>Uri</TH>
-					<TH>Code</TH>
 					<TH></TH>
 				</tr>
 			</thead>
@@ -60,19 +59,18 @@
 
 						<td>$j</td>
 
-						<td > " . $apiss[$i]->application_id ."</td>
+						<td > " . $apis[$i]->application_id ."</td>
 
 						<td>". $apis[$i]->composant_id ."</td>
 
-						<td>". $apis[$i]->couche ."</td>
+						<td>". $apis[$i]->entite_id ."</td>
 
 						<td>". $apis[$i]->methode ."</td>
 
 						<td>". $apis[$i]->uri ."</td>
 
-						<td>". $apis[$i]->code ."</td>
-		
-						<td> <a href='?page=demande_supprimer&id=". $apis[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
+						
+						<td> <a href='?page=demande_supprimer_api&id=". $apis[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
 					</tr>";
 						         
 				}
@@ -83,10 +81,10 @@
 					<TH>#</TH>
 					<TH>Application</TH>
 					<TH>Composant</TH>
-					<TH>Couche</TH>
+					<TH>Entite</TH>
 					<TH>Methode</TH>
 					<TH>Uri</TH>
-					<TH>Code</TH>
+					
 					<TH></TH>
 				</tr>
 			</thead>

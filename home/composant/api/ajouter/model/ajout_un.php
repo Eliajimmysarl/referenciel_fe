@@ -4,7 +4,7 @@
 
     $application_id=$_POST['application_id'];
 
-    $couche=$_POST['couche'];
+    $entite_id=$_POST['entite_id'];
 
     $composant_id=$_POST['composant_id'];
 
@@ -17,7 +17,7 @@
         
         'application_id' => $application_id,
 
-        'couche'=> $couche,
+        'entite_id'=> $entite_id,
 
         'composant_id'=> $composant_id,
 
@@ -26,12 +26,11 @@
         'uri'=> $uri
     
     );
-
     $result=curl_post($uri, $token, $data);
   
-    $apis=json_decode($result);
-
-    $code = $entites->code;
+    $api=json_decode($result);
+ 
+    $code = $api->code;
         
     if($code ==201)
             {   
