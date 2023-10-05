@@ -49,12 +49,12 @@
     $result=curl_post($uri, $token, $data);
   
     $donnee_persistante=json_decode($result);
-echo"$result";
+
     $code = $donnee_persistante->code;
         
     if($code ==201)
             {   
-                require_once('composant/donnee_persistante/ajout_un/view/reponse_positive.php'); 
+                require_once('composant/donnee_persistante/ajouter/view/reponse_positive.php'); 
             }
         else    
             {

@@ -44,7 +44,7 @@
 											for($i=0; $i < count($applications); $i++)
 												{         
 													echo"  
-															<option value=". $Applications[$i]->id ."> ". $applications[$i]->nom ."</option>                       
+													<option value=". $applications[$i]->id ."> ". $applications[$i]->nom ."</option>                                              
 															
 													";
 																
@@ -154,21 +154,6 @@
 							</div>
 					</div>
 
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Type <abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="type" id="selec"  class="form-control" required="required">
-									<option value="" selected>Type</option>
-										<option value="date">date</option>
-										<option value="INT">INT</option>
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
-
 					
                     <div class="form-group"> 
 
@@ -178,13 +163,13 @@
                         
 							<div class="radio"> 
 								<label> 
-									<input type="radio" name="cle_primaire" id="cle_primaire" value="1" checked="">Oui
+									<input type="radio" name="cle_primaire" id="cle_primaire" value="1" >Oui
 								</label> 
 							</div>
 
 							<div class="radio">
 								<label> 
-									<input type="radio" name="cle_primaire" id="cle_primaire" value="1">Non
+									<input type="radio" name="cle_primaire" id="cle_primaire" value="2">Non
 								</label>   
 							</div> 
                          
@@ -200,13 +185,13 @@
                         
 							<div class="radio"> 
 								<label> 
-									<input type="radio" name="indexe" id="Index1" value="cle etrangeur" >Etrangere
+									<input type="radio" name="indexe" id="Index1" value="1" >Etrangere
 								</label> 
 							</div>
 
 							<div class="radio">
 								<label> 
-									<input type="radio" name="indexe" id="Index2" value="unique">Unique
+									<input type="radio" name="indexe" id="Index2" value="2">Unique
 								</label>   
 							</div> 
 
@@ -215,28 +200,6 @@
 						</div>
                          
 					</div>
-
-					<div class="form-group"> 
-
-			<label class="col-sm-3 control-label">Null <abbr style="color:green; font-size:15px;">**</abbr></label>			
-
-	  <div class="col-sm-offset-3 col-sm-5"> 
-	
-		<div class="radio"> 
-			<label> 
-				<input type="radio" name="null" id="optionsRadios1" value="Yes" >YES
-			</label> 
-		</div>
-
-		<div class="radio">
-					<label> 
-						<input type="radio" name="null" id="optionsRadios2" value="No">No
-					</label>   
-				</div> 
-			
-			</div>
-			
-		</div>
 
 
 					<div class="form-group">
