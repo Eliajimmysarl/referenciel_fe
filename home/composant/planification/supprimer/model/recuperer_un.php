@@ -8,7 +8,7 @@ $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $planifications= $obj->planifications;
+    $planifications= $obj->planification;
 
     $code =  $obj->code;
 
@@ -20,7 +20,6 @@ $result=curl_get($uri, $token);
 
             $remarque=$planifications[0]->remarque;
 
-            $status=$planifications[0]->status;
 
             $date_debut=$planifications[0]->date_debut;
             

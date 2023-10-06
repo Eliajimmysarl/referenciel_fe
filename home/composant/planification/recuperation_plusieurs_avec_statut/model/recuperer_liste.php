@@ -6,7 +6,7 @@
 
     $obj = json_decode($result);                      
     
-    $planifications= $obj->planifications;
+    $planifications= $obj->planification;
   
     
     $code = $obj->code;
@@ -15,7 +15,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/planification/recuperation_plusieurs_avec_dependance/view/demande_recuperation.php'); 
+            require_once('composant/planification/recuperation_plusieurs_avec_statut/view/demande_recuperation.php'); 
         }
     else
         {

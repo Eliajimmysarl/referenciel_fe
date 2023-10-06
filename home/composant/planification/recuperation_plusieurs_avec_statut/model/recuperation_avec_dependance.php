@@ -10,18 +10,15 @@
     
     $data = array(
 
-        'user_id'=> $user_id;
-
         'status'=> $status
 
-    
     );
 
     $result=curl_get_data($uri, $token, $data);
 
     $obj = json_decode($result);   
        
-    $planifications= $obj->planifications;
+    $planifications= $obj->planification;
 
     $code = $obj->code;
 
@@ -29,7 +26,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/planification/recuperation_plusieurs_avec_dependance/view/recuperation_plusieurs.php'); 
+            require_once('composant/planification/recuperation_plusieurs_avec_statut/view/recuperation_plusieurs.php'); 
         }
         else
         {

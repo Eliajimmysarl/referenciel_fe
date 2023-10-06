@@ -71,7 +71,7 @@
 
 							<td>". $composants[$i]->descriptions ."</td>
 							
-							<td>". $composants[$i]->url_code ."</td>
+							<td><a href='". $composants[$i]->url_code ."' target=_blank>Voir le code</a></td>
 					
 					<td> <a href='?page=modification_composant&id=". $composants[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> </td>
 				</tr>";

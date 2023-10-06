@@ -2,10 +2,23 @@
 
     $uri =  $authority.'/planification/';
 
-    $result=curl_get($uri, $token);
+    $user_id=$_POST['user_id'];
 
-    $obj = json_decode($result);                      
+  
+
+ 
     
+    $data = array(
+
+        'user_id'=> $user_id
+
+    
+    );
+
+    $result=curl_get_data($uri, $token, $data);
+
+    $obj = json_decode($result);   
+       
     $planifications= $obj->planification;
 
     $code = $obj->code;
@@ -14,7 +27,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/planification/recuperer_plusieurs/view/recuperation_plusieurs.php'); 
+            require_once('composant/planification/recuperation_plusieurs_avec_user/view/recuperation_plusieurs.php'); 
         }
         else
         {

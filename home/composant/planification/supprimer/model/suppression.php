@@ -8,7 +8,7 @@ $uri = $authority."/planification/".$id;
 $result=curl_delete($uri, $token);
 
     $obj = json_decode($result);                      
-    $planifications= $obj->planifications;
+    $planifications= $obj->planification;
 
     $code =  $obj->code;
 

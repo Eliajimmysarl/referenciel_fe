@@ -40,7 +40,7 @@
 					<TH>User</TH>
 					<TH>Composant</TH>
 					<TH>Remarque</TH>
-					<TH>Status</TH>
+					<TH>Statut</TH>
 					<TH>Date debut</TH>
 					<TH>Date fin</TH>
 					<TH></TH>
@@ -66,14 +66,14 @@
 
 							<td>". $planifications[$i]->remarque ."</td>
 
-							<td>". $planifications[$i]->status ."</td>
+							<td>". $planifications[$i]->statut ."</td>
 
 							<td>". $planifications[$i]->date_debut ."</td>
 
 							<td>". $planifications[$i]->date_fin ."</td>
 		
 							
-							<td><a href='?page=recuperation_un&id=". $planifications[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
+							<td><a href='?page=recuperation_un_planification&id=". $planifications[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
 				 		
 						</tr>";
 						         

@@ -1,51 +1,50 @@
 <hr/>
 
-	<ol class="breadcrumb bc-3" >
+<ol class="breadcrumb bc-3">
+	<li>
+		<a href="?home"><i class="fa fa-home"></i>Home</a>
+	</li>
+	<li>
+		<a href="?page=recuperer_modeles">Planification</a>
+	</li>
+	<li class="active">
+		<strong>Recuperer</strong>
+	</li>
+</ol>
 
-		<li>
-			<a href="?home"><i class="fa fa-home"></i>Home</a>
-		</li>
-
-		<li>
-			<a href="?page=recuperer_modeles">Planification</a>
-		</li>
-
-		<li class="active">
-			<strong>Recuperer</strong>
-		</li>
-
-	</ol>
 								
-	<br/>
+		
+		<br/>
 		
 		<script type="text/javascript">
-			jQuery( document ).ready( function( $ ) {
-				var $table1 = jQuery( '#table-1' );
-				
-				// Initialize DataTable
-				$table1.DataTable( {
-					"aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
-					"bStateSave": true
-				});
-				
-				// Initalize Select Dropdown after DataTables is created
-				$table1.closest( '.dataTables_wrapper' ).find( 'select' ).select2( {
-					minimumResultsForSearch: -1
-				});
-			} );
+		jQuery( document ).ready( function( $ ) {
+			var $table1 = jQuery( '#table-1' );
+			
+			// Initialize DataTable
+			$table1.DataTable( {
+				"aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+				"bStateSave": true
+			});
+			
+			// Initalize Select Dropdown after DataTables is created
+			$table1.closest( '.dataTables_wrapper' ).find( 'select' ).select2( {
+				minimumResultsForSearch: -1
+			});
+		} );
 		</script>
 		
 		<table class="table table-bordered datatable" id="table-1">
 			<thead>
-			<tr>
+				<tr>
 				    <TH>#</TH>
 					<TH>User</TH>
 					<TH>Composant</TH>
 					<TH>Remarque</TH>
-					<TH>Statut</TH>
+					<TH>Status</TH>
 					<TH>Date debut</TH>
 					<TH>Date fin</TH>
-                    <TH></TH>
+					<TH></TH>
+
 				</tr>
 			</thead>
 			<tbody>
@@ -67,19 +66,21 @@
 
 							<td>". $planifications[$i]->remarque ."</td>
 
-							<td>". $planifications[$i]->statut ."</td>
+							<td>". $planifications[$i]->status ."</td>
 
 							<td>". $planifications[$i]->date_debut ."</td>
 
 							<td>". $planifications[$i]->date_fin ."</td>
 		
-							<td> <a href='?page=demande_supprimer_planification&id=". $planifications[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
-					</tr>";
+							
+							<td><a href='?page=recuperation_un&id=". $planifications[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
+				 		
+						</tr>";
 						         
 				}
 				?>
-            </tbody>
-            <thead>
+
+               <thead>
 				<tr>
 					<TH>#</TH>
 					<TH>User</TH>
@@ -88,7 +89,8 @@
 					<TH>Status</TH>
 					<TH>Date debut</TH>
 					<TH>Date fin</TH>
-                    <TH></TH>
+					<TH></TH>
+
 				</tr>
 			</thead>
 		</table>

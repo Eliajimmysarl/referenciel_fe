@@ -65,7 +65,7 @@
 
 							<td>". $planifications[$i]->remarque ."</td>
 
-							<td>". $planifications[$i]->status ."</td>
+							<td>". $planifications[$i]->statut ."</td>
 
 							<td>". $planifications[$i]->date_debut ."</td>
 

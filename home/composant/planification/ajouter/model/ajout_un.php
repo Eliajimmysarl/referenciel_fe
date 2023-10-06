@@ -8,6 +8,8 @@
 
     $remarque=$_POST['remarque'];
 
+    $statut=$_POST['statut'];
+
     $date_debut=$_POST['date_debut'];
 
     $date_fin=$_POST['date_fin'];
@@ -21,7 +23,7 @@
 
         'remarque'=> $remarque,
 
-        'status'=> $status,
+        'statut'=> $statut,
 
         'date_debut'=> $date_debut,
 
@@ -30,11 +32,11 @@
     );
 
     $result=curl_post($uri, $token, $data);
-  
-    $planifications=json_decode($result);
+    
+    $planification=json_decode($result);
 
-    $code = $planifications->code;
-        
+    $code = $planification->code;
+
     if($code ==201)
             {   
                 require_once('composant/planification/ajouter/view/reponse_positive.php'); 

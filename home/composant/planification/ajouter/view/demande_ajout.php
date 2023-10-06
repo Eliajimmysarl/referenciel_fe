@@ -31,7 +31,7 @@
 					
 			<div class="panel-body">
 						
-				<form method="POST" action="index.php?demande=ajouter_un_avec_dependance"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
+				<form method="POST" action="index.php?demande=ajouter_un_planification"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
 
 					<div class="form-group">		
@@ -46,7 +46,7 @@
 											for($i=0; $i < count($users); $i++)
 												{         
 													echo"  
-															<option value=". $users[$i]->id ."> ". $users[$i]->nom ."</option>                       
+															<option value=". $users[$i]->email ."> ". $users[$i]->nom ."/". $users[$i]->email ."</option>                       
 															
 													";
 																
@@ -101,10 +101,11 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="status" id="selec"  class="form-control" required="required">
+									<select  name="statut" id="selec"  class="form-control" required="required">
 									<option value="" selected>Status</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
+										<option value="1">Debut</option>
+										<option value="2">Encour</option>
+										<option value="3">FIn</option>
                                     </select>
 									<span class="input-group-addon"><i class=""></i></span>
 								</div>

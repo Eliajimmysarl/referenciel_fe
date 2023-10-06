@@ -1,25 +1,28 @@
 <?php
 
-    $uri =  $authority.'/planification/';
-
+    $uri =  $authority2.'/client/';
+   
     $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
     
-    $planifications= $obj->planification;
-
+    $users= $obj->user;
+  
+    
     $code = $obj->code;
 
     if($code ==200)
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/planification/recuperer_plusieurs/view/recuperation_plusieurs.php'); 
+            require_once('composant/planification/recuperation_plusieurs_avec_user/view/demande_recuperation.php'); 
         }
-        else
+    else
         {
             echo "verifier le code sources ";  
         }
+
+   
 
 
 ?>

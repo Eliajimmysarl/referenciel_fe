@@ -68,14 +68,14 @@
 
 							<td>". $planifications[$i]->remarque ."</td>
 
-							<td>". $planifications[$i]->status ."</td>
+							<td>". $planifications[$i]->statut ."</td>
 
 							<td>". $planifications[$i]->date_debut ."</td>
 
 							<td>". $planifications[$i]->date_fin ."</td>
 		
 					
-					<td> <a href='?page=modification&id=". $planifications[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> </td>
+					<td> <a href='?page=modification_un_planificaton&id=". $planifications[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> </td>
 				</tr>";
 						         
 				}

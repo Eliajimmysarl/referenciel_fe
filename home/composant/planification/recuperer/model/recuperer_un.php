@@ -7,7 +7,7 @@ $uri = $authority."/planification/".$id;
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
-                      
+    echo"$result";
     $planifications= $obj->planification;
 
     $code =  $obj->code;
@@ -20,15 +20,13 @@ $result=curl_get($uri, $token);
 
             $remarque=$planifications[0]->remarque;
 
-            $status=$planifications[0]->status;
+            $statut=$planifications[0]->statut;
 
             $date_debut=$planifications[0]->date_debut;
             
             $date_fin=$planifications[0]->date_fin;
 
-            $id=$entites[0]->id;
-        
-
+            $id=$planifications[0]->id;
           
             require_once('composant/planification/recuperer/view/recuperation_un.php'); 
         }

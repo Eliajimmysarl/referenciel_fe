@@ -1,7 +1,7 @@
 <?php 
     //Authority for URI
     $authority="http://develop.eliajimmy.net/referentiel";
-
+    $authority2="http://api.eliajimmy.net";
     //Import module Curl
     require_once('composant/curl.php'); 
 
@@ -30,6 +30,11 @@
             else  if($demande=='ajouter_entite')
                 {
                     require_once('composant/entite/ajouter/model/ajout_un.php');  
+                }
+
+        else  if($demande=='ajouter_un_planification')
+                {
+                    require_once('composant/planification/ajouter/model/ajout_un.php');  
                 }
             
             else  if($demande=='ajouter_un_api')
@@ -73,13 +78,20 @@
                 {
                     require_once('composant/donnee_echange/modifier/model/modification_un.php');  
                 }
-                
+            else  if($demande=='modification_un_planification')
+                {
+                    require_once('composant/planification/modifier/model/modification_un.php');  
+                }
             else  if($demande=='suppression_application')
                 {
                     require_once('composant/application/supprimer/model/suppression.php');  
                 }
 
             else  if($demande=='suppression_un_composant')
+                {
+                    require_once('composant/composant/supprimer/model/suppression.php');  
+                }
+            else  if($demande=='suppression_un_planification')
                 {
                     require_once('composant/composant/supprimer/model/suppression.php');  
                 }
@@ -395,19 +407,31 @@
                 }
             else  if($page=='modifier_planification')
                 {
-                    require_once('composant/ajout_plusieurs/view/demande_modification.php'); 
+                    require_once('composant/planification/modifier/model/recuperer_plusieurs.php'); 
+                }
+            else  if($page=='modification_un_planificaton')
+                {
+                    require_once('composant/planification/modifier/model/recuperer_un.php'); 
                 }
             else if($page=='supprimer_planification')
                 {
-                    require_once('composant/ajout_un_avec_dependance/model/recuperer_liste.php');
+                    require_once('composant\planification\supprimer\model\recuperer_plusieurs.php');
+                }
+            else if($page=='demande_supprimer_planification')
+                {
+                    require_once('composant\planification\supprimer\model\recuperer_un.php');
                 }
             else  if($page=='recuperes_planifications')
                 {
-                    require_once('composant/ajout_plusieurs/view/demande_ajout.php'); 
+                    require_once('composant/planification/recuperer_plusieurs/model/recuperer_plusieurs.php'); 
                 } 
             else  if($page=='recuperer_planification')
                 {
-                    require_once('composant/recuperation_plusieurs/model/recuperer_plusieurs.php'); 
+                    require_once('composant\planification\recuperer\model\recuperer_plusieurs.php'); 
+                }
+            else  if($page=='recuperation_un_planification')
+                {
+                    require_once('composant\planification\recuperer\model\recuperer_un.php'); 
                 }
 
 

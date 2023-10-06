@@ -33,7 +33,7 @@
 
 											<td>Remarque :</td><td>". $remarque ." </td>
 
-											<tr><td>Status : </td><td> " . $status." </td>
+											<tr><td>Statut : </td><td> " . $statut." </td>
 			
 											<tr><td>Date debut : </td><td> ". $date_debut." </td>
 

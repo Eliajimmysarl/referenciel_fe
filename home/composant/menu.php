@@ -374,6 +374,12 @@
 						</li>
 
 						<li>
+							<a href="?page=recuperer_planification">
+								<span class="title">Recuperer</span>
+							</a>
+						</li> 
+
+						<li>
 							<a href="?page=recuperes_planifications">
 								<span class="title">Recuperers plusieurs</span>
 							</a>
