@@ -34,11 +34,23 @@
 				<form method="POST" action="index.php?demande=ajouter_un_donnee_persistante"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
 				<div class="form-group">		
+						<label class="col-sm-3 control-label" >Nom <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="nom" class="form-control" placeholder="nom" required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
+								</div>
+							</div>
+					</div>
+
+
+				<div class="form-group">		
 						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="application_id" id="selec"  class="form-control" required="required">
+									<select  name="application_id" id="selec"  class="form-control" >
 									<option value="" selected>Application</option>
 									
 										<?php
@@ -63,7 +75,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="entite_id" id="selec"  class="form-control" required="required">
+									<select  name="entite_id" id="selec"  class="form-control" >
 									<option value="" selected>Entite</option>
 									
 										<?php
@@ -83,24 +95,56 @@
 							</div>
 					</div>
 
+				
+
+					
+
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Nom <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label">Types<abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="nom" class="form-control" placeholder="nom" required="required">
+									<select  name="types" id="selec"  class="form-control" >
+									<option value="" selected>Types</option>
+										<option value="string">String</option>
+										<option value="int">Int</option>
+                                    </select>
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+
+					
+					<div class="form-group">		
+						<label class="col-sm-3 control-label" >Taille <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="number" name="taille" class="form-control" placeholder="Taille" >
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
 					</div>
 
 
+
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Taille <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label" >Valeur  <abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="number" name="taille" class="form-control" placeholder="Taille" required="required">
+									<input type="text" name="valeur" class="form-control" placeholder="valeur " >
+									<span class="input-group-addon"><i class="r"></i></span>
+								</div>
+							</div>
+					</div>
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label" >Defaut <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="number" name="defaut" class="form-control" placeholder="Defaut" >
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
@@ -112,44 +156,6 @@
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-pencil"></i></span>
 									<textarea class="form-control" name="descriptions" id="textAreaExample6" rows="3"></textarea>
-									<span class="input-group-addon"><i class="r"></i></span>
-								</div>
-							</div>
-					</div>
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Types<abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="types" id="selec"  class="form-control" required="required">
-									<option value="" selected>Types</option>
-										<option value="string">String</option>
-										<option value="int">Int</option>
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
-
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Valeur  <abbr style="color:green; font-size:15px;">**</abbr></label>
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="valeur" class="form-control" placeholder="valeur " required="required">
-									<span class="input-group-addon"><i class="r"></i></span>
-								</div>
-							</div>
-					</div>
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Defaut <abbr style="color:green; font-size:15px;">**</abbr></label>
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="number" name="defaut" class="form-control" placeholder="Defaut" required="required">
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>

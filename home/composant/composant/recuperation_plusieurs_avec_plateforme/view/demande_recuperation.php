@@ -31,7 +31,7 @@
 					
 			<div class="panel-body">
 						
-				<form method="POST" action="index.php?demande=recuperation_avec_dependance"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
+				<form method="POST" action="index.php?demande=recuperation_avec_plateforme"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
 					<div class="form-group">		
 						<label class="col-sm-3 control-label">Plateforme <abbr style="color:green; font-size:15px;">**</abbr></label>			

@@ -71,7 +71,8 @@
 
 							<td>". $composants[$i]->descriptions ."</td>
 							
-							<td>". $composants[$i]->url_code ."</td>
+							<td><a href='". $composants[$i]->url_code ."' target=_blank>Voir le code</a></td>
+					
 		
 						<td> <a href='?page=demande_supprimer_composant&id=". $composants[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> </td>
 					</tr>";

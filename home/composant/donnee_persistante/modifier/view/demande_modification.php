@@ -32,6 +32,19 @@
 						
 					<input type="HIDDEN" name="id" value=<?php echo $_GET['id'];?>>	
 
+					
+					<div class="form-group">		
+						<label class="col-sm-3 control-label" >Nom <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="nom" class="form-control" value="<?php echo $nom;?>" required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
+								</div>
+							</div>
+					</div>
+
+
 					<div class="form-group">		
 						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
@@ -62,7 +75,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="entite_id" id="selec" value="<?php echo $entite_id;?>" class="form-control" required="required">
+									<select  name="entite_id" id="selec" value="<?php echo $entite_id;?>" class="form-control" >
 									<option value="" selected>Entite</option>
 									
 										<?php
@@ -82,24 +95,13 @@
 							</div>
 					</div>
 
-					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Nom <abbr style="color:green; font-size:15px;">**</abbr></label>
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="nom" class="form-control" value="<?php echo $nom;?>" required="required">
-									<span class="input-group-addon"><i class="r"></i></span>
-								</div>
-							</div>
-					</div>
-
 
 					<div class="form-group">		
 						<label class="col-sm-3 control-label" >Taille <abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="number" name="taille" class="form-control" value="<?php echo $taille;?>" required="required">
+									<input type="number" name="taille" class="form-control" value="<?php echo $taille;?>" >
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
@@ -121,7 +123,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="types" id="selec"  class="form-control" required="required">
+									<select  name="types" id="selec"  class="form-control" >
 									<option value="" selected>Types</option>
 										<option value="string">String</option>
 										<option value="int">Int</option>
@@ -137,7 +139,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="valeur" class="form-control" value="<?php echo $valeur;?>" required="required">
+									<input type="text" name="valeur" class="form-control" value="<?php echo $valeur;?>" >
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
@@ -148,7 +150,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="number" name="defaut" class="form-control" value="<?php echo $defaut;?>" required="required">
+									<input type="number" name="defaut" class="form-control" value="<?php echo $defaut;?>" >
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>

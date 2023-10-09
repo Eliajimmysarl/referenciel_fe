@@ -45,40 +45,15 @@
 							</div>
 					</div>
 
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Types<abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="types" id="selec"  class="form-control" required="required">
-									<option value="" selected>Types</option>
-										<option value="string">String</option>
-										<option value="int">Int</option>
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
 
 					
-					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Description <abbr style="color:green; font-size:15px;">**</abbr></label>
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-pencil"></i></span>
-									<textarea class="form-control" name="descriptions" id="textAreaExample6" rows="3"></textarea>
-									<span class="input-group-addon"><i class="r"></i></span>
-								</div>
-							</div>
-					</div>
-
 
 				<div class="form-group">		
 						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="application_id" id="monselect"  class="form-control" required="required">
+									<select  name="application_id" id="monselect"  class="form-control" >
 									<option value="" selected>Application</option>
 									
 										<?php
@@ -104,7 +79,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="composant_id" id="monselect"  class="form-control" required="required">
+									<select  name="composant_id" id="monselect"  class="form-control" >
 									<option value="" selected>Composant</option>
 									
 										<?php
@@ -129,7 +104,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="entite_id" id="monselect"  class="form-control" required="required">
+									<select  name="entite_id" id="monselect"  class="form-control" >
 									<option value="" selected>Entite</option>
 									
 										<?php
@@ -149,18 +124,48 @@
 							</div>
 					</div>
 
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Types<abbr style="color:green; font-size:15px;">**</abbr></label>			
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<select  name="types" id="selec"  class="form-control" >
+									<option value="" selected>Types</option>
+										<option value="string">String</option>
+										<option value="int">Int</option>
+                                    </select>
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+
 					
+				
 
 					<div class="form-group">		
 						<label class="col-sm-3 control-label" >Url code <abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="url_code" class="form-control" placeholder="Url code" required="required">
+									<input type="text" name="url_code" class="form-control" placeholder="Url code" >
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
 					</div>
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label" >Description <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-pencil"></i></span>
+									<textarea class="form-control" name="descriptions" id="textAreaExample6" rows="3"></textarea>
+									<span class="input-group-addon"><i class="r"></i></span>
+								</div>
+							</div>
+					</div>
+
+					
 
 					<div class="form-group">
 						

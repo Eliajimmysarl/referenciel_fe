@@ -17,7 +17,7 @@
 
     $obj = json_decode($result);   
        
-    $donnee_echange= $obj->donnee_echange;
+    $donnee_echanges= $obj->donnee_echange;
 
     $code = $obj->code;
 
@@ -25,7 +25,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/donnee_echange/recuperation_plusieurs_avec_dependance/view/recuperation_plusieurs.php'); 
+            require_once('composant/donnee_echange/recuperation_plusieurs_avec_application/view/recuperation_plusieurs.php'); 
         }
         else
         {

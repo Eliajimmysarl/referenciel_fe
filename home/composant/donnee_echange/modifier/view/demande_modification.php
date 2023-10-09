@@ -31,6 +31,17 @@
 				<form method="POST" action="index.php?demande=modification_un_tde"   id="theForm"  role="form" class="form-horizontal form-groups-bordered">
 						
 					<input type="HIDDEN" name="id" value=<?php echo $_GET['id'];?>>	
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Nom<abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="nom" value="<?php echo $nom;?>"  class="form-control">
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
                     
 					<div class="form-group">		
 						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
@@ -83,21 +94,6 @@
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Types<abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="types" id="selec"  class="form-control" required="required">
-									<option value="" selected>Types</option>
-										<option value="string">String</option>
-										<option value="int">Int</option>
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
-
-					<div class="form-group">		
 						<label class="col-sm-3 control-label">Entite <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
@@ -122,17 +118,25 @@
 							</div>
 					</div>
 
-
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Nom<abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label">Types<abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="nom" value="<?php echo $nom;?>"  class="form-control">
+									<select  name="types" id="selec"  class="form-control" required="required">
+									<option value="" selected>Types</option>
+										<option value="string">String</option>
+										<option value="int">Int</option>
+                                    </select>
 									<span class="input-group-addon"><i class=""></i></span>
 								</div>
 							</div>
 					</div>
+
+					
+
+
+				
 
 				
 					

@@ -32,7 +32,18 @@
 						
 					<input type="HIDDEN" name="id" value=<?php echo $_GET['id'];?>>	
 
-					<<div class="form-group">		
+					<div class="form-group">		
+						<label class="col-sm-3 control-label" >Nom <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="nom" class="form-control" placeholder="Nom" value=<?php echo $nom;?> required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
+								</div>
+							</div>
+					</div>
+
+					<div class="form-group">		
 						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
@@ -57,24 +68,6 @@
 							</div>
 					</div>
 
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Couche <abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="couche" id="selec"  class="form-control" required="required">
-									<option value="" selected>Couche</option>
-										<option value="interration">Interration</option>
-										<option value="processus">Processus</option>
-										<option value="entite">Entite</option>
-										<option value="non">Non</option>
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
-
-                    
 					<div class="form-group">		
 						<label class="col-sm-3 control-label">Plateforme<abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
@@ -117,30 +110,24 @@
 							</div>
 					</div>
 
-					
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Nom <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label">Couche <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="nom" class="form-control" placeholder="Nom" value=<?php echo $nom;?> required="required">
-									<span class="input-group-addon"><i class="r"></i></span>
+									<select  name="couche" id="selec"  class="form-control" required="required">
+									<option value="" selected>Couche</option>
+										<option value="interration">Interration</option>
+										<option value="processus">Processus</option>
+										<option value="entite">Entite</option>
+										<option value="non">Non</option>
+                                    </select>
+									<span class="input-group-addon"><i class=""></i></span>
 								</div>
 							</div>
 					</div>
 
-					
-					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Description <abbr style="color:green; font-size:15px;">**</abbr></label>
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-pencil"></i></span>
-									<textarea class="form-control" name="description" id="textAreaExample6" value="<?php echo $descriptions;?>" rows="3"></textarea>
-									<span class="input-group-addon"><i class="r"></i></span>
-								</div>
-							</div>
-					</div>
-
+                    		
 
 					<div class="form-group">		
 						<label class="col-sm-3 control-label" >Url code <abbr style="color:green; font-size:15px;">**</abbr></label>
@@ -148,6 +135,17 @@
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 									<input type="text" name="url_code"  value=<?php echo $url_code;?> class="form-control" placeholder="Url code" required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
+								</div>
+							</div>
+					</div>
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label" >Description <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-pencil"></i></span>
+									<textarea class="form-control" name="description" id="textAreaExample6" value="<?php echo $descriptions;?>" rows="3"></textarea>
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>

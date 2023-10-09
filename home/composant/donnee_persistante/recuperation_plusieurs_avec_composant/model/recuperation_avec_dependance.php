@@ -1,6 +1,6 @@
 <?php
 
-    $uri =  $authority.'/donnee_pesistante/';
+    $uri =  $authority.'/donnee_persistante/';
 
 
 
@@ -26,7 +26,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/donnee_pesistante/recuperation_plusieurs_avec_composant/view/recuperation_plusieurs.php'); 
+            require_once('composant/donnee_persistante/recuperation_plusieurs_avec_composant/view/recuperation_plusieurs.php'); 
         }
         else
         {

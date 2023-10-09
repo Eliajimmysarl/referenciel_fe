@@ -16,7 +16,7 @@ $result=curl_delete($uri, $token);
         {    
              
             
-            require_once('composant/entite/supprimer/view/reponse_positive.php');
+            require_once('composant\entite\supprimer\view\reponse_positive.php');
         }
         else
         {

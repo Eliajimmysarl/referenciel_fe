@@ -58,7 +58,7 @@
 
 							<td>". $entites[$i]->nom ."</td>
 
-							<td>". $entites[$i]->description ."</td>
+							<td>". $entites[$i]->descriptions ."</td>
 							
 							<td><a href='?page=recuperation_un&id=". $entites[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
 				 		

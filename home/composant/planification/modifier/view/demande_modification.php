@@ -63,7 +63,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="composant_id" id="monselect"  value="<?php echo $composant_id;?>" class="form-control" required="required">
+									<select  name="composant_id" id="monselect"  value="<?php echo $composant_id;?>" class="form-control" >
 									<option value="" selected>Composant</option>
 									
 										<?php
@@ -100,7 +100,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="status" id="selec"  class="form-control" value="<?php echo $status;?>" required="required">
+									<select  name="status" id="selec"  class="form-control" value="<?php echo $status;?>" >
 									<option value="" selected>Status</option>
 										<option value="1">1</option>
 										<option value="2">2</option>
@@ -115,7 +115,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="date" name="date_debut" class="form-control" value="<?php echo $debut_debut;?>"  required="required">
+									<input type="date" name="date_debut" class="form-control" value="<?php echo $debut_debut;?>" >
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
@@ -126,7 +126,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="date" name="date_fin" class="form-control"  value="<?php echo $date_fin;?>" required="required">
+									<input type="date" name="date_fin" class="form-control"  value="<?php echo $date_fin;?>" >
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>

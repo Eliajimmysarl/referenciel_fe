@@ -95,23 +95,7 @@
 								</div>
 							</div>
 					</div>
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Status <abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="statut" id="selec"  class="form-control" required="required">
-									<option value="" selected>Status</option>
-										<option value="1">Debut</option>
-										<option value="2">Encour</option>
-										<option value="3">FIn</option>
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
-
+					
 					<div class="form-group">		
 						<label class="col-sm-3 control-label" >Date debut <abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">

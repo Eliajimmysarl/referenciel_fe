@@ -75,6 +75,55 @@
 				<li class="has-sub">
 					<a href="?page=ajouter_un">
 					<i class="fa fa-users"></i>
+						<span class="title">Entite</span>
+					</a>
+					<ul >
+						<li>
+							<a href="?page=ajouter_entite">
+								<span class="title">Ajouter </span>
+							</a>
+						</li>
+
+						
+
+						<li>
+							<a href="?page=modifier_entite">
+								<span class="title">Modifier</span>
+							</a>
+						</li>
+
+						
+						<li>
+							<a href="?page=supprimer_entite">
+								<span class="title">Supprimer</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=recuperer_un_entite">
+								<span class="title">Recupere</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=recuperes_plusieurs_entite_application">
+								<span class="title">Recuperers par application</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=recuperes_entites">
+								<span class="title">Recuperers</span>
+							</a>
+						</li>
+												
+					</ul>
+				</li>
+
+
+				<li class="has-sub">
+					<a href="?page=ajouter_un">
+					<i class="fa fa-users"></i>
 						<span class="title">Composant</span>
 					</a>
 					<ul >
@@ -136,61 +185,7 @@
 					</ul>
 				</li>
 
-				<li class="has-sub">
-					<a href="?page=ajouter_un">
-					<i class="fa fa-users"></i>
-						<span class="title">Entite</span>
-					</a>
-					<ul >
-						<li>
-							<a href="?page=ajouter_entite">
-								<span class="title">Ajouter </span>
-							</a>
-						</li>
-
-						
-
-						<li>
-							<a href="?page=modifier_entite">
-								<span class="title">Modifier</span>
-							</a>
-						</li>
-
-						
-						<li>
-							<a href="?page=supprimer_entite">
-								<span class="title">Supprimer</span>
-							</a>
-						</li>
-
-						<li>
-							<a href="?page=recuperer_un_entite">
-								<span class="title">Recupere</span>
-							</a>
-						</li>
-
-						<li>
-							<a href="?page=recuperes_plusieurs_entite_composant">
-								<span class="title">Recuperers par composant</span>
-							</a>
-						</li>
-
-						
-						<li>
-							<a href="?page=recuperes_plusieurs_entite_application">
-								<span class="title">Recuperers par application</span>
-							</a>
-						</li>
-
-						<li>
-							<a href="?page=recuperes_entites">
-								<span class="title">Recuperers</span>
-							</a>
-						</li>
-												
-					</ul>
-				</li>
-
+				
 				<li class="has-sub">
 					<a href="?page=ajouter_un">
 					<i class="fa fa-users"></i>
@@ -386,14 +381,14 @@
 						</li>
 
 						<li>
-							<a href="?page=recuperes_planification_application">
-								<span class="title">Recuperers par application</span>
+							<a href="?page=recuperes_planification_statut">
+								<span class="title">Recuperers par statut</span>
 							</a>
 						</li>
 
 						<li>
-							<a href="?page=recuperes_planifications_composant">
-								<span class="title">Recuperers par composant</span>
+							<a href="?page=recuperes_planifications_user">
+								<span class="title">Recuperers par user</span>
 							</a>
 						</li>
 												

@@ -33,6 +33,18 @@
 						
 				<form method="POST" action="index.php?demande=ajouter_un_composant"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
+			
+				<div class="form-group">		
+						<label class="col-sm-3 control-label" >Nom <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="nom" class="form-control" placeholder="Nom" required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
+								</div>
+							</div>
+					</div>
+
 				<div class="form-group">		
 						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
@@ -58,42 +70,7 @@
 							</div>
 					</div>
 
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Couche <abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="couche" id="selec"  class="form-control" required="required">
-									<option value="" selected>Couche</option>
-										<option value="interration">Interration</option>
-										<option value="processus">Processus</option>
-										<option value="entite">Entite</option>
-										<option value="non">Non</option>
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
-
-                    
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Plateforme<abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="plateforme" id="selec"  class="form-control" required="required">
-									<option value="" selected>Plateforme</option>
-										<option value="android">Android</option>
-										<option value="web">Web</option>
-										<option value="ios">Ios</option>
-										<option value="non">Non</option>
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
-                    
-
+					
 					<div class="form-group">		
 						<label class="col-sm-3 control-label">Entite <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
@@ -119,19 +96,56 @@
 							</div>
 					</div>
 
-					
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Nom <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label">Couche <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="nom" class="form-control" placeholder="Nom" required="required">
+									<select  name="couche" id="selec"  class="form-control" >
+									<option value="" selected>Couche</option>
+										<option value="interration">Interration</option>
+										<option value="processus">Processus</option>
+										<option value="entite">Entite</option>
+										<option value="non">Non</option>
+                                    </select>
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+
+                    
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Plateforme<abbr style="color:green; font-size:15px;">**</abbr></label>			
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<select  name="plateforme" id="selec"  class="form-control" >
+									<option value="" selected>Plateforme</option>
+										<option value="android">Android</option>
+										<option value="web">Web</option>
+										<option value="ios">Ios</option>
+										<option value="non">Non</option>
+                                    </select>
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+                    
+
+
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label" >Url code <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="url_code" class="form-control" placeholder="Url code" >
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
 					</div>
 
-					
+
 					<div class="form-group">		
 						<label class="col-sm-3 control-label" >Description <abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
@@ -143,17 +157,6 @@
 							</div>
 					</div>
 
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Url code <abbr style="color:green; font-size:15px;">**</abbr></label>
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="url_code" class="form-control" placeholder="Url code" required="required">
-									<span class="input-group-addon"><i class="r"></i></span>
-								</div>
-							</div>
-					</div>
 
 					<div class="form-group">
 						

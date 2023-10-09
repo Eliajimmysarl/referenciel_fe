@@ -6,16 +6,15 @@
 
     $obj = json_decode($result);                      
     
-    $apllications= $obj->applications;
-  
+    $applications= $obj->applications;
+
     
     $code = $obj->code;
 
     if($code ==200)
         {   
-             
-            //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/entite/recuperation_plusieurs_avec_dependance/view/demande_recuperation.php'); 
+         
+            require_once('composant\entite\recuperation_plusieurs_avec_application\view\demande_recuperation.php'); 
         }
     else
         {

@@ -63,10 +63,50 @@
                 {
                     require_once('composant/entite/modifier/model/modification_un.php');  
                 }
+            else  if($demande=='recuperation_avec_entite_composant')
+                {
+                    require_once('composant\entite\recuperation_plusieurs_avec_composant\model\recuperation_avec_dependance.php');  
+                }
+
+            else  if($demande=='recuperation_avec_entite_application')
+                {
+                    require_once('composant\entite\recuperation_plusieurs_avec_application\model\recuperation_avec_dependance.php');  
+                }
 
             else  if($demande=='modification_un_composant')
                 {
                     require_once('composant/composant/modifier/model/modification_un.php');  
+                }
+
+            else  if($demande=='recuperation_avec_couche')
+                {
+                    require_once('composant\composant\recuperation_plusieurs_avec_couche\model\recuperation_avec_dependance.php');  
+                }
+
+                
+            else  if($demande=='recuperation_avec_dp_application')
+                {
+                    require_once('composant\donnee_persistante\recuperation_plusieurs_avec_application\model\recuperation_avec_dependance.php');  
+                }
+
+                else  if($demande=='recuperation_avec_user')
+                {
+                    require_once('composant\planification\recuperation_plusieurs_avec_user\model\recuperation_avec_dependance.php');  
+                }
+
+                else  if($demande=='recuperation_avec_statut')
+                {
+                    require_once('composant\planification\recuperation_plusieurs_avec_statut\model\recuperation_avec_dependance.php');  
+                }
+
+            else  if($demande=='recuperation_avec_dp_composant')
+                {
+                    require_once('composant\donnee_persistante\recuperation_plusieurs_avec_composant\model\recuperation_avec_dependance.php');  
+                }
+
+            else  if($demande=='recuperation_avec_plateforme')
+                {
+                    require_once('composant\composant\recuperation_plusieurs_avec_plateforme\model\recuperation_avec_dependance.php');  
                 }
 
             else  if($demande=='modification_un_donnee_persistance')
@@ -107,6 +147,15 @@
             else  if($demande=='suppression_un_tde')
                 {
                     require_once('composant/donnee_echange/supprimer/model/suppression.php');  
+                }
+            else  if($demande=='recuperation_avec_tde')
+                {
+                    require_once('composant\donnee_echange\recuperation_plusieurs_avec_application\model\recuperation_avec_dependance.php');  
+                }
+
+            else  if($demande=='recuperation_avec_composant_tde')
+                {
+                    require_once('composant\donnee_echange\recuperation_plusieurs_avec_composant\model\recuperation_avec_dependance.php');  
                 }
 
             else  if($demande=='suppression_entite')
@@ -177,6 +226,16 @@
             else  if($page=='ajouter_composant')
                 {
                     require_once('composant/composant/ajouter/model/recuperer_liste.php');
+                }
+
+             else  if($page=='ajouter_composant_plusieurs')
+                {
+                    require_once('composant\composant\ajout_plusieurs\view\nombre_ligne.php');
+                }
+
+            else  if($page=='ajouter_plusieurs_composant')
+                {
+                    require_once('composant\composant\ajout_plusieurs\model\recuperer_liste.php');
                 }
            
             else  if($page=='recuperes_composants')
@@ -273,7 +332,16 @@
             else  if($page=='recuperes_entites')
                 {
                     require_once('composant\entite\recuperer_plusieurs\model\recuperer_plusieurs.php'); 
-                } 
+                }
+            else  if($page=='recuperes_plusieurs_entite_application')
+                {
+                    require_once('composant\entite\recuperation_plusieurs_avec_application\model\recuperer_liste.php'); 
+                }
+                
+            else  if($page=='recuperes_plusieurs_entite_composant')
+                {
+                    require_once('composant\entite\recuperation_plusieurs_avec_composant\model\recuperer_liste.php'); 
+                }
             else  if($page=='recuperer_un_entite')
                 {
                     require_once('composant\entite\recuperer\model\recuperer_plusieurs.php');
@@ -432,6 +500,15 @@
             else  if($page=='recuperation_un_planification')
                 {
                     require_once('composant\planification\recuperer\model\recuperer_un.php'); 
+                }
+
+            else  if($page=='recuperes_planifications_user')
+                {
+                    require_once('composant\planification\recuperation_plusieurs_avec_user\model\recuperer_liste.php'); 
+                }
+            else  if($page=='recuperes_planification_statut')
+                {
+                    require_once('composant\planification\recuperation_plusieurs_avec_statut\model\recuperer_liste.php'); 
                 }
 
 
