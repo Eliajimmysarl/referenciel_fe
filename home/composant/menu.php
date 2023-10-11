@@ -1,5 +1,4 @@
-<!-- Active menu dans les entites -->
-<?php  require_once('active_menu.php'); ?>
+
 
 <div class="sidebar-menu">
 
