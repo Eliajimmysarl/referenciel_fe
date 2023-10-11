@@ -1,8 +1,8 @@
 <?php
 
-    $uri =  $authority.'/donnee_echange/';
-
     $composant_id=$_POST['composant_id'];
+
+    $uri = $authority."/donnee_echange/".$composant_id;
 
   
     $data = array(

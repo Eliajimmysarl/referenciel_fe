@@ -70,7 +70,8 @@
 
 							<td>". $composants[$i]->descriptions ."</td>
 							
-							<td>". $composants[$i]->url_code ."</td>
+							<td><button class='btn btn-info' ><a  href='". $composants[$i]->url_code ."' target=_blank  class='link-danger'>Voir le code</a></button></td>
+					
 		
 						</tr>";
 						         
@@ -82,7 +83,7 @@
                     <TH>#</TH>
 					<TH>Application</TH>
 					<TH>Couche</TH>
-					<TH>Platforme</TH>
+					<TH>Plateforme</TH>
 					<TH>Entite</TH>
 					<TH>Nom</TH>
 					<TH>Description</TH>

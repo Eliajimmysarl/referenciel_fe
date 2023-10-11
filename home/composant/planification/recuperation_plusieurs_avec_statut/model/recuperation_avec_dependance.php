@@ -1,23 +1,25 @@
 <?php
 
-    $uri =  $authority.'/planification/';
 
-    $user_id=$_POST['user_id'];
+$statut=$_POST['statut'];
 
-    $status=$_POST['status'];
+$uri = $authority."/planification/".$statut;
+
+  
+
 
  
     
     $data = array(
 
-        'status'=> $status
+        'statut'=> $statut
 
     );
 
     $result=curl_get_data($uri, $token, $data);
 
     $obj = json_decode($result);   
-       
+     
     $planifications= $obj->planification;
 
     $code = $obj->code;

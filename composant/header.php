@@ -8,7 +8,7 @@
 
         <p class="description" style="font-size: 20px;">
 
-         EJ Referenciel
+         EJ Referentiel
 			
 		</div>
 		

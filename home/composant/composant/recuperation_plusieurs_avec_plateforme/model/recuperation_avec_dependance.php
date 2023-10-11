@@ -1,9 +1,8 @@
 <?php
 
-    $uri =  $authority.'/composant/';
-
-
     $plateforme=$_POST['plateforme'];
+
+    $uri = $authority."/composant/".$plateforme;
 
 
     

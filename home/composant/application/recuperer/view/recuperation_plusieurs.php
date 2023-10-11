@@ -57,7 +57,7 @@
 				for($i=0; $i < count($applications); $i++)
 				{ 
 					$j = $i + 1;
-				echo"                         
+				echo"                      
 					<tr class='odd gradeX'>
 
 						<td>$j</td>
@@ -104,18 +104,6 @@
 		</table>
 		
 		<br />
-		
-	
-
-		
-	
-			
-		
-	
-
-
-
-
 
 	<!-- Imported styles on this page -->
 	<link rel="stylesheet" href="assets/js/datatables/datatables.css">

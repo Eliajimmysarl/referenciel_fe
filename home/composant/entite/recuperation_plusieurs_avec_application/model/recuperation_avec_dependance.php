@@ -1,9 +1,8 @@
 <?php
 
-    $uri =  $authority.'/entite/';
-
     $application_id=$_POST['application_id'];
 
+    $uri = $authority."/entite/".$application_id;
  
     
     $data = array(

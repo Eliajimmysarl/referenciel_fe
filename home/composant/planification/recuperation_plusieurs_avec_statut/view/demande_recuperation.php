@@ -37,7 +37,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="status" id="selec"  class="form-control" required="required">
+									<select  name="statut" id="selec"  class="form-control" required="required">
 									<option value="" selected>Statut</option>
 										<option value="1">Debut</option>
 										<option value="2">Encoure</option>

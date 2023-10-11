@@ -1,8 +1,9 @@
 <?php
 
-    $uri =  $authority.'/donnee_persistante/';
 
     $application_id=$_POST['application_id'];
+
+    $uri = $authority."/donnee_persistante/".$application_id;
 
     
     $data = array(

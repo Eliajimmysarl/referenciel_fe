@@ -3,7 +3,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Ej Referenciel" />
+	<meta name="description" content="Ej Referentiel" />
     <meta name="author" content="" />
 	<link rel="icon" href="home/assets/images/hk.svg">
 	<title>Referenciel</title>

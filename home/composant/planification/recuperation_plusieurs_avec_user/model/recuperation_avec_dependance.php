@@ -1,12 +1,9 @@
 <?php
 
-    $uri =  $authority.'/planification/';
+$user_id=$_POST['user_id'];
 
-    $user_id=$_POST['user_id'];
+$uri = $authority."/planification/".$user_id;
 
-  
-
- 
     
     $data = array(
 

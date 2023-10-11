@@ -1,8 +1,8 @@
 <?php
 
-    $uri =  $authority.'/composant/';
-
     $couche=$_POST['couche'];
+
+    $uri = $authority."/composant/".$couche;
    
     
     $data = array(
