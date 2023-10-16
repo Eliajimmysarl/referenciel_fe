@@ -59,9 +59,9 @@
 
 							<td>$j</td>
 
-							<td > " . $entites[$i]->application_id ."</td>
+							<td > " . $entites[$i]->application_nom ."</td>
 
-							<td>". $entites[$i]->nom ."</td>
+							<td>". $entites[$i]->entite_nom ."</td>
 
 							<td>". $entites[$i]->descriptions ."</td>
 		

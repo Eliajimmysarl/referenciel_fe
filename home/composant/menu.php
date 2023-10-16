@@ -458,62 +458,62 @@
 						<span class="title">Planification</span>
 					</a>
 					<ul >
-						<li>
-						<a href="">
-								<span class="title">Gerer </span>
-							</a>
-                            <ul >
-                            <li>
-							<a href="?page=ajouter_planification">
-								<span class="title">Ajouter </span>
-							</a>
-							</li>
 							<li>
-							<a href="?page=modifier_planification">
-								<span class="title">Modifier</span>
-							</a>
-						</li>
+									<a href="">
+										<span class="title">Gerer </span>
+									</a>
+								<ul >
+									<li>
+										<a href="?page=ajouter_planification">
+											<span class="title">Ajouter </span>
+										</a>
+									</li>
+									<li>
+										<a href="?page=modifier_planification">
+											<span class="title">Modifier</span>
+										</a>
+									</li>
 
-						
-						<li>
-							<a href="?page=supprimer_planification">
-								<span class="title">Supprimer</span>
-							</a>
-						</li>
+							
+									<li>
+										<a href="?page=supprimer_planification">
+											<span class="title">Supprimer</span>
+										</a>
+									</li>
 
-						<li>
-							<a href="?page=recuperer_planification">
-								<span class="title">Recuperer</span>
-							</a>
-						</li> 
-						</ul>
+									<li>
+										<a href="?page=recuperer_planification">
+											<span class="title">Recuperer</span>
+										</a>
+									</li> 
+							</ul>
 						</li>
                         <li>
 							<a href="">
 								<span class="title">Cartographie</span>
 							</a>
-						<ul>
-						<li>
-							<a href="?page=recuperes_planifications">
-								<span class="title">Recuperers plusieurs</span>
-							</a>
-						</li>
+							<ul>
+							<li>
+								<a href="?page=recuperes_planifications">
+									<span class="title">Recuperers plusieurs</span>
+								</a>
+							</li>
 
-						<li>
-							<a href="?page=recuperes_planification_statut">
-								<span class="title">Recuperers par statut</span>
-							</a>
-						</li>
+							<li>
+								<a href="?page=recuperes_planification_statut">
+									<span class="title">Recuperers par statut</span>
+								</a>
+							</li>
 
-						<li>
-							<a href="?page=recuperes_planifications_user">
-								<span class="title">Recuperers par user</span>
-							</a>
-						</li>
+							<li>
+								<a href="?page=recuperes_planifications_user">
+									<span class="title">Recuperers par user</span>
+								</a>
+							</li>
 						<ul>
 					  </li>
 
-					</ul>
+				
 
 				</li>
 
