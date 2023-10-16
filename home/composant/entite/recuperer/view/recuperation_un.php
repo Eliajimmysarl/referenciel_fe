@@ -27,7 +27,7 @@
 									echo"
 										<tr>
 										
-											<td>Application :</td><td>". $application_id ." </td>
+											<td>Application :</td><td>". $application_nom." </td>
 											
 											<tr><td>Nom : </td><td> " . $nom." </td>
 			

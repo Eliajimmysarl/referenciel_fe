@@ -2,7 +2,7 @@
 
     $application_id=$_POST['application_id'];
 
-    $uri = $authority."/donnee_echange/".$application_id;
+    $uri = $authority."/donnee_echange/";
 
    
     

@@ -27,10 +27,10 @@
 										echo"
 										<tr>
 										
-											<td>Nom :</td><td>". $noms ." </td>
+											<td>Nom :</td><td>". $nom ." </td>
 											<tr><td>Type : </td><td> " . $types." </td>
-											<tr><td>Entite : </td><td> ". $entite_id." </td>
-											<tr><td>Application : </td><td> ". $application_id." </td>
+											<tr><td>Entite : </td><td> ". $entite_nom." </td>
+											<tr><td>Application : </td><td> ". $application_nom." </td>
 											<tr><td>Valeur : </td><td> ". $valeur." </td>
 											<tr><td>Description : </td><td> ". $descriptions." </td>
 											<tr><td>Index : </td><td> ". $indexe." </td>

@@ -98,7 +98,7 @@
 											for($i=0; $i < count($entites); $i++)
 												{         
 													echo"  
-															<option value=". $entites[$i]->id ."> ". $entites[$i]->nom ."</option>                       
+															<option value=". $entites[$i]->id ."> ". $entites[$i]->entite_nom ."</option>                       
 															
 													";
 																

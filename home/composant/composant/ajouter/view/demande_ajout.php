@@ -77,13 +77,13 @@
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 									<select  name="entite_id" id="monselect"  class="form-control" required="required">
-									<option value="" selected>Application</option>
+									<option value="" selected>Entite</option>
 									
 										<?php
 											for($i=0; $i < count($entites); $i++)
 												{         
 													echo"  
-															<option value=". $entites[$i]->id ."> ". $entites[$i]->nom ."</option>                       
+															<option value=". $entites[$i]->id ."> ". $entites[$i]->entite_nom ."</option>                       
 															
 													";
 																

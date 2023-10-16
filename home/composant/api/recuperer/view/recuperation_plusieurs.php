@@ -59,11 +59,11 @@
 
 						<td>$j</td>
 
-						<td > " . $apis[$i]->application_id ."</td>
+						<td > " . $apis[$i]->application_nom ."</td>
 
-						<td>". $apis[$i]->composant_id ."</td>
+						<td>". $apis[$i]->composant_nom ."</td>
 
-						<td>". $apis[$i]->entite_id ."</td>
+						<td>". $apis[$i]->entite_nom ."</td>
 
 						<td>". $apis[$i]->methode ."</td>
 

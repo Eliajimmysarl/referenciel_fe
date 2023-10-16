@@ -27,10 +27,10 @@
 										echo"
 										<tr>
 										
-										<td>Application :</td><td>". $application_id ." </td>
+										<td>Application :</td><td>". $application_nom ." </td>
+										<tr><td>Entite : </td><td> ". $entite_nom." </td>
 										<tr><td>Couche : </td><td> " . $couche." </td>
 		                            	<tr><td>Platforme : </td><td> ". $plateforme." </td>
-										<tr><td>Platforme : </td><td> ". $entite_id." </td>
 										<tr><td>Nom : </td><td> ". $nom." </td>
 										<tr><td>Description : </td><td> ". $descriptions." </td>
 										<tr><td>Url code: </td><td> ". $url_code." </td>

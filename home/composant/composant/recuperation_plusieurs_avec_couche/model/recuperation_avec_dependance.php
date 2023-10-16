@@ -1,9 +1,9 @@
 <?php
 
-    $couche=$_POST['couche'];
 
-    $uri = $authority."/composant/".$couche;
+    $uri = $authority."/composant/";
    
+    $couche=$_POST['couche'];
     
     $data = array(
 

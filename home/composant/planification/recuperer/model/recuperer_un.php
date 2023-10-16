@@ -16,7 +16,7 @@ $result=curl_get($uri, $token);
         {   
             $user_id=$planifications[0]->user_id; 
 
-            $composant_id=$planifications[0]->composant_id;
+            $nom=$planifications[0]->nom;
 
             $remarque=$planifications[0]->remarque;
 

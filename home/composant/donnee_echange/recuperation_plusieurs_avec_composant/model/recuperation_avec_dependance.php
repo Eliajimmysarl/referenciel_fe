@@ -2,17 +2,14 @@
 
     $composant_id=$_POST['composant_id'];
 
-    $uri = $authority."/donnee_echange/".$composant_id;
+    $uri = $authority."/donnee_echange/";
 
   
     $data = array(
 
-      
-
         'composant_id'=> $composant_id,
 
      
-    
     );
 
     $result=curl_get_data($uri, $token, $data);

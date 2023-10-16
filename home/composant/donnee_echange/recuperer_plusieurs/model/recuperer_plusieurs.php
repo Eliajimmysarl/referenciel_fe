@@ -5,7 +5,7 @@
     $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
-    
+
     $donnee_echanges= $obj->donnee_echange;
 
     $code = $obj->code;

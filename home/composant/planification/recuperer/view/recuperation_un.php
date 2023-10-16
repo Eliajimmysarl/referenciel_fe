@@ -29,7 +29,7 @@
 										
 											<td>User :</td><td>". $user_id ." </td>
 
-											<td>Composant :</td><td>". $composant_id ." </td>
+											<td>Composant :</td><td>". $nom ." </td>
 
 											<td>Remarque :</td><td>". $remarque ." </td>
 

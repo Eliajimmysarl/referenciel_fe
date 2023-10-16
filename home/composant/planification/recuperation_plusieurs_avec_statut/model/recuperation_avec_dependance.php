@@ -3,7 +3,7 @@
 
 $statut=$_POST['statut'];
 
-$uri = $authority."/planification/".$statut;
+$uri = $authority."/planification/";
 
   
 

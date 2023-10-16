@@ -66,9 +66,9 @@
 
 				<td>". $donnee_persistantes[$i]->types ."</td>
 
-				<td>". $donnee_persistantes[$i]->application_id ."</td>
+				<td>". $donnee_persistantes[$i]->application_nom ."</td>
 
-				<td>". $donnee_persistantes[$i]->entite_id ."</td>
+				<td>". $donnee_persistantes[$i]->entite_nom ."</td>
 
 				<td>". $donnee_persistantes[$i]->valeur ."</td>
 

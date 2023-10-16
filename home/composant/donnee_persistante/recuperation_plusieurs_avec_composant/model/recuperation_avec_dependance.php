@@ -2,7 +2,7 @@
 
     $composant_id=$_POST['composant_id'];
 
-    $uri = $authority."/donnee_persistante/".$composant_id;
+    $uri = $authority."/donnee_persistante/";
     
     $data = array(
 

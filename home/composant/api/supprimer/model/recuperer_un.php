@@ -14,11 +14,11 @@ $result=curl_get($uri, $token);
 
     if($code ==200)
         {   
-            $application_id=$apis[0]->application_id; 
+            $application_nom=$apis[0]->application_nom; 
 
-            $entite_id=$apis[0]->entite_id;
+            $entite_nom=$apis[0]->entite_nom;
 
-            $compsant_id=$apis[0]->composant_id;
+            $compsant_nom=$apis[0]->composant_nom;
             
             $methode=$apis[0]->methode;
             

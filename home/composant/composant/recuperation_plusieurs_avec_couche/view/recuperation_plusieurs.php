@@ -58,13 +58,13 @@
 
 							<td>$j</td>
 
-							<td > " . $composants[$i]->application_id ."</td>
+							<td > " . $composants[$i]->application_nom ."</td>
 
 							<td>". $composants[$i]->couche ."</td>
 
 							<td>". $composants[$i]->plateforme ."</td>
 
-							<td>". $composants[$i]->entite_id ."</td>
+							<td>". $composants[$i]->entite_nom ."</td>
 
 							<td>". $composants[$i]->nom ."</td>
 

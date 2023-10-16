@@ -2,7 +2,7 @@
 
     $plateforme=$_POST['plateforme'];
 
-    $uri = $authority."/composant/".$plateforme;
+    $uri = $authority."/composant/";
 
 
     

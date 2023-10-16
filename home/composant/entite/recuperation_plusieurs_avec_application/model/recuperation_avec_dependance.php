@@ -15,7 +15,7 @@
     $result=curl_get_data($uri, $token, $data);
 
     $obj = json_decode($result);   
-    echo"$result";   
+    
     $entites= $obj->entite;
 
     $code = $obj->code;

@@ -7,18 +7,18 @@ $uri = $authority."/donnee_persistante/".$id;
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
-
+echo"$result";
     $donnee_persistantes= $obj->donnee_persistante;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $application_id=$donnee_persistantes[0]->application_id; 
+            $application_nom=$donnee_persistantes[0]->application_nom; 
 
-            $entite_id=$donnee_persistantes[0]->entite_id;
+            $entite_nom=$donnee_persistantes[0]->entite_nom;
 
-            $noms=$donnee_persistantes[0]->nom;
+            $nom=$donnee_persistantes[0]->nom;
             
             $types=$donnee_persistantes[0]->types;
             

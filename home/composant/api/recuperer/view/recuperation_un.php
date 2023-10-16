@@ -27,9 +27,9 @@
 										echo"
 										<tr>
 										
-										<td>Application :</td><td>". $application_id ." </td>
-										<tr><td>Composant : </td><td> " . $composant_id." </td>
-										<tr><td>Couche : </td><td> ". $entite_id." </td>
+										<td>Application :</td><td>". $application_nom ." </td>
+										<tr><td>Composant : </td><td> " . $composant_nom." </td>
+										<tr><td>Couche : </td><td> ". $entite_nom." </td>
 										<tr><td>Methode : </td><td> ". $methode." </td>
 										<tr><td>Uri : </td><td> ". $uri." </td>
 										

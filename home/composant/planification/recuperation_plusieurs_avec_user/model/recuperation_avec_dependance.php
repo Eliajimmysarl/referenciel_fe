@@ -2,7 +2,7 @@
 
 $user_id=$_POST['user_id'];
 
-$uri = $authority."/planification/".$user_id;
+$uri = $authority."/planification/";
 
     
     $data = array(

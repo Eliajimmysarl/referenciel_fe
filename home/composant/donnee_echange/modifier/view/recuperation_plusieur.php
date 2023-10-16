@@ -60,11 +60,11 @@
 
 						<td>$j</td>
 
-						<td > " . $donnee_echanges[$i]->application_id ."</td>
+						<td > " . $donnee_echanges[$i]->application_nom ."</td>
 
-						<td>". $donnee_echanges[$i]->composant_id ."</td>
+						<td>". $donnee_echanges[$i]->composant_nom ."</td>
 
-						<td>". $donnee_echanges[$i]->entite_id ."</td>
+						<td>". $donnee_echanges[$i]->entite_nom ."</td>
 
 						<td>". $donnee_echanges[$i]->nom ."</td>
 

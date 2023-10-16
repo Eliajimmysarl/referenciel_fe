@@ -59,9 +59,9 @@
 
 							<td>$j</td>
 
-							<td > " . $planifications[$i]->user_id ."</td>
+							<td > " . $planifications[$i]->email ."</td>
 
-							<td > " . $planifications[$i]->composant_id ."</td>
+							<td > " . $planifications[$i]->nom ."</td>
 
 							<td>". $planifications[$i]->remarque ."</td>
 
