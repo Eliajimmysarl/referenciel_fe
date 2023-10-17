@@ -5,7 +5,7 @@
     $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
-    
+
     $applications= $obj->applications;
     
     

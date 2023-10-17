@@ -163,9 +163,14 @@
                     require_once('composant/entite/supprimer/model/suppression.php');  
                 }
 
-            else  if($demande=='recuperation_avec_composant')
+            else  if($demande=='recuperation_avec_composant_api')
                 {
                     require_once('composant\api\recuperation_plusieurs_avec_composant\model\recuperation_avec_dependance.php');  
+                }
+
+            else  if($demande=='recuperation_avec_application_api')
+                {
+                    require_once('composant\api\recuperation_plusieurs_avec_application\model\recuperation_avec_dependance.php');  
                 }
 
             else  if($demande=='modification_plusieurs')

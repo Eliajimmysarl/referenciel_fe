@@ -17,14 +17,14 @@
     $obj = json_decode($result);   
        
     $apis= $obj->api;
-
+echo"$result";
     $code = $obj->code;
 
     if($code ==200)
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/api/recuperation_plusieurs_avec_dependance/view/recuperation_plusieurs.php'); 
+            require_once('composant\api\recuperation_plusieurs_avec_application\view\recuperation_plusieurs.php'); 
         }
         else
         {
