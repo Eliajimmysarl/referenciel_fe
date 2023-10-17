@@ -7,20 +7,20 @@ $uri = $authority."/composant/".$id;
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
-                      
+            
     $composants= $obj->composant;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $application_id=$composants[0]->application_id; 
+            $application_nom=$composants[0]->application_nom; 
 
             $couche=$composants[0]->couche;
 
             $plateforme=$composants[0]->plateforme;
             
-            $entite_id=$composants[0]->entite_id;
+            $entite_nom=$composants[0]->entite_nom;
             
             $nom=$composants[0]->nom;
             

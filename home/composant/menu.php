@@ -370,8 +370,8 @@
 								</li>
 
 								<li>
-								<a href="?page=recuperes_donnee_persistantes_composant">
-									<span class="title">Recuperers par composant</span>
+								<a href="?page=recuperes_donnee_persistantes_entite">
+									<span class="title">Recuperers par entite</span>
 								</a>
 								</li>
 							</ul>

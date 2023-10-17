@@ -60,7 +60,7 @@
 
 						<td>$j</td>
 
-						<td > " . $apiss[$i]->application_nom ."</td>
+						<td > " . $apis[$i]->application_nom ."</td>
 
 						<td>". $apis[$i]->composant_nom ."</td>
 

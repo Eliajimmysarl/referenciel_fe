@@ -18,11 +18,11 @@ $result=curl_get($uri, $token);
 
             $types=$donnee_echanges[0]->types;
 
-            $application_id=$donnee_echanges[0]->application_id;
+            $application_nom=$donnee_echanges[0]->application_nom;
 
-            $composant_id=$donnee_echanges[0]->composant_id;
+            $composant_nom=$donnee_echanges[0]->composant_nom;
             
-            $entite_id=$donnee_echanges[0]->entite_id;
+            $entite_nom=$donnee_echanges[0]->entite_nom;
             
             $descriptions=$donnee_echanges[0]->descriptions;
         
