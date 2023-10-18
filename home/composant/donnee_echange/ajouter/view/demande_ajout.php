@@ -99,30 +99,7 @@
 							</div>
 					</div>
 
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Entite <abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="entite_id" id="monselect"  class="form-control" >
-									<option value="" selected>Entite</option>
-									
-										<?php
-											for($i=0; $i < count($entites); $i++)
-												{         
-													echo"  
-															<option value=". $entites[$i]->id ."> ". $entites[$i]->entite_nom ."</option>                       
-															
-													";
-																
-												}
-										?>
-
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
+					
 
 
 					<div class="form-group">		
@@ -140,19 +117,6 @@
 							</div>
 					</div>
 
-					
-				
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Url code <abbr style="color:green; font-size:15px;">**</abbr></label>
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="url_code" class="form-control" placeholder="Url code" >
-									<span class="input-group-addon"><i class="r"></i></span>
-								</div>
-							</div>
-					</div>
 
 					<div class="form-group">		
 						<label class="col-sm-3 control-label" >Description <abbr style="color:green; font-size:15px;">**</abbr></label>

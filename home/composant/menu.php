@@ -31,39 +31,14 @@
 			</header>      
 			<ul id="main-menu" class="main-menu">
 							
-				<li class="has-sub">
+			<li class="has-sub">
 					<a href="?page=ajouter_un">
 					<i class="fa fa-users"></i>
-						<span class="title">Application</span>
+						<span class="title">Architecture de metier</span>
 					</a>
-					<ul >
-						<li>
-							<a href="?page=modifier_application">
-								<span class="title">Gerer </span>
-							</a>
-								
-                    	</li>
-
-						<li>
-							<a href="">
-								<span class="title">Cartographie</span>
-							</a>
-
-							<ul>
-								<li>
-									<a href="?page=recuperes_applications">
-										<span class="title">Recuperers</span>
-									</a>
-								</li>
-							</ul>
-						</li>
-												
-					</ul>
-				</li>
-
-				<li class="has-sub">
-					<a href="?page=ajouter_un">
-					<i class="fa fa-users"></i>
+               <ul>
+				<li>
+					<a href="">
 						<span class="title">Entite</span>
 					</a>
 					<ul >
@@ -75,124 +50,27 @@
 						</li>
 
 						<li>
-						<a href="">
+						<a href="?page=recuperes_entites">
 								<span class="title">Cartographie</span>
 							</a>
-
-							<ul>
-
-								<li>
-									<a href="?page=recuperes_plusieurs_entite_application">
-										<span class="title">Recuperers par application</span>
-									</a>
-								</li>
-								<li>
-								<a href="?page=recuperes_entites">
-									<span class="title">Recuperers</span>
-								</a>
-							</li>
-							</ul>
-						</li>
-
-						
+						</li>		
 												
 					</ul>
 				</li>
 
-
-				<li class="has-sub">
-					<a href="?page=ajouter_un">
-					<i class="fa fa-users"></i>
-						<span class="title">Composant Entite</span>
-					</a>
-					<ul >
-						<li>
-							<a href="?page=modifier_composant">
-								<span class="title">Gerer </span>
-							</a>
-
-						</li>
-
-
-						<li>
-							<a href="">
-								<span class="title">Cartographie</span>
-							</a>
-
-							<ul>
-
-								<li>
-									<a href="?page=recuperes_composants">
-									<span class="title">Recuperers</span>
-									</a>
-								</li>
-
-								<li>
-									<a href="?page=recuperes_composants_couche">
-									<span class="title">Recuperers par couche</span>
-									</a>
-								</li>
-
-								<li>
-									<a href="?page=recuperes_composants_plateforme">
-										<span class="title">Recuperers par  plateforme</span>
-									</a>
-								</li>
-
-							</ul>
-						</li>
-
-						
-												
-					</ul>
+            	</ul>
 				</li>
-
+				
 				
 				<li class="has-sub">
 					<a href="?page=ajouter_un">
 					<i class="fa fa-users"></i>
-						<span class="title">Donnee Echange</span>
+						<span class="title">Architecture de donnees</span>
 					</a>
-					<ul >
-						<li>
-							<a href="?page=modifier_donnee_echange">
-								<span class="title">Gerer </span>
-							</a>
-						</li>
-
-						<li>
-							<a href="">
-								<span class="title">Cartographie</span>
-							</a>
-
-							<ul>
-							   <li>
-							   <a href="?page=recuperes_donnee_echanges">
-									<span class="title">Recuperers plusieurs</span>
-								</a>
-								</li>
-								<li>
-								<a href="?page=recuperes_donnee_echanges_composant">
-									<span class="title">Recuperers par composant</span>
-									</a>
-								</li>
-
-								<li>
-									<a href="?page=recuperes_donnee_echanges_application">
-										<span class="title">Recuperers application</span>
-									</a>
-								</li>
-							</ul>
-						</li>
-
-						
-												
-					</ul>
-				</li>
-
-				<li class="has-sub">
-					<a href="?page=ajouter_un">
-					<i class="fa fa-users"></i>
+                  <ul>
+					
+				<li>
+					<a href="">
 						<span class="title">Donnee Persistante</span>
 					</a>
 					<ul >
@@ -207,113 +85,160 @@
 
 						
 						<li>
-						<a href="">
+						<a href="?page=recuperes_donnee_persistantes">
 								<span class="title">Cartographie</span>
-							</a>
-							<ul>
-								<li>
-								<a href="?page=recuperes_donnee_persistantes">
-								<span class="title">Recuperers plusieurs</span>
-								</a>
-								</li>
-								<li>
-								<a href="?page=recuperes_donnee_persistantes_application">
-									<span class="title">Recuperers par application</span>
-								</a>
-								</li>
-
-								<li>
-								<a href="?page=recuperes_donnee_persistantes_entite">
-									<span class="title">Recuperers par entite</span>
-								</a>
-								</li>
-							</ul>
-						</li>
-
-					
-												
-					</ul>
-
-				</li>
-				
-				<li class="has-sub">
-					<a href="?page=ajouter_un">
-					<i class="fa fa-users"></i>
-						<span class="title">Api Entite</span>
-					</a>
-					<ul>
-						<li>
-							<a href="?page=modifier_api">
-								<span class="title">Gerer </span>
 							</a>
 							
 						</li>
+						
+					
+					<ul >
+						<li>
+							<a href="?page=modifier_donnee_echange">
+								<span class="title">Gerer </span>
+							</a>
+						</li>
 
 						<li>
-							<a href="">
+							<a href="?page=recuperes_donnee_echanges">
 								<span class="title">Cartographie</span>
 							</a>
-							<ul>
-								<li>
-									<a href="?page=recuperes_apis">
-										<span class="title">Recuperers plusieurs</span>
-									</a>
-								</li>
-								<li>
-									<a href="?page=recuperes_api_composant">
-									<span class="title">Recuperers par composant</span>
-									</a>
-								</li>
 
-								<li>
-									<a href="?page=recuperes_api_application">
-									<span class="title">Recuperers par application</span>
-									</a>
-								</li>
-							</ul>
 						</li>
 
 						
 												
 					</ul>
 				</li>
+				</ul>
+
+					</li>
+				</ul>
+				</li>
+				
+				
+				<li class="has-sub">
+					<a href="?page=ajouter_un">
+					<i class="fa fa-users"></i>
+						<span class="title">Architecture applicative</span>
+					</a>
+            
+                 	<ul>
+						<li class="">
+							<a href="?page=ajouter_un">
+									<span class="title">Api Entite</span>
+							</a>
+
+							<ul>
+								<li>
+									<a href="?page=modifier_api">
+										<span class="title">Gerer </span>
+									</a>
+									
+								</li>
+
+								<li>
+									<a href="?page=recuperes_apis">
+										<span class="title">Cartographie</span>
+									</a>
+								</li>
+													
+							</ul>
+						</li>
+						<li>
+					<a href="?page=ajouter_un">
+						<span class="title">Donnee Echange</span>
+					</a>
+					<ul >
+						<li>
+							<a href="?page=modifier_donnee_echange">
+								<span class="title">Gerer </span>
+							</a>
+						</li>
+
+						<li>
+							<a href="?page=recuperes_donnee_echanges">
+								<span class="title">Cartographie</span>
+							</a>
+
+						</li>
+
+												
+					</ul>
+				</li>
+
+				<li>
+					<a href="?page=ajouter_un">
+						<span class="title">Composant Entite</span>
+					</a>
+					<ul >
+						<li>
+							<a href="?page=modifier_composant">
+								<span class="title">Gerer </span>
+							</a>
+
+						</li>
+
+
+						<li>
+							<a href="?page=recuperes_composants">
+								<span class="title">Cartographie</span>
+							</a>
+				
+						</li>	
+												
+					</ul>
+				</li>
+
+				<li>
+					<a href="?page=ajouter_un">
+						<span class="title">Application</span>
+					</a>
+					<ul >
+						<li>
+							<a href="?page=modifier_application">
+								<span class="title">Gerer </span>
+							</a>
+								
+                    	</li>
+
+						<li>
+							<a href="?page=recuperes_applications">
+								<span class="title">Cartographie</span>
+							</a>
+						</li>
+												
+					</ul>
+				</li>
+					</ul>
+				</li>
+
 
 				<li class="has-sub">
 					<a href="">
 					<i class="fa fa-users"></i>
-						<span class="title">Planification</span>
+						<span class="title">Architecture Technique</span>
 					</a>
-					<ul >
-						<li>
-						 	<a href="?page=modifier_planification">
-								<span class="title">Gerer </span>
-							</a>
-							</li>
+					
+				</li>
+
+				<li class="has-sub">
+					<a href="">
+						<i class="fa fa-users"></i>
+							<span class="title">Planification</span>
+					</a>
+						<ul >
 								<li>
-									<a href="">
+								<a href="?page=modifier_planification">
+									<span class="title">Gerer </span>
+								</a>
+								</li>
+								<li>
+									<a href="?page=recuperes_planifications">
 										<span class="title">Cartographie</span>
 									</a>
-								<ul>
-									<li>
-										<a href="?page=recuperes_planifications">
-											<span class="title">Recuperers plusieurs</span>
-										</a>
-									</li>
-
-									<li>
-										<a href="?page=recuperes_planification_statut">
-											<span class="title">Recuperers par statut</span>
-										</a>
-									</li>
-
-									<li>
-										<a href="?page=recuperes_planifications_user">
-											<span class="title">Recuperers par user</span>
-										</a>
-									</li>
-								<ul>
-							</li>
-                    </ul>
+								</li>
+                    	</ul>
 					  
 				</li>
 
@@ -333,3 +258,5 @@
 	</div>
 
 	</div>
+				
+						

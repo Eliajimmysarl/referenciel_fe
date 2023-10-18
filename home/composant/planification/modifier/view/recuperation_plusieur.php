@@ -17,7 +17,7 @@
 	</ol>
 								
 	<br/>
-	<a href='?page=ajouter_planification'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>		
+	<a href='?page=ajouter_planification'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>	/<a href='?page=recuperes_planifications_user'  class='btn btn-primary btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par user</a> /<a href='?page=recuperes_planification_statut'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par statut</a>		
 		<script type="text/javascript">
 			jQuery( document ).ready( function( $ ) {
 				var $table1 = jQuery( '#table-1' );
@@ -61,9 +61,9 @@
                			 <tr class='odd gradeX'>
 
 							<td>$j</td>
-
+                            
 							<td > " . $planifications[$i]->user_id ."</td>
-
+						
 							<td > " . $planifications[$i]->nom ."</td>
 
 							<td>". $planifications[$i]->remarque ."</td>

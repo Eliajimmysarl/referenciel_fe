@@ -10,7 +10,6 @@
 
     $composant_id=$_POST['composant_id'];
 
-    $entite_id=$_POST['entite_id'];
 
     $descriptions=$_POST['descriptions'];
 
@@ -25,7 +24,6 @@
 
         'composant_id'=> $composant_id,
 
-        'entite_id'=> $entite_id,
 
         'descriptions'=> $descriptions
 

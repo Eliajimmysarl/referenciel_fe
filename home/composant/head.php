@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="assets/css/neon-theme.css">
 	<link rel="stylesheet" href="assets/css/neon-forms.css">
 	<link rel="stylesheet" href="assets/css/custom.css">
-	<link rel="stylesheet" href="assets/css/skins/facebook.css">
+	<link rel="stylesheet" href="assets/css/skins/black.css">
 
 	<script src="assets/js/jquery-1.11.3.min.js"></script>
 
