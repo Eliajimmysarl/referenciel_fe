@@ -38,37 +38,10 @@
 					</a>
 					<ul >
 						<li>
-							<a href="">
+							<a href="?page=modifier_application">
 								<span class="title">Gerer </span>
 							</a>
-								<ul>
-
-										<li>
-											<a href="?page=ajouter_application">
-												<span class="title">Ajouter </span>
-											</a>
-										</li>
-
-
-										<li>
-											<a href="?page=modifier_application">
-												<span class="title">Modifier</span>
-											</a>
-										</li>
-
-										
-										<li>
-											<a href="?page=supprimer_application">
-												<span class="title">Supprimer</span>
-											</a>
-										</li>
-
-										<li>
-											<a href="?page=recuperer_un_application">
-												<span class="title">Recupere</span>
-											</a>
-										</li>
-							</ul>
+								
                     	</li>
 
 						<li>
@@ -95,37 +68,10 @@
 					</a>
 					<ul >
 						<li>
-							<a href="">
+							<a href="?page=modifier_entite">
 								<span class="title">Gerer </span>
 							</a>
 
-							<ul>
-								<li>
-									<a href="?page=ajouter_entite">
-										<span class="title">Ajouter </span>
-									</a>
-
-								</li>
-										
-								<li>
-									<a href="?page=modifier_entite">
-										<span class="title">Modifier</span>
-									</a>
-								</li>
-
-								
-								<li>
-									<a href="?page=supprimer_entite">
-										<span class="title">Supprimer</span>
-									</a>
-								</li>
-
-								<li>
-									<a href="?page=recuperer_un_entite">
-										<span class="title">Recupere</span>
-									</a>
-								</li>
-							</ul>
 						</li>
 
 						<li>
@@ -157,52 +103,13 @@
 				<li class="has-sub">
 					<a href="?page=ajouter_un">
 					<i class="fa fa-users"></i>
-						<span class="title">Composant</span>
+						<span class="title">Composant Entite</span>
 					</a>
 					<ul >
 						<li>
-							<a href="">
+							<a href="?page=modifier_composant">
 								<span class="title">Gerer </span>
 							</a>
-							<ul>
-
-								<li>
-								<a href="?page=ajouter_composant">
-										<span class="title">Ajouter </span>
-									</a>
-								</li>
-											
-								<li>
-									<a href="?page=ajouter_composant_plusieurs">
-										<span class="title">Ajouter plusieurs </span>
-									</a>
-								</li>
-
-								<li>
-									<a href="?page=modifier_composant">
-										<span class="title">Importer diagramme</span>
-									</a>
-								</li>
-
-								<li>
-									<a href="?page=modifier_composant">
-										<span class="title">Modifier</span>
-									</a>
-								</li>
-
-								
-									<li>
-										<a href="?page=supprimer_composant">
-											<span class="title">Supprimer</span>
-										</a>
-									</li>
-
-									<li>
-										<a href="?page=recuperer_composant">
-											<span class="title">Recuperer</span>
-										</a>
-									</li>
-							</ul>
 
 						</li>
 
@@ -248,38 +155,10 @@
 					</a>
 					<ul >
 						<li>
-							<a href="">
+							<a href="?page=modifier_donnee_echange">
 								<span class="title">Gerer </span>
 							</a>
-
-							<ul>
-								<li>
-
-								<a href="?page=ajouter_donnee_echange">
-									<span class="title">Ajouter </span>
-								</a>
-								</li>
-                                <li>
-									<a href="?page=modifier_donnee_echange">
-										<span class="title">Modifier</span>
-									</a>
-								</li>
-								
-								<li>
-									<a href="?page=supprimer_donnee_echange">
-										<span class="title">Supprimer</span>
-									</a>
-								</li>
-
-								<li>
-									<a href="?page=recuperer_donnee_echange">
-										<span class="title">Recuperer</span>
-									</a>
-								</li>
-							</ul>
 						</li>
-
-					
 
 						<li>
 							<a href="">
@@ -318,37 +197,11 @@
 					</a>
 					<ul >
 						<li>
-							<a href="">
+							<a href="?page=modifier_donnee_persistante">
 								<span class="title">Gerer</span>
 							</a>
 
-							<ul>
-								<li>
-								<a href="?page=ajouter_donnee_persistante">
-								<span class="title">Ajouter </span>
-							</a>
-								</li>
-
-							<li>
-							<a href="?page=modifier_donnee_persistante">
-								<span class="title">Modifier</span>
-							</a>
-						</li>
-
-						
-						<li>
-							<a href="?page=supprimer_donnee_persistante">
-								<span class="title">Supprimer</span>
-							</a>
-						</li>
-
-						<li>
-							<a href="?page=recuperer_donnee_persistante">
-								<span class="title">Recuperer</span>
-							</a>
-						</li>
-
-							</ul>
+							
 
 						</li>
 
@@ -386,41 +239,14 @@
 				<li class="has-sub">
 					<a href="?page=ajouter_un">
 					<i class="fa fa-users"></i>
-						<span class="title">Api</span>
+						<span class="title">Api Entite</span>
 					</a>
 					<ul>
 						<li>
-							<a href="">
+							<a href="?page=modifier_api">
 								<span class="title">Gerer </span>
 							</a>
-
-							<ul>
-								<li>
-									<a href="?page=ajouter_api">
-										<span class="title">Ajouter </span>
-									</a>
-								</li>
-
-							<li>
-								<a href="?page=modifier_api">
-									<span class="title">Modifier</span>
-								</a>
-						    </li>
-
-						
-						<li>
-							<a href="?page=supprimer_api">
-								<span class="title">Supprimer</span>
-							</a>
-						</li> 
-
-						<li>
-							<a href="?page=recuperer_api">
-								<span class="title">Recuperer</span>
-							</a>
-						</li> 
-
-							</ul>
+							
 						</li>
 
 						<li>
@@ -459,34 +285,9 @@
 					</a>
 					<ul >
 						<li>
-						 	<a href="">
+						 	<a href="?page=modifier_planification">
 								<span class="title">Gerer </span>
 							</a>
-                            <ul >
-										<li>
-											<a href="?page=ajouter_planification">
-												<span class="title">Ajouter </span>
-											</a>
-										</li>
-										<li>
-											<a href="?page=modifier_planification">
-												<span class="title">Modifier</span>
-											</a>
-										</li>
-
-								
-										<li>
-											<a href="?page=supprimer_planification">
-												<span class="title">Supprimer</span>
-											</a>
-										</li>
-
-									<li>
-										<a href="?page=recuperer_planification">
-											<span class="title">Recuperer</span>
-										</a>
-									</li> 
-								</ul>
 							</li>
 								<li>
 									<a href="">

@@ -15,7 +15,7 @@ $uri = $authority."/planification/";
     $result=curl_get_data($uri, $token, $data);
 
     $obj = json_decode($result);   
-       
+      echo"$result"; 
     $planifications= $obj->planification;
 
     $code = $obj->code;

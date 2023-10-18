@@ -17,7 +17,7 @@
 	</ol>
 								
 	<br/>
-		
+	<a href='?page=ajouter_planification'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>		
 		<script type="text/javascript">
 			jQuery( document ).ready( function( $ ) {
 				var $table1 = jQuery( '#table-1' );
@@ -75,7 +75,9 @@
 							<td>". $planifications[$i]->date_fin ."</td>
 		
 					
-					<td> <a href='?page=modification_un_planificaton&id=". $planifications[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> </td>
+					<td> <a href='?page=modification_un_planificaton&id=". $planifications[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a>
+					<a href='?page=demande_supprimer_planification&id=". $planifications[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a> 
+					<a href='?page=recuperation_un_planification&id=". $planifications[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a> </td>
 				</tr>";
 						         
 				}

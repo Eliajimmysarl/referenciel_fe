@@ -17,7 +17,7 @@
     $obj = json_decode($result);   
        
     $apis= $obj->api;
-echo"$result";
+    
     $code = $obj->code;
 
     if($code ==200)

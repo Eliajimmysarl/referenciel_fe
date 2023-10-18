@@ -17,7 +17,7 @@
 	</ol>
 								
 	<br/>
-		
+	<a href='?page=ajouter_api'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>
 		<script type="text/javascript">
 			jQuery( document ).ready( function( $ ) {
 				var $table1 = jQuery( '#table-1' );
@@ -72,7 +72,9 @@
 
 		
 						
-					<td> <a href='?page=modification_api&id=". $apis[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> </td>
+					<td> <a href='?page=modification_api&id=". $apis[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> 
+					<a href='?page=demande_supprimer_api&id=". $apis[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a>
+					<a href='?page=recuperation_un_api&id=". $apis[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
 				</tr>";
 						         
 				}
