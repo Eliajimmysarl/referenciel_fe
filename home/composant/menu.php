@@ -34,9 +34,30 @@
 			<li class="has-sub">
 					<a href="?page=ajouter_un">
 					<i class="fa fa-users"></i>
-						<span class="title">Architecture de metier</span>
+						<span class="title">Architecture  metiér</span>
 					</a>
                <ul>
+
+			   <li>
+					<a href="?page=ajouter_un">
+						<span class="title">Projet</span>
+					</a>
+					<ul >
+						<li>
+							<a href="?page=modifier_application">
+								<span class="title">Gerer </span>
+							</a>
+								
+                    	</li>
+
+						<li>
+							<a href="?page=recuperes_applications">
+								<span class="title">Cartographie</span>
+							</a>
+						</li>
+												
+					</ul>
+				</li>
 				<li>
 					<a href="">
 						<span class="title">Entite</span>
@@ -65,13 +86,13 @@
 				<li class="has-sub">
 					<a href="?page=ajouter_un">
 					<i class="fa fa-users"></i>
-						<span class="title">Architecture de donnees</span>
+						<span class="title">Architecture des données</span>
 					</a>
                   <ul>
 					
 				<li>
 					<a href="">
-						<span class="title">Donnee Persistante</span>
+						<span class="title">Donnée persistante</span>
 					</a>
 					<ul >
 						<li>
@@ -190,26 +211,7 @@
 					</ul>
 				</li>
 
-				<li>
-					<a href="?page=ajouter_un">
-						<span class="title">Application</span>
-					</a>
-					<ul >
-						<li>
-							<a href="?page=modifier_application">
-								<span class="title">Gerer </span>
-							</a>
-								
-                    	</li>
-
-						<li>
-							<a href="?page=recuperes_applications">
-								<span class="title">Cartographie</span>
-							</a>
-						</li>
-												
-					</ul>
-				</li>
+				
 					</ul>
 				</li>
 
@@ -217,7 +219,7 @@
 				<li class="has-sub">
 					<a href="">
 					<i class="fa fa-users"></i>
-						<span class="title">Architecture Technique</span>
+						<span class="title">Architecture technique</span>
 					</a>
 					
 				</li>

@@ -120,7 +120,7 @@
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="number" name="taille" class="form-control" placeholder="Taille" >
+									<input type="text" name="taille" class="form-control" placeholder="Taille" >
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>

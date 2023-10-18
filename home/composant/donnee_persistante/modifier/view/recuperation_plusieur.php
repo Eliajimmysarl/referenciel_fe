@@ -15,7 +15,7 @@
 		</li>
 
 	</ol>
-	<a href='?page=ajouter_donnee_persistante'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>/<a href='??page=recuperes_donnee_persistantes_application'  class='btn btn-primary btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par application</a> /<a href='?page=recuperes_donnee_persistantes_entite'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par composant</a>									
+	<a href='?page=ajouter_donnee_persistante'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>/<a href='??page=recuperes_donnee_persistantes_application'  class='btn btn-primary btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par application</a> /<a href='?page=recuperes_donnee_persistantes_entite'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par entite</a>									
 	<br/>
 		
 		<script type="text/javascript">
