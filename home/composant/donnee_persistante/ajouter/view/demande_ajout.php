@@ -191,7 +191,7 @@
                         
 							<div class="radio"> 
 								<label> 
-									<input type="radio" name="indexe" id="Index1" value="1" >Etrangere
+									<input type="radio" name="indexe" id="Index1" value="1">Etrangere
 								</label> 
 							</div>
 
@@ -203,12 +203,10 @@
 							
 							<div class="radio">
 								<label> 
-									<input type="radio" name="indexe" id="Index2" value="3">index
+									<input type="radio" name="indexe" id="Index3" value="3">index
 								</label>   
 							</div>
 
-							
-                         
 						</div>
                          
 					</div>

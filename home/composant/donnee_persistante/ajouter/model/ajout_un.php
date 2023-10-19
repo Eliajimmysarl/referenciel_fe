@@ -47,9 +47,9 @@
     );
 
     $result=curl_post($uri, $token, $data);
-  
+  echo json_encode($data);
     $donnee_persistante=json_decode($result);
-
+echo"$result";
     $code = $donnee_persistante->code;
         
     if($code ==201)

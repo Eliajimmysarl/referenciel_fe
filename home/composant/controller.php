@@ -517,10 +517,16 @@
                 }
 
 
+                else  if($page=='dash')
+                {
+                    require_once('composant/dashboard/view/index.php'); 
+                }
+
+
         }
     else   
         {
-            //require_once('composant/dashboard/ihm/index.php'); 
+                require_once('composant/dashboard/view/index.php'); 
         }
       
       
