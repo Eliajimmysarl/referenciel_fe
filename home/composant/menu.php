@@ -32,12 +32,51 @@
 			<ul id="main-menu" class="main-menu">
 				
 			<li class="has-sub">
-					<a href="?page=dash">
+					<a href="">
 					<i class="fa fa-users"></i>
-						<span class="title">Tableau de bord</span>
+						<span class="title">Cartographie</span>
 					</a>
-					
-				</li>
+					<ul>
+						<li>
+							<a href="?page=recuperes_applications">
+								<span class="title">Projet</span>
+							</a>
+						</li>
+						
+                       <li>
+						<a href="?page=recuperes_entites">
+								<span class="title">Entite</span>
+							</a>
+						</li>
+
+                              <li>
+									<a href="?page=recuperes_apis">
+										<span class="title">Api</span>
+									</a>
+								</li>						
+							<li>
+							<a href="?page=recuperes_composants">
+								<span class="title">Composant</span>
+							</a>
+				
+						</li>
+						
+						<li>
+							<a href="?page=recuperes_donnee_echanges">
+								<span class="title">Donnée echange</span>
+							</a>
+
+						</li>
+
+						<li>
+						<a href="?page=recuperes_donnee_persistantes">
+								<span class="title">Donnée persistante</span>
+							</a>
+							
+						</li>
+
+					</ul>
+				    </li>
 
 			<li class="has-sub">
 					<a href="?page=ajouter_un">
@@ -202,52 +241,7 @@
 				</li>
 
 
-					<li class="has-sub">
-					<a href="">
-					<i class="fa fa-users"></i>
-						<span class="title">Cartographie</span>
-					</a>
-					<ul>
-						<li>
-							<a href="?page=recuperes_applications">
-								<span class="title">Projet</span>
-							</a>
-						</li>
-						
-                       <li>
-						<a href="?page=recuperes_entites">
-								<span class="title">Cartographie</span>
-							</a>
-						</li>
-
-                              <li>
-									<a href="?page=recuperes_apis">
-										<span class="title">Api</span>
-									</a>
-								</li>						
-							<li>
-							<a href="?page=recuperes_composants">
-								<span class="title">Composant</span>
-							</a>
 				
-						</li>
-						
-						<li>
-							<a href="?page=recuperes_donnee_echanges">
-								<span class="title">Donnée echange</span>
-							</a>
-
-						</li>
-
-						<li>
-						<a href="?page=recuperes_donnee_persistantes">
-								<span class="title">Donnée persistante</span>
-							</a>
-							
-						</li>
-
-					</ul>
-				    </li>
 
 				<li class="has-sub">
 					<a href="">
