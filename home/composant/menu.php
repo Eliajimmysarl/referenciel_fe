@@ -33,7 +33,7 @@
 				
 			<li class="has-sub">
 					<a href="">
-					<i class="fa fa-users"></i>
+					<i class="fa fa-book"></i>
 						<span class="title">Cartographie</span>
 					</a>
 					<ul>
@@ -80,7 +80,7 @@
 
 			<li class="has-sub">
 					<a href="?page=ajouter_un">
-					<i class="fa fa-users"></i>
+					<i class="fa fa-list"></i>
 						<span class="title">Architecture  metiér</span>
 					</a>
                <ul>
@@ -122,7 +122,7 @@
 				
 				<li class="has-sub">
 					<a href="?page=ajouter_un">
-					<i class="fa fa-users"></i>
+					<i class="fa fa-list"></i>
 						<span class="title">Architecture des données</span>
 					</a>
                   <ul>
@@ -172,7 +172,7 @@
 				
 				<li class="has-sub">
 					<a href="?page=ajouter_un">
-					<i class="fa fa-users"></i>
+					<i class="fa fa-list"></i>
 						<span class="title">Architecture applicative</span>
 					</a>
             
@@ -234,7 +234,7 @@
 
 				<li class="has-sub">
 					<a href="">
-					<i class="fa fa-users"></i>
+					<i class="fa fa-cog"></i>
 						<span class="title">Architecture technique</span>
 					</a>
 					
@@ -245,7 +245,7 @@
 
 				<li class="has-sub">
 					<a href="">
-						<i class="fa fa-users"></i>
+						<i class="fa fa-list"></i>
 							<span class="title">Planification</span>
 					</a>
 						<ul >
