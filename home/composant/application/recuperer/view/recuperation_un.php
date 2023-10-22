@@ -27,14 +27,30 @@
 										echo"
 										<tr>
 										
-										<td>Nom app :</td><td>". $nom ." </td>
+										<td>Nom application :</td><td>". $nom ." </td>
 										<tr><td>Description : </td><td> " . $descriptions." </td>
-										<tr><td>Lien web: </td><td> ". $lien_web." </td>
-										<tr><td>Lien android : </td><td> ". $lien_android." </td>
-										<tr><td>Lien ios : </td><td> ". $lien_ios." </td>
-										<tr><td>Ussd vodacom: </td><td> ". $ussd_vodacom." </td>
-										<tr><td>Ussd africell: </td><td> ". $ussd_africell." </td>
-										<tr><td>Ussd orange: </td><td> ". $ussd_orange." </td>
+										<tr><td>Site web: </td><td> ". $lien_web." </td>
+
+										<tr><td>Entite: </td><td>  <form  method='POST' action='index.php?demande=recuperation_avec_entite_application' class='form'>
+										<input type='hidden' name='application_id'  value='". $id ."' class='form-control'>
+										<input type='submit' class='btn btn-info' value='Voir'> </form></td>
+
+										<tr><td>composant : </td><td><form  method='POST' action='index.php?demande=recuperation_avec_composant_application' class='form'>
+										<input type='hidden' name='application_id'  value='". $id ."' class='form-control'>
+										<input type='submit' class='btn btn-info' value='Voir'> </form></td>
+
+										<tr><td>Tde: </td><td><form  method='POST' action='index.php?demande=recuperation_avec_tde' class='form'>
+										<input type='hidden' name='application_id'  value='". $id ."' class='form-control'>
+										<input type='submit' class='btn btn-info' value='Voir'> </form></td>
+
+										<tr><td>Donnée persitante: </td><td> <form  method='POST' action='index.php?demande=recuperation_avec_dp_application' class='form'>
+										<input type='hidden' name='application_id'  value='". $id ."' class='form-control'>
+										<input type='submit' class='btn btn-info' value='Voir'> </form></td>
+
+										<tr><td>Api: </td><td><form  method='POST' action='index.php?demande=recuperation_avec_application_api' class='form'>
+										<input type='hidden' name='application_id'  value='". $id ."' class='form-control'>
+										<input type='submit' class='btn btn-info' value='Voir'> </form></td>
+										
 										
 										</tr>
 										";

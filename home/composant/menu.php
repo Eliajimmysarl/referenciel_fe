@@ -32,14 +32,14 @@
 			<ul id="main-menu" class="main-menu">
 				
 			<li class="has-sub">
-					<a href="">
+					<a href="?home">
 					<i class="fa fa-book"></i>
 						<span class="title">Cartographie</span>
 					</a>
 					<ul>
 						<li>
 							<a href="?page=recuperes_applications">
-								<span class="title">Projet</span>
+								<span class="title">Application</span>
 							</a>
 						</li>
 						
@@ -86,34 +86,15 @@
                <ul>
 
 			   <li>
-					<a href="?page=ajouter_un">
-						<span class="title">Projet</span>
+					<a href="?page=modifier_application">
+						<span class="title">Application</span>
 					</a>
-					<ul >
-						<li>
-							<a href="?page=modifier_application">
-								<span class="title">Gerer </span>
-							</a>
-								
-                    	</li>
-
-						
-												
-					</ul>
 				</li>
 				<li>
-					<a href="">
+					<a href="?page=modifier_entite">
 						<span class="title">Entite</span>
 					</a>
-					<ul >
-						<li>
-							<a href="?page=modifier_entite">
-								<span class="title">Gerer </span>
-							</a>
-
-						</li>		
-												
-					</ul>
+					
 				</li>
 
             	</ul>
@@ -125,48 +106,16 @@
 					<i class="fa fa-list"></i>
 						<span class="title">Architecture des données</span>
 					</a>
-                  <ul>
-					
-				<li>
-					<a href="">
-						<span class="title">Donnée persistante</span>
-					</a>
-					<ul >
+					<ul>
+						
 						<li>
 							<a href="?page=modifier_donnee_persistante">
-								<span class="title">Gerer</span>
-							</a>
-
+								<span class="title">Donnée persistante</span>
+							</a>	
 							
-
 						</li>
-
-						
-						
-						
-					
-					<ul >
-						<li>
-							<a href="?page=modifier_donnee_echange">
-								<span class="title">Gerer </span>
-							</a>
-						</li>
-
-						<li>
-							<a href="?page=recuperes_donnee_echanges">
-								<span class="title">Cartographie</span>
-							</a>
-
-						</li>
-
-						
-												
+				
 					</ul>
-				</li>
-				</ul>
-
-					</li>
-				</ul>
 				</li>
 				
 				
@@ -178,54 +127,24 @@
             
                  	<ul>
 						<li class="">
-							<a href="?page=ajouter_un">
+							<a href="?page=modifier_api">
 									<span class="title">Api Entite</span>
 							</a>
 
-							<ul>
-								<li>
-									<a href="?page=modifier_api">
-										<span class="title">Gerer </span>
-									</a>
-									
-								</li>
-
-								
-													
-							</ul>
 						</li>
-						<li>
-					<a href="?page=ajouter_un">
-						<span class="title">Donnee Echange</span>
-					</a>
-					<ul >
 						<li>
 							<a href="?page=modifier_donnee_echange">
-								<span class="title">Gerer </span>
+								<span class="title">Donnee Echange</span>
 							</a>
+						
 						</li>
 
-
-												
-					</ul>
-				</li>
-
-				<li>
-					<a href="?page=ajouter_un">
-						<span class="title">Composant Entite</span>
-					</a>
-					<ul >
 						<li>
 							<a href="?page=modifier_composant">
-								<span class="title">Gerer </span>
+								<span class="title">Composant Entite</span>
 							</a>
-
+						
 						</li>
-
-
-												
-					</ul>
-				</li>
 
 				
 					</ul>
@@ -267,7 +186,7 @@
 				
 
             
-			<li class="has-sub">
+			<li class="">
 						<a href="/smaas/kill.php">
 						<i class="entypo-logout right"></i>	Log Out 
 						</a>

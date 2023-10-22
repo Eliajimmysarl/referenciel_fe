@@ -83,6 +83,16 @@
                     require_once('composant\composant\recuperation_plusieurs_avec_couche\model\recuperation_avec_dependance.php');  
                 }
 
+            else  if($demande=='recuperation_avec_composant_entite')
+                {
+                    require_once('composant\composant\recuperation_plusieurs_avec_entite\model\recuperation_avec_dependance.php');  
+                }
+
+            else  if($demande=='recuperation_avec_composant_application')
+                {
+                    require_once('composant\composant\recuperation_plusieurs_avec_application\model\recuperation_avec_dependance.php');  
+                }
+
                 
             else  if($demande=='recuperation_avec_dp_application')
                 {
@@ -292,6 +302,16 @@
             else  if($page=='recuperes_composants_couche')
                 {
                     require_once('composant\composant\recuperation_plusieurs_avec_couche\model\recuperer_liste.php'); 
+                }
+
+                else  if($page=='recuperes_composants_application')
+                {
+                    require_once('composant\composant\recuperation_plusieurs_avec_application\model\recuperer_liste.php'); 
+                }
+
+            else  if($page=='recuperes_composants_entite')
+                {
+                    require_once('composant\composant\recuperation_plusieurs_avec_entite\model\recuperer_liste.php'); 
                 }
             else  if($page=='recuperes_donnee_echanges_composant')
                 {

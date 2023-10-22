@@ -20,22 +20,36 @@
 				<table class="table table-bordered responsive">
 					
 					<tbody>
-						<tr>
+					<tr>
+					<td>Nom : </td>
+					<td>Application :</td>
+					<td>Description:</td>
+					<td>Composant: </td>
+					<td>Donnée persistante: </td>
+					
+					</tr>
 							<?php
 							
 								
 									echo"
-										<tr>
-										
-											<td>Application :</td><td>". $application_nom." </td>
+										   <tr>
+										   <td> " . $nom." </td>
+										   <td>". $application_nom." </td>
 											
-											<tr><td>Nom : </td><td> " . $nom." </td>
-			
-											<tr><td>Description : </td><td> ". $descriptions." </td>
+										<td> ". $descriptions." </td>
+										   <td><form  method='POST' action='index.php?demande=recuperation_avec_composant_entite' class='form'>
+										   <input type='hidden' name='entite_id'  value='". $id ."' class='form-control'>
+										   <input type='submit' class='btn btn-info' value='Voir'> </form>
+										   </td>
+
+										   <td>
+										   <form  method='POST' action='index.php?demande=recuperation_avec_dp_entite' class='form'>
+										   <input type='hidden' name='entite_id'  value='". $id ."' class='form-control'>
+										   <input type='submit' class='btn btn-info' value='Voir'> </form>
+										   </td>
+								   
 										
-										
-										
-										</tr>
+										 </tr>
 									";
 								
 							?>

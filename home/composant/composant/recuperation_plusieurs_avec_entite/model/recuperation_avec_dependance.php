@@ -1,32 +1,28 @@
 <?php
-     
-     $application_id=$_POST['application_id'];  
-    
 
-    $uri = $authority."/entite/";
+
+    $uri = $authority."/composant/";
    
+    $entite_id=$_POST['entite_id'];
     
     $data = array(
 
-        'application_id'=> $application_id
+        'entite_id'=> $entite_id,
 
-    
     );
 
     $result=curl_get_data($uri, $token, $data);
 
     $obj = json_decode($result);   
-    
-    $entites= $obj->entite;
-
+       
+    $composants= $obj->composant;
     $code = $obj->code;
 
     if($code ==200)
         {   
-
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/entite/recuperation_plusieurs_avec_application/view/recuperation_plusieurs.php'); 
+            require_once('composant/composant/recuperation_plusieurs_avec_entite/view/recuperation_plusieurs.php'); 
         }
         else
         {

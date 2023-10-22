@@ -11,11 +11,10 @@
 	</li>
 </ol>
 
-		<br/>
-
-		<a href='?page=ajouter_composant'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a> /<a href='?page=recuperes_composants_plateforme'  class='btn btn-primary btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par plateforme</a> /<a href='?page=recuperes_composants_couche'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par couche</a>
-		/<a href='?page=recuperes_composants_entite'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par entite</a>
-		/<a href='?page=recuperes_composants_application'  class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par application</a>	
+								
+		
+		<br />
+		
 		<script type="text/javascript">
 		jQuery( document ).ready( function( $ ) {
 			var $table1 = jQuery( '#table-1' );
@@ -35,7 +34,7 @@
 		
 		<table class="table table-bordered datatable" id="table-1">
 			<thead>
-			<tr>
+				<tr>
 				    <TH>#</TH>
 					<TH>Application</TH>
 					<TH>Couche</TH>
@@ -44,7 +43,6 @@
 					<TH>Nom</TH>
 					<TH>Description</TH>
 					<TH>Url code</TH>
-					<TH></TH>
 				</tr>
 			</thead>
 			<tbody>
@@ -73,18 +71,17 @@
 							<td>". $composants[$i]->descriptions ."</td>
 							
 							<td><a href='". $composants[$i]->url_code ."' target=_blank>Voir le code</a></td>
-					
-					<td> <a href='?page=modification_composant&id=". $composants[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a>
-					<a href='?page=demande_supprimer_composant&id=". $composants[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a>
-					<a href='?page=recuperation_un_composant&id=". $composants[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
-				</tr>";
+
+							<td><a href='?page=recuperation_un&id=". $composants[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
+		
+						</tr>";
 						         
 				}
 				?>
 
                <thead>
 				<tr>
-					<TH>#</TH>
+                    <TH>#</TH>
 					<TH>Application</TH>
 					<TH>Couche</TH>
 					<TH>Platforme</TH>
@@ -92,8 +89,6 @@
 					<TH>Nom</TH>
 					<TH>Description</TH>
 					<TH>Url code</TH>
-					<TH></TH>
-	
 				</tr>
 			</thead>
 		</table>
@@ -130,3 +125,8 @@
 	<script src="assets/js/datatables/datatables.js"></script>
 	<script src="assets/js/select2/select2.min.js"></script>
 	<script src="assets/js/neon-chat.js"></script>
+
+
+
+
+
