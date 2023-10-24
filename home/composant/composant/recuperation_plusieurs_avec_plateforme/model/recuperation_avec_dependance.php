@@ -16,7 +16,7 @@
     $result=curl_get_data($uri, $token, $data);
 
     $obj = json_decode($result);   
-       
+    
     $composants= $obj->composant;
 
     $code = $obj->code;

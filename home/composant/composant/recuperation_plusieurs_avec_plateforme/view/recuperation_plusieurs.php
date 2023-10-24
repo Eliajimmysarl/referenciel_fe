@@ -73,7 +73,7 @@
 							<td><a href='". $composants[$i]->url_code ."' target=_blank>Voir le code</a></td>
 					
 
-							<td><a href='?page=recuperation_un&id=". $composants[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
+							<td><a href='?page=recuperation_un&id=". $composants[$i]->id_composant ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
 		
 						</tr>";
 						         
