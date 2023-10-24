@@ -73,9 +73,9 @@
 						<td>". $donnee_echanges[$i]->descriptions ."</td>
 		
 						<td> 
-						<a href='?page=modification_tde&id=". $donnee_echanges[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a>
-						<a href='?page=demande_supprimer_tde&id=". $donnee_echanges[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a>
-						<a href='?page=recuperation_un_tde&id=". $donnee_echanges[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a> </td>
+						<a href='?page=modification_tde&id=". $donnee_echanges[$i]->id_donnee_echange ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a>
+						<a href='?page=demande_supprimer_tde&id=". $donnee_echanges[$i]->id_donnee_echange ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a>
+						
 				
 					</tr>";
 						         
@@ -84,6 +84,7 @@
 
                <thead>
 				<tr>
+				<TH>#</TH>
                   	<TH>Application</TH>
 					<TH>Composant</TH>
 					<TH>Entite</TH>

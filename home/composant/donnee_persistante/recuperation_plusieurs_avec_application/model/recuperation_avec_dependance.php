@@ -16,7 +16,8 @@
     $result=curl_get_data($uri, $token, $data);
 
     $obj = json_decode($result);   
-       
+    
+
     $donnee_persistantes= $obj->donnee_persistante;
 
     $code = $obj->code;

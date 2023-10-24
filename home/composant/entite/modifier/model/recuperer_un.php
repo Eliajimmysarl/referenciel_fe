@@ -16,7 +16,7 @@ $result=curl_get($uri, $token);
         {   
             $application_id=$entites[0]->application_id; 
 
-            $nom=$entites[0]->nom;
+            $nom=$entites[0]->entite_nom;
 
             $descriptions=$entites[0]->descriptions;
             

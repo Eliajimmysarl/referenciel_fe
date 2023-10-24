@@ -45,7 +45,7 @@
 					
 					
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Lien web <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label" >Lien web </label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
@@ -56,7 +56,7 @@
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Lien android <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label" >Lien android </label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
@@ -67,7 +67,7 @@
 					</div>
 					
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Lien ios <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label" >Lien ios </label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
@@ -78,7 +78,7 @@
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Ussd vodacom <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label" >Ussd vodacom </label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
@@ -89,7 +89,7 @@
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Ussd africel <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label" >Ussd africel </label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
@@ -100,7 +100,7 @@
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Ussd orange <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label" >Ussd orange </label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
@@ -111,7 +111,7 @@
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Description <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label" >Description </label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-pencil"></i></span>

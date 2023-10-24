@@ -71,7 +71,7 @@
 											for($i=0; $i < count($composants); $i++)
 												{         
 													echo"  
-															<option value=". $composants[$i]->id ."> ". $composants[$i]->nom ."</option>                       
+															<option value=". $composants[$i]->id_composant ."> ". $composants[$i]->nom ."</option>                       
 															
 													";
 																

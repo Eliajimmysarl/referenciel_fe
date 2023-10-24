@@ -29,7 +29,7 @@
 										
 										<td>Nom application :</td><td>". $nom ." </td>
 										<tr><td>Description : </td><td> " . $descriptions." </td>
-										<tr><td>Site web: </td><td> ". $lien_web." </td>
+										<tr><td>Site web: </td><td> <a href='". $lien_web."' target='_blank'> ". $lien_web."</a> </td>
 
 										<tr><td>Entite: </td><td>  <form  method='POST' action='index.php?demande=recuperation_avec_entite_application' class='form'>
 										<input type='hidden' name='application_id'  value='". $id ."' class='form-control'>

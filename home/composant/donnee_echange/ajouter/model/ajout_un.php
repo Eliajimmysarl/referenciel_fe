@@ -2,28 +2,34 @@
 
     $uri =  $authority.'/donnee_echange/';
 
-    $nom=$_POST['nom'];
 
-    $types=$_POST['types'];
 
     $application_id=$_POST['application_id'];
 
     $composant_id=$_POST['composant_id'];
 
+    $entite_id=$_POST['entite_id'];
+
+    $nom=$_POST['nom'];
+
+    $types=$_POST['types'];
 
     $descriptions=$_POST['descriptions'];
 
 
     $data = array(
         
-        'nom' => $nom,
-
-        'types'=> $types,
-
         'application_id'=> $application_id,
+
+        'entite_id'=> $entite_id,
 
         'composant_id'=> $composant_id,
 
+
+
+        'nom' => $nom,
+
+        'types'=> $types,
 
         'descriptions'=> $descriptions
 
@@ -31,7 +37,7 @@
     );
 
     $result=curl_post($uri, $token, $data);
-  
+
     $donnee_echanges=json_decode($result);
 
     $code = $donnee_echanges->code;
@@ -42,7 +48,7 @@
             }
         else    
             {
-                require_once('composant/donnee_echange/ajouter/view/reponse_negative.php');   
+                echo'verifier le code';
             }
 
 

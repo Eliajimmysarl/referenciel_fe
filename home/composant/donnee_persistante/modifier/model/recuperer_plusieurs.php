@@ -6,7 +6,7 @@ $uri =  $authority.'/donnee_persistante/';
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
-    
+  
     $donnee_persistantes= $obj->donnee_persistante;
 
     $code = $obj->code;

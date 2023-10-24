@@ -39,6 +39,7 @@
 					<TH>Application</TH>
 					<TH>Nom</TH>
 					<TH>Description</TH>
+					<TH></TH>
 				</tr>
 			</thead>
 			<tbody>
@@ -60,7 +61,7 @@
 
 							<td>". $entites[$i]->descriptions ."</td>
 							
-				 		
+				 		    <td><a href='?page=recuperation_entite&id=". $entites[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a>  </td>
 						</tr>";
 						         
 				}
@@ -72,6 +73,7 @@
 					<TH>Application</TH>
 					<TH>Nom</TH>
 					<TH>Description</TH>
+					<TH></TH>
 
 				</tr>
 			</thead>

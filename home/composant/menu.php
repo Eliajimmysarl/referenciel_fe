@@ -48,25 +48,28 @@
 								<span class="title">Entite</span>
 							</a>
 						</li>
-
-                              <li>
-									<a href="?page=recuperes_apis">
-										<span class="title">Api</span>
-									</a>
-								</li>						
-							<li>
+						<li>
 							<a href="?page=recuperes_composants">
 								<span class="title">Composant</span>
 							</a>
 				
 						</li>
-						
+
 						<li>
 							<a href="?page=recuperes_donnee_echanges">
 								<span class="title">Donnée echange</span>
 							</a>
 
 						</li>
+
+                        <li>
+							<a href="?page=recuperes_apis">
+								<span class="title">Api</span>
+							</a>
+						</li>						
+							
+						
+					
 
 						<li>
 						<a href="?page=recuperes_donnee_persistantes">
@@ -126,12 +129,15 @@
 					</a>
             
                  	<ul>
-						<li class="">
-							<a href="?page=modifier_api">
-									<span class="title">Api Entite</span>
-							</a>
+						
 
+					 <li>
+							<a href="?page=modifier_composant">
+								<span class="title">Composant Entite</span>
+							</a>
+						
 						</li>
+						
 						<li>
 							<a href="?page=modifier_donnee_echange">
 								<span class="title">Donnee Echange</span>
@@ -139,13 +145,14 @@
 						
 						</li>
 
-						<li>
-							<a href="?page=modifier_composant">
-								<span class="title">Composant Entite</span>
-							</a>
 						
-						</li>
 
+						<li class="">
+							<a href="?page=modifier_api">
+									<span class="title">Api Entite</span>
+							</a>
+
+						</li>
 				
 					</ul>
 				</li>

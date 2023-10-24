@@ -43,6 +43,7 @@
 					<TH>Nom</TH>
 					<TH>Description</TH>
 					<TH>Url code</TH>
+					<TH></TH>
 				</tr>
 			</thead>
 			<tbody>
@@ -71,7 +72,8 @@
 							<td>". $composants[$i]->descriptions ."</td>
 							
 							<td><button class='btn btn-info' ><a  href='". $composants[$i]->url_code ."' target=_blank  class='link-danger'>Voir le code</a></button></td>
-					
+					 		
+							<td><a href='?page=recuperation_un_composant&id=". $composants[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
 		
 						</tr>";
 						         
@@ -88,6 +90,7 @@
 					<TH>Nom</TH>
 					<TH>Description</TH>
 					<TH>Url code</TH>
+					<TH></TH>
 				</tr>
 			</thead>
 		</table>

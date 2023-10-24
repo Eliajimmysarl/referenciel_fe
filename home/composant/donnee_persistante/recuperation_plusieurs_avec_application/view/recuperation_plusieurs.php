@@ -78,7 +78,7 @@
 
 				<td>". $donnee_persistantes[$i]->descriptions ."</td>
 									
-				<td> <a href='?page=recuperation_un_donnee_persistante&id=". $donnee_persistantes[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
+				<td> <a href='?page=recuperation_un_donnee_persistante&id=". $donnee_persistantes[$i]->id_donnee_persistante ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
 			
 			</tr>";
 						         

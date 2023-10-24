@@ -79,9 +79,9 @@
 				<td>". $donnee_persistantes[$i]->descriptions ."</td>
 		
 									
-				<td> <a href='?page=modification_donnee_persistante&id=". $donnee_persistantes[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> 
-				<a href='?page=demande_supprimer_donnee_persistante&id=". $donnee_persistantes[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a>
-				<a href='?page=recuperation_un_donnee_persistante&id=". $donnee_persistantes[$i]->id ."' class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a>
+				<td> <a href='?page=modification_donnee_persistante&id=". $donnee_persistantes[$i]->id_donnee_persistante ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> 
+				<a href='?page=demande_supprimer_donnee_persistante&id=". $donnee_persistantes[$i]->id_donnee_persistante ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a>
+				<a href='?page=recuperation_un_donnee_persistante&id=". $donnee_persistantes[$i]->id_donnee_persistante ."' class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a>
 					</tr>";
 					
 				}

@@ -197,7 +197,12 @@
 								</label>   
 							</div> 
 
-							
+							<div class="radio">
+								<label> 
+									<input type="radio" name="indexe" id="Index3" value="3">index
+								</label>   
+							</div> 
+
                          
 						</div>
                          

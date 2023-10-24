@@ -34,7 +34,7 @@ $result=curl_get($uri, $token);
             
             $descriptions=$donnee_persistantes[0]->descriptions;
 
-            $id=$donnee_persistantes[0]->id;
+            $id=$donnee_persistantes[0]->id_donnee_persistante;
           
             require_once('composant/donnee_persistante/recuperer/view/recuperation_un.php'); 
         }

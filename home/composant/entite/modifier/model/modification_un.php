@@ -24,7 +24,7 @@
     );    
 
     $result=curl_put($uri, $token,$data);
-        
+        echo json_encode($data);
         $entite=json_decode($result);
 
         $code =  $entite->code;

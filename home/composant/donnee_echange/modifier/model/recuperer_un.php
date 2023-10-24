@@ -26,7 +26,7 @@ $result=curl_get($uri, $token);
             
             $descriptions=$donnee_echanges[0]->descriptions;
         
-            $id=$donnee_echanges[0]->id;
+            $id=$donnee_echanges[0]->id_donnee_echange;
 
         
         

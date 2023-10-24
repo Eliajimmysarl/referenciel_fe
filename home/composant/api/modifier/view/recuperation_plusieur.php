@@ -88,7 +88,6 @@
 					<TH>Entite</TH>
 					<TH>Methode</TH>
 					<TH>Uri</TH>
-					<TH>Code</TH>
 					<TH></TH>
 				</tr>
 			</thead>

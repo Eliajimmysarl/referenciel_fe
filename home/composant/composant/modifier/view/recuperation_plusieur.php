@@ -74,9 +74,9 @@
 							
 							<td><a href='". $composants[$i]->url_code ."' target=_blank>Voir le code</a></td>
 					
-					<td> <a href='?page=modification_composant&id=". $composants[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a>
-					<a href='?page=demande_supprimer_composant&id=". $composants[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a>
-					<a href='?page=recuperation_un_composant&id=". $composants[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
+					<td> <a href='?page=modification_composant&id=". $composants[$i]->id_composant ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a>
+					<a href='?page=demande_supprimer_composant&id=". $composants[$i]->id_composant ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a>
+					
 				</tr>";
 						         
 				}

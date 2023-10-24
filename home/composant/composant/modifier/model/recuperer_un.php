@@ -28,7 +28,7 @@ $result=curl_get($uri, $token);
             
             $url_code=$composants[0]->url_code;
 
-            $id=$composants[0]->id;
+            $id=$composants[0]->id_composant;
 
         
         

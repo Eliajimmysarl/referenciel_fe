@@ -36,14 +36,14 @@
 		<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Nom app</TH>
+					<TH>Nom </TH>
 					<TH>Description</TH>
-					<TH>Lien web</TH>
-					<TH>Lien android</TH>
-					<TH>Lien Ios</TH>
-					<TH>Ussd vodacom</TH>
-					<TH>Ussd africell</TH>
-					<TH>Ussd orange</TH>
+					<TH>Web</TH>
+					<TH>Android</TH>
+					<TH>Ios</TH>
+					<TH>Vodacom</TH>
+					<TH>Africell</TH>
+					<TH>Orange</TH>
 					<TH></TH>
 				</tr>
 			</thead>
@@ -62,8 +62,7 @@
 						<td > " . $applications[$i]->nom ."</td>
 
 						<td>". $applications[$i]->descriptions ."</td>
-
-						<td>". $applications[$i]->lien_web ."</td>
+						<td> <a href='". $applications[$i]->lien_web ."' target='_blank' >". $applications[$i]->lien_web ."</a></td>
 
 						<td>". $applications[$i]->lien_android ."</td>
 
@@ -77,7 +76,7 @@
 					
 					<td> <a href='?page=demande_supprimer_app&id=". $applications[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a>
 					 <a href='?page=modification_app&id=". $applications[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a>
-					 <a href='?page=recuperation_application&id=". $applications[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a>
+					 
 					 </td>
 				</tr>";
 						         
@@ -87,14 +86,14 @@
                <thead>
 				<tr>
                		 <TH>#</TH>
-					<TH>Nom app</TH>
+					<TH>Nom </TH>
 					<TH>Description</TH>
-					<TH>Lien web</TH>
-					<TH>Lien android</TH>
-					<TH>Lien Ios</TH>
-					<TH>Ussd vodacom</TH>
-					<TH>Ussd africell</TH>
-					<TH>Ussd orange</TH>
+					<TH>Web</TH>
+					<TH>Android</TH>
+					<TH>Ios</TH>
+					<TH>Vodacom</TH>
+					<TH>Africell</TH>
+					<TH>Orange</TH>
 					<TH></TH>
 	
 				</tr>
