@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperer">Entite</a>
+		<a href="?page=recuperes_entites">Entite</a>
 	</li>
 	<li class="active">
 		<strong>Recuperer</strong>

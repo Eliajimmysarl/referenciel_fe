@@ -6,7 +6,7 @@
 		</li>
 	
 		<li>
-			<a href="?page=recuperer_modeles">Api</a>
+			<a href="?page=recuperes_apis">Api</a>
 		</li>
 	
 		<li class="active">

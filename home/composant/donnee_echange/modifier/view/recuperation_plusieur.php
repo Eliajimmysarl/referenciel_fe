@@ -7,7 +7,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperer_modeles">TDE</a>
+			<a href="?page=recuperes_donnee_echanges">TDE</a>
 		</li>
 
 		<li class="active">

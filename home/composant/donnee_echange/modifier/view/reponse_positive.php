@@ -5,7 +5,7 @@
 	</li>
 	<li>
 
-		<a href="?page=recuperers">TDE</a>
+		<a href="?page=recuperes_donnee_echanges">TDE</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>

@@ -5,7 +5,7 @@
 	</li>
 	<li>
 
-		<a href="?page=recuperers">Planification</a>
+	<a href="?page=modifier_planification">Planification</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>

@@ -7,7 +7,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperer_modeles">textes</a>
+			<a href="?page=recuperes_apis">Api</a>
 		</li>
 
 		<li class="active">

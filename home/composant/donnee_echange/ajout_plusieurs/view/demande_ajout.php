@@ -6,7 +6,7 @@
 		</li>
 	
 		<li>
-			<a href="?page=recuperer_modeles">Ajouter modele</a>
+			<a href="?page=recuperes_donnee_echanges">TDE</a>
 		</li>
 	
 		<li class="active">

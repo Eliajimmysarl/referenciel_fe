@@ -4,7 +4,7 @@
 	</li>
 	<li>
 
-		<a href="">API</a>
+		<a href="?page=recuperes_apis">API</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>

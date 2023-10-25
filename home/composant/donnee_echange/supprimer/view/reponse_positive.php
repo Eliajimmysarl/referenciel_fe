@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperer_equipes">Texte</a>
+		<a href="?page=recuperes_donnee_echanges">TDE</a>
 	</li>
 	<li class="active">
 		<strong>Supprimer</strong>

@@ -7,7 +7,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperer_modeles">textes</a>
+			<a href="?page=recuperes_entites">Entite</a>
 		</li>
 
 		<li class="active">

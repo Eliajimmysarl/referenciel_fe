@@ -6,7 +6,7 @@
 		</li>
 	
 		<li>
-			<a href="?page=recuperer_modeles">Ajouter modele</a>
+		<a href="?page=recuperes_donnee_persistantes">Donnée persistante</a>
 		</li>
 	
 		<li class="active">

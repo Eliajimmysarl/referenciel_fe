@@ -5,7 +5,7 @@
 	</li>
 	<li>
 
-		<a href="?page=recuperers">Texte</a>
+		<a href="?page=recuperes_entites">Entite</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>

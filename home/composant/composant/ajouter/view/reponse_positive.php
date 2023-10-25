@@ -6,7 +6,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperer_agents">Agent</a>
+			<a href="?page=recuperes_composants">Composant</a>
 		</li>
 
 		<li class="active">

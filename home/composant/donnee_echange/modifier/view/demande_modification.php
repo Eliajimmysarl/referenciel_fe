@@ -2,10 +2,11 @@
 	<li>
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
+	
 	<li>
-
-		<a href="">TDE</a>
+		<a href="?page=recuperes_donnee_echanges">TDE</a>
 	</li>
+
 	<li class="active">
 		<strong>Modifier</strong>
 	</li>

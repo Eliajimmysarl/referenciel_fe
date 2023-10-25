@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperer_modeles">textes</a>
+		<a href="?page=recuperes_composants">Composant</a>
 	</li>
 	<li class="active">
 		<strong>Recuperer</strong>
@@ -73,7 +73,7 @@
 							
 							<td><button class='btn btn-info' ><a  href='". $composants[$i]->url_code ."' target=_blank  class='link-danger'>Voir le code</a></button></td>
 					 		
-							<td><a href='?page=recuperation_un_composant&id=". $composants[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
+							<td><a href='?page=recuperation_un_composant&id=". $composants[$i]->id_composant ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
 		
 						</tr>";
 						         

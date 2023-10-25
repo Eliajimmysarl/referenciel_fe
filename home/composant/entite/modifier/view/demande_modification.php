@@ -4,7 +4,7 @@
 	</li>
 	<li>
 
-		<a href="">Entite</a>
+		<a href="?page=recuperes_entites">Entite</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>

@@ -7,7 +7,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperer_modeles">Donnee persistante</a>
+		<a href="?page=recuperes_donnee_persistantes">Donnée persistante</a>
 		</li>
 
 		<li class="active">

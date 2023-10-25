@@ -6,7 +6,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperer_agents">Planification</a>
+		<a href="?page=modifier_planification">Planification</a>
 		</li>
 
 		<li class="active">

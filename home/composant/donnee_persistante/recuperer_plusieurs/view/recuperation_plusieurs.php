@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperer_modeles">textes</a>
+	<a href="?page=recuperes_donnee_persistantes">Donnée persistante</a>
 	</li>
 	<li class="active">
 		<strong>Recuperer</strong>
@@ -13,8 +13,9 @@
 
 								
 		
-		<br />
+		<br/>
 		
+	
 		<script type="text/javascript">
 		jQuery( document ).ready( function( $ ) {
 			var $table1 = jQuery( '#table-1' );
@@ -33,7 +34,6 @@
 		</script>
 		
 		<table class="table table-bordered datatable" id="table-1">
-			<thead>
 			<thead>
 				<tr>
 					<TH>#</TH>
@@ -80,10 +80,10 @@
 						         
 				}
 				?>
-
+			</tbody>
                <thead>
 				<tr>
-				<TH>#</TH>
+					<TH>#</TH>
 					<TH>Nom</TH>
 					<TH>Types</TH>
 					<TH>Application</TH>
@@ -96,7 +96,7 @@
 			</thead>
 		</table>
 		
-		<br />
+		<br/>
 		
 	
 
@@ -110,8 +110,8 @@
 
 
 
-	<!-- Imported styles on this page -->
-	<link rel="stylesheet" href="assets/js/datatables/datatables.css">
+		<!-- Imported styles on this page -->
+		<link rel="stylesheet" href="assets/js/datatables/datatables.css">
 	<link rel="stylesheet" href="assets/js/select2/select2-bootstrap.css">
 	<link rel="stylesheet" href="assets/js/select2/select2.css">
 

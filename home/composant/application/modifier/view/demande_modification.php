@@ -4,7 +4,7 @@
 	</li>
 	<li>
 
-		<a href="">Modifier</a>
+		<a href="?page=recuperes_applications">Application</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>

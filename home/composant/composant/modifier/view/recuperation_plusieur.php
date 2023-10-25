@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperer_modeles">textes</a>
+		<a href="?page=recuperes_composants">Composant</a>
 	</li>
 	<li class="active">
 		<strong>Recuperer</strong>

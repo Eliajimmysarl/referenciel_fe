@@ -5,7 +5,7 @@
 	</li>
 	<li>
 
-		<a href="?page=recuperers">Composant</a>
+		<a href="?page=recuperes_composants">Composant</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
