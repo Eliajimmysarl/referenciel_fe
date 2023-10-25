@@ -1,5 +1,4 @@
-<!-- Active menu dans les entites -->
-<?php  require_once('active_menu.php'); ?>
+
 
 <div class="sidebar-menu">
 
@@ -10,7 +9,7 @@
 				<!-- logo -->
 				<div class="logo">
 					<a href="?home">
-						<img src="assets/images/logo_m.png" width="120" alt="" />
+						<img src="assets/images/logo@2x.png.png" width="120" alt="" />
 					</a>
 				</div>
 
@@ -31,220 +30,180 @@
 
 			</header>      
 			<ul id="main-menu" class="main-menu">
-							
-				<li class="has-sub">
-					<a href="?page=ajouter_un">
-					<i class="fa fa-users"></i>
-						<span class="title">Application</span>
+				
+			<li class="has-sub">
+					<a href="?home">
+					<i class="fa fa-book"></i>
+						<span class="title">Cartographie</span>
 					</a>
-					<ul >
-						<li>
-							<a href="?page=ajouter_application">
-								<span class="title">Ajouter </span>
-							</a>
-						</li>
-
-						<li>
-							<a href="?page=modifier_application">
-								<span class="title">Modifier</span>
-							</a>
-						</li>
-
-						
-						<li>
-							<a href="?page=supprimer_application">
-								<span class="title">Supprimer</span>
-							</a>
-						</li>
-
+					<ul>
 						<li>
 							<a href="?page=recuperes_applications">
-								<span class="title">Recuperer</span>
+								<span class="title">Application</span>
 							</a>
 						</li>
-												
-					</ul>
-				</li>
-
-				<li class="has-sub">
-					<a href="?page=ajouter_un">
-					<i class="fa fa-users"></i>
-						<span class="title">Composant</span>
-					</a>
-					<ul >
-						<li>
-							<a href="?page=ajouter_composant">
-								<span class="title">Ajouter </span>
-							</a>
-						</li>
-
-						<li>
-							<a href="?page=modifier_composant">
-								<span class="title">Modifier</span>
-							</a>
-						</li>
-
 						
-						<li>
-							<a href="?page=supprimer_composant">
-								<span class="title">Supprimer</span>
+                       <li>
+						<a href="?page=recuperes_entites">
+								<span class="title">Entite</span>
 							</a>
 						</li>
-
 						<li>
 							<a href="?page=recuperes_composants">
-								<span class="title">Recuperer</span>
+								<span class="title">Composant</span>
 							</a>
-						</li>
-												
-					</ul>
-				</li>
-
-				<li class="has-sub">
-					<a href="?page=ajouter_un">
-					<i class="fa fa-users"></i>
-						<span class="title">Service</span>
-					</a>
-					<ul >
-						<li>
-							<a href="?page=ajouter_service">
-								<span class="title">Ajouter </span>
-							</a>
-						</li>
-
-						<li>
-							<a href="?page=modifier_service">
-								<span class="title">Modifier</span>
-							</a>
-						</li>
-
-						
-						<li>
-							<a href="?page=supprimer_service">
-								<span class="title">Supprimer</span>
-							</a>
-						</li>
-
-						<li>
-							<a href="?page=recuperes_services">
-								<span class="title">Recuperer</span>
-							</a>
-						</li>
-												
-					</ul>
-				</li>
-
-				<li class="has-sub">
-					<a href="?page=ajouter_un">
-					<i class="fa fa-users"></i>
-						<span class="title">Donnee Echange</span>
-					</a>
-					<ul >
-						<li>
-							<a href="?page=ajouter_donnee_echange">
-								<span class="title">Ajouter </span>
-							</a>
-						</li>
-
-						<li>
-							<a href="?page=modifier_donnee_echange">
-								<span class="title">Modifier</span>
-							</a>
-						</li>
-
-						
-						<li>
-							<a href="?page=supprimer_donnee_echange">
-								<span class="title">Supprimer</span>
-							</a>
+				
 						</li>
 
 						<li>
 							<a href="?page=recuperes_donnee_echanges">
-								<span class="title">Recuperer</span>
+								<span class="title">Donnée echange</span>
 							</a>
+
 						</li>
-												
+
+                        <li>
+							<a href="?page=recuperes_apis">
+								<span class="title">Api</span>
+							</a>
+						</li>						
+							
+						
+					
+
+						<li>
+						<a href="?page=recuperes_donnee_persistantes">
+								<span class="title">Donnée persistante</span>
+							</a>
+							
+						</li>
+
+					</ul>
+				    </li>
+
+			<li class="has-sub">
+					<a href="?page=ajouter_un">
+					<i class="fa fa-list"></i>
+						<span class="title">Architecture  metiér</span>
+					</a>
+               <ul>
+
+			   <li>
+					<a href="?page=modifier_application">
+						<span class="title">Application</span>
+					</a>
+				</li>
+				<li>
+					<a href="?page=modifier_entite">
+						<span class="title">Entite</span>
+					</a>
+					
+				</li>
+
+            	</ul>
+				</li>
+				
+				
+				<li class="has-sub">
+					<a href="?page=ajouter_un">
+					<i class="fa fa-list"></i>
+						<span class="title">Architecture des données</span>
+					</a>
+					<ul>
+						
+						<li>
+							<a href="?page=modifier_donnee_persistante">
+								<span class="title">Donnée persistante</span>
+							</a>	
+							
+						</li>
+				
+					</ul>
+				</li>
+				
+				
+				<li class="has-sub">
+					<a href="?page=ajouter_un">
+					<i class="fa fa-list"></i>
+						<span class="title">Architecture applicative</span>
+					</a>
+            
+                 	<ul>
+						
+
+					 <li>
+							<a href="?page=modifier_composant">
+								<span class="title">Composant Entite</span>
+							</a>
+						
+						</li>
+						
+						<li>
+							<a href="?page=modifier_donnee_echange">
+								<span class="title">Donnee Echange</span>
+							</a>
+						
+						</li>
+
+						
+
+						<li class="">
+							<a href="?page=modifier_api">
+									<span class="title">Api Entite</span>
+							</a>
+
+						</li>
+				
 					</ul>
 				</li>
 
+
 				<li class="has-sub">
-					<a href="?page=ajouter_un">
-					<i class="fa fa-users"></i>
-						<span class="title">Donnee Persistante</span>
+					<a href="">
+					<i class="fa fa-cog"></i>
+						<span class="title">Architecture technique</span>
 					</a>
-					<ul >
-						<li>
-							<a href="?page=ajouter_donnee_persistante">
-								<span class="title">Ajouter </span>
-							</a>
-						</li>
+					
+				</li>
 
-						<li>
-							<a href="?page=modifier_donnee_persistante">
-								<span class="title">Modifier</span>
-							</a>
-						</li>
 
-						
-						<li>
-							<a href="?page=supprimer_donnee_persistante">
-								<span class="title">Supprimer</span>
-							</a>
-						</li>
+				
 
-						<li>
-							<a href="?page=recuperes_donnee_persistantes">
-								<span class="title">Recuperer</span>
-							</a>
-						</li>
-												
-					</ul>
-				</li><li class="has-sub">
-					<a href="?page=ajouter_un">
-					<i class="fa fa-users"></i>
-						<span class="title">Api</span>
+				<li class="has-sub">
+					<a href="">
+						<i class="fa fa-list"></i>
+							<span class="title">Planification</span>
 					</a>
-					<ul >
-						<li>
-							<a href="?page=ajouter_api">
-								<span class="title">Ajouter </span>
-							</a>
-						</li>
-
-						<li>
-							<a href="?page=modifier_api">
-								<span class="title">Modifier</span>
-							</a>
-						</li>
-
-						
-						<li>
-							<a href="?page=supprimer_api">
-								<span class="title">Supprimer</span>
-							</a>
-						</li>
-
-						<li>
-							<a href="?page=recuperes_apis">
-								<span class="title">Recuperer</span>
-							</a>
-						</li>
-												
-					</ul>
+						<ul >
+								<li>
+								<a href="?page=modifier_planification">
+									<span class="title">Gerer </span>
+								</a>
+								</li>
+								<li>
+									<a href="?page=recuperes_planifications">
+										<span class="title">Cartographie</span>
+									</a>
+								</li>
+                    	</ul>
+					  
 				</li>
 
 									
-				<li>
+				
+
+            
+			<li class="">
 						<a href="/smaas/kill.php">
 						<i class="entypo-logout right"></i>	Log Out 
 						</a>
-					</li>
-					
-
-
+				</li>
 
 			</ul>
+
+					
 	</div>
 
 	</div>
+				
+						
