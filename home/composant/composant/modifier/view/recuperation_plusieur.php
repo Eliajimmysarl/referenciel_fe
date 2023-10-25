@@ -14,7 +14,7 @@
 		<br/>
 
 		<a href='?page=ajouter_composant'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a> /<a href='?page=recuperes_composants_plateforme'  class='btn btn-primary btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par plateforme</a> /<a href='?page=recuperes_composants_couche'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par couche</a>
-		/<a href='?page=recuperes_composants_entite'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par entite</a>
+		/<a href='?page=recuperes_composants_entite'  class='btn btn-orange btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par entite</a>
 		/<a href='?page=recuperes_composants_application'  class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par application</a>	
 		<script type="text/javascript">
 		jQuery( document ).ready( function( $ ) {

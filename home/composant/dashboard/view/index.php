@@ -5,7 +5,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		Dashboard
+		Dashboard  
 	</li>
 	
 </ol>
@@ -27,7 +27,7 @@
 					
 					<div class="tile-footer">
 						<h4>
-							<span class="pct-counter">0</span>% d'augmentation
+							<span class="pct-counter">0</span>% <button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
 						<span>Nombre total de clients ajoutés : 120</span>
@@ -52,7 +52,7 @@
 					
 					<div class="tile-footer">
 						<h4>
-							<span class="pct-counter">0</span>% en service
+							<span class="pct-counter">0</span>% <button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
 						<span>Nombre total d'agents en service : 15</span>
@@ -77,7 +77,7 @@
 					
 					<div class="tile-footer">
 						<h4>
-							<span class="pct-counter">0</span>% actifs
+							<span class="pct-counter">0</span>% <button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
 						<span>Nombre total d'itinéraires actifs : 50</span>
@@ -102,7 +102,7 @@
 					
 					<div class="tile-footer">
 						<h4>
-							<span class="pct-counter">0</span>% en service
+							<span class="pct-counter">0</span>% <button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
 						<span>Nombre total de bus en service : 230</span>
@@ -130,7 +130,7 @@
 					
 					<div class="tile-footer">
 						<h4>
-							<span class="pct-counter">0</span>% attribués
+							<span class="pct-counter">0</span>% <button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
 						<span>Nombre total des composants attribués : 120</span>
@@ -155,7 +155,7 @@
 					
 					<div class="tile-footer">
 						<h4>
-							<span class="pct-counter">0</span>% utilisés
+							<span class="pct-counter">0</span>% <button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
 						<span>Nombre total de composants utilisés : 20</span>
@@ -180,7 +180,7 @@
 					
 					<div class="tile-footer">
 						<h4>
-							<span class="pct-counter">0</span>% attribuées
+							<span class="pct-counter">0</span>% <button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
 						<span>Nombre total de cartes attribuées : 120</span>
@@ -205,7 +205,7 @@
 					
 					<div class="tile-footer">
 						<h4>
-							<span class="pct-counter">0</span>% en moyenne
+							<span class="pct-counter">0</span>% <button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
 						<span>Nombre moyen d'arrêts par itineraire : 15</span>
