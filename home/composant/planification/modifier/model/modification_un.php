@@ -8,6 +8,8 @@
 
     $composant_id=$_POST['composant_id'];
 
+    $application_id=$_POST['application_id'];
+
     $remarque=$_POST['remarque'];
 
     $statut=$_POST['statut'];
@@ -22,6 +24,8 @@
         'user_id' => $user_id,
 
         'composant_id' => $composant_id,
+
+        'application_id' => $application_id,
 
         'remarque'=> $remarque,
 

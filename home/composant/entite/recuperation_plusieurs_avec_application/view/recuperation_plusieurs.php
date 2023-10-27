@@ -42,7 +42,8 @@
 					<TH>Application</TH>
 					<TH>Nom</TH>
 					<TH>Description</TH>
-					<TH></TH>
+					<TH>Composant</TH>
+					<TH>Donnée peristante</TH>
 				</tr>
 			</thead>
 			<tbody>
@@ -64,9 +65,17 @@
 
 							<td>". $entites[$i]->descriptions ."</td>
 		
-									
-					<td> <a href='?page=recuperation_entite&id=". $entites[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
-			
+					
+							<td><form  method='POST' action='index.php?demande=recuperation_avec_composant_entite' class='form'>
+							<input type='hidden' name='entite_id'  value='". $entites[$i]->id ."' class='form-control'>
+							<input type='submit' class='btn btn-info' value='Voir'> </form>
+							</td>
+
+							<td>
+							<form  method='POST' action='index.php?demande=recuperation_avec_dp_entite' class='form'>
+							<input type='hidden' name='entite_id'  value='". $entites[$i]->id ."' class='form-control'>
+							<input type='submit' class='btn btn-info' value='Voir'> </form>
+							</td>
 					</tr>";
 						         
 				}
@@ -78,7 +87,8 @@
 					<TH>Application</TH>
 					<TH>Nom</TH>
 					<TH>Description</TH>
-					<TH></TH>
+					<TH>Composant</TH>
+					<TH>Donnée peristante</TH>
 	
 				</tr>
 			</thead>

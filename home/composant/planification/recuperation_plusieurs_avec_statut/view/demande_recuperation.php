@@ -32,7 +32,32 @@
 			<div class="panel-body">
 						
 				<form method="POST" action="index.php?demande=recuperation_avec_statut"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
-					<div class="form-group">		
+					<div class="form-group">
+					
+					<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<select  name="application_id" id="selec"  class="form-control" required="required">
+									<option value="" selected>Application</option>
+									
+										<?php
+											for($i=0; $i < count($applications); $i++)
+												{         
+													echo"  
+															<option value=". $applications[$i]->id ."> ". $applications[$i]->nom ."</option>                       
+															
+													";
+																
+												}
+										?>
+
+                                    </select>
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+								
 						<label class="col-sm-3 control-label">Statut <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">

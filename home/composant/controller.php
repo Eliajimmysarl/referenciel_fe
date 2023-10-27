@@ -504,7 +504,7 @@
                 }
             else  if($page=='modification_un_planificaton')
                 {
-                    require_once('composant/planification/modifier/model/recuperer_un.php'); 
+                    require_once('composant\planification\modifier\model\recuperer_liste.php'); 
                 }
             else if($page=='supprimer_planification')
                 {

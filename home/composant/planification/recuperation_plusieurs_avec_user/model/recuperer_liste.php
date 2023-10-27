@@ -7,6 +7,15 @@
     $obj = json_decode($result);                      
     
     $users= $obj->user;
+
+
+    $uri =  $authority.'/application/';
+   
+    $result=curl_get($uri, $token);
+
+    $obj = json_decode($result);                      
+    
+    $applications= $obj->applications;
   
     
     $code = $obj->code;

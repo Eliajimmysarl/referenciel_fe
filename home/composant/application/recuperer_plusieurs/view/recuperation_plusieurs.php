@@ -45,7 +45,7 @@
 					<TH>Vodacom</TH>
 					<TH>Africell</TH>
 					<TH>Orange</TH>
-					<TH></TH>
+					<TH>Entite</TH>
 				
 				</tr>
 			</thead>
@@ -77,7 +77,10 @@
 							<td>". $applications[$i]->ussd_africell ."</td>
 	
 							<td>". $applications[$i]->ussd_orange ."</td>
-							<td><a href='?page=recuperation_application&id=". $applications[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
+
+							<td>  <form  method='POST' action='index.php?demande=recuperation_avec_entite_application' class='form'>
+							<input type='hidden' name='application_id'  value='". $applications[$i]->id ."' class='form-control'>
+							<input type='submit' class='btn btn-info' value='Voir'> </form></td>
 					
 						</tr>";
 						         

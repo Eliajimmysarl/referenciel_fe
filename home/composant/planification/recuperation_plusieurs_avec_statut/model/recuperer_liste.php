@@ -7,7 +7,15 @@
     $obj = json_decode($result);                      
     
     $planifications= $obj->planification;
+    
   
+    $uri =  $authority.'/application/';
+   
+    $result=curl_get($uri, $token);
+
+    $obj = json_decode($result);                      
+    
+    $applications= $obj->applications;
     
     $code = $obj->code;
 

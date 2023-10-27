@@ -18,19 +18,19 @@
 					<a href=" ?page=recuperes_applications">
 					<div class="tile-header">
 						<h3>Application</h3>
-						<span>Nombre total des application : 150</span>
+						<span>Nombre total d'application : 150</span>
 					</div>
 					
 					<div class="tile-progressbar">
-						<span data-fill="80%"></span>
+						<span data-fill="100%" type="hidden"></span>
 					</div>
 					
 					<div class="tile-footer">
 						<h4>
-							<span class="pct-counter">0</span>% <button type="button" class="btn btn-orange">View</button>
+							<button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
-						<span>Nombre total de clients ajoutés : 120</span>
+						<span>Nombre total d'application ajoutés : 120</span>
 					</div>
 				</a>
 				</div>
@@ -43,19 +43,19 @@
 					<a href="?page=recuperes_entites">
 					<div class="tile-header">
 						<h3>Entite</h3>
-						<span>Nombre total d'entite : 50</span>
+						<span>Nombre total d'entites : 50</span>
 					</div>
 					
 					<div class="tile-progressbar">
-						<span data-fill="80%"></span>
+						<span data-fill="100%"></span>
 					</div>
 					
 					<div class="tile-footer">
 						<h4>
-							<span class="pct-counter">0</span>% <button type="button" class="btn btn-orange">View</button>
+							 <button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
-						<span>Nombre total d'agents en service : 15</span>
+						<span>Nombre total d'entites en service : 15</span>
 					</div>
 					</a>
 				</div>
@@ -67,7 +67,7 @@
 				<div class="tile-progress tile-blue">
 					<a href="?page=recuperes_apis">
 					<div class="tile-header">
-						<h3>Api</h3>
+						<h3>API</h3>
 						<span>Nombre total d'api' : 50</span>
 					</div>
 					
@@ -77,10 +77,10 @@
 					
 					<div class="tile-footer">
 						<h4>
-							<span class="pct-counter">0</span>% <button type="button" class="btn btn-orange">View</button>
+							 <button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
-						<span>Nombre total d'itinéraires actifs : 50</span>
+						<span>Nombre total d'api actifs : 50</span>
 					</div>
 					</a>
 				</div>
@@ -97,12 +97,12 @@
 					</div>
 					
 					<div class="tile-progressbar">
-						<span data-fill="80%"></span>
+						<span data-fill="100%"></span>
 					</div>
 					
 					<div class="tile-footer">
 						<h4>
-							<span class="pct-counter">0</span>% <button type="button" class="btn btn-orange">View</button>
+						 <button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
 						<span>Nombre total de bus en service : 230</span>
@@ -125,12 +125,12 @@
 					</div>
 					
 					<div class="tile-progressbar">
-						<span data-fill="80%"></span>
+						<span data-fill="100%"></span>
 					</div>
 					
 					<div class="tile-footer">
 						<h4>
-							<span class="pct-counter">0</span>% <button type="button" class="btn btn-orange">View</button>
+							<button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
 						<span>Nombre total des composants attribués : 120</span>
@@ -145,20 +145,20 @@
 				<div class="tile-progress tile-cyan">
 					<a href="?page=recuperes_donnee_persistantes">
 					<div class="tile-header">
-						<h3>Donnéee persistante</h3>
-						<span>Nombre total des Donnéees persistantes : 150</span>
+						<h3>Donnée persistante</h3>
+						<span>Nombre total des Données persistantes : 150</span>
 					</div>
 					
 					<div class="tile-progressbar">
-						<span data-fill="20.5%"></span>
+						<span data-fill="100%"></span>
 					</div>
 					
 					<div class="tile-footer">
 						<h4>
-							<span class="pct-counter">0</span>% <button type="button" class="btn btn-orange">View</button>
+							<button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
-						<span>Nombre total de composants utilisés : 20</span>
+						<span>Nombre total des Données persistantes utilisés : 20</span>
 					</div>
 				</a>
 				</div>
@@ -175,12 +175,12 @@
 					</div>
 					
 					<div class="tile-progressbar">
-						<span data-fill="80%"></span>
+						<span data-fill="100%"></span>
 					</div>
 					
 					<div class="tile-footer">
 						<h4>
-							<span class="pct-counter">0</span>% <button type="button" class="btn btn-orange">View</button>
+							<button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
 						<span>Nombre total de cartes attribuées : 120</span>
@@ -200,15 +200,15 @@
 					</div>
 					
 					<div class="tile-progressbar">
-						<span data-fill="10"></span>
+						<span data-fill="100"></span>
 					</div>
 					
 					<div class="tile-footer">
 						<h4>
-							<span class="pct-counter">0</span>% <button type="button" class="btn btn-orange">View</button>
+							<button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
-						<span>Nombre moyen d'arrêts par itineraire : 15</span>
+						<span>Nombre moyen de users : 15</span>
 					</div>
 				</div>
 			

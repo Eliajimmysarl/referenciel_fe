@@ -1,22 +1,14 @@
 <?php
 
-    $uri =  $authority2.'/client/';
+$uri =  $authority2.'/client/';
    
-    $result=curl_get($uri, $token);
+$result=curl_get($uri, $token);
 
-    $obj = json_decode($result);                      
+$obj = json_decode($result);                      
+
+$users= $obj->user;
     
-    $users= $obj->user;
-
-
-    $uri =  $authority.'/composant/';
-   
-    $result=curl_get($uri, $token);
-
-    $obj = json_decode($result);                      
-    
-    $composants= $obj->composant;
-
+  
     $uri =  $authority.'/application/';
    
     $result=curl_get($uri, $token);
@@ -26,13 +18,21 @@
     $applications= $obj->applications;
 
     
+    $uri =  $authority.'/composant/';
+   
+    $result=curl_get($uri, $token);
+
+    $obj = json_decode($result);                      
+    
+    $composants= $obj->composant;
+    
     $code = $obj->code;
 
     if($code ==200)
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/planification/ajouter/view/demande_ajout.php'); 
+            require_once('composant\planification\modifier\view\demande_modification.php'); 
         }
     else
         {

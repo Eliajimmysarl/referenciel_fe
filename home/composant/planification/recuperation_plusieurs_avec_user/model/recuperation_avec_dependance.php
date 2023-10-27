@@ -1,13 +1,15 @@
 <?php
 
 $user_id=$_POST['user_id'];
+$application_id=$_POST['application_id'];
 
 $uri = $authority."/planification/";
 
     
     $data = array(
 
-        'user_id'=> $user_id
+        'user_id'=> $user_id,
+        'application_id'=> $application_id
 
     
     );
@@ -15,7 +17,7 @@ $uri = $authority."/planification/";
     $result=curl_get_data($uri, $token, $data);
 
     $obj = json_decode($result);   
-      echo"$result"; 
+     
     $planifications= $obj->planification;
 
     $code = $obj->code;

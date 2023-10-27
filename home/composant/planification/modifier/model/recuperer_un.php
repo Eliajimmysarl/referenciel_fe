@@ -32,7 +32,7 @@ $result=curl_get($uri, $token);
         
         
         
-        require_once('composant/planification/modifier/view/demande_modification.php'); 
+        require_once('composant\planification\modifier\model\recuperer_liste.phpp'); 
     }
 else if ($code ==400)
     {
