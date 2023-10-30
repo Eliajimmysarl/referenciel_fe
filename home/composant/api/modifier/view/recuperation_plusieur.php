@@ -68,7 +68,7 @@
 
 						<td>". $apis[$i]->methode ."</td>
 
-						<td> <a href='". $apis[$i]->uri ."' target=_blank>Voir le code</a></td>
+						<td> <a href='". $apis[$i]->uri ."' target=_blank class='btn btn-orange'>Voir le code</a></td>
 
 		
 						

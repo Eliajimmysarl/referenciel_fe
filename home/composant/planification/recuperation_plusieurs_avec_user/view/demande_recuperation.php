@@ -44,7 +44,7 @@
 											for($i=0; $i < count($users); $i++)
 												{         
 													echo"  
-															<option value=". $users[$i]->id ."> ". $users[$i]->email ."</option>                       
+															<option value=". $users[$i]->email ."> ". $users[$i]->email ."</option>                       
 															
 													";
 																

@@ -43,7 +43,7 @@
 											for($i=0; $i < count($users); $i++)
 												{         
 													echo"  
-															<option value=". $users[$i]->id ."> ". $users[$i]->email ."</option>                       
+															<option value=". $users[$i]->email ."> ". $users[$i]->email ."</option>                       
 															
 													";
 																
@@ -94,7 +94,7 @@
 											for($i=0; $i < count($composants); $i++)
 												{         
 													echo"  
-															<option value=". $composants[$i]->id ."> ". $composants[$i]->nom ."</option>                       
+															<option value=". $composants[$i]->id_composant ."> ". $composants[$i]->nom ."</option>                       
 															
 													";
 																
@@ -125,7 +125,7 @@
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 									<select  name="status" id="selec"  class="form-control" value="<?php echo $status;?>" >
-									<option value="" selected>Status</option>
+									<option value="" selected>Statut</option>
 										<option value="1">Debut</option>
 										<option value="2">En cour</option>
 										<option value="3">fin</option>

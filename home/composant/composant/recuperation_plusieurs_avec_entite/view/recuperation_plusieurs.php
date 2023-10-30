@@ -36,11 +36,12 @@
 			<thead>
 				<tr>
 				    <TH>#</TH>
+					<TH>Entite</TH>
 					<TH>Nom</TH>
 					<TH>Application</TH>
 					<TH>Couche</TH>
 					<TH>Platforme</TH>
-					<TH>Entite</TH>
+				
 					<TH>Description</TH>
 					<TH>Url code</TH>
 					<TH>TDE</TH>
@@ -59,7 +60,7 @@
                			 <tr class='odd gradeX'>
 
 							<td>$j</td>
-
+                            <td>". $composants[$i]->nom ."</td>
 							<td>". $composants[$i]->entite_nom ."</td>
 
 							<td > " . $composants[$i]->application_nom ."</td>
@@ -68,15 +69,15 @@
 
 							<td>". $composants[$i]->plateforme ."</td>
 
-							<td>". $composants[$i]->nom ."</td>
+							
 
 							<td>". $composants[$i]->descriptions ."</td>
 							
-							<td><a href='". $composants[$i]->url_code ."' target=_blank>Voir le code</a></td>
+							<td><a href='". $composants[$i]->url_code ."' target=_blank class='btn btn-orange'>Voir le code</a></td>
 
 										<td><form  method='POST' action='index.php?demande=recuperation_avec_composant_tde' class='form'>
 										<input type='hidden' name='composant_id'  value='". $composants[$i]->id_composant ."' class='form-control'>
-										<input type='submit' class='btn btn-info' value='Voir'> </form> </td>
+										<input type='submit' class='btn btn-black' value='Voir'> </form> </td>
 
 										<td><form  method='POST' action='index.php?demande=recuperation_avec_composant_api' class='form'>
 										<input type='hidden' name='composant_id'  value='". $composants[$i]->id_composant ."' class='form-control'>
@@ -89,11 +90,12 @@
                <thead>
 				<tr>
                     <TH>#</TH>
+					<TH>Entite</TH>
 					<TH>Nom</TH>
 					<TH>Application</TH>
 					<TH>Couche</TH>
 					<TH>Platforme</TH>
-					<TH>Entite</TH>
+				
 					<TH>Description</TH>
 					<TH>Url code</TH>
 					<TH>TDE</TH>

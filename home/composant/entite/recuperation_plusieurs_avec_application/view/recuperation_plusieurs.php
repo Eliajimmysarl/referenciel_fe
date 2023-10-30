@@ -39,8 +39,10 @@
 			<thead>
 			<tr>
 				    <TH>#</TH>
-					<TH>Application</TH>
+
 					<TH>Nom</TH>
+					<TH>Application</TH>
+					
 					<TH>Description</TH>
 					<TH>Composant</TH>
 					<TH>Donnée peristante</TH>
@@ -59,22 +61,24 @@
 
 							<td>$j</td>
 
+							<td>". $entites[$i]->entite_nom ."</td>
+
 							<td > " . $entites[$i]->applications_nom ."</td>
 
-							<td>". $entites[$i]->entite_nom ."</td>
+							
 
 							<td>". $entites[$i]->descriptions ."</td>
 		
 					
 							<td><form  method='POST' action='index.php?demande=recuperation_avec_composant_entite' class='form'>
 							<input type='hidden' name='entite_id'  value='". $entites[$i]->id ."' class='form-control'>
-							<input type='submit' class='btn btn-info' value='Voir'> </form>
+							<input type='submit' class='btn btn-success' value='Voir'> </form>
 							</td>
 
 							<td>
 							<form  method='POST' action='index.php?demande=recuperation_avec_dp_entite' class='form'>
 							<input type='hidden' name='entite_id'  value='". $entites[$i]->id ."' class='form-control'>
-							<input type='submit' class='btn btn-info' value='Voir'> </form>
+							<input type='submit' class='btn btn-danger' value='Voir'> </form>
 							</td>
 					</tr>";
 						         
@@ -84,8 +88,9 @@
             <thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Application</TH>
 					<TH>Nom</TH>
+					<TH>Application</TH>
+				
 					<TH>Description</TH>
 					<TH>Composant</TH>
 					<TH>Donnée peristante</TH>

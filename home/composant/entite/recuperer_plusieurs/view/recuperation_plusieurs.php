@@ -66,13 +66,13 @@
 							
 				 		                 <td><form  method='POST' action='index.php?demande=recuperation_avec_composant_entite' class='form'>
 										   <input type='hidden' name='entite_id'  value='". $entites[$i]->id ."' class='form-control'>
-										   <input type='submit' class='btn btn-info' value='Voir'> </form>
+										   <input type='submit' class='btn btn-danger' value='Voir'> </form>
 										   </td>
 
 										   <td>
 										   <form  method='POST' action='index.php?demande=recuperation_avec_dp_entite' class='form'>
 										   <input type='hidden' name='entite_id'  value='". $entites[$i]->id ."' class='form-control'>
-										   <input type='submit' class='btn btn-info' value='Voir'> </form>
+										   <input type='submit' class='btn btn-black' value='Voir'> </form>
 										   </td>
 						</tr>";
 						         

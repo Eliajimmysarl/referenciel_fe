@@ -36,11 +36,12 @@
 			<thead>
 				<tr>
 				    <TH>#</TH>
+					<TH>Entite</TH>
 					<TH>Nom</TH>
 					<TH>Application</TH>
 					<TH>Couche</TH>
 					<TH>Platforme</TH>
-					<TH>Entite</TH>
+					
 					<TH>Description</TH>
 					<TH>Url code</TH>
 				</tr>
@@ -84,11 +85,11 @@
                <thead>
 				<tr>
                     <TH>#</TH>
+					<TH>Entite</TH>
 					<TH>Nom</TH>
 					<TH>Application</TH>
 					<TH>Couche</TH>
 					<TH>Platforme</TH>
-					<TH>Entite</TH>
 					<TH>Description</TH>
 					<TH>Url code</TH>
 				</tr>

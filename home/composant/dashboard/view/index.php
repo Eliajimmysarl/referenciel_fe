@@ -30,7 +30,7 @@
 							<button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
-						<span>Nombre total d'application ajoutés : 120</span>
+						<span></span>
 					</div>
 				</a>
 				</div>
@@ -55,7 +55,7 @@
 							 <button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
-						<span>Nombre total d'entites en service : 15</span>
+						<span></span>
 					</div>
 					</a>
 				</div>
@@ -80,7 +80,7 @@
 							 <button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
-						<span>Nombre total d'api actifs : 50</span>
+						<span></span>
 					</div>
 					</a>
 				</div>
@@ -105,7 +105,7 @@
 						 <button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
-						<span>Nombre total de bus en service : 230</span>
+						<span></span>
 					</div>
 					</a>
 					</div>
@@ -133,7 +133,7 @@
 							<button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
-						<span>Nombre total des composants attribués : 120</span>
+						<span></span>
 					</div>
 					</a>
 				</div>
@@ -158,7 +158,7 @@
 							<button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
-						<span>Nombre total des Données persistantes utilisés : 20</span>
+						<span></span>
 					</div>
 				</a>
 				</div>
@@ -183,7 +183,7 @@
 							<button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
-						<span>Nombre total de cartes attribuées : 120</span>
+						<span></span>
 					</div>
 					</a>
 				</div>
@@ -208,7 +208,7 @@
 							<button type="button" class="btn btn-orange">View</button>
 						</h4>
 						
-						<span>Nombre moyen de users : 15</span>
+						<span></span>
 					</div>
 				</div>
 			

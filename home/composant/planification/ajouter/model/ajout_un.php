@@ -10,7 +10,6 @@
 
     $remarque=$_POST['remarque'];
 
-    $statut=$_POST['statut'];
 
     $date_debut=$_POST['date_debut'];
 
@@ -27,8 +26,7 @@
 
         'remarque'=> $remarque,
 
-        'statut'=> $statut,
-
+       
         'date_debut'=> $date_debut,
 
         'date_fin'=> $date_fin

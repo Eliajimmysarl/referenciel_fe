@@ -45,7 +45,7 @@
 					<TH>Entite</TH>
 					<TH>Types</TH>
 					<TH>Description</TH>
-					<TH></TH>
+				
 				</tr>
 			</thead>
 			<tbody>
@@ -73,7 +73,7 @@
 						<td>". $donnee_echanges[$i]->descriptions ."</td>
 		
 									
-					<td> <a href='?page=recuperation_un_tde&id=". $donnee_echanges[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
+					
 			
 					</tr>";
 						         
@@ -89,7 +89,7 @@
 					<TH>Entite</TH>
 					<TH>Types</TH>
 					<TH>Description</TH>
-					<TH></TH>
+				
 	
 				</tr>
 			</thead>
