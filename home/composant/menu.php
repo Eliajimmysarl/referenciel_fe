@@ -194,7 +194,7 @@
 
             
 			<li class="">
-						<a href="/smaas/kill.php">
+						<a href="/referentiel/kill.php">
 						<i class="entypo-logout right"></i>	Log Out 
 						</a>
 				</li>
