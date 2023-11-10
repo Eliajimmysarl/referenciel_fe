@@ -100,6 +100,34 @@
 					
 				</li>
 
+				<li>
+					<a href="?page=modifier_entite">
+						<span class="title">Acteur</span>
+					</a>
+					
+				</li>
+
+				<li>
+					<a href="?page=modifier_entite">
+						<span class="title">Role</span>
+					</a>
+					
+				</li>
+
+				<li>
+					<a href="?page=modifier_entite">
+						<span class="title">Unite organisation </span>
+					</a>
+					
+				</li>
+
+				<li>
+					<a href="?page=modifier_entite">
+						<span class="title">Processus </span>
+					</a>
+					
+				</li>
+				
             	</ul>
 				</li>
 				
@@ -150,6 +178,27 @@
 						<li class="">
 							<a href="?page=modifier_api">
 									<span class="title">Api Entite</span>
+							</a>
+
+						</li>
+
+						<li class="">
+							<a href="?page=modifier_api">
+									<span class="title">Composant processus</span>
+							</a>
+
+						</li>
+
+						<li class="">
+							<a href="?page=modifier_api">
+									<span class="title">Interaction processus</span>
+							</a>
+
+						</li>
+
+						<li class="">
+							<a href="?page=modifier_api">
+									<span class="title">Interaction entite</span>
 							</a>
 
 						</li>
