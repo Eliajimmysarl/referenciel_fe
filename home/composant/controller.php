@@ -18,6 +18,11 @@
                     require_once('composant/composant/ajouter/model/ajout_un.php');  
                 }
 
+            else  if($demande=='ajouter_un_unite_organisation')
+                {
+                    require_once('composant/unite_organisation/ajouter/model/ajout_un.php');  
+                }
+
             else  if($demande=='ajouter_un_tde')
                 {
                     require_once('composant/donnee_echange/ajouter/model/ajout_un.php');  
@@ -59,6 +64,12 @@
                     require_once('composant/api/modifier/model/modification_un.php');  
                 }
 
+
+            else  if($demande=='modification_un_unite_organisation')
+                {
+                    require_once('composant/unite_organisation/modifier/model/modification_un.php');  
+                }
+
             else  if($demande=='modification_entite')
                 {
                     require_once('composant/entite/modifier/model/modification_un.php');  
@@ -71,6 +82,16 @@
             else  if($demande=='recuperation_avec_entite_application')
                 {
                     require_once('composant\entite\recuperation_plusieurs_avec_application\model\recuperation_avec_dependance.php');  
+                }
+
+            else  if($demande=='recuperation_avec_organisation_nom')
+                {
+                    require_once('composant\unite_organisation\recuperation_plusieurs_avec_organisation\model\recuperation_avec_dependance.php');  
+                }
+
+            else  if($demande=='recuperation_avec_application_unite_organisation')
+                {
+                    require_once('composant\unite_organisation\recuperation_plusieurs_avec_application\model\recuperation_avec_dependance.php');  
                 }
 
             else  if($demande=='modification_un_composant')
@@ -135,6 +156,11 @@
             else  if($demande=='suppression_application')
                 {
                     require_once('composant/application/supprimer/model/suppression.php');  
+                }
+
+                else  if($demande=='suppression_un_unite_organisation')
+                {
+                    require_once('composant/unite_organisation/supprimer/model/suppression.php');  
                 }
 
             else  if($demande=='suppression_un_composant')
@@ -273,6 +299,18 @@
                 {
                     require_once('composant/composant/supprimer/model/recuperer_plusieurs.php'); 
                 }
+
+            else  if($page=='supprimer_unite_organisation')
+                {
+                    require_once('composant/unite_organisation/supprimer/model/recuperer_plusieurs.php'); 
+                }
+     
+                else  if($page=='demande_supprimer_unite_organisation')
+                {
+                    require_once('composant/unite_organisation/supprimer/model/recuperer_un.php'); 
+                }
+
+
             else  if($page=='demande_supprimer_composant')
                 {
                     require_once('composant/composant/supprimer/model/recuperer_un.php'); 
@@ -367,9 +405,24 @@
                 {
                     require_once('composant\entite\recuperation_plusieurs_avec_composant\model\recuperer_liste.php'); 
                 }
+
+            else  if($page=='recuperes_plusieurs_unite_organisation_nom')
+                {
+                    require_once('composant\unite_organisation\recuperation_plusieurs_avec_organisation\model\recuperer_liste.php'); 
+                }
+            else  if($page=='recuperes_plusieurs_unite_organisation_application')
+                {
+                    require_once('composant\unite_organisation\recuperation_plusieurs_avec_application\model\recuperer_liste.php'); 
+                }
+
             else  if($page=='recuperer_un_entite')
                 {
                     require_once('composant\entite\recuperer\model\recuperer_plusieurs.php');
+                }
+
+                else  if($page=='recuperation_un_unite_organisation')
+                {
+                    require_once('composant\unite_organisation\recuperer\model\recuperer_un.php');
                 }
 
             else  if($page=='recuperation_entite')
@@ -464,6 +517,8 @@
                 {
                     require_once('composant\api\modifier\model\recuperer_plusieurs.php'); 
                 }
+
+            
             else if($page=='supprimer_api')
                 {
                     require_once('composant\api\supprimer\model\recuperer_plusieurs.php');
@@ -484,6 +539,11 @@
             else  if($page=='recuperation_un_api')
                 {
                     require_once('composant\api\recuperer\model\recuperer_un.php'); 
+                }
+
+                else  if($page=='modification_un_unite_organisation')
+                {
+                    require_once('composant\unite_organisation\modifier\model\recuperer_liste.php'); 
                 }
             else  if($page=='recuperes_api_composant')
                 {
@@ -534,6 +594,17 @@
             else  if($page=='recuperes_planification_statut')
                 {
                     require_once('composant\planification\recuperation_plusieurs_avec_statut\model\recuperer_liste.php'); 
+                }
+
+
+                else  if($page=='modifier_unite_organisation')
+                {
+                    require_once('composant/unite_organisation/modifier/model/recuperer_plusieurs.php'); 
+                }
+
+                else  if($page=='ajouter_unite_organisation')
+                {
+                    require_once('composant\unite_organisation\ajouter\model\recuperer_liste.php');
                 }
 
 

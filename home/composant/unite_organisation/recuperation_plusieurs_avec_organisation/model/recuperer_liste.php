@@ -1,13 +1,13 @@
 <?php
 
 
-    $uri =  $authority.'/composant/';
+    $uri =  $authority.'/unite_organisation/';
    
     $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
     
-    $composants= $obj->composant;
+    $unite_organisations= $obj->unite_organisation;
     
     
     $code = $obj->code;
@@ -16,7 +16,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant\api\recuperation_plusieurs_avec_composant\view\demande_recuperation.php'); 
+            require_once('composant\unite_organisation\recuperation_plusieurs_avec_organisation\view\demande_recuperation.php'); 
         }
     else
         {

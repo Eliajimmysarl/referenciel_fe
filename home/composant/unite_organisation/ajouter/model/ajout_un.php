@@ -1,44 +1,39 @@
 <?php
 
-    $uri =  $authority.'/api/';
+    $uri =  $authority.'/unite_organisation/';
 
     $application_id=$_POST['application_id'];
 
-    $entite_id=$_POST['entite_id'];
+    $nom=$_POST['nom'];
 
-    $composant_id=$_POST['composant_id'];
+    $description=$_POST['descriptions'];
 
-    $methode=$_POST['methode'];
-
-    $urir=$_POST['uri'];
+   
 
 
     $data = array(
         
         'application_id' => $application_id,
 
-        'entite_id'=> $entite_id,
+        'nom'=> $nom,
 
-        'composant_id'=> $composant_id,
+        'descriptions'=> $description
 
-        'methode'=> $methode,
-
-        'uri'=> $urir
     
     );
     $result=curl_post($uri, $token, $data);
 
-    $api=json_decode($result);
+    $unite_organisation=json_decode($result);
  
-    $code = $api->code;
+    $code = $unite_organisation->code;
         
     if($code ==201)
             {   
-                require_once('composant/api/ajouter/view/reponse_positive.php'); 
+                require_once('composant/unite_organisation/ajouter/view/reponse_positive.php'); 
             }
         else    
             {
-                require_once('composant/api/ajouter/view/reponse_negative.php');   
+                require_once('composant/unite_organisation/ajouter/view/reponse_negative.php');   
             }
 
 

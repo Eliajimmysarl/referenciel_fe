@@ -3,12 +3,12 @@
 $id=$_GET['id'];
 
 //URI
-$uri = $authority."/api/".$id;
+$uri = $authority."/unite_organisation/".$id;
 
 $result=curl_delete($uri, $token);
 
     $obj = json_decode($result);                      
-    $apis= $obj->api;
+    $unite_organisations= $obj->unite_organisation;
 
     $code =  $obj->code;
 
@@ -16,7 +16,7 @@ $result=curl_delete($uri, $token);
         {    
              
             
-            require_once('composant/api/supprimer/view/reponse_positive.php');
+            require_once('composant/unite_organisation/supprimer/view/reponse_positive.php');
         }
         else
         {

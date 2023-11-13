@@ -1,6 +1,6 @@
 <?php
 
-    $uri =  $authority.'/api/';
+    $uri =  $authority.'/unite_organisation/';
 
     $result=curl_get($uri, $token);
 
@@ -14,7 +14,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant\api\recuperer_plusieurs\view\recuperation_plusieurs.php'); 
+            require_once('composant\unite_organisation\recuperer_plusieurs\view\recuperation_plusieurs.php'); 
         }
         else
         {

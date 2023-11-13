@@ -7,7 +7,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperes_apis">Api</a>
+			<a href="?page=recuperes_apis">Unité organisation</a>
 		</li>
 
 		<li class="active">
@@ -39,11 +39,9 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
+					<TH>Nom</TH>
 					<TH>Application</TH>
-					<TH>Composant</TH>
-					<TH>entite</TH>
-					<TH>Methode</TH>
-					<TH>Uri</TH>
+					<TH>Description</TH>
 				
 				</tr>
 			</thead>
@@ -51,7 +49,7 @@
 				
 				<?php
 								
-				for($i=0; $i < count($apis); $i++)
+				for($i=0; $i < count($unite_organisations); $i++)
 				{ 
 					$j = $i + 1;
 				echo"                         
@@ -59,17 +57,11 @@
 
 						<td>$j</td>
 
-						<td > " . $apis[$i]->application_nom ."</td>
+						<td > " . $unite_organisations[$i]->nom ."</td>
 
-						<td>". $apis[$i]->composant_nom ."</td>
+						<td>". $unite_organisations[$i]->application_nom ."</td>
 
-						<td>". $apis[$i]->entite_nom ."</td>
-
-						<td>". $apis[$i]->methode ."</td>
-
-						<td> <a href='". $apis[$i]->uri ."' target=_blank class='btn btn-orange'>Voir le code</a></td>
-
-					
+						<td>". $unite_organisations[$i]->description."</td>
 		
 						</tr>";
 						         
@@ -78,16 +70,11 @@
 
                <thead>
 				<tr>
-                	<TH>#</TH>
+				     <TH>#</TH>
+					<TH>Nom</TH>
 					<TH>Application</TH>
-					<TH>Composant</TH>
-					<TH>Entite</TH>
-					<TH>Methode</TH>
-					<TH>Uri</TH>
-					
-					
-	
-	
+					<TH>Description</TH>
+				
 				</tr>
 			</thead>
 		</table>

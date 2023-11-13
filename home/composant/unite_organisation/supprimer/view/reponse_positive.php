@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperes_apis">Api</a>
+		<a href="?page=recuperes_apis">Unite organisation</a>
 	</li>
 	<li class="active">
 		<strong>Supprimer</strong>

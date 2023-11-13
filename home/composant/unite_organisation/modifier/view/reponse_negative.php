@@ -5,7 +5,7 @@
 	</li>
 	<li>
 
-		<a href="?page=recuperes_apis">Api</a>
+		<a href="?page=recuperes_apis">Unité organisation</a>
 
 	</li>
 	<li class="active">

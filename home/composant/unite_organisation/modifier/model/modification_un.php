@@ -2,37 +2,31 @@
 
     $id=$_POST['id'];
 
-    $uri = $authority."/api/".$id;
+    $uri = $authority."/unite_organisation/".$id;
 
     $application_id=$_POST['application_id'];
 
-    $entite_id=$_POST['entite_id'];
+    $nom=$_POST['nom'];
 
-    $composant_id=$_POST['composant_id'];
+    $description=$_POST['descriptions'];
 
-    $methode=$_POST['methode'];
-
-    $urir=$_POST['uri'];
+   
 
     $data = array(
         
         'application_id' => $application_id,
 
-        'entite_id'=> $entite_id,
+        'nom'=> $nom,
 
-        'composant_id'=> $composant_id,
-
-        'methode'=> $methode,
-
-        'uri'=> $urir
+        'descriptions'=> $description
 
     );    
 
     $result=curl_put($uri, $token,$data);
         
-    $api=json_decode($result);
+    $unite_organisation=json_decode($result);
 
-    $code =  $api->code;
+    $code =  $unite_organisation->code;
 
     if($code ==200)
         

@@ -2,34 +2,28 @@
 
 $id=$_GET['id'];
 
-$uri = $authority."/api/".$id;
+$uri = $authority."/unite_organisation/".$id;
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $apis= $obj->api;
+    $unite_organisations= $obj->unite_organisation;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $application_nom=$apis[0]->application_nom; 
+            $application_nom=$unite_organisations[0]->applications_nom; 
 
-            $composant_nom=$apis[0]->composant_nom;
+            $nom=$unite_organisations[0]->unite_organisation_nom;
 
-            $entite_nom=$apis[0]->entite_nom;
-            
-            $methode=$apis[0]->methode;
-            
-            $uri=$apis[0]->uri;
-
-       
-            
-            $id=$apis[0]->id;
+            $description=$unite_organisations[0]->descriptions;
+           
+            $id=$unite_organisations[0]->id;
 
           
-            require_once('composant/api/recuperer/view/recuperation_un.php'); 
+            require_once('composant/unite_organisation/recuperer/view/recuperation_un.php'); 
         }
     else
         {

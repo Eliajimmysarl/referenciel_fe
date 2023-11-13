@@ -7,7 +7,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperes_apis">Api</a>
+			<a href="?page=recuperes_apis">Unite organisation</a>
 		</li>
 
 		<li class="active">
@@ -38,39 +38,33 @@
 		<table class="table table-bordered datatable" id="table-1">
 			<thead>
 				<tr>
-					<TH>#</TH>
-					<TH>Uri</TH>
+				<TH>#</TH>
+					<TH>Nom</TH>
 					<TH>Application</TH>
-					<TH>Composant</TH>
-					<TH>Entite</TH>
-					<TH>Methode</TH>
-				
-				
-				</tr>
+					<TH>Description</TH>
 			</thead>
 			<tbody>
 				
 				<?php
 								
-				for($i=0; $i < count($apis); $i++)
-				{ 
-					$j = $i + 1;
-				echo"                         
-					<tr class='odd gradeX'>
-
-						<td>$j</td>
-
-						<td>". $apis[$i]->uri ."</td>
-
-						<td > " . $apis[$i]->application_nom ."</td>
-
-						<td>". $apis[$i]->composant_nom ."</td>
-
-						<td>". $apis[$i]->entite_nom ."</td>
-
-						<td>". $apis[$i]->methode ."</td>
-
-					
+							
+								
+								for($i=0; $i < count($unite_organisations); $i++)
+								{ 
+									$j = $i + 1;
+								echo"                         
+									<tr class='odd gradeX'>
+				
+										<td>$j</td>
+				
+										<td > " . $unite_organisations[$i]->unite_organisation_nom ."</td>
+				
+										<td>". $unite_organisations[$i]->applications_nom ."</td>
+				
+										<td>". $unite_organisations[$i]->descriptions ."</td>
+				
+									
+				
 			
 					</tr>";
 						         
@@ -79,14 +73,10 @@
             </tbody>
             <thead>
 				<tr>
-                    <TH>#</TH>
-					<TH>Uri</TH>
+				<TH>#</TH>
+					<TH>Nom</TH>
 					<TH>Application</TH>
-					<TH>Composant</TH>
-					<TH>Entite</TH>
-					<TH>Methode</TH>
-					
-			
+					<TH>Description</TH>
 	
 				</tr>
 			</thead>
