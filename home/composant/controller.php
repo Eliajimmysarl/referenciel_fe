@@ -47,6 +47,11 @@
                     require_once('composant/api/ajouter/model/ajout_un.php');  
                 }
 
+                else  if($demande=='ajouter_un_role')
+                {
+                    require_once('composant/role/ajouter/model/ajout_un.php');  
+                }
+
                 else  if($demande=='ajouter_un_acteur')
                 {
                     require_once('composant/acteur/ajouter/model/ajout_un.php');  
@@ -414,6 +419,11 @@
                     require_once('composant/entite/modifier/model/recuperer_plusieurs.php'); 
                 }
 
+                else  if($page=='modifier_role')
+                {
+                    require_once('composant/role/modifier/model/recuperer_plusieurs.php'); 
+                }
+
 
             else  if($page=='modification_entite')
                 {
@@ -565,6 +575,11 @@
                 else  if($page=='recuperes_acteur_nom')
                 {
                     require_once('composant\acteur\recuperation_plusieurs_avec_acteur\model\recuperer_liste.php'); 
+                }
+
+                else  if($page=='ajouter_role')
+                {
+                    require_once('composant/role/ajouter/model/recuperer_liste.php');
                 }
                 
             else  if($page=='ajouter_api')

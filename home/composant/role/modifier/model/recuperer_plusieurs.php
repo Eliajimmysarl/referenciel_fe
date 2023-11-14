@@ -1,19 +1,19 @@
 <?php
 
-$uri =  $authority.'/api/';
+$uri =  $authority.'/role/';
    
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
     
-    $apis= $obj->api;
+    $roles= $obj->roles;
 
     $code = $obj->code;
 
     if($code ==200)
         {   
-            require_once('composant/api/modifier/view/recuperation_plusieur.php'); 
+            require_once('composant/role/modifier/view/recuperation_plusieur.php'); 
         }
         else
         {

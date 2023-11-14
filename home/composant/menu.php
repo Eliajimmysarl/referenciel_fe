@@ -108,7 +108,7 @@
 				</li>
 
 				<li>
-					<a href="?page=modifier_entite">
+					<a href="?page=modifier_role">
 						<span class="title">Role</span>
 					</a>
 					
