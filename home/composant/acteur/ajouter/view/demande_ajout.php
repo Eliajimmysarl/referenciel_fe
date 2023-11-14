@@ -6,7 +6,7 @@
 		</li>
 	
 		<li>
-			<a href="?page=recuperes_apis">Api</a>
+			<a href="?page=recuperes_apis">Acteur</a>
 		</li>
 	
 		<li class="active">
@@ -31,7 +31,7 @@
 					
 			<div class="panel-body">
 						
-				<form method="POST" action="index.php?demande=ajouter_un_api"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
+				<form method="POST" action="index.php?demande=ajouter_un_acteur"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
 				<div class="form-group">		
 						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
@@ -60,18 +60,18 @@
 					
 					
 				<div class="form-group">		
-						<label class="col-sm-3 control-label">Composant <abbr style="color:green; font-size:15px;">**</abbr></label>			
+						<label class="col-sm-3 control-label">Unite organisation <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="composant_id" id="monselect"  class="form-control" required="required">
-									<option value="" selected>Composant</option>
+									<select  name="unite_organisation_id" id="monselect"  class="form-control" required="required">
+									<option value="" selected>Unite organisation</option>
 									
 										<?php
-											for($i=0; $i < count($composants); $i++)
+											for($i=0; $i < count($unite_organisations); $i++)
 												{         
 													echo"  
-															<option value=". $composants[$i]->id_composant ."> ". $composants[$i]->nom ."</option>                       
+															<option value=". $unite_organisations[$i]->id ."> ". $unite_organisations[$i]->unite_organisation_nom ."  ". $unite_organisations[$i]->id . "</option>                       
 															
 													";
 																
@@ -85,40 +85,24 @@
 					</div>
 
 				
-						
-				<div class="form-group">		
-						<label class="col-sm-3 control-label">Entite <abbr style="color:green; font-size:15px;">**</abbr></label>			
+			
+					<div class="form-group">		
+						<label class="col-sm-3 control-label" >Nom <abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="entite_id" id="monselect"  class="form-control" required="required">
-									<option value="" selected>Entite</option>
-									
-										<?php
-											for($i=0; $i < count($entites); $i++)
-												{         
-													echo"  
-															<option value=". $entites[$i]->id ."> ". $entites[$i]->entite_nom ."</option>                       
-															
-													";
-																
-												}
-										?>
-
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
+									<input type="text" name="nom" class="form-control" placeholder="Nom" required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
 					</div>
 
-			
-
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Uri <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label" >Types <abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="uri" class="form-control" placeholder="Url code" required="required">
+									<input type="text" name="types" class="form-control" placeholder="Type" required="required">
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
@@ -126,11 +110,11 @@
 
 					
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Methode <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label" >Description </label>
 							<div class="col-sm-5">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="methode" class="form-control" placeholder="Methode" required="required">
+									<span class="input-group-addon"><i class="entypo-pencil"></i></span>
+									<textarea class="form-control" name="descriptions" id="textAreaExample6" rows="3"></textarea>
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>

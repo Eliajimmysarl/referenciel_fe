@@ -2,42 +2,43 @@
 
     $id=$_POST['id'];
 
-    $uri = $authority."/api/".$id;
+    $uri = $authority."/acteur".$id;
 
     $application_id=$_POST['application_id'];
 
-    $entite_id=$_POST['entite_id'];
+    $unite_organisation_id=$_POST['unite_organisation_id'];
 
-    $composant_id=$_POST['composant_id'];
+    $nom=$_POST['nom'];
 
-    $methode=$_POST['methode'];
+    $types=$_POST['types'];
 
-    $urir=$_POST['uri'];
+    $descriptions=$_POST['descriptions'];
+
 
     $data = array(
         
         'application_id' => $application_id,
 
-        'entite_id'=> $entite_id,
+        'unite_organisation_id'=> $unite_organisation_id,
 
-        'composant_id'=> $composant_id,
+        'nom'=> $nom,
 
-        'methode'=> $methode,
+        'types'=> $types,
 
-        'uri'=> $urir
-
-    );    
+        'descriptions'=> $descriptions
+    
+    ); 
 
     $result=curl_put($uri, $token,$data);
         
-    $api=json_decode($result);
+    $acteur=json_decode($result);
 
-    $code =  $api->code;
+    $code = $acteur->code;
 
     if($code ==200)
         
             {   
-                require_once('composant/api/modifier/view/reponse_positive.php');
+                require_once('composant/acteur/modifier/view/reponse_positive.php');
             }
     
     

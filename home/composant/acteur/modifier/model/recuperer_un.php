@@ -2,34 +2,34 @@
 
 $id=$_GET['id'];
 
-$uri = $authority."/api/".$id;
+$uri = $authority."/acteur/".$id;
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $apis= $obj->api;
+    $acteurs= $obj->acteur;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $application_id=$apis[0]->application_id; 
+            $application_id=$acteurs[0]->applications_nom; 
 
-            $composant_id=$apis[0]->composant_id;
+            $unite_organisation_nom=$acteurs[0]->unite_organisation_nom;
 
-            $couche=$apis[0]->entite_id;
+            $nom=$acteurs[0]->acteur_nom;
             
-            $methode=$apis[0]->methode;
+            $types=$acteurs[0]->types;
             
-            $uri=$apis[0]->uri;        
+            $descriptions=$acteurs[0]->descriptions;        
 
-            $id=$apis[0]->id;
+            $id=$acteurs[0]->id;
 
         
         
         
-        require_once('composant/api/modifier/view/demande_modification.php'); 
+        require_once('composant/acteur/modifier/view/demande_modification.php'); 
     }
 else if ($code ==400)
     {
