@@ -157,6 +157,12 @@
                 }
 
 
+                else  if($demande=='recuperation_avec_application_processus')
+                {
+                    require_once('composant/processus/recuperation_plusieurs_avec_application/model/recuperation_avec_dependance.php');  
+                }
+
+
                 else  if($demande=='recuperation_avec_statut')
                 {
                     require_once('composant\planification\recuperation_plusieurs_avec_statut\model\recuperation_avec_dependance.php');  
@@ -175,6 +181,11 @@
             else  if($demande=='modification_un_donnee_persistance')
                 {
                     require_once('composant\donnee_persistante\modifier\model\modification_un.php');  
+                }
+
+                else  if($demande=='modification_un_role')
+                {
+                    require_once('composant\role\modifier\model\modification_un.php');  
                 }
 
                 else  if($demande=='modification_un_processus')
@@ -388,7 +399,13 @@
             else  if($page=='modification_composant')
                 {
                     require_once('composant\composant\modifier\model\recuperer_liste.php'); 
-                } 
+                }
+                
+                else  if($page=='modification_role')
+                {
+                    require_once('composant\role\modifier\model\recuperer_liste.php'); 
+                }
+                
             else  if($page=='recuperes_composants_couche')
                 {
                     require_once('composant\composant\recuperation_plusieurs_avec_couche\model\recuperer_liste.php'); 
@@ -587,6 +604,17 @@
                 {
                     require_once('composant\donnee_persistante\recuperer\model\recuperer_un.php'); 
                 }
+
+                else  if($page=='recuperation_un_processus')
+                {
+                    require_once('composant\processus\recuperer\model\recuperer_un.php'); 
+                }
+
+                else  if($page=='recuperes_processus_application')
+                {
+                    require_once('composant\processus\recuperation_plusieurs_avec_application\model\recuperer_liste.php'); 
+                }
+
             else  if($page=='recuperes_donnee_persistantes_application')
                 {
                     require_once('composant\donnee_persistante\recuperation_plusieurs_avec_application\model\recuperer_liste.php'); 

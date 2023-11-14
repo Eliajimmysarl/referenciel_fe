@@ -7,7 +7,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperes_apis">Api</a>
+			<a href="?page=recuperes_apis">Processus</a>
 		</li>
 
 		<li class="active">
@@ -39,12 +39,10 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Uri</TH>
+					<TH>Nom</TH>
 					<TH>Application</TH>
-					<TH>Composant</TH>
-					<TH>Entite</TH>
-					<TH>Methode</TH>
-				
+					<TH>Description</TH>
+					
 				
 				</tr>
 			</thead>
@@ -52,24 +50,20 @@
 				
 				<?php
 								
-				for($i=0; $i < count($apis); $i++)
+				for($i=0; $i < count($processuss); $i++)
 				{ 
 					$j = $i + 1;
 				echo"                         
 					<tr class='odd gradeX'>
 
 						<td>$j</td>
+					
 
-						<td>". $apis[$i]->uri ."</td>
+						<td>". $processuss[$i]->processus_nom ."</td>
 
-						<td > " . $apis[$i]->application_nom ."</td>
+						<td > " . $processuss[$i]->applications_nom ."</td>
 
-						<td>". $apis[$i]->composant_nom ."</td>
-
-						<td>". $apis[$i]->entite_nom ."</td>
-
-						<td>". $apis[$i]->methode ."</td>
-
+						<td>". $processuss[$i]->descriptions ."</td>
 					
 			
 					</tr>";
@@ -79,12 +73,11 @@
             </tbody>
             <thead>
 				<tr>
-                    <TH>#</TH>
-					<TH>Uri</TH>
+				<TH>#</TH>
+					<TH>Nom</TH>
 					<TH>Application</TH>
-					<TH>Composant</TH>
-					<TH>Entite</TH>
-					<TH>Methode</TH>
+					<TH>Description</TH>
+					
 					
 			
 	

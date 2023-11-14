@@ -2,34 +2,28 @@
 
 $id=$_GET['id'];
 
-$uri = $authority."/api/".$id;
+$uri = $authority."/processus/".$id;
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $apis= $obj->api;
+    $processuss= $obj->processus;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $application_nom=$apis[0]->application_nom; 
+            $applications_nom=$processuss[0]->applications_nom; 
 
-            $composant_nom=$apis[0]->composant_nom;
+            $processus_nom=$processuss[0]->processus_nom;
 
-            $entite_nom=$apis[0]->entite_nom;
-            
-            $methode=$apis[0]->methode;
-            
-            $uri=$apis[0]->uri;
+            $descriptions=$processuss[0]->descriptions;
 
-       
-            
-            $id=$apis[0]->id;
+            $id=$processuss[0]->id;
 
           
-            require_once('composant/api/recuperer/view/recuperation_un.php'); 
+            require_once('composant/processus/recuperer/view/recuperation_un.php'); 
         }
     else
         {

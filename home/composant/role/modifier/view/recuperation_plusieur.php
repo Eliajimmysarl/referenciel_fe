@@ -17,7 +17,7 @@
 	</ol>
 								
 	<br/>
-	<a href='?page=ajouter_acteur'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>/<a href='?page=recuperes_acteur_application'  class='btn btn-primary btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par application</a> /<a href='?page=recuperes_acteur_nom'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par composant</a>	
+	<a href='?page=ajouter_role'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>/<a href='?page=recuperes_acteur_application'  class='btn btn-primary btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par application</a> /<a href='?page=recuperes_acteur_nom'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par composant</a>	
 		<script type="text/javascript">
 			jQuery( document ).ready( function( $ ) {
 				var $table1 = jQuery( '#table-1' );
@@ -40,9 +40,10 @@
 				<tr>
 					<TH>#</TH>
 					<TH>Nom</TH>
+					<TH>Acteur</TH>
 					<TH>Application</TH>
 					<TH>Organisation</TH>
-					<TH>Type</TH>
+				
 					<TH>Description</TH>
 					<TH></TH>
 				</tr>
@@ -51,28 +52,30 @@
 				
 				<?php
 								
-				for($i=0; $i < count($acteurs); $i++)
+				for($i=0; $i < count($roles); $i++)
 				{ 
 					$j = $i + 1;
 				echo"                         
 					<tr class='odd gradeX'>
 
 						<td>$j</td>
-						<td > " . $roles[$i]->roles_nom ."</td>
 
-						<td > " . $roles[$i]->applications_nom ."</td>
+						<td > " . $roles[$i]->nom ."</td>
+						<td > " . $roles[$i]->acteur_nom ."</td>
+
+						<td > " . $roles[$i]->application_nom ."</td>
 
 						<td>". $roles[$i]->unite_organisation_nom ."</td>
 
-						<td>". $roles[$i]->types ."</td>
+					
 
-						<td>". $aroles[$i]->descriptions ."</td>
+						<td>". $roles[$i]->descriptions ."</td>
 
 		
 						
-					<td> <a href='?page=modification_role&id=". $roles[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> 
-					<a href='?page=demande_supprimer_role&id=". $roles[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a>
-					<a href='?page=recuperation_un_role&id=". $roles[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
+					<td> <a href='?page=modification_role&id=". $roles[$i]->id_roles ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> 
+					<a href='?page=demande_supprimer_role&id=". $roles[$i]->id_roles ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a>
+					<a href='?page=recuperation_un_role&id=". $roles[$i]->id_roles."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
 				</tr>";
 						         
 				}
@@ -82,9 +85,9 @@
 				<tr>
 				<TH>#</TH>
 					<TH>Nom</TH>
+					<TH>Acteur</TH>
 					<TH>Application</TH>
 					<TH>Organisation</TH>
-					<TH>Type</TH>
 					<TH>Description</TH>
 					<TH></TH>
 				</tr>

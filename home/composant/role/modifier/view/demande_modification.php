@@ -4,7 +4,7 @@
 	</li>
 	<li>
 
-		<a href="?page=recuperes_apis">API</a>
+		<a href="?page=recuperes_apis">Role</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -28,11 +28,36 @@
 					
 			<div class="panel-body">
 			
-				<form method="POST" action="index.php?demande=modification_un_api"   id="theForm"  role="form" class="form-horizontal form-groups-bordered">
+				<form method="POST" action="index.php?demande=modification_un_role"   id="theForm"  role="form" class="form-horizontal form-groups-bordered">
 						
 					<input type="HIDDEN" name="id" value=<?php echo $_GET['id'];?>>	
 
 					<div class="form-group">		
+						<label class="col-sm-3 control-label">Acteur <abbr style="color:green; font-size:15px;">**</abbr></label>			
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<select  name="acteur_id" id="monselect"  class="form-control" required="required">
+									<option value="" selected>Acteur</option>
+									
+										<?php
+											for($i=0; $i < count($acteurs); $i++)
+												{         
+													echo"  
+															<option value=". $acteurs[$i]->id ."> ". $acteurs[$i]->acteur_nom ."</option>                       
+															
+													";
+																
+												}
+										?>
+
+                                    </select>
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+
+				<div class="form-group">		
 						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
@@ -59,18 +84,18 @@
 					
 					
 				<div class="form-group">		
-						<label class="col-sm-3 control-label">Composant <abbr style="color:green; font-size:15px;">**</abbr></label>			
+						<label class="col-sm-3 control-label">Unite organisation <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="composant_id" id="monselect"  class="form-control" required="required">
-									<option value="" selected>Composant</option>
+									<select  name="unite_organisation_id" id="monselect"  class="form-control" required="required">
+									<option value="" selected>Unite organisation</option>
 									
 										<?php
-											for($i=0; $i < count($composants); $i++)
+											for($i=0; $i < count($unite_organisations); $i++)
 												{         
 													echo"  
-															<option value=". $composants[$i]->id ."> ". $composants[$i]->nom ."</option>                       
+															<option value=". $unite_organisations[$i]->id ."> ". $unite_organisations[$i]->unite_organisation_nom ."  ". $unite_organisations[$i]->id . "</option>                       
 															
 													";
 																
@@ -83,58 +108,30 @@
 							</div>
 					</div>
 
-
+				
+			
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Composant <abbr style="color:green; font-size:15px;">**</abbr></label>			
+						<label class="col-sm-3 control-label" >Nom <abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="entite_id" id="monselect"  class="form-control" required="required">
-									<option value="" selected>Entite</option>
-									
-										<?php
-											for($i=0; $i < count($entites); $i++)
-												{         
-													echo"  
-															<option value=". $entites[$i]->id ."> ". $entites[$i]->nom ."</option>                       
-															
-													";
-																
-												}
-										?>
-
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
+									<input type="text" name="nom" class="form-control" value="<?php echo $nom;?>" required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
 					</div>
 
+					
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Methode<abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label" >Description </label>
 							<div class="col-sm-5">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									
-									<input type="text" name="methode" value="<?php echo $methode;?>"  class="form-control">
-									
-									<span class="input-group-addon"><i class=""></i></span>
+									<span class="input-group-addon"><i class="entypo-pencil"></i></span>
+									<textarea class="form-control" name="descriptions" id="textAreaExample6" value="<?php echo $descriptions;?>" rows="3"></textarea>
+									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
 					</div>
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Uri<abbr style="color:green; font-size:15px;">**</abbr></label>
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									
-									<input type="text" name="uri" value="<?php echo $uri;?>"  class="form-control">
-									
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
-
 
 					<div class="form-group">
 						<div class="col-sm-offset-3 col-sm-5">
