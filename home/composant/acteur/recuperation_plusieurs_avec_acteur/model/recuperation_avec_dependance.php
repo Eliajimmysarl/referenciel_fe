@@ -1,14 +1,14 @@
 <?php
 
-    $uri =  $authority.'/api/';
+    $uri =  $authority.'/acteur/';
 
-    $composant_id=$_POST['composant_id'];
+    $acteur_nom=$_POST['acteur_nom'];
 
  
     $data = array(
 
 
-        'composant_id'=> $composant_id
+        'acteur_nom'=> $acteur_nom
 
     
     );
@@ -16,8 +16,8 @@
     $result=curl_get_data($uri, $token, $data);
 
     $obj = json_decode($result);   
-       
-    $apis= $obj->api;
+
+    $acteurs= $obj->acteur;
 
     $code = $obj->code;
 
@@ -25,7 +25,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant\api\recuperation_plusieurs_avec_composant\view\recuperation_plusieurs.php'); 
+            require_once('composant\acteur\recuperation_plusieurs_avec_acteur\view\recuperation_plusieurs.php'); 
         }
         else
         {

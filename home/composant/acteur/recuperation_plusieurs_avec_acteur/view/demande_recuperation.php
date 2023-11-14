@@ -6,7 +6,7 @@
 		</li>
 	
 		<li>
-			<a href="?page=recuperes_apis">Api</a>
+			<a href="?page=recuperes_apis">Acteur</a>
 		</li>
 	
 		<li class="active">
@@ -31,21 +31,21 @@
 					
 			<div class="panel-body">
 						
-				<form method="POST" action="index.php?demande=recuperation_avec_composant_api"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
+				<form method="POST" action="index.php?demande=recuperation_avec_nom_acteur"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
                     <div class="form-group">		
-						<label class="col-sm-3 control-label">Composant <abbr style="color:green; font-size:15px;">**</abbr></label>			
+						<label class="col-sm-3 control-label">Acteur <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="composant_id" id="selec"  class="form-control" required="required">
-									<option value="" selected>Composant</option>
+									<select  name="acteur_nom" id="selec"  class="form-control" required="required">
+									<option value="" selected>Acteur</option>
 									
 										<?php
-											for($i=0; $i < count($composants); $i++)
+											for($i=0; $i < count($acteurs); $i++)
 												{         
 													echo"  
-															<option value=". $composants[$i]->id_composant."> ". $composants[$i]->nom ."</option>                       
+															<option value=". $acteurs[$i]->acteur_nom."> ". $acteurs[$i]->acteur_nom ."</option>                       
 															
 													";
 																

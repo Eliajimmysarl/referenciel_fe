@@ -7,7 +7,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperes_apis">Api</a>
+			<a href="?page=recuperes_apis">Acteur</a>
 		</li>
 
 		<li class="active">
@@ -39,35 +39,38 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Uri</TH>
+					<TH>Nom</TH>
 					<TH>Application</TH>
-					<TH>Composant</TH>
-					<TH>Couche</TH>
-					<TH>Methode</TH>
-					
-					
+					<TH>Organisation</TH>
+					<TH>Type</TH>
+					<TH>Descriprtion</TH>
 				
+				
+				</tr>
 			</thead>
 			<tbody>
 				
 				<?php
 								
-				for($i=0; $i < count($apis); $i++)
+				for($i=0; $i < count($acteurs); $i++)
 				{ 
 					$j = $i + 1;
 				echo"                         
 					<tr class='odd gradeX'>
 
 						<td>$j</td>
-						<td>". $apis[$i]->uri ."</td>
-						<td > " . $apis[$i]->application_nom ."</td>
 
-						<td>". $apis[$i]->composant_nom ."</td>
+						<td>". $acteurs[$i]->acteur_nom ."</td>
 
-						<td>". $apis[$i]->entite_nom ."</td>
+						<td > " . $acteurs[$i]->applications_nom ."</td>
 
-						<td>". $apis[$i]->methode ."</td>
+						<td>". $acteurs[$i]->unite_organisation_nom ."</td>
 
+						<td>". $acteurs[$i]->types ."</td>
+
+						<td>". $acteurs[$i]->descriptions ."</td>
+
+					
 			
 					</tr>";
 						         
@@ -76,12 +79,14 @@
             </tbody>
             <thead>
 				<tr>
-                    <TH>#</TH>
-					<TH>Uri</TH>
+				    <TH>#</TH>
+					<TH>Nom</TH>
 					<TH>Application</TH>
-					<TH>Composant</TH>
-					<TH>Couche</TH>
-					<TH>Methode</TH>
+					<TH>Organisation</TH>
+					<TH>Type</TH>
+					<TH>Descriprtion</TH>
+					
+			
 	
 				</tr>
 			</thead>

@@ -139,6 +139,13 @@
                     require_once('composant\acteur\recuperation_plusieurs_avec_application\model\recuperation_avec_dependance.php');  
                 }
 
+
+                else  if($demande=='recuperation_avec_nom_acteur')
+                {
+                    require_once('composant/acteur/recuperation_plusieurs_avec_acteur/model/recuperation_avec_dependance.php');  
+                }
+
+
                 else  if($demande=='recuperation_avec_statut')
                 {
                     require_once('composant\planification\recuperation_plusieurs_avec_statut\model\recuperation_avec_dependance.php');  
@@ -553,6 +560,11 @@
             else  if($page=='recuperes_donnee_persistantes_entite')
                 {
                     require_once('composant\donnee_persistante\recuperation_plusieurs_avec_entite\model\recuperer_liste.php'); 
+                }
+
+                else  if($page=='recuperes_acteur_nom')
+                {
+                    require_once('composant\acteur\recuperation_plusieurs_avec_acteur\model\recuperer_liste.php'); 
                 }
                 
             else  if($page=='ajouter_api')
