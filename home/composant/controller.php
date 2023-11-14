@@ -176,6 +176,11 @@
                 {
                     require_once('composant\donnee_persistante\modifier\model\modification_un.php');  
                 }
+
+                else  if($demande=='modification_un_processus')
+                {
+                    require_once('composant\processus\modifier\model\modification_un.php');  
+                }
               
                 else  if($demande=='modification_un_tde')
                 {
@@ -659,6 +664,12 @@
                 {
                     require_once('composant\planification\modifier\model\recuperer_liste.php'); 
                 }
+
+                else  if($page=='modification_processus')
+                {
+                    require_once('composant\processus\modifier\model\recuperer_liste.php'); 
+                }
+
             else if($page=='supprimer_planification')
                 {
                     require_once('composant\planification\supprimer\model\recuperer_plusieurs.php');
