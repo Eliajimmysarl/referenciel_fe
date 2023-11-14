@@ -205,7 +205,11 @@
                 {
                     require_once('composant/acteur/supprimer/model/suppression.php');  
                 }
-
+                
+            else  if($demande=='suppression_un_processus')
+                {
+                    require_once('composant/processus/supprimer/model/suppression.php');  
+                }
             else  if($demande=='suppression_un_composant')
                 {
                     require_once('composant/composant/supprimer/model/suppression.php');  
@@ -294,6 +298,11 @@
             else if($page=='demande_supprimer_app')
                 {
                     require_once('composant/application/supprimer/model/recuperer_un.php');
+                }
+
+                else if($page=='demande_supprimer_processus')
+                {
+                    require_once('composant/processus/supprimer/model/recuperer_un.php');
                 }
             else  if($page=='recuperes_applications')
                 {
