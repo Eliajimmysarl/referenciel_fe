@@ -122,7 +122,7 @@
 				</li>
 
 				<li>
-					<a href="?page=modifier_entite">
+					<a href="?page=modifier_processus">
 						<span class="title">Processus </span>
 					</a>
 					

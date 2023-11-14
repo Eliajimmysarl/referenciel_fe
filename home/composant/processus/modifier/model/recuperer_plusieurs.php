@@ -1,19 +1,19 @@
 <?php
 
-$uri =  $authority.'/api/';
+$uri =  $authority.'/processus/';
    
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
     
-    $apis= $obj->api;
+    $processuss= $obj->processus;
 
     $code = $obj->code;
 
     if($code ==200)
         {   
-            require_once('composant/api/modifier/view/recuperation_plusieur.php'); 
+            require_once('composant\processus\modifier\view\recuperation_plusieur.php'); 
         }
         else
         {

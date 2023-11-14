@@ -9,22 +9,7 @@
     $applications= $obj->applications;
 
 
-    $uri =  $authority.'/entite/';
    
-    $result=curl_get($uri, $token);
-
-    $obj = json_decode($result);                      
-    
-    $entites= $obj->entite;
-
-
-    $uri =  $authority.'/composant/';
-   
-    $result=curl_get($uri, $token);
-
-    $obj = json_decode($result);                      
-    
-    $composants= $obj->composant;
     
     
     
@@ -34,7 +19,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/api/ajouter/view/demande_ajout.php'); 
+            require_once('composant/processus/ajouter/view/demande_ajout.php'); 
         }
     else
         {
