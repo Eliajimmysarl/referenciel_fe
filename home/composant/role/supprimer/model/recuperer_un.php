@@ -2,32 +2,32 @@
 
 $id=$_GET['id'];
 
-$uri = $authority."/api/".$id;
+$uri = $authority."/role/".$id;
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $apis= $obj->api;
+    $roles= $obj->roles;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $application_nom=$apis[0]->application_nom; 
+            $application_nom=$roles[0]->application_nom; 
 
-            $entite_nom=$apis[0]->entite_nom;
+            $acteur_nom=$roles[0]->acteur_nom;
 
-            $compsant_nom=$apis[0]->composant_nom;
+            $unite_organisation_nom=$roles[0]->unite_organisation_nom;
             
-            $methode=$apis[0]->methode;
+            $nom=$roles[0]->nom;
             
-            $uri=$apis[0]->uri;
-            
+            $descriptions=$roles[0]->descriptions;        
 
-            $id=$apis[0]->id;
+            $id=$roles[0]->id_roles;
+
         
-            require_once('composant/api/supprimer/view/demande_suppression.php'); 
+            require_once('composant/role/supprimer/view/demande_suppression.php'); 
     }
 else if ($code ==400)
     {

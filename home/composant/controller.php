@@ -238,6 +238,11 @@
                     require_once('composant/donnee_persistante/supprimer/model/suppression.php');  
                 }
 
+                else  if($demande=='suppression_un_role')
+                {
+                    require_once('composant/role/supprimer/model/suppression.php');  
+                }
+
             else  if($demande=='suppression_un_tde')
                 {
                     require_once('composant/donnee_echange/supprimer/model/suppression.php');  
@@ -371,6 +376,12 @@
                 else  if($page=='demande_supprimer_unite_organisation')
                 {
                     require_once('composant/unite_organisation/supprimer/model/recuperer_un.php'); 
+                }
+
+
+                else  if($page=='demande_supprimer_role')
+                {
+                    require_once('composant/role/supprimer/model/recuperer_un.php'); 
                 }
 
 
@@ -518,6 +529,11 @@
                 else  if($page=='recuperation_un_unite_organisation')
                 {
                     require_once('composant\unite_organisation\recuperer\model\recuperer_un.php');
+                }
+
+                else  if($page=='recuperation_un_role')
+                {
+                    require_once('composant\role\recuperer\model\recuperer_un.php');
                 }
 
                 else  if($page=='recuperation_un_acteur')
