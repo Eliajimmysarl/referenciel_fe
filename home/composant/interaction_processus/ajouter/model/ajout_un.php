@@ -1,36 +1,26 @@
 <?php
 
-    $uri =  $authority.'/composant_processus/';
+    $uri =  $authority.'/interaction_processus/';
 
     $processus_id=$_POST['processus_id'];
 
-    $activite=$_POST['activite'];
-
-    $lien_cod=$_POST['lien_code'];
-
-    $descriptions=$_POST['descriptions'];
 
 
     $data = array(
         
-        'processus_id' => $processus_id,
+        'processus_id' => $processus_id
 
-        'activite'=> $activite,
-
-        'lien_code'=> $lien_code,
-
-        'descriptions'=> $descriptions
- 
+        
     );
     $result=curl_post($uri, $token, $data);
 
-    $composant_processus=json_decode($result);
+    $interaction_processus=json_decode($result);
  
-    $code = $composant_processus->code;
+    $code = $interaction_processus->code;
         
     if($code ==201)
             {   
-                require_once('composant/composant_processus/ajouter/view/reponse_positive.php'); 
+                require_once('composant/interaction_processus/ajouter/view/reponse_positive.php'); 
             }
         else    
             {

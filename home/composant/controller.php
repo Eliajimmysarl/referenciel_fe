@@ -69,6 +69,17 @@
                     require_once('composant/processus/ajouter/model/ajout_un.php');  
                 }
 
+
+                else  if($demande=='ajouter_un_interaction_entite')
+                {
+                    require_once('composant/interaction_entite/ajouter/model/ajout_un.php');  
+                }
+
+                else  if($demande=='ajouter_un_composant_processus')
+                {
+                    require_once('composant/composant_processus/ajouter/model/ajout_un.php');  
+                }
+
                 else  if($demande=='ajouter_un_composant_processus')
                 {
                     require_once('composant/composant_processus/ajouter/model/ajout_un.php');  
@@ -217,6 +228,12 @@
             else  if($demande=='suppression_application')
                 {
                     require_once('composant/application/supprimer/model/suppression.php');  
+                }
+
+
+                else  if($demande=='suppression_un_interaction_processus')
+                {
+                    require_once('composant/interaction_processus/supprimer/model/suppression.php');  
                 }
 
                 else  if($demande=='suppression_un_unite_organisation')
@@ -522,6 +539,12 @@
                     require_once('composant/entite/supprimer/model/recuperer_un.php');
                 }
 
+
+                else if($page=='demande_supprimer_interaction_processus')
+                {
+                    require_once('composant/interaction_processus/supprimer/model/recuperer_un.php');
+                }
+
                 else if($page=='demande_supprimer_acteur')
                 {
                     require_once('composant/acteur/supprimer/model/recuperer_un.php');
@@ -580,6 +603,11 @@
                     require_once('composant/acteur/ajouter/model/recuperer_liste.php');
                 }
 
+                else  if($page=='ajouter_interaction_processus')
+                {
+                    require_once('composant/interaction_processus/ajouter/model/recuperer_liste.php');
+                }
+
             else  if($page=='ajouter_donnee_echange')
                 {
                     require_once('composant/donnee_echange/ajouter/model/recuperer_liste.php');
@@ -587,6 +615,11 @@
                 else  if($page=='modifier_processus')
                 {
                     require_once('composant\processus\modifier\model\recuperer_plusieurs.php'); 
+                }
+
+                else  if($page=='modifier_interaction_processus')
+                {
+                    require_once('composant\interaction_processus\modifier\model\recuperer_plusieurs.php'); 
                 }
 
             else  if($page=='modifier_donnee_echange')
@@ -650,6 +683,11 @@
                     require_once('composant\donnee_persistante\recuperer\model\recuperer_un.php'); 
                 }
 
+                else  if($page=='recuperation_un_interaction_processus')
+                {
+                    require_once('composant\interaction_processus\recuperer\model\recuperer_un.php'); 
+                }
+
                 else  if($page=='recuperation_un_processus')
                 {
                     require_once('composant\processus\recuperer\model\recuperer_un.php'); 
@@ -675,6 +713,12 @@
                     require_once('composant\donnee_persistante\modifier\model\recuperer_plusieurs.php'); 
                 }
 
+                else  if($page=='modifier_interaction_entite')
+                {
+                    require_once('composant\interaction_entite\modifier\model\recuperer_plusieurs.php'); 
+                }
+
+
             else  if($page=='recuperes_donnee_persistantes_entite')
                 {
                     require_once('composant\donnee_persistante\recuperation_plusieurs_avec_entite\model\recuperer_liste.php'); 
@@ -689,6 +733,14 @@
                 {
                     require_once('composant/role/ajouter/model/recuperer_liste.php');
                 }
+
+
+                else  if($page=='ajouter_interaction_entite')
+                {
+                    require_once('composant/interaction_entite/ajouter/model/recuperer_liste.php');
+                }
+
+
 
 
             else  if($page=='ajouter_composant_processus')

@@ -6,7 +6,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperes_apis">Composant processus</a>
+			<a href="?page=recuperes_apis">Interaction processus</a>
 		</li>
 
 		<li class="active">

@@ -6,7 +6,7 @@
 		</li>
 	
 		<li>
-			<a href="?page=recuperes_apis">Composant processus</a>
+			<a href="?page=recuperes_apis">Interaction processus</a>
 		</li>
 	
 		<li class="active">
@@ -31,7 +31,7 @@
 					
 			<div class="panel-body">
 						
-				<form method="POST" action="index.php?demande=ajouter_un_composant_processus"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
+				<form method="POST" action="index.php?demande=ajouter_un_interaction_processus"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
 				<div class="form-group">		
 						<label class="col-sm-3 control-label">Processus <abbr style="color:green; font-size:15px;">**</abbr></label>			
@@ -58,41 +58,6 @@
 							</div>
 					</div>
 					
-					
-						
-					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Activite <abbr style="color:green; font-size:15px;">**</abbr></label>
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="activite" class="form-control" placeholder="Url code" required="required">
-									<span class="input-group-addon"><i class="r"></i></span>
-								</div>
-							</div>
-					</div>
-
-					
-					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Lien code <abbr style="color:green; font-size:15px;">**</abbr></label>
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="lien_code" class="form-control" placeholder="Lien code" required="required">
-									<span class="input-group-addon"><i class="r"></i></span>
-								</div>
-							</div>
-					</div>
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Description </label>
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-pencil"></i></span>
-									<textarea class="form-control" name="descriptions" id="textAreaExample6" rows="3"></textarea>
-									<span class="input-group-addon"><i class="r"></i></span>
-								</div>
-							</div>
-					</div>
 
 
 					<div class="form-group">

@@ -1,40 +1,33 @@
 <?php
 
-    $uri =  $authority.'/api/';
-
-    $application_id=$_POST['application_id'];
+    $uri =  $authority.'/interaction_entite/';
 
     $entite_id=$_POST['entite_id'];
 
-    $composant_id=$_POST['composant_id'];
+    $composant_id=$_POST['composant_entite_id'];
 
-    $methode=$_POST['methode'];
-
-    $urir=$_POST['uri'];
+    $descriptions=$_POST['descriptions'];
+ 
 
 
     $data = array(
         
-        'application_id' => $application_id,
-
-        'entite_id'=> $entite_id,
+        'entite_id' => $entite_id,
 
         'composant_id'=> $composant_id,
 
-        'methode'=> $methode,
-
-        'uri'=> $urir
+        'descriptions'=> $descriptions
     
     );
     $result=curl_post($uri, $token, $data);
 
-    $api=json_decode($result);
+    $interaction_entite=json_decode($result);
  
-    $code = $api->code;
+    $code = $interaction_entite->code;
         
     if($code ==201)
             {   
-                require_once('composant/api/ajouter/view/reponse_positive.php'); 
+                require_once('composant/interaction_entite/ajouter/view/reponse_positive.php'); 
             }
         else    
             {

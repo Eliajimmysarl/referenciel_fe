@@ -190,14 +190,14 @@
 						</li>
 
 						<li class="">
-							<a href="?page=modifier_api">
+							<a href="?page=modifier_interaction_processus">
 									<span class="title">Interaction processus</span>
 							</a>
 
 						</li>
 
 						<li class="">
-							<a href="?page=modifier_api">
+							<a href="?page=modifier_interaction_entite">
 									<span class="title">Interaction entite</span>
 							</a>
 

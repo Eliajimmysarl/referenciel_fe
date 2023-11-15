@@ -7,7 +7,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperes_apis">Api</a>
+			<a href="?page=recuperes_apis">Interaction processus</a>
 		</li>
 
 		<li class="active">
@@ -17,7 +17,7 @@
 	</ol>
 								
 	<br/>
-	<a href='?page=ajouter_api'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>/<a href='?page=recuperes_api_application'  class='btn btn-primary btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par application</a> /<a href='?page=recuperes_api_composant'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par composant</a>	
+	<a href='?page=ajouter_interaction_processus'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>
 		<script type="text/javascript">
 			jQuery( document ).ready( function( $ ) {
 				var $table1 = jQuery( '#table-1' );
@@ -39,12 +39,7 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Application</TH>
-					<TH>Composant</TH>
-					<TH>Entite</TH>
-					<TH>Methode</TH>
-					<TH>Uri</TH>
-				
+					<TH>Processus</TH>
 					<TH></TH>
 				</tr>
 			</thead>
@@ -52,7 +47,7 @@
 				
 				<?php
 								
-				for($i=0; $i < count($apis); $i++)
+				for($i=0; $i < count($interaction_processuss); $i++)
 				{ 
 					$j = $i + 1;
 				echo"                         
@@ -60,21 +55,13 @@
 
 						<td>$j</td>
 
-						<td > " . $apis[$i]->application_nom ."</td>
+						<td > " . $interaction_processuss[$i]->processus_nom ."</td>
 
-						<td>". $apis[$i]->composant_nom ."</td>
-
-						<td>". $apis[$i]->entite_nom ."</td>
-
-						<td>". $apis[$i]->methode ."</td>
-
-						<td> <a href='". $apis[$i]->uri ."' target=_blank class='btn btn-orange'>Voir le code</a></td>
-
-		
+					
 						
-					<td> <a href='?page=modification_api&id=". $apis[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> 
-					<a href='?page=demande_supprimer_api&id=". $apis[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a>
-					<a href='?page=recuperation_un_api&id=". $apis[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
+					<td>
+					<a href='?page=demande_supprimer_interaction_processus&id=". $interaction_processuss[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a>
+					<a href='?page=recuperation_un_interaction_processus&id=". $interaction_processuss[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
 				</tr>";
 						         
 				}
@@ -83,11 +70,8 @@
                <thead>
 				<tr>
 				<TH>#</TH>
-					<TH>Application</TH>
-					<TH>Composant</TH>
-					<TH>Entite</TH>
-					<TH>Methode</TH>
-					<TH>Uri</TH>
+					<TH>Processus</TH>
+					
 					<TH></TH>
 				</tr>
 			</thead>

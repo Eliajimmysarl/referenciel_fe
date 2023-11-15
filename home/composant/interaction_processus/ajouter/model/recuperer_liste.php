@@ -16,7 +16,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/composant_processus/ajouter/view/demande_ajout.php'); 
+            require_once('composant/interaction_processus/ajouter/view/demande_ajout.php'); 
         }
     else
         {

@@ -1,14 +1,5 @@
 <?php
 
-    $uri =  $authority.'/application/';
-   
-    $result=curl_get($uri, $token);
-
-    $obj = json_decode($result);                      
-    
-    $applications= $obj->applications;
-
-
     $uri =  $authority.'/entite/';
    
     $result=curl_get($uri, $token);
@@ -18,13 +9,15 @@
     $entites= $obj->entite;
 
 
-    $uri =  $authority.'/composant/';
+
+
+    $uri =  $authority.'/composant_entite/';
    
     $result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
     
-    $composants= $obj->composant;
+    $composant_entites= $obj->composant_entite;
     
     
     
@@ -34,7 +27,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/api/modifier/model/recuperer_un.php'); 
+            require_once('composant/interaction_entite/modifier/model/recuperer_un.php'); 
         }
     else
         {
