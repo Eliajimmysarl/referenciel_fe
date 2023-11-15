@@ -1,6 +1,6 @@
 <?php
 
-    $uri =  $authority.'/api/';
+    $uri =  $authority.'/role/';
 
     $application_id=$_POST['application_id'];
     
@@ -16,7 +16,7 @@
 
     $obj = json_decode($result);   
        
-    $apis= $obj->api;
+    $roles= $obj->roles;
     
     $code = $obj->code;
 
@@ -24,7 +24,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant\api\recuperation_plusieurs_avec_application\view\recuperation_plusieurs.php'); 
+            require_once('composant\role\recuperation_plusieurs_avec_application\view\recuperation_plusieurs.php'); 
         }
         else
         {

@@ -3,12 +3,12 @@
 $id=$_GET['id'];
 
 //URI
-$uri = $authority."/api/".$id;
+$uri = $authority."/composant_processus/".$id;
 
 $result=curl_delete($uri, $token);
 
     $obj = json_decode($result);                      
-    $apis= $obj->api;
+    $composant_processuss= $obj->composant_processus;
 
     $code =  $obj->code;
 
@@ -16,7 +16,7 @@ $result=curl_delete($uri, $token);
         {    
              
             
-            require_once('composant/api/supprimer/view/reponse_positive.php');
+            require_once('composant/composant_processus/supprimer/view/reponse_positive.php');
         }
         else
         {

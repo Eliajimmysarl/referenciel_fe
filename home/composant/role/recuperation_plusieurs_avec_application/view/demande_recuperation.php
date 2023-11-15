@@ -6,7 +6,7 @@
 		</li>
 	
 		<li>
-			<a href="?page=recuperes_apis">Api</a>
+			<a href="?page=recuperes_apis">Role</a>
 		</li>
 	
 		<li class="active">
@@ -31,7 +31,7 @@
 					
 			<div class="panel-body">
 						
-				<form method="POST" action="index.php?demande=recuperation_avec_application_api"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
+				<form method="POST" action="index.php?demande=recuperation_avec_application_role"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
 				<div class="form-group">		
 						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			

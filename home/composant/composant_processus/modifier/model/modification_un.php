@@ -1,43 +1,42 @@
 <?php
 
-    $id=$_POST['id'];
+$id=$_POST['id'];
 
-    $uri = $authority."/api/".$id;
+$uri = $authority."/composant_processus/".$id;
 
-    $application_id=$_POST['application_id'];
 
-    $entite_id=$_POST['entite_id'];
 
-    $composant_id=$_POST['composant_id'];
+    $processus_id=$_POST['processus_id'];
 
-    $methode=$_POST['methode'];
+    $activite=$_POST['activite'];
 
-    $urir=$_POST['uri'];
+    $lien_code=$_POST['lien_code'];
+
+    $descriptions=$_POST['descriptions'];
+
 
     $data = array(
         
-        'application_id' => $application_id,
+        'processus_id' => $processus_id,
 
-        'entite_id'=> $entite_id,
+        'activite'=> $activite,
 
-        'composant_id'=> $composant_id,
+        'lien_code'=> $lien_code,
 
-        'methode'=> $methode,
-
-        'uri'=> $urir
+        'descriptions'=> $descriptions
+ 
 
     );    
 
     $result=curl_put($uri, $token,$data);
         
-    $api=json_decode($result);
-
-    $code =  $api->code;
+    $composant_processus=json_decode($result);
+    $code =  $composant_processus->code;
 
     if($code ==200)
         
             {   
-                require_once('composant/api/modifier/view/reponse_positive.php');
+                require_once('composant/composant_processus/modifier/view/reponse_positive.php');
             }
     
     

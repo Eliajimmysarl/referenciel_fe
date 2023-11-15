@@ -23,6 +23,13 @@
                     require_once('composant/unite_organisation/ajouter/model/ajout_un.php');  
                 }
 
+
+                else  if($demande=='modification_un_composant_processus')
+                {
+                    require_once('composant/composant_processus/modifier/model/modification_un.php');  
+                }
+
+
             else  if($demande=='ajouter_un_tde')
                 {
                     require_once('composant/donnee_echange/ajouter/model/ajout_un.php');  
@@ -60,6 +67,11 @@
                 else  if($demande=='ajouter_un_processus')
                 {
                     require_once('composant/processus/ajouter/model/ajout_un.php');  
+                }
+
+                else  if($demande=='ajouter_un_composant_processus')
+                {
+                    require_once('composant/composant_processus/ajouter/model/ajout_un.php');  
                 }
 
                 else  if($demande=='modification_un_acteur')
@@ -216,6 +228,11 @@
                 {
                     require_once('composant/acteur/supprimer/model/suppression.php');  
                 }
+
+                else  if($demande=='suppression_un_composant_processus')
+                {
+                    require_once('composant/composant_processus/supprimer/model/suppression.php');  
+                }
                 
             else  if($demande=='suppression_un_processus')
                 {
@@ -251,6 +268,7 @@
                 {
                     require_once('composant\donnee_echange\recuperation_plusieurs_avec_application\model\recuperation_avec_dependance.php');  
                 }
+                
 
             else  if($demande=='recuperation_avec_composant_tde')
                 {
@@ -410,6 +428,12 @@
             else  if($page=='modification_composant')
                 {
                     require_once('composant\composant\modifier\model\recuperer_liste.php'); 
+                }
+
+
+                else  if($page=='modification_composant_processus')
+                {
+                    require_once('composant\composant_processus\modifier\model\recuperer_liste.php'); 
                 }
                 
                 else  if($page=='modification_role')
@@ -636,6 +660,11 @@
                     require_once('composant\donnee_persistante\recuperation_plusieurs_avec_application\model\recuperer_liste.php'); 
                 }
 
+                else  if($page=='recuperes_role_application')
+                {
+                    require_once('composant\role\recuperation_plusieurs_avec_application\model\recuperer_liste.php'); 
+                }
+
             else  if($page=='modifier_donnee_persistante')
                 {
                     require_once('composant\donnee_persistante\modifier\model\recuperer_plusieurs.php'); 
@@ -655,6 +684,12 @@
                 {
                     require_once('composant/role/ajouter/model/recuperer_liste.php');
                 }
+
+
+            else  if($page=='ajouter_composant_processus')
+                {
+                    require_once('composant/composant_processus/ajouter/model/recuperer_liste.php');
+                }
                 
             else  if($page=='ajouter_api')
                 {
@@ -667,6 +702,16 @@
             else  if($page=='modifier_api')
                 {
                     require_once('composant\api\modifier\model\recuperer_plusieurs.php'); 
+                }
+
+                else  if($page=='modifier_composant_processus')
+                {
+                    require_once('composant\composant_processus\modifier\model\recuperer_plusieurs.php'); 
+                }
+
+                else if($page=='demande_supprimer_composant_processus')
+                {
+                    require_once('composant\composant_processus\supprimer\model\recuperer_un.php');
                 }
 
             

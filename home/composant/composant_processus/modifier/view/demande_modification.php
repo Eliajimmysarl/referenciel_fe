@@ -4,7 +4,7 @@
 	</li>
 	<li>
 
-		<a href="?page=recuperes_apis">API</a>
+		<a href="?page=recuperes_apis">Composant processus</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -28,23 +28,23 @@
 					
 			<div class="panel-body">
 			
-				<form method="POST" action="index.php?demande=modification_un_api"   id="theForm"  role="form" class="form-horizontal form-groups-bordered">
+				<form method="POST" action="index.php?demande=modification_un_composant_processus"   id="theForm"  role="form" class="form-horizontal form-groups-bordered">
 						
 					<input type="HIDDEN" name="id" value=<?php echo $_GET['id'];?>>	
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
+						<label class="col-sm-3 control-label">Processus <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="application_id" id="monselect"  class="form-control" required="required">
-									<option value="" selected>Application</option>
+									<select  name="processus_id" id="monselect"  class="form-control" required="required">
+									<option value="" selected>Processus</option>
 									
 										<?php
-											for($i=0; $i < count($applications); $i++)
+											for($i=0; $i < count($processuss); $i++)
 												{         
 													echo"  
-															<option value=". $applications[$i]->id ."> ". $applications[$i]->nom ."</option>                       
+															<option value=". $processuss[$i]->id ."> ". $processuss[$i]->processus_nom ."</option>                       
 															
 													";
 																
@@ -58,82 +58,42 @@
 					</div>
 					
 					
-				<div class="form-group">		
-						<label class="col-sm-3 control-label">Composant <abbr style="color:green; font-size:15px;">**</abbr></label>			
+						
+					<div class="form-group">		
+						<label class="col-sm-3 control-label" >Activite <abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="composant_id" id="monselect"  class="form-control" required="required">
-									<option value="" selected>Composant</option>
-									
-										<?php
-											for($i=0; $i < count($composants); $i++)
-												{         
-													echo"  
-															<option value=". $composants[$i]->id ."> ". $composants[$i]->nom ."</option>                       
-															
-													";
-																
-												}
-										?>
-
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
+									<input type="text" name="activite" class="form-control" value="<?php echo $activite;?>" required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
 					</div>
 
-
+					
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Composant <abbr style="color:green; font-size:15px;">**</abbr></label>			
+						<label class="col-sm-3 control-label" >Lien code <abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="entite_id" id="monselect"  class="form-control" required="required">
-									<option value="" selected>Entite</option>
-									
-										<?php
-											for($i=0; $i < count($entites); $i++)
-												{         
-													echo"  
-															<option value=". $entites[$i]->id ."> ". $entites[$i]->nom ."</option>                       
-															
-													";
-																
-												}
-										?>
-
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
+									<input type="text" name="lien_code" class="form-control" value="<?php echo $lien_code;?>" required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Methode<abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label" >Description </label>
 							<div class="col-sm-5">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									
-									<input type="text" name="methode" value="<?php echo $methode;?>"  class="form-control">
-									
-									<span class="input-group-addon"><i class=""></i></span>
+									<span class="input-group-addon"><i class="entypo-pencil"></i></span>
+									<textarea class="form-control" name="descriptions" id="textAreaExample6" rows="3"></textarea>
+									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>
 					</div>
 
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Uri<abbr style="color:green; font-size:15px;">**</abbr></label>
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									
-									<input type="text" name="uri" value="<?php echo $uri;?>"  class="form-control">
-									
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
+				
 
 
 					<div class="form-group">

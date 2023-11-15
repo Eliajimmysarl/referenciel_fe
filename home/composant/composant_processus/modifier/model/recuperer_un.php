@@ -2,34 +2,32 @@
 
 $id=$_GET['id'];
 
-$uri = $authority."/api/".$id;
+$uri = $authority."/composant_processus/".$id;
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $apis= $obj->api;
+    $composant_processuss= $obj->composant_processus;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $application_id=$apis[0]->application_id; 
+            $processus_nom=$composant_processuss[0]->processus_nom; 
 
-            $composant_id=$apis[0]->composant_id;
+            $activite=$composant_processuss[0]->activite;
 
-            $couche=$apis[0]->entite_id;
+            $descriptions=$composant_processuss[0]->descriptions;
             
-            $methode=$apis[0]->methode;
-            
-            $uri=$apis[0]->uri;        
+            $lien_code=$composant_processuss[0]->lien_code;    
 
-            $id=$apis[0]->id;
+            $id=$composant_processuss[0]->id;
 
         
         
         
-        require_once('composant/api/modifier/view/demande_modification.php'); 
+        require_once('composant/composant_processus/modifier/view/demande_modification.php'); 
     }
 else if ($code ==400)
     {

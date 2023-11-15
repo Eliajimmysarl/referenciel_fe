@@ -183,7 +183,7 @@
 						</li>
 
 						<li class="">
-							<a href="?page=modifier_api">
+							<a href="?page=modifier_composant_processus">
 									<span class="title">Composant processus</span>
 							</a>
 

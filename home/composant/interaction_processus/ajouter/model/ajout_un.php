@@ -1,44 +1,40 @@
 <?php
 
-    $uri =  $authority.'/api/';
+    $uri =  $authority.'/composant_processus/';
 
-    $application_id=$_POST['application_id'];
+    $processus_id=$_POST['processus_id'];
 
-    $entite_id=$_POST['entite_id'];
+    $activite=$_POST['activite'];
 
-    $composant_id=$_POST['composant_id'];
+    $lien_cod=$_POST['lien_code'];
 
-    $methode=$_POST['methode'];
-
-    $urir=$_POST['uri'];
+    $descriptions=$_POST['descriptions'];
 
 
     $data = array(
         
-        'application_id' => $application_id,
+        'processus_id' => $processus_id,
 
-        'entite_id'=> $entite_id,
+        'activite'=> $activite,
 
-        'composant_id'=> $composant_id,
+        'lien_code'=> $lien_code,
 
-        'methode'=> $methode,
-
-        'uri'=> $urir
-    
+        'descriptions'=> $descriptions
+ 
     );
     $result=curl_post($uri, $token, $data);
 
-    $api=json_decode($result);
+    $composant_processus=json_decode($result);
  
-    $code = $api->code;
+    $code = $composant_processus->code;
         
     if($code ==201)
             {   
-                require_once('composant/api/ajouter/view/reponse_positive.php'); 
+                require_once('composant/composant_processus/ajouter/view/reponse_positive.php'); 
             }
         else    
             {
-                require_once('composant/api/ajouter/view/reponse_negative.php');   
+                require_once('composant/composant_processus/ajouter/view/reponse_negative.php');   
             }
 
 
