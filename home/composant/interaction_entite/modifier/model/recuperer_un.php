@@ -2,34 +2,29 @@
 
 $id=$_GET['id'];
 
-$uri = $authority."/api/".$id;
+$uri = $authority."/interaction_entite/".$id;
 
 $result=curl_get($uri, $token);
 
     $obj = json_decode($result);
                       
-    $apis= $obj->api;
+    $interaction_entites= $obj->interaction_entite;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $application_id=$apis[0]->application_id; 
+            $entite_nom=$interaction_entites[0]->entite_nom; 
 
-            $composant_id=$apis[0]->composant_id;
+            $composant_nom=$interaction_entites[0]->composant_nom;
+      
 
-            $couche=$apis[0]->entite_id;
-            
-            $methode=$apis[0]->methode;
-            
-            $uri=$apis[0]->uri;        
-
-            $id=$apis[0]->id;
+            $id=$interaction_entites[0]->id;
 
         
         
         
-        require_once('composant/api/modifier/view/demande_modification.php'); 
+        require_once('composant/interaction_entite/modifier/view/demande_modification.php'); 
     }
 else if ($code ==400)
     {

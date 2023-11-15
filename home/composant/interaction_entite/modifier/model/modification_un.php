@@ -2,32 +2,26 @@
 
     $id=$_POST['id'];
 
-    $uri = $authority."/api/".$id;
-
-    $application_id=$_POST['application_id'];
+    $uri = $authority."/interaction_entite/".$id;
 
     $entite_id=$_POST['entite_id'];
 
-    $composant_id=$_POST['composant_id'];
+    $composant_id=$_POST['composant_entite_id'];
 
-    $methode=$_POST['methode'];
+    $descriptions=$_POST['descriptions'];
+ 
 
-    $urir=$_POST['uri'];
 
     $data = array(
         
-        'application_id' => $application_id,
-
-        'entite_id'=> $entite_id,
+        'entite_id' => $entite_id,
 
         'composant_id'=> $composant_id,
 
-        'methode'=> $methode,
-
-        'uri'=> $urir
-
-    );    
-
+        'descriptions'=> $descriptions
+    
+    );
+   
     $result=curl_put($uri, $token,$data);
         
     $api=json_decode($result);
@@ -37,7 +31,7 @@
     if($code ==200)
         
             {   
-                require_once('composant/api/modifier/view/reponse_positive.php');
+                require_once('composant/interaction_entite/modifier/view/reponse_positive.php');
             }
     
     

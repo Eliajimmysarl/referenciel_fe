@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperes_apis">Api</a>
+		<a href="?page=recuperes_apis">Interaction entite</a>
 	</li>
 	<li class="active">
 		<strong>Recuperer</strong>
@@ -27,11 +27,9 @@
 										echo"
 										<tr>
 										
-										<td>Application :</td><td>". $application_nom ." </td>
-										<tr><td>Composant : </td><td> " . $composant_nom." </td>
-										<tr><td>Couche : </td><td> ". $entite_nom." </td>
-										<tr><td>Methode : </td><td> ". $methode." </td>
-										<tr><td>Uri : </td><td> <a href='". $uri ."' target=_blank>Voir le code</a> </td>
+										<tr><td>Entite :</td><td>". $entite_nom ." </td></tr>
+										<tr><td>Composant : </td><td> " . $composant_nom." </td></tr>
+										<tr><td>Description : </td><td> ". $descriptions." </td></tr>
 										
 										
 										

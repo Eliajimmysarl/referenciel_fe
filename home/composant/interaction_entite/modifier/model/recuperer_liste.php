@@ -1,27 +1,27 @@
 <?php
 
-    $uri =  $authority.'/entite/';
+$uri =  $authority.'/entite/';
    
-    $result=curl_get($uri, $token);
+$result=curl_get($uri, $token);
 
-    $obj = json_decode($result);                      
-    
-    $entites= $obj->entite;
+$obj = json_decode($result);                      
 
-
+$entites= $obj->entite;
 
 
-    $uri =  $authority.'/composant_entite/';
-   
-    $result=curl_get($uri, $token);
 
-    $obj = json_decode($result);                      
-    
-    $composant_entites= $obj->composant_entite;
-    
-    
-    
-    $code = $obj->code;
+
+$uri =  $authority.'/composant/';
+
+$result=curl_get($uri, $token);
+
+$obj = json_decode($result);                      
+
+$composant_entites= $obj->composant;
+
+
+
+$code = $obj->code;
 
     if($code ==200)
         {   
