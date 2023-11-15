@@ -7,7 +7,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperes_apis">Api</a>
+			<a href="?page=recuperes_apis">Role</a>
 		</li>
 
 		<li class="active">
@@ -17,7 +17,7 @@
 	</ol>
 								
 	<br/>
-		
+	
 		<script type="text/javascript">
 			jQuery( document ).ready( function( $ ) {
 				var $table1 = jQuery( '#table-1' );
@@ -39,19 +39,20 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
+					<TH>Nom</TH>
+					<TH>Acteur</TH>
 					<TH>Application</TH>
-					<TH>Composant</TH>
-					<TH>entite</TH>
-					<TH>Methode</TH>
-					<TH>Uri</TH>
+					<TH>Organisation</TH>
 				
+					<TH>Description</TH>
+					<TH></TH>
 				</tr>
 			</thead>
 			<tbody>
 				
 				<?php
 								
-				for($i=0; $i < count($apis); $i++)
+				for($i=0; $i < count($roles); $i++)
 				{ 
 					$j = $i + 1;
 				echo"                         
@@ -59,35 +60,31 @@
 
 						<td>$j</td>
 
-						<td > " . $apis[$i]->application_nom ."</td>
+						<td > " . $roles[$i]->nom ."</td>
+						<td > " . $roles[$i]->acteur_nom ."</td>
 
-						<td>". $apis[$i]->composant_nom ."</td>
+						<td > " . $roles[$i]->application_nom ."</td>
 
-						<td>". $apis[$i]->entite_nom ."</td>
-
-						<td>". $apis[$i]->methode ."</td>
-
-						<td> <a href='". $apis[$i]->uri ."' target=_blank class='btn btn-orange'>Voir le code</a></td>
+						<td>". $roles[$i]->unite_organisation_nom ."</td>
 
 					
-		
-						</tr>";
+
+						<td>". $roles[$i]->descriptions ."</td>
+
+				</tr>";
 						         
 				}
 				?>
 
                <thead>
 				<tr>
-                	<TH>#</TH>
+				<TH>#</TH>
+					<TH>Nom</TH>
+					<TH>Acteur</TH>
 					<TH>Application</TH>
-					<TH>Composant</TH>
-					<TH>Entite</TH>
-					<TH>Methode</TH>
-					<TH>Uri</TH>
-					
-					
-	
-	
+					<TH>Organisation</TH>
+					<TH>Description</TH>
+			
 				</tr>
 			</thead>
 		</table>

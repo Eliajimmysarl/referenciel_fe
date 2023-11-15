@@ -1,12 +1,13 @@
 <?php
 
-    $uri =  $authority.'/api/';
+$uri =  $authority.'/role/';
+   
 
-    $result=curl_get($uri, $token);
+$result=curl_get($uri, $token);
 
     $obj = json_decode($result);                      
     
-    $apis= $obj->api;
+    $roles= $obj->roles;
 
     $code = $obj->code;
 
@@ -14,7 +15,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant\api\recuperer_plusieurs\view\recuperation_plusieurs.php'); 
+            require_once('composant\role\recuperer_plusieurs\view\recuperation_plusieurs.php'); 
         }
         else
         {

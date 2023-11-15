@@ -7,7 +7,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperes_apis">Api</a>
+			<a href="?page=recuperes_apis">Compoasnt processus</a>
 		</li>
 
 		<li class="active">
@@ -17,8 +17,7 @@
 	</ol>
 								
 	<br/>
-		
-		<script type="text/javascript">
+<script type="text/javascript">
 			jQuery( document ).ready( function( $ ) {
 				var $table1 = jQuery( '#table-1' );
 				
@@ -39,11 +38,12 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Application</TH>
-					<TH>Composant</TH>
-					<TH>entite</TH>
-					<TH>Methode</TH>
-					<TH>Uri</TH>
+					<TH>Activite</TH>
+					<TH>Processus</TH>
+					
+					<TH>Description</TH>
+					<TH>Lien code</TH>
+				
 				
 				</tr>
 			</thead>
@@ -51,7 +51,7 @@
 				
 				<?php
 								
-				for($i=0; $i < count($apis); $i++)
+				for($i=0; $i < count($composant_processuss); $i++)
 				{ 
 					$j = $i + 1;
 				echo"                         
@@ -59,35 +59,29 @@
 
 						<td>$j</td>
 
-						<td > " . $apis[$i]->application_nom ."</td>
+						<td>". $composant_processuss[$i]->activite ."</td>
 
-						<td>". $apis[$i]->composant_nom ."</td>
+						<td>". $composant_processuss[$i]->processus_nom ."</td>
 
-						<td>". $apis[$i]->entite_nom ."</td>
+						<td>". $composant_processuss[$i]->descriptions ."</td>
 
-						<td>". $apis[$i]->methode ."</td>
+						<td> <a href='". $composant_processuss[$i]->lien_code ."' target=_blank class='btn btn-orange'>Voir le code</a></td>
 
-						<td> <a href='". $apis[$i]->uri ."' target=_blank class='btn btn-orange'>Voir le code</a></td>
-
-					
 		
-						</tr>";
+			</tr>";
 						         
 				}
 				?>
 
                <thead>
 				<tr>
-                	<TH>#</TH>
-					<TH>Application</TH>
-					<TH>Composant</TH>
-					<TH>Entite</TH>
-					<TH>Methode</TH>
-					<TH>Uri</TH>
-					
-					
-	
-	
+				<TH>#</TH>
+					<TH>Activite</TH>
+					<TH>Processus</TH>
+					<TH>Description</TH>
+					<TH>Lien code</TH>
+				
+				
 				</tr>
 			</thead>
 		</table>

@@ -78,6 +78,58 @@
 							
 						</li>
 
+						
+						<li>
+						<a href="?page=recuperes_acteurs">
+								<span class="title">Acteur</span>
+							</a>
+							
+						</li>
+
+
+						<li>
+						<a href="?page=recuperes_roles">
+								<span class="title">Role</span>
+							</a>
+							
+						</li>
+
+						<li>
+						<a href="?page=recuperes_unite_organisations">
+								<span class="title">Unite organisation</span>
+							</a>
+							
+						</li>
+
+						<li>
+						<a href="?page=recuperes_processuss">
+								<span class="title">Processus</span>
+							</a>
+							
+						</li>
+
+						<li>
+						<a href="?page=recuperes_composant_processuss">
+								<span class="title">Composant processus</span>
+							</a>
+							
+						</li>
+
+						<li>
+						<a href="?page=recuperes_interaction_processuss">
+								<span class="title">Interaction processus</span>
+							</a>
+							
+						</li>
+
+						<li>
+						<a href="?page=recuperes_interaction_entites">
+								<span class="title">Interaction entite</span>
+							</a>
+							
+						</li>
+
+
 					</ul>
 				    </li>
 

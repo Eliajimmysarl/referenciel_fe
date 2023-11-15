@@ -891,6 +891,43 @@
                     require_once('composant\unite_organisation\ajouter\model\recuperer_liste.php');
                 }
 
+                else  if($page=='recuperes_acteurs')
+                {
+                    require_once('composant\acteur\recuperer_plusieurs\model\recuperer_plusieurs.php'); 
+                }
+
+                else  if($page=='recuperes_roles')
+                {
+                    require_once('composant\role\recuperer_plusieurs\model\recuperer_plusieurs.php'); 
+                }
+
+
+                else  if($page=='recuperes_processuss')
+                {
+                    require_once('composant\processus\recuperer_plusieurs\model\recuperer_plusieurs.php'); 
+                }
+
+                else  if($page=='recuperes_interaction_processuss')
+                {
+                    require_once('composant\interaction_processus\recuperer_plusieurs\model\recuperer_plusieurs.php'); 
+                }
+
+                else  if($page=='recuperes_composant_processuss')
+                {
+                    require_once('composant\composant_processus\recuperer_plusieurs\model\recuperer_plusieurs.php'); 
+                }
+
+                else  if($page=='recuperes_interaction_entites')
+                {
+                    require_once('composant\interaction_entite\recuperer_plusieurs\model\recuperer_plusieurs.php'); 
+                }
+
+                else  if($page=='recuperes_unite_organisations')
+                {
+                    require_once('composant\unite_organisation\recuperer_plusieurs\model\recuperer_plusieurs.php'); 
+                }
+
+
 
                 else  if($page=='dash')
                 {

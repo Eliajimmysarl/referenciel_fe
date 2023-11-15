@@ -57,12 +57,12 @@
 
 						<td>$j</td>
 
-						<td > " . $unite_organisations[$i]->nom ."</td>
+						<td > " . $unite_organisations[$i]->applications_nom ."</td>
 
-						<td>". $unite_organisations[$i]->application_nom ."</td>
+						<td>". $unite_organisations[$i]->unite_organisation_nom ."</td>
 
-						<td>". $unite_organisations[$i]->description."</td>
-		
+						<td>". $unite_organisations[$i]->descriptions."</td>
+
 						</tr>";
 						         
 				}
