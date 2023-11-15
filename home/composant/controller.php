@@ -421,6 +421,11 @@
                     require_once('composant/donnee_echange/recuperer/model/recuperer_plusieurs.php'); 
                 }
                 
+                else  if($page=='recuperation_un_composant_processus')
+                {
+                    require_once('composant\composant_processus\recuperer\model\recuperer_un.php');
+                }
+
             else  if($page=='recuperation_un_tde')
                 {
                     require_once('composant\donnee_echange\recuperer\model\recuperer_un.php');
