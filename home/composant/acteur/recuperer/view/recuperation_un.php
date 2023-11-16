@@ -26,8 +26,8 @@
 								
 										echo"
 										<tr>
-										<tr><td>Nom : </td><td> ". $nom." </td></tr>
-										<tr><td>Application :</td><td>". $applications_nom ." </td></tr>
+										<tr><td>Acteur : </td><td> ". $nom." </td></tr>
+										<tr><td>Fonction :</td><td>". $applications_nom ." </td></tr>
 										<tr><td>Unite organisation : </td><td> " . $unite_organisation_nom." </td></tr>
 										
 										<tr><td>Type : </td><td> ". $types." </td></tr>

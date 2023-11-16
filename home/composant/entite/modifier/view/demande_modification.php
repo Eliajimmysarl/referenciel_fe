@@ -32,26 +32,17 @@
 						
 					<input type="HIDDEN" name="id" value=<?php echo $_GET['id'];?>>	
 
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Nom<abbr style="color:green; font-size:15px;">**</abbr></label>
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="nom" value="<?php echo $nom;?>"  class="form-control">
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
+					
 
 				
                     
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
+						<label class="col-sm-3 control-label">Fonction <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 									<select  name="application_id" id="monselect" value="<?php echo $application_id;?>"  class="form-control" required="required">
-									<option value="" selected>Application</option>
+									<option value="" selected>Fonction</option>
 									
 										<?php
 											for($i=0; $i < count($applications); $i++)
@@ -70,7 +61,16 @@
 							</div>
 					</div>
 
-
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Entite<abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="nom" value="<?php echo $nom;?>"  class="form-control">
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
 					
 					
 					<div class="form-group">		

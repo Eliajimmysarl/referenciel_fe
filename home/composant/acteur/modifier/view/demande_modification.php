@@ -33,7 +33,7 @@
 					<input type="HIDDEN" name="id" value=<?php echo $_GET['id'];?>>	
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
+						<label class="col-sm-3 control-label">Fonction<abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
@@ -87,7 +87,7 @@
 				
 			
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Nom <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label" >Actuer <abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
@@ -98,15 +98,21 @@
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Types <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label">Types<abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="types" class="form-control" value="<?php echo $types;?>" required="required">
-									<span class="input-group-addon"><i class="r"></i></span>
+									<select  name="types" id="selec"  class="form-control" >
+									<option value="" selected>Types</option>
+										
+										<option value="Interne">Interne</option>
+										<option value="Externe">Externe</option>
+                                    </select>
+									<span class="input-group-addon"><i class=""></i></span>
 								</div>
 							</div>
 					</div>
+
 
 					
 					<div class="form-group">		

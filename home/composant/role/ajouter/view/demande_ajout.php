@@ -33,7 +33,33 @@
 						
 				<form method="POST" action="index.php?demande=ajouter_un_role"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
+				
 				<div class="form-group">		
+						<label class="col-sm-3 control-label">Fonction <abbr style="color:green; font-size:15px;">**</abbr></label>			
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<select  name="application_id" id="monselect"  class="form-control" required="required">
+									<option value="" selected>Fonction</option>
+									
+										<?php
+											for($i=0; $i < count($applications); $i++)
+												{         
+													echo"  
+															<option value=". $applications[$i]->id ."> ". $applications[$i]->nom ."</option>                       
+															
+													";
+																
+												}
+										?>
+
+                                    </select>
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+
+					<div class="form-group">		
 						<label class="col-sm-3 control-label">Acteur <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
@@ -58,30 +84,6 @@
 							</div>
 					</div>
 
-				<div class="form-group">		
-						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="application_id" id="monselect"  class="form-control" required="required">
-									<option value="" selected>Application</option>
-									
-										<?php
-											for($i=0; $i < count($applications); $i++)
-												{         
-													echo"  
-															<option value=". $applications[$i]->id ."> ". $applications[$i]->nom ."</option>                       
-															
-													";
-																
-												}
-										?>
-
-                                    </select>
-									<span class="input-group-addon"><i class=""></i></span>
-								</div>
-							</div>
-					</div>
 					
 					
 				<div class="form-group">		
@@ -112,11 +114,11 @@
 				
 			
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Nom <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label" >Role <abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="nom" class="form-control" placeholder="Nom" required="required">
+									<input type="text" name="nom" class="form-control" placeholder="Role" required="required">
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>

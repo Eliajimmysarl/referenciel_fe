@@ -39,11 +39,10 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Nom</TH>
+					<TH>Role</TH>
+					<TH>Fonction</TH>
 					<TH>Acteur</TH>
-					<TH>Application</TH>
 					<TH>Organisation</TH>
-				
 					<TH>Description</TH>
 					<TH></TH>
 				</tr>
@@ -61,9 +60,10 @@
 						<td>$j</td>
 
 						<td > " . $roles[$i]->nom ."</td>
+						<td > " . $roles[$i]->application_nom ."</td>
 						<td > " . $roles[$i]->acteur_nom ."</td>
 
-						<td > " . $roles[$i]->application_nom ."</td>
+						
 
 						<td>". $roles[$i]->unite_organisation_nom ."</td>
 
@@ -79,9 +79,9 @@
                <thead>
 				<tr>
 				<TH>#</TH>
-					<TH>Nom</TH>
+				<TH>Role</TH>
+					<TH>Fonction</TH>
 					<TH>Acteur</TH>
-					<TH>Application</TH>
 					<TH>Organisation</TH>
 					<TH>Description</TH>
 			

@@ -39,10 +39,10 @@
 			<thead>
 			<tr>
 			<TH>#</TH>
-			<TH>Nom</TH>
-			<TH>Types</TH>
-			<TH>Application</TH>
+			<TH>Donnee Persistante</TH>
+			<TH>Fonction</TH>
 			<TH>Entite</TH>
+			<TH>Types</TH>
 			<TH>Valeur</TH>
 			<TH>index</TH>
 			<TH>Cle primaire</TH>
@@ -64,11 +64,12 @@
 
 				<td > " . $donnee_persistantes[$i]->nom ."</td>
 
-				<td>". $donnee_persistantes[$i]->types ."</td>
+				
 
 				<td>". $donnee_persistantes[$i]->application_nom ."</td>
 
 				<td>". $donnee_persistantes[$i]->entite_nom ."</td>
+				<td>". $donnee_persistantes[$i]->types ."</td>
 
 				<td>". $donnee_persistantes[$i]->valeur ."</td>
 
@@ -88,10 +89,10 @@
             <thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Nom</TH>
-					<TH>Types</TH>
-					<TH>Application</TH>
+					<TH>Donnee Persistante</TH>
+					<TH>Fonction</TH>
 					<TH>Entite</TH>
+					<TH>Types</TH>
 					<TH>Valeur</TH>
 					<TH>index</TH>
 					<TH>Cle primaire</TH>

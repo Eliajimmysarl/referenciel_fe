@@ -39,8 +39,8 @@
 			<thead>
 			<tr>
 				    <TH>#</TH>
-					<TH>Application</TH>
-					<TH>Nom</TH>
+					<TH>Entite</TH>
+					<TH>Fonction</TH>
 					<TH>Description</TH>
 					<TH></TH>
 
@@ -59,9 +59,11 @@
 
 							<td>$j</td>
 
+							<td>". $entites[$i]->entite_nom ."</td>
+
 							<td > " . $entites[$i]->applications_nom ."</td>
 
-							<td>". $entites[$i]->entite_nom ."</td>
+							
 
 							<td>". $entites[$i]->descriptions ."</td>
 		
@@ -78,8 +80,8 @@
                <thead>
 				<tr>
 				    <TH></TH>
-                    <TH>Application</TH>
-					<TH>Nom</TH>
+                    <TH>Entite</TH>
+					<TH>Fonction</TH>
 					<TH>Description</TH>
 					<TH></TH>
 	

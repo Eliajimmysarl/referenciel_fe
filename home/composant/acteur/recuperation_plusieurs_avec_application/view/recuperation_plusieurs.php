@@ -39,8 +39,8 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Nom</TH>
-					<TH>Application</TH>
+					<TH>Acteur</TH>
+					<TH>Fonction</TH>
 					<TH>Organisation</TH>
 					<TH>Type</TH>
 					<TH>Descriprtion</TH>
@@ -80,8 +80,8 @@
             <thead>
 				<tr>
 				    <TH>#</TH>
-					<TH>Nom</TH>
-					<TH>Application</TH>
+					<TH>Acteur</TH>
+					<TH>Fonction</TH>
 					<TH>Organisation</TH>
 					<TH>Type</TH>
 					<TH>Descriprtion</TH>

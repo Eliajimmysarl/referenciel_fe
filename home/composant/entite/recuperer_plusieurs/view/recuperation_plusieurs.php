@@ -36,8 +36,8 @@
 			<thead>
 				<tr>
 				    <TH>#</TH>
-					<TH>Nom</TH>
-					<TH>Application</TH>
+					<TH>Entite</TH>
+					<TH>Fonction</TH>
 					<TH>Description</TH>
 					<TH>Composant</TH>
 					<TH>Donnée persistante</TH>
@@ -82,8 +82,8 @@
                <thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Nom</TH>
-					<TH>Application</TH>
+					<TH>Entite</TH>
+					<TH>Fonction</TH>
 					<TH>Description</TH>
 					<TH>Composant</TH>
 					<TH>Donnée persistante</TH>

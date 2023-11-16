@@ -36,9 +36,9 @@
 			<thead>
 				<tr>
 				    <TH>#</TH>
+					<TH>Composant</TH>
+					<TH>Fonction</TH>
 					<TH>Entite</TH>
-					<TH>Nom</TH>
-					<TH>Application</TH>
 					<TH>Couche</TH>
 					<TH>Platforme</TH>
 				
@@ -61,9 +61,10 @@
 
 							<td>$j</td>
                             <td>". $composants[$i]->nom ."</td>
-							<td>". $composants[$i]->entite_nom ."</td>
+							
 
 							<td > " . $composants[$i]->application_nom ."</td>
+							<td>". $composants[$i]->entite_nom ."</td>
 
 							<td>". $composants[$i]->couche ."</td>
 
@@ -90,9 +91,9 @@
                <thead>
 				<tr>
                     <TH>#</TH>
+					<TH>Composant</TH>
+					<TH>Fonction</TH>
 					<TH>Entite</TH>
-					<TH>Nom</TH>
-					<TH>Application</TH>
 					<TH>Couche</TH>
 					<TH>Platforme</TH>
 				

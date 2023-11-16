@@ -39,8 +39,8 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Nom</TH>
-					<TH>Application</TH>
+					<TH>Processus</TH>
+					<TH>Fonction</TH>
 					<TH>Description</TH>
 					<TH></TH>
 				</tr>
@@ -74,8 +74,8 @@
                <thead>
 				<tr>
 				     <TH>#</TH>
-					<TH>Nom</TH>
-					<TH>Application</TH>
+					 <TH>Processus</TH>
+					<TH>Fonction</TH>
 					<TH>Description</TH>
 					<TH></TH>
 				</tr>

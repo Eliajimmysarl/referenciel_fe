@@ -39,8 +39,8 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Nom</TH>
-					<TH>Application</TH>
+					<TH>Donnee echange</TH>
+					<TH>Fonction</TH>
 					<TH>Composant</TH>
 					<TH>Entite</TH>
 					<TH>Types</TH>
@@ -79,8 +79,8 @@
             <thead>
 				<tr>
 				    <TH>#</TH>
-					<TH>Nom</TH>
-					<TH>Application</TH>
+					<TH>Donnee echange</TH>
+					<TH>Fonction</TH>
 					<TH>Composant</TH>
 					<TH>Entite</TH>
 					<TH>Types</TH>

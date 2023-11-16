@@ -39,8 +39,8 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Nom</TH>
-					<TH>Application</TH>
+					<TH>Unite organisation</TH>
+					<TH>Fonction</TH>>
 					<TH>Description</TH>
 				
 				</tr>
@@ -57,9 +57,10 @@
 
 						<td>$j</td>
 
+						<td>". $unite_organisations[$i]->unite_organisation_nom ."</td>
 						<td > " . $unite_organisations[$i]->applications_nom ."</td>
 
-						<td>". $unite_organisations[$i]->unite_organisation_nom ."</td>
+						
 
 						<td>". $unite_organisations[$i]->descriptions."</td>
 
@@ -71,8 +72,8 @@
                <thead>
 				<tr>
 				     <TH>#</TH>
-					<TH>Nom</TH>
-					<TH>Application</TH>
+					 <TH>Unite organisation</TH>
+					<TH>Fonction</TH>
 					<TH>Description</TH>
 				
 				</tr>

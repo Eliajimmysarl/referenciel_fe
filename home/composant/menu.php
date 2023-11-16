@@ -39,7 +39,7 @@
 					<ul>
 						<li>
 							<a href="?page=recuperes_applications">
-								<span class="title">Application</span>
+								<span class="title">Fonction</span>
 							</a>
 						</li>
 						
@@ -79,6 +79,16 @@
 						</li>
 
 						
+						
+
+						<li>
+						<a href="?page=recuperes_unite_organisations">
+								<span class="title">Unite organisation</span>
+							</a>
+							
+						</li>
+
+
 						<li>
 						<a href="?page=recuperes_acteurs">
 								<span class="title">Acteur</span>
@@ -90,13 +100,6 @@
 						<li>
 						<a href="?page=recuperes_roles">
 								<span class="title">Role</span>
-							</a>
-							
-						</li>
-
-						<li>
-						<a href="?page=recuperes_unite_organisations">
-								<span class="title">Unite organisation</span>
 							</a>
 							
 						</li>

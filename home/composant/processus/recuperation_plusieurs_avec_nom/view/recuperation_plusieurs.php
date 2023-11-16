@@ -39,8 +39,8 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Uri</TH>
-					<TH>Application</TH>
+					<TH>Processus</TH>
+					<TH>Fonction</TH>
 					<TH>Composant</TH>
 					<TH>Couche</TH>
 					<TH>Methode</TH>
@@ -77,8 +77,8 @@
             <thead>
 				<tr>
                     <TH>#</TH>
-					<TH>Uri</TH>
-					<TH>Application</TH>
+					<TH>Processus</TH>
+					<TH>Fonction</TH>
 					<TH>Composant</TH>
 					<TH>Couche</TH>
 					<TH>Methode</TH>

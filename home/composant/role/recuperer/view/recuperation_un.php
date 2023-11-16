@@ -26,8 +26,8 @@
 								
 										echo"
 										<tr>
-										<td>nom :</td><td>". $nom ." </td></tr>
-										<td>Application :</td><td>". $application_nom ." </td></tr>
+										<td>Role :</td><td>". $nom ." </td></tr>
+										<tr><td>Application :</td><td>". $application_nom ." </td></tr>
 										<tr><td>Acteur : </td><td> " . $acteur_nom." </td></tr>
 										<tr><td>Organisation : </td><td> ". $unite_organisation_nom." </td></tr>
 										<tr><td>Description: </td><td> ". $descriptions." </td></tr>

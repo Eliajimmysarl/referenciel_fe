@@ -40,8 +40,8 @@
 			<tr>
 				    <TH>#</TH>
 
-					<TH>Nom</TH>
-					<TH>Application</TH>
+					<TH>Entite</TH>
+					<TH>Fonction</TH>
 					
 					<TH>Description</TH>
 					<TH>Composant</TH>
@@ -88,8 +88,8 @@
             <thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Nom</TH>
-					<TH>Application</TH>
+					<TH>Entite</TH>
+					<TH>Fonction</TH>
 				
 					<TH>Description</TH>
 					<TH>Composant</TH>
