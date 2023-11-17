@@ -43,6 +43,7 @@
 					<TH>Organisation</TH>
 					<TH>Type</TH>
 					<TH>Description</TH>
+					<TH>Role</TH>
 					
 				</tr>
 			</thead>
@@ -67,7 +68,9 @@
 
 						<td>". $acteurs[$i]->descriptions ."</td>
 
-		
+		                <td><form  method='POST' action='index.php?demande=recuperation_avec_entite_application' class='form'>
+						<input type='hidden' name='acteur_id'  value='". $acteurs[$i]->id ."' class='form-control'>
+						<input type='submit' class='btn btn-default'  value='Voir'> </form></td>
 						
 					
 				</tr>";
@@ -83,6 +86,7 @@
 					<TH>Organisation</TH>
 					<TH>Type</TH>
 					<TH>Description</TH>
+					<TH>Role</TH>
 	
 				</tr>
 			</thead>

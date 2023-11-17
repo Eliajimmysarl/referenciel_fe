@@ -42,6 +42,8 @@
 					<TH>Unite organisation</TH>
 					<TH>Fonction</TH>>
 					<TH>Description</TH>
+					<TH>Acteur</TH>
+					<TH>Role</TH>
 				
 				</tr>
 			</thead>
@@ -64,6 +66,13 @@
 
 						<td>". $unite_organisations[$i]->descriptions."</td>
 
+						<td><form  method='POST' action='index.php?demande=recuperation_avec_entite_application' class='form'>
+						<input type='hidden' name='unite_organisations_id'  value='". $unite_organisations[$i]->id ."' class='form-control'>
+						<input type='submit' class='btn btn-info'  value='Voir'> </form></td>
+						<td><form  method='POST' action='index.php?demande=recuperation_avec_entite_application' class='form'>
+						<input type='hidden' name='unite_organisations_id'  value='". $unite_organisations[$i]->id ."' class='form-control'>
+						<input type='submit' class='btn btn-danger'  value='Voir'> </form></td>
+
 						</tr>";
 						         
 				}
@@ -75,6 +84,8 @@
 					 <TH>Unite organisation</TH>
 					<TH>Fonction</TH>
 					<TH>Description</TH>
+					<TH>Acteur</TH>
+					<TH>Role</TH>
 				
 				</tr>
 			</thead>

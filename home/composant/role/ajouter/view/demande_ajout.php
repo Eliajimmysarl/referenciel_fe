@@ -98,7 +98,7 @@
 											for($i=0; $i < count($unite_organisations); $i++)
 												{         
 													echo"  
-															<option value=". $unite_organisations[$i]->id ."> ". $unite_organisations[$i]->unite_organisation_nom ."  ". $unite_organisations[$i]->id . "</option>                       
+															<option value=". $unite_organisations[$i]->id ."> ". $unite_organisations[$i]->unite_organisation_nom ."  </option>                       
 															
 													";
 																

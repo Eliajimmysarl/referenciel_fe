@@ -40,9 +40,9 @@
 				<tr>
 					<TH>#</TH>
 					<TH>Processus</TH>
-					<TH>Fonction</TH>>
+					<TH>Fonction</TH>
 					<TH>Description</TH>
-				
+					<TH>Activite</TH>
 				</tr>
 			</thead>
 			<tbody>
@@ -62,6 +62,10 @@
 						<td > " . $processuss[$i]->applications_nom ."</td>
 
 						<td>". $processuss[$i]->descriptions."</td>
+
+						<td><form  method='POST' action='index.php?demande=recuperation_avec_entite_application' class='form'>
+						<input type='hidden' name='unite_organisations_id'  value='". $processuss[$i]->id ."' class='form-control'>
+						<input type='submit' class='btn btn-danger'  value='Voir'> </form></td>
 						
 					</tr>";
 						         
@@ -74,7 +78,7 @@
 					 <TH>Processus</TH>
 					<TH>Fonction</TH>
 					<TH>Description</TH>
-					
+					<TH>Activite</TH>
 				</tr>
 				</tr>
 			</thead>

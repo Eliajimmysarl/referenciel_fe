@@ -75,6 +75,11 @@
                     require_once('composant/interaction_entite/ajouter/model/ajout_un.php');  
                 }
 
+                else  if($demande=='ajouter_un_interaction_processus')
+                {
+                    require_once('composant/interaction_processus/ajouter/model/ajout_un.php');  
+                }
+
                 else  if($demande=='ajouter_un_composant_processus')
                 {
                     require_once('composant/composant_processus/ajouter/model/ajout_un.php');  

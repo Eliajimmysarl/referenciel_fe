@@ -82,7 +82,55 @@
 								</div>
 							</div>
 					</div>
+                    
 
+					
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label" >Model <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="model" class="form-control" value="<?php echo $model;?>" required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
+								</div>
+							</div>
+					</div>
+					
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label" >View <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="view" class="form-control" value="<?php echo $view;?>" required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
+								</div>
+							</div>
+					</div>
+					
+					<div class="form-group">		
+						<label class="col-sm-3 control-label" >Interface <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="interface" class="form-control" value="<?php echo $interface;?>" required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
+								</div>
+							</div>
+					</div>
+
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label" >Service <abbr style="color:green; font-size:15px;">**</abbr></label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="service" class="form-control" value="<?php echo $service;?>" required="required">
+									<span class="input-group-addon"><i class="r"></i></span>
+								</div>
+							</div>
+					</div>
 				
 						
 				

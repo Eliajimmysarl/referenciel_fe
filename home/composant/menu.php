@@ -145,7 +145,7 @@
 
 			   <li>
 					<a href="?page=modifier_application">
-						<span class="title">Application</span>
+						<span class="title">Fonction</span>
 					</a>
 				</li>
 				<li>
