@@ -1,6 +1,6 @@
 <?php
 
-    $uri =  $authority.'/api/';
+    $uri =  $authority.'/acteur/';
 
     $application_id=$_POST['application_id'];
 

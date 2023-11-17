@@ -44,7 +44,7 @@
 					<TH>Acteur</TH>
 					<TH>Organisation</TH>
 					<TH>Description</TH>
-					<TH></TH>
+				
 				</tr>
 			</thead>
 			<tbody>

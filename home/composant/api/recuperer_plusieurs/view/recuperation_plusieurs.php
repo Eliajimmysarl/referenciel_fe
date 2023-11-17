@@ -39,7 +39,7 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Application</TH>
+					<TH>Fonction</TH>
 					<TH>Composant</TH>
 					<TH>entite</TH>
 					<TH>Methode</TH>
@@ -79,7 +79,7 @@
                <thead>
 				<tr>
                 	<TH>#</TH>
-					<TH>Application</TH>
+					<TH>Fonction</TH>
 					<TH>Composant</TH>
 					<TH>Entite</TH>
 					<TH>Methode</TH>

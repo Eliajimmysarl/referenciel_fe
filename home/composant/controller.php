@@ -127,6 +127,11 @@
                     require_once('composant\entite\recuperation_plusieurs_avec_composant\model\recuperation_avec_dependance.php');  
                 }
 
+                else  if($demande=='recuperation_avec_application_role')
+                {
+                    require_once('composant\role\recuperation_plusieurs_avec_application\model\recuperation_avec_dependance.php');  
+                }
+
             else  if($demande=='recuperation_avec_entite_application')
                 {
                     require_once('composant\entite\recuperation_plusieurs_avec_application\model\recuperation_avec_dependance.php');  
