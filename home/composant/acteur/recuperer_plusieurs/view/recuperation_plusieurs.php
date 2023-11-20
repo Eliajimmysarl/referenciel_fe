@@ -68,7 +68,7 @@
 
 						<td>". $acteurs[$i]->descriptions ."</td>
 
-		                <td><form  method='POST' action='index.php?demande=recuperation_avec_entite_application' class='form'>
+		                <td><form  method='POST' action='index.php?demande=recuperation_avec_acteur_role' class='form'>
 						<input type='hidden' name='acteur_id'  value='". $acteurs[$i]->id ."' class='form-control'>
 						<input type='submit' class='btn btn-default'  value='Voir'> </form></td>
 						

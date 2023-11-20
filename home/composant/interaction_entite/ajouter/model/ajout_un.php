@@ -6,6 +6,14 @@
 
     $composant_id=$_POST['composant_entite_id'];
 
+    $view=$_POST['view'];
+
+    $model=$_POST['model'];
+
+    $interface=$_POST['interface'];
+
+    $service=$_POST['service'];
+
     $descriptions=$_POST['descriptions'];
  
 
@@ -15,6 +23,14 @@
         'entite_id' => $entite_id,
 
         'composant_id'=> $composant_id,
+
+        'view'=> $view,
+        
+        'model'=> $model,
+
+        'interface'=> $interface,
+
+        'service'=> $service,
 
         'descriptions'=> $descriptions
     

@@ -137,6 +137,22 @@
                     require_once('composant\role\recuperation_plusieurs_avec_application\model\recuperation_avec_dependance.php');  
                 }
 
+                else  if($demande=='recuperation_avec_organisation_role')
+                {
+                    require_once('composant\role\recuperation_plusieurs_avec_organisation\model\recuperation_avec_dependance.php');  
+                }
+
+
+                else  if($demande=='recuperation_avec_acteur_role')
+                {
+                    require_once('composant\role\recuperation_plusieurs_avec_acteur\model\recuperation_avec_dependance.php');  
+                }
+
+                else  if($demande=='recuperation_avec_organisation_acteur')
+                {
+                    require_once('composant\role\recuperation_plusieurs_avec_organisation\model\recuperation_avec_dependance.php');  
+                }
+
             else  if($demande=='recuperation_avec_entite_application')
                 {
                     require_once('composant\entite\recuperation_plusieurs_avec_application\model\recuperation_avec_dependance.php');  
@@ -741,6 +757,22 @@
                 else  if($page=='recuperes_role_application')
                 {
                     require_once('composant\role\recuperation_plusieurs_avec_application\model\recuperer_liste.php'); 
+                }
+
+                else  if($page=='recuperes_role_unite_organisation')
+                {
+                    require_once('composant\role\recuperation_plusieurs_avec_organisation\model\recuperer_liste.php'); 
+                }
+
+
+                else  if($page=='recuperes_role_acteur')
+                {
+                    require_once('composant\role\recuperation_plusieurs_avec_acteur\model\recuperer_liste.php'); 
+                }
+
+                else  if($page=='recuperes_acteur_unite_organisation')
+                {
+                    require_once('composant\role\recuperation_plusieurs_avec_organisation\model\recuperer_liste.php'); 
                 }
 
             else  if($page=='modifier_donnee_persistante')

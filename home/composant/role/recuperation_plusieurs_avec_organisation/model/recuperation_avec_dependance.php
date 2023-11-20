@@ -1,14 +1,14 @@
 <?php
 
-    $uri =  $authority.'/api/';
+    $uri =  $authority.'/role/';
 
-    $composant_id=$_POST['composant_id'];
+    $unite_organisation_id=$_POST['unite_organisation_id'];
 
  
     $data = array(
 
 
-        'composant_id'=> $composant_id
+        'unite_organisation_id'=> $unite_organisation_id
 
     
     );
@@ -17,7 +17,7 @@
 
     $obj = json_decode($result);   
        
-    $apis= $obj->api;
+    $roles= $obj->roles;
 
     $code = $obj->code;
 
@@ -25,7 +25,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant\api\recuperation_plusieurs_avec_composant\view\recuperation_plusieurs.php'); 
+            require_once('composant\role\recuperation_plusieurs_avec_organisation\view\recuperation_plusieurs.php'); 
         }
         else
         {

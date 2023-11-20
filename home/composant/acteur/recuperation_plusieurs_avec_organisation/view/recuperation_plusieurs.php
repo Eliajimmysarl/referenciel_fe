@@ -7,7 +7,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperes_apis">Unité organisation</a>
+			<a href="?page=recuperes_apis">Acteur</a>
 		</li>
 
 		<li class="active">
@@ -39,11 +39,12 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Unite organisation</TH>
-					<TH>Fonction</TH>>
-					<TH>Description</TH>
 					<TH>Acteur</TH>
-					<TH>Role</TH>
+					<TH>Fonction</TH>
+					<TH>Organisation</TH>
+					<TH>Type</TH>
+					<TH>Descriprtion</TH>
+				
 				
 				</tr>
 			</thead>
@@ -51,7 +52,7 @@
 				
 				<?php
 								
-				for($i=0; $i < count($unite_organisations); $i++)
+				for($i=0; $i < count($acteurs); $i++)
 				{ 
 					$j = $i + 1;
 				echo"                         
@@ -59,34 +60,34 @@
 
 						<td>$j</td>
 
-						<td>". $unite_organisations[$i]->unite_organisation_nom ."</td>
-						<td > " . $unite_organisations[$i]->applications_nom ."</td>
+						<td>". $acteurs[$i]->acteur_nom ."</td>
 
-						
+						<td > " . $acteurs[$i]->applications_nom ."</td>
 
-						<td>". $unite_organisations[$i]->descriptions." </td>
+						<td>". $acteurs[$i]->unite_organisation_nom ."</td>
 
-						<td><form  method='POST' action='index.php?demande=recuperation_avec_organisation_acteur' class='form'>
-						<input type='hidden' name='unite_organisation_id'  value='". $unite_organisations[$i]->id ."' class='form-control'>
-						<input type='submit' class='btn btn-info'  value='Voir'> </form></td>
-						<td><form  method='POST' action='index.php?demande=recuperation_avec_organisation_role' class='form'>
-						<input type='hidden' name='unite_organisation_id'  value='". $unite_organisations[$i]->id ."' class='form-control'>
-						<input type='submit' class='btn btn-danger'  value='Voir'> </form></td>
+						<td>". $acteurs[$i]->types ."</td>
 
-						</tr>";
+						<td>". $acteurs[$i]->descriptions ."</td>
+
+					
+			
+					</tr>";
 						         
 				}
 				?>
-
-               <thead>
+            </tbody>
+            <thead>
 				<tr>
-				     <TH>#</TH>
-					 <TH>Unite organisation</TH>
-					<TH>Fonction</TH>
-					<TH>Description</TH>
+				    <TH>#</TH>
 					<TH>Acteur</TH>
-					<TH>Role</TH>
-				
+					<TH>Fonction</TH>
+					<TH>Organisation</TH>
+					<TH>Type</TH>
+					<TH>Descriprtion</TH>
+					
+			
+	
 				</tr>
 			</thead>
 		</table>
