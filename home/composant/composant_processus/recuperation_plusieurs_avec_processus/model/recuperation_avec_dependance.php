@@ -1,12 +1,12 @@
 <?php
 
-    $uri =  $authority.'/api/';
+    $uri =  $authority.'/composant_processus/';
 
-    $application_id=$_POST['application_id'];
+    $processus_id=$_POST['processus_id'];
     
     $data = array(
 
-        'application_id'=> $application_id
+        'processus_id'=> $processus_id
 
 
     
@@ -16,7 +16,7 @@
 
     $obj = json_decode($result);   
        
-    $apis= $obj->api;
+    $composant_processuss= $obj->composant_processus;
     
     $code = $obj->code;
 
@@ -24,7 +24,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant\api\recuperation_plusieurs_avec_application\view\recuperation_plusieurs.php'); 
+            require_once('composant\composant_processus\recuperation_plusieurs_avec_processus\view\recuperation_plusieurs.php'); 
         }
         else
         {

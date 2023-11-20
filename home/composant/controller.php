@@ -142,6 +142,23 @@
                     require_once('composant\role\recuperation_plusieurs_avec_organisation\model\recuperation_avec_dependance.php');  
                 }
 
+                else  if($demande=='recuperation_avec_processus_composant_processus')
+                {
+                    require_once('composant\composant_processus\recuperation_plusieurs_avec_processus\model\recuperation_avec_dependance.php');  
+                }
+
+
+                else  if($demande=='recuperation_avec_entite_interaction_entite')
+                {
+                    require_once('composant\interaction_entite\recuperation_plusieurs_avec_entite\model\recuperation_avec_dependance.php');  
+                }
+
+
+                else  if($demande=='recuperation_avec_processus_interaction_processus')
+                {
+                    require_once('composant\interaction_processus\recuperation_plusieurs_avec_processus\model\recuperation_avec_dependance.php');  
+                }
+
 
                 else  if($demande=='recuperation_avec_acteur_role')
                 {
@@ -774,6 +791,23 @@
                 {
                     require_once('composant\role\recuperation_plusieurs_avec_organisation\model\recuperer_liste.php'); 
                 }
+
+
+                else  if($page=='recuperes_composant_processus_processus')
+                {
+                    require_once('composant\composant_processus\recuperation_plusieurs_avec_processus\model\recuperer_liste.php'); 
+                }
+
+                else  if($page=='recuperes_interaction_processus_processus')
+                {
+                    require_once('composant\interaction_processus\recuperation_plusieurs_avec_processus\model\recuperer_liste.php'); 
+                }
+
+                else  if($page=='recuperes_interaction_entite_entite')
+                {
+                    require_once('composant\interaction_entite\recuperation_plusieurs_avec_entite\model\recuperer_liste.php'); 
+                }
+
 
             else  if($page=='modifier_donnee_persistante')
                 {

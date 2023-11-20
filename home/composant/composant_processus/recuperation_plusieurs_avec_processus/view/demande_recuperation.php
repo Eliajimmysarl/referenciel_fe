@@ -6,7 +6,7 @@
 		</li>
 	
 		<li>
-			<a href="?page=recuperes_apis">Api</a>
+			<a href="?page=recuperes_apis">Composant processus</a>
 		</li>
 	
 		<li class="active">
@@ -31,21 +31,21 @@
 					
 			<div class="panel-body">
 						
-				<form method="POST" action="index.php?demande=recuperation_avec_application_api"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
+				<form method="POST" action="index.php?demande=recuperation_avec_processus_composant_processus"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
 				<div class="form-group">		
-						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
+						<label class="col-sm-3 control-label">Processus <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="application_id" id="selec"  class="form-control" required="required">
-									<option value="" selected>Application</option>
+									<select  name="processus_id" id="selec"  class="form-control" required="required">
+									<option value="" selected>Processus</option>
 									
 										<?php
-											for($i=0; $i < count($applications); $i++)
+											for($i=0; $i < count($processuss); $i++)
 												{         
 													echo"  
-															<option value=". $applications[$i]->id ."> ". $applications[$i]->nom ."</option>                       
+															<option value=". $processuss[$i]->id ."> ". $processuss[$i]->processus_nom ."</option>                       
 															
 													";
 																

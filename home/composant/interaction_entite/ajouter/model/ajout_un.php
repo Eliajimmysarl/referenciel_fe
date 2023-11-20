@@ -30,7 +30,7 @@
 
         'interface'=> $interface,
 
-        'service'=> $service,
+        'services'=> $service,
 
         'descriptions'=> $descriptions
     

@@ -40,6 +40,10 @@
 					<TH>#</TH>
 					<TH>Entite</TH>
 					<TH>Composant entite</TH>
+					<TH>Model</TH>
+					<TH>View</TH>
+					<TH>Interface</TH>
+					<TH>Service</TH>
 					<TH>Description</TH>
 					
 				</tr>
@@ -60,6 +64,11 @@
 
 						<td>". $interaction_entites[$i]->composant_entite_nom ."</td>
 
+						<td>". $interaction_entites[$i]->model ."</td>
+						<td>". $interaction_entites[$i]->view ."</td>
+						<td>". $interaction_entites[$i]->interface ."</td>
+						<td>". $interaction_entites[$i]->services ."</td>
+
 						<td>". $interaction_entites[$i]->descriptions ."</td>
 			</tr>";
 						         
@@ -70,10 +79,13 @@
 				<tr>
 			
 				<TH>#</TH>
-					<TH>Entite</TH>
+				<TH>Entite</TH>
 					<TH>Composant entite</TH>
+					<TH>Model</TH>
+					<TH>View</TH>
+					<TH>Interface</TH>
+					<TH>Service</TH>
 					<TH>Description</TH>
-				
 				</tr>
 			</thead>
 		</table>

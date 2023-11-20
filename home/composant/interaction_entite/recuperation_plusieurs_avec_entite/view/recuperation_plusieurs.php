@@ -7,7 +7,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperes_apis">Api</a>
+			<a href="?page=recuperes_apis">Interaction entite</a>
 		</li>
 
 		<li class="active">
@@ -17,8 +17,7 @@
 	</ol>
 								
 	<br/>
-		
-		<script type="text/javascript">
+	<script type="text/javascript">
 			jQuery( document ).ready( function( $ ) {
 				var $table1 = jQuery( '#table-1' );
 				
@@ -39,20 +38,21 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Uri</TH>
-					<TH>Application</TH>
-					<TH>Composant</TH>
 					<TH>Entite</TH>
-					<TH>Methode</TH>
-				
-				
+					<TH>Composant entite</TH>
+					<TH>Model</TH>
+					<TH>View</TH>
+					<TH>Interface</TH>
+					<TH>Service</TH>
+					<TH>Description</TH>
+					
 				</tr>
 			</thead>
 			<tbody>
 				
 				<?php
 								
-				for($i=0; $i < count($apis); $i++)
+				for($i=0; $i < count($interaction_entites); $i++)
 				{ 
 					$j = $i + 1;
 				echo"                         
@@ -60,34 +60,32 @@
 
 						<td>$j</td>
 
-						<td>". $apis[$i]->uri ."</td>
+						<td > " . $interaction_entites[$i]->entite_nom ."</td>
 
-						<td > " . $apis[$i]->application_nom ."</td>
+						<td>". $interaction_entites[$i]->composant_entite_nom ."</td>
 
-						<td>". $apis[$i]->composant_nom ."</td>
+						<td>". $interaction_entites[$i]->model ."</td>
+						<td>". $interaction_entites[$i]->view ."</td>
+						<td>". $interaction_entites[$i]->interface ."</td>
+						<td>". $interaction_entites[$i]->services ."</td>
 
-						<td>". $apis[$i]->entite_nom ."</td>
-
-						<td>". $apis[$i]->methode ."</td>
-
-					
-			
-					</tr>";
+						<td>". $interaction_entites[$i]->descriptions ."</td>
+			</tr>";
 						         
 				}
 				?>
-            </tbody>
-            <thead>
+
+               <thead>
 				<tr>
-                    <TH>#</TH>
-					<TH>Uri</TH>
-					<TH>Application</TH>
-					<TH>Composant</TH>
-					<TH>Entite</TH>
-					<TH>Methode</TH>
-					
 			
-	
+				<TH>#</TH>
+				<TH>Entite</TH>
+					<TH>Composant entite</TH>
+					<TH>Model</TH>
+					<TH>View</TH>
+					<TH>Interface</TH>
+					<TH>Service</TH>
+					<TH>Description</TH>
 				</tr>
 			</thead>
 		</table>

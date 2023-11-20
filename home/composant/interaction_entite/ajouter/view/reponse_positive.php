@@ -6,7 +6,7 @@
 		</li>
 
 		<li>
-			<a href="?page=recuperes_apis">Api</a>
+			<a href="?page=recuperes_apis">Interaction entite</a>
 		</li>
 
 		<li class="active">

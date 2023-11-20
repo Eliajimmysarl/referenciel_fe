@@ -17,7 +17,7 @@
 	</ol>
 								
 	<br/>
-	<a href='?page=ajouter_interaction_entite'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>/<a href='?page=recuperes_api_application'  class='btn btn-primary btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par application</a> /<a href='?page=recuperes_api_composant'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par composant</a>	
+	<a href='?page=ajouter_interaction_entite'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>/<a href='?page=recuperes_interaction_entite_entite'  class='btn btn-primary btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par Entite</a> 
 		<script type="text/javascript">
 			jQuery( document ).ready( function( $ ) {
 				var $table1 = jQuery( '#table-1' );
@@ -41,6 +41,10 @@
 					<TH>#</TH>
 					<TH>Entite</TH>
 					<TH>Composant entite</TH>
+					<TH>Model</TH>
+					<TH>View</TH>
+					<TH>Interface</TH>
+					<TH>Service</TH>
 					<TH>Description</TH>
 					<TH></TH>
 				</tr>
@@ -61,7 +65,14 @@
 
 						<td>". $interaction_entites[$i]->composant_entite_nom ."</td>
 
+						<td>". $interaction_entites[$i]->model ."</td>
+						<td>". $interaction_entites[$i]->view ."</td>
+						<td>". $interaction_entites[$i]->interface ."</td>
+						<td>". $interaction_entites[$i]->services ."</td>
+
 						<td>". $interaction_entites[$i]->descriptions ."</td>
+
+						
 
 					<td> <a href='?page=modification_interaction_entite&id=". $interaction_entites[$i]->id ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a> 
 					<a href='?page=demande_supprimer_interaction_entite&id=". $interaction_entites[$i]->id ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a>
@@ -77,6 +88,10 @@
 				<TH>#</TH>
 					<TH>Entite</TH>
 					<TH>Composant entite</TH>
+					<TH>Model</TH>
+					<TH>View</TH>
+					<TH>Interface</TH>
+					<TH>Service</TH>
 					<TH>Description</TH>
 					<TH></TH>
 				</tr>

@@ -6,7 +6,7 @@
 		</li>
 	
 		<li>
-			<a href="?page=recuperes_apis">Api</a>
+			<a href="?page=recuperes_composants">Interaction entite</a>
 		</li>
 	
 		<li class="active">
@@ -31,21 +31,21 @@
 					
 			<div class="panel-body">
 						
-				<form method="POST" action="index.php?demande=recuperation_avec_composant_api"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
+				<form method="POST" action="index.php?demande=recuperation_avec_entite_interaction_entite"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
-                    <div class="form-group">		
-						<label class="col-sm-3 control-label">Composant <abbr style="color:green; font-size:15px;">**</abbr></label>			
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Entite <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<select  name="composant_id" id="selec"  class="form-control" required="required">
-									<option value="" selected>Composant</option>
+									<select  name="entite_id" id="selec"  class="form-control" required="required">
+									<option value="" selected>Entite</option>
 									
 										<?php
-											for($i=0; $i < count($composants); $i++)
+											for($i=0; $i < count($entites); $i++)
 												{         
 													echo"  
-															<option value=". $composants[$i]->id_composant."> ". $composants[$i]->nom ."</option>                       
+															<option value=". $entites[$i]->id ."> ". $entites[$i]->entite_nom ."</option>                       
 															
 													";
 																
@@ -57,9 +57,9 @@
 								</div>
 							</div>
 					</div>
+
                     
 
-                  
 					<div class="form-group">
 						
 						<div class="col-sm-offset-3 col-sm-5">
@@ -81,3 +81,4 @@
 	</div>
 		
 </div>	
+
