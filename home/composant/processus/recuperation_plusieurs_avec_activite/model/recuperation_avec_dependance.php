@@ -25,7 +25,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant\api\recuperation_plusieurs_avec_composant\view\recuperation_plusieurs.php'); 
+            require_once('composant/api/recuperation_plusieurs_avec_composant/view/recuperation_plusieurs.php'); 
         }
         else
         {

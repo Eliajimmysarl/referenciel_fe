@@ -17,7 +17,7 @@ $unite_organisations= $obj->unite_organisation;
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant\acteur\recuperation_plusieurs_avec_organisation\view\demande_recuperation.php'); 
+            require_once('composant/acteur/recuperation_plusieurs_avec_organisation/view/demande_recuperation.php'); 
         }
     else
         {

@@ -24,7 +24,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant\role\recuperation_plusieurs_avec_acteur\view\recuperation_plusieurs.php'); 
+            require_once('composant/role/recuperation_plusieurs_avec_acteur/view/recuperation_plusieurs.php'); 
         }
         else
         {

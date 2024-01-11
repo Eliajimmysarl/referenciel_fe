@@ -24,7 +24,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant\donnee_persistante\ajouter\view\demande_ajout.php'); 
+            require_once('composant/donnee_persistante/ajouter/view/demande_ajout.php'); 
         }
     else
         {

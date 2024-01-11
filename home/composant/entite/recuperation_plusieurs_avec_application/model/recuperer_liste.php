@@ -14,7 +14,7 @@
     if($code ==200)
         {   
          
-            require_once('composant\entite\recuperation_plusieurs_avec_application\view\demande_recuperation.php'); 
+            require_once('composant/entite/recuperation_plusieurs_avec_application/view/demande_recuperation.php'); 
         }
     else
         {
