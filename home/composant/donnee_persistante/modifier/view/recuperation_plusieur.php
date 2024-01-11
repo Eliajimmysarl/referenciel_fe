@@ -15,7 +15,7 @@
 		</li>
 
 	</ol>
-	<a href='?page=ajouter_donnee_persistante'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>/<a href='?page=recuperes_donnee_persistantes_application'  class='btn btn-primary btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par application</a> /<a href='?page=recuperes_donnee_persistantes_entite'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par entite</a>									
+	<a href='?page=ajouter_donnee_persistante'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>/<a href='?page=recuperes_donnee_persistantes_application'  class='btn btn-primary btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par Fonction</a> /<a href='?page=recuperes_donnee_persistantes_entite'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par entite</a>									
 	<br/>
 		
 		<script type="text/javascript">
@@ -39,10 +39,10 @@
 			<thead>
 			<tr>
 			<TH>#</TH>
-			<TH>Nom</TH>
-			<TH>Types</TH>
-			<TH>Application</TH>
+			<TH>Donnee Persistante</TH>
+			<TH>Fonction</TH>
 			<TH>Entite</TH>
+			<TH>Types</TH>
 			<TH>Valeur</TH>
 			<TH>index</TH>
 			<TH>Cle primaire</TH>
@@ -64,11 +64,11 @@
 
 				<td > " . $donnee_persistantes[$i]->nom ."</td>
 
-				<td>". $donnee_persistantes[$i]->types ."</td>
-
 				<td>". $donnee_persistantes[$i]->application_nom ."</td>
 
 				<td>". $donnee_persistantes[$i]->entite_nom ."</td>
+
+				<td>". $donnee_persistantes[$i]->types ."</td>
 
 				<td>". $donnee_persistantes[$i]->valeur ."</td>
 
@@ -90,10 +90,10 @@
             <thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Nom</TH>
-					<TH>Types</TH>
-					<TH>Application</TH>
+					<TH>Donnee Persistante</TH>
+					<TH>Fonction</TH>
 					<TH>Entite</TH>
+					<TH>Types</TH>
 					<TH>Valeur</TH>
 					<TH>index</TH>
 					<TH>Cle primaire</TH>

@@ -17,7 +17,7 @@
 	</ol>
 								
 	<br/>
-	<a href='?page=ajouter_donnee_echange'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>/<a href='?page=recuperes_donnee_echanges_application'  class='btn btn-primary btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par application</a> /<a href='?page=recuperes_donnee_echanges_composant'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par composant</a>	
+	<a href='?page=ajouter_donnee_echange'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>/<a href='?page=recuperes_donnee_echanges_application'  class='btn btn-primary btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par Fonction</a> /<a href='?page=recuperes_donnee_echanges_composant'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par composant</a>	
 		<script type="text/javascript">
 			jQuery( document ).ready( function( $ ) {
 				var $table1 = jQuery( '#table-1' );
@@ -39,10 +39,10 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Application</TH>
+					<TH>Donnee TDE</TH>
+					<TH>Fonction</TH>
 					<TH>Composant</TH>
 					<TH>Entite</TH>
-					<TH>Nom</TH>
 					<TH>Types</TH>
 					<TH>Description</TH>
 					<TH></TH>
@@ -60,13 +60,13 @@
 
 						<td>$j</td>
 
+						<td>". $donnee_echanges[$i]->nom ."</td>
+
 						<td > " . $donnee_echanges[$i]->application_nom ."</td>
 
 						<td>". $donnee_echanges[$i]->composant_nom ."</td>
 
 						<td>". $donnee_echanges[$i]->entite_nom ."</td>
-
-						<td>". $donnee_echanges[$i]->nom ."</td>
 
 						<td>". $donnee_echanges[$i]->types ."</td>
 
@@ -84,11 +84,11 @@
 
                <thead>
 				<tr>
-				<TH>#</TH>
-                  	<TH>Application</TH>
+					<TH>#</TH>
+					<TH>Donnee TDE</TH>
+					<TH>Fonction</TH>
 					<TH>Composant</TH>
 					<TH>Entite</TH>
-					<TH>Nom</TH>
 					<TH>Types</TH>
 					<TH>Description</TH>
 					<TH></TH>

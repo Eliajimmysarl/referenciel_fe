@@ -43,7 +43,7 @@
 					<TH>Status</TH>
 					<TH>Date debut</TH>
 					<TH>Date fin</TH>
-					<TH></TH>
+				
 
 				</tr>
 			</thead>
@@ -73,7 +73,7 @@
 							<td>". $planifications[$i]->date_fin ."</td>
 		
 							
-							<td><a href='?page=recuperation_un&id=". $planifications[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
+						
 				 		
 						</tr>";
 						         
@@ -89,7 +89,7 @@
 					<TH>Status</TH>
 					<TH>Date debut</TH>
 					<TH>Date fin</TH>
-					<TH></TH>
+
 
 				</tr>
 			</thead>

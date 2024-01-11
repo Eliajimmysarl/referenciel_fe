@@ -43,7 +43,32 @@
 											for($i=0; $i < count($users); $i++)
 												{         
 													echo"  
-															<option value=". $users[$i]->id ."> ". $users[$i]->nom ."</option>                       
+															<option value=". $users[$i]->email ."> ". $users[$i]->email ."</option>                       
+															
+													";
+																
+												}
+										?>
+
+                                    </select>
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Application <abbr style="color:green; font-size:15px;">**</abbr></label>			
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<select  name="application_id" id="monselect"  value="<?php echo $application_id;?>" class="form-control" required="required">
+									<option value="" selected>Application</option>
+									
+										<?php
+											for($i=0; $i < count($applications); $i++)
+												{         
+													echo"  
+															<option value=". $applications[$i]->id ."> ". $applications[$i]->nom ."</option>                       
 															
 													";
 																
@@ -69,7 +94,7 @@
 											for($i=0; $i < count($composants); $i++)
 												{         
 													echo"  
-															<option value=". $composants[$i]->id ."> ". $composants[$i]->nom ."</option>                       
+															<option value=". $composants[$i]->id_composant ."> ". $composants[$i]->nom ."</option>                       
 															
 													";
 																
@@ -100,9 +125,10 @@
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 									<select  name="status" id="selec"  class="form-control" value="<?php echo $status;?>" >
-									<option value="" selected>Status</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
+									<option value="" selected>Statut</option>
+										<option value="1">Debut</option>
+										<option value="2">En cour</option>
+										<option value="3">fin</option>
                                     </select>
 									<span class="input-group-addon"><i class=""></i></span>
 								</div>
@@ -137,9 +163,9 @@
 						
 						<div class="col-sm-offset-3 col-sm-5">
 							
-							<button type="submit" onclick="validate()" class="btn btn-success btn-block btn-login">
+							<button type="submit" onclick="validate()" class="btn btn-info btn-block btn-login">
 						
-							<i class="entypo-right-open-mini">Ajouter</i>
+							<i class="entypo-right-open-mini">Modifier</i>
 						
 						</div>
 					

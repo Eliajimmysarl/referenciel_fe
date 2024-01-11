@@ -61,6 +61,31 @@
 
 					
 					<div class="form-group">		
+						<label class="col-sm-3 control-label">Fonction <abbr style="color:green; font-size:15px;">**</abbr></label>			
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<select  name="application_id" id="monselect"  class="form-control" required="required">
+									<option value="" selected>Fonction</option>
+									
+										<?php
+											for($i=0; $i < count($applications); $i++)
+												{         
+													echo"  
+															<option value=". $applications[$i]->id ."> ". $applications[$i]->nom ."</option>                       
+															
+													";
+																
+												}
+										?>
+
+                                    </select>
+									<span class="input-group-addon"><i class=""></i></span>
+								</div>
+							</div>
+					</div>
+
+					<div class="form-group">		
 						<label class="col-sm-3 control-label">Composant <abbr style="color:green; font-size:15px;">**</abbr></label>			
 							<div class="col-sm-5">
 								<div class="input-group">
@@ -72,7 +97,7 @@
 											for($i=0; $i < count($composants); $i++)
 												{         
 													echo"  
-															<option value=". $composants[$i]->id ."> ". $composants[$i]->nom ."</option>                       
+															<option value=". $composants[$i]->id_composant ."> ". $composants[$i]->nom ."</option>                       
 															
 													";
 																

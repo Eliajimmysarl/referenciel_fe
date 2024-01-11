@@ -6,9 +6,10 @@
 
     $composant_id=$_POST['composant_id'];
 
+    $application_id=$_POST['application_id'];
+
     $remarque=$_POST['remarque'];
 
-    $statut=$_POST['statut'];
 
     $date_debut=$_POST['date_debut'];
 
@@ -21,10 +22,11 @@
 
         'composant_id' => $composant_id,
 
+        'application_id'=> $application_id,
+
         'remarque'=> $remarque,
 
-        'statut'=> $statut,
-
+       
         'date_debut'=> $date_debut,
 
         'date_fin'=> $date_fin

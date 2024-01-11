@@ -39,13 +39,13 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Application</TH>
+					<TH>Donnee TDE</TH>
+					<TH>Fonction</TH>
 					<TH>Composant</TH>
 					<TH>Entite</TH>
-					<TH>Nom</TH>
 					<TH>Types</TH>
 					<TH>Description</TH>
-					<TH></TH>
+				
 				</tr>
 			</thead>
 			<tbody>
@@ -60,20 +60,20 @@
 
 						<td>$j</td>
 
+						<td>". $donnee_echanges[$i]->nom ."</td>
+
 						<td > " . $donnee_echanges[$i]->application_nom ."</td>
 
 						<td>". $donnee_echanges[$i]->composant_nom ."</td>
 
 						<td>". $donnee_echanges[$i]->entite_nom ."</td>
 
-						<td>". $donnee_echanges[$i]->nom ."</td>
-
 						<td>". $donnee_echanges[$i]->types ."</td>
 
 						<td>". $donnee_echanges[$i]->descriptions ."</td>
 		
 									
-					<td> <a href='?page=recuperation_un_tde&id=". $donnee_echanges[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
+					
 			
 					</tr>";
 						         
@@ -83,13 +83,13 @@
             <thead>
 				<tr>
 				    <TH>#</TH>
-					<TH>Application</TH>
+					<TH>Donnee TDE</TH>
+					<TH>Fonction</TH>
 					<TH>Composant</TH>
 					<TH>Entite</TH>
-					<TH>Nom</TH>
 					<TH>Types</TH>
 					<TH>Description</TH>
-					<TH></TH>
+				
 	
 				</tr>
 			</thead>

@@ -6,7 +6,7 @@
 		</li>
 	
 		<li>
-			<a href="?page=recuperes_applications">Application </a>
+			<a href="?page=recuperes_applications">Fonction </a>
 		</li>
 	
 		<li class="active">
@@ -33,11 +33,11 @@
 				<form method="POST" action="index.php?demande=ajout_application"  id="theForm"  role="form" class="form-horizontal form-groups-bordered" enctype='multipart/form-data'>
 	
 					<div class="form-group">		
-						<label class="col-sm-3 control-label" >Nom application <abbr style="color:green; font-size:15px;">**</abbr></label>
+						<label class="col-sm-3 control-label" >Formation <abbr style="color:green; font-size:15px;">**</abbr></label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="nom" class="form-control" placeholder="nom d'application" required="required">
+									<input type="text" name="nom" class="form-control" placeholder="Formation" required="required">
 									<span class="input-group-addon"><i class="r"></i></span>
 								</div>
 							</div>

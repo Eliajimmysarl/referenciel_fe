@@ -4,7 +4,7 @@
 		<a href="?home"><i class="fa fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="?page=recuperes_applications">Application</a>
+		<a href="?page=recuperes_applications">Fonction</a>
 	</li>
 	<li class="active">
 		<strong>Recuperer</strong>
@@ -45,7 +45,7 @@
 					<TH>Vodacom</TH>
 					<TH>Africell</TH>
 					<TH>Orange</TH>
-					<TH></TH>
+					<TH>Action</TH>
 				
 				</tr>
 			</thead>
@@ -77,7 +77,20 @@
 							<td>". $applications[$i]->ussd_africell ."</td>
 	
 							<td>". $applications[$i]->ussd_orange ."</td>
-							<td><a href='?page=recuperation_application&id=". $applications[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
+
+							<td class='row'>  <form  method='POST' action='index.php?demande=recuperation_avec_entite_application' class='form'>
+							<input type='hidden' name='application_id'  value='". $applications[$i]->id ."' class='form-control'>
+							<input type='submit' class='btn btn-default'  value='Entite'> </form>
+
+							<form  method='POST' action='index.php?demande=recuperation_avec_application_role' class='form'>
+							<input type='hidden' name='application_id'  value='". $applications[$i]->id ."' class='form-control'>
+							<input type='submit' class='btn btn-danger' value='Role'> </form>
+
+							<form  method='POST' action='index.php?demande=recuperation_avec_application_acteur' class='form'>
+							<input type='hidden' name='application_id'  value='". $applications[$i]->id ."' class='form-control'>
+							<input type='submit' class='btn btn-info' value='Acteur'> </form>
+							
+							</td>
 					
 						</tr>";
 						         
@@ -96,7 +109,7 @@
 					<TH>Vodacom</TH>
 					<TH>Africell</TH>
 					<TH>Orange</TH>
-	                <TH></TH>
+	                <TH>Action</TH>
 				</tr>
 			</thead>
 		</table>

@@ -15,7 +15,7 @@
 
 		<a href='?page=ajouter_composant'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a> /<a href='?page=recuperes_composants_plateforme'  class='btn btn-primary btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par plateforme</a> /<a href='?page=recuperes_composants_couche'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par couche</a>
 		/<a href='?page=recuperes_composants_entite'  class='btn btn-orange btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par entite</a>
-		/<a href='?page=recuperes_composants_application'  class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par application</a>	
+		/<a href='?page=recuperes_composants_application'  class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par Fonction</a>	
 		<script type="text/javascript">
 		jQuery( document ).ready( function( $ ) {
 			var $table1 = jQuery( '#table-1' );
@@ -37,11 +37,11 @@
 			<thead>
 			<tr>
 				    <TH>#</TH>
-					<TH>Application</TH>
+					<TH>Composant</TH>
+					<TH>Fonction</TH>
 					<TH>Couche</TH>
 					<TH>Platforme</TH>
 					<TH>Entite</TH>
-					<TH>Nom</TH>
 					<TH>Description</TH>
 					<TH>Url code</TH>
 					<TH></TH>
@@ -60,6 +60,8 @@
 
 							<td>$j</td>
 
+							<td>". $composants[$i]->nom ."</td>
+
 							<td > " . $composants[$i]->application_nom ."</td>
 
 							<td>". $composants[$i]->couche ."</td>
@@ -68,11 +70,10 @@
 
 							<td>". $composants[$i]->entite_nom ."</td>
 
-							<td>". $composants[$i]->nom ."</td>
 
 							<td>". $composants[$i]->descriptions ."</td>
 							
-							<td><a href='". $composants[$i]->url_code ."' target=_blank>Voir le code</a></td>
+							<td><a href='". $composants[$i]->url_code ."' target=_blank class='btn btn-orange'>Voir le code</a></td>
 					
 					<td> <a href='?page=modification_composant&id=". $composants[$i]->id_composant ."' class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Modifier</a>
 					<a href='?page=demande_supprimer_composant&id=". $composants[$i]->id_composant ."' class='btn btn-danger btn-sm btn-icon icon-left'><i class='entypo-cancel'></i>Supprimer</a>
@@ -85,11 +86,11 @@
                <thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Application</TH>
+					<TH>Composant</TH>
+					<TH>Fonction</TH>
 					<TH>Couche</TH>
 					<TH>Platforme</TH>
 					<TH>Entite</TH>
-					<TH>Nom</TH>
 					<TH>Description</TH>
 					<TH>Url code</TH>
 					<TH></TH>

@@ -2,6 +2,7 @@
 
 
 $statut=$_POST['statut'];
+$application_id=$_POST['application_id'];
 
 $uri = $authority."/planification/";
 
@@ -12,7 +13,8 @@ $uri = $authority."/planification/";
     
     $data = array(
 
-        'statut'=> $statut
+        'statut'=> $statut,
+        'application_id'=> $application_id
 
     );
 

@@ -39,7 +39,7 @@
 					<ul>
 						<li>
 							<a href="?page=recuperes_applications">
-								<span class="title">Application</span>
+								<span class="title">Fonction</span>
 							</a>
 						</li>
 						
@@ -78,6 +78,61 @@
 							
 						</li>
 
+						
+						
+
+						<li>
+						<a href="?page=recuperes_unite_organisations">
+								<span class="title">Unite organisation</span>
+							</a>
+							
+						</li>
+
+
+						<li>
+						<a href="?page=recuperes_acteurs">
+								<span class="title">Acteur</span>
+							</a>
+							
+						</li>
+
+
+						<li>
+						<a href="?page=recuperes_roles">
+								<span class="title">Role</span>
+							</a>
+							
+						</li>
+
+						<li>
+						<a href="?page=recuperes_processuss">
+								<span class="title">Processus</span>
+							</a>
+							
+						</li>
+
+						<li>
+						<a href="?page=recuperes_composant_processuss">
+								<span class="title">Composant processus</span>
+							</a>
+							
+						</li>
+
+						<li>
+						<a href="?page=recuperes_interaction_processuss">
+								<span class="title">Interaction processus</span>
+							</a>
+							
+						</li>
+
+						<li>
+						<a href="?page=recuperes_interaction_entites">
+								<span class="title">Interaction entite</span>
+							</a>
+							
+						</li>
+
+
 					</ul>
 				    </li>
 
@@ -90,7 +145,7 @@
 
 			   <li>
 					<a href="?page=modifier_application">
-						<span class="title">Application</span>
+						<span class="title">Fonction</span>
 					</a>
 				</li>
 				<li>
@@ -100,6 +155,34 @@
 					
 				</li>
 
+				<li>
+					<a href="?page=modifier_acteur">
+						<span class="title">Acteur</span>
+					</a>
+					
+				</li>
+
+				<li>
+					<a href="?page=modifier_role">
+						<span class="title">Role</span>
+					</a>
+					
+				</li>
+
+				<li>
+					<a href="?page=modifier_unite_organisation">
+						<span class="title">Unite organisation </span>
+					</a>
+					
+				</li>
+
+				<li>
+					<a href="?page=modifier_processus">
+						<span class="title">Processus </span>
+					</a>
+					
+				</li>
+				
             	</ul>
 				</li>
 				
@@ -153,6 +236,27 @@
 							</a>
 
 						</li>
+
+						<li class="">
+							<a href="?page=modifier_composant_processus">
+									<span class="title">Composant processus</span>
+							</a>
+
+						</li>
+
+						<li class="">
+							<a href="?page=modifier_interaction_processus">
+									<span class="title">Interaction processus</span>
+							</a>
+
+						</li>
+
+						<li class="">
+							<a href="?page=modifier_interaction_entite">
+									<span class="title">Interaction entite</span>
+							</a>
+
+						</li>
 				
 					</ul>
 				</li>
@@ -194,7 +298,7 @@
 
             
 			<li class="">
-						<a href="/smaas/kill.php">
+						<a href="/referentiel/kill.php">
 						<i class="entypo-logout right"></i>	Log Out 
 						</a>
 				</li>

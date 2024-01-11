@@ -36,11 +36,11 @@
 			<thead>
 				<tr>
 				    <TH>#</TH>
-					<TH>Application</TH>
+					<TH>Composant</TH>
+					<TH>Fonction</TH>
+					<TH>Entite</TH>
 					<TH>Couche</TH>
 					<TH>Platforme</TH>
-					<TH>Entite</TH>
-					<TH>Nom</TH>
 					<TH>Description</TH>
 					<TH>Url code</TH>
 				</tr>
@@ -58,15 +58,17 @@
 
 							<td>$j</td>
 
+							<td>". $composants[$i]->nom ."</td>
+
 							<td > " . $composants[$i]->application_nom ."</td>
+							<td>". $composants[$i]->entite_nom ."</td>
 
 							<td>". $composants[$i]->couche ."</td>
 
 							<td>". $composants[$i]->plateforme ."</td>
 
-							<td>". $composants[$i]->entite_nom ."</td>
+						
 
-							<td>". $composants[$i]->nom ."</td>
 
 							<td>". $composants[$i]->descriptions ."</td>
 							
@@ -83,11 +85,11 @@
                <thead>
 				<tr>
                     <TH>#</TH>
-					<TH>Application</TH>
+					<TH>Composant</TH>
+					<TH>Fonction</TH>
+					<TH>Entite</TH>
 					<TH>Couche</TH>
 					<TH>Platforme</TH>
-					<TH>Entite</TH>
-					<TH>Nom</TH>
 					<TH>Description</TH>
 					<TH>Url code</TH>
 				</tr>

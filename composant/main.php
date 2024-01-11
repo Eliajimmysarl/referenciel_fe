@@ -5,7 +5,7 @@
             <?php
                 //Structure de controle pour affichier les composants
                 //connexion
-                $authority="http://api.eliajimmy.net";
+                $authority="http://api.eliajimmy.net/auth";
                 //Est-ce que le visiteur sollicte de créer un compte ou se connecter?
                 if(isSet($_GET['op']))
 				    {

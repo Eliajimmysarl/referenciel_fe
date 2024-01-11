@@ -39,7 +39,7 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Application</TH>
+					<TH>Fonction</TH>
 					<TH>Composant</TH>
 					<TH>entite</TH>
 					<TH>Methode</TH>
@@ -67,7 +67,7 @@
 
 						<td>". $apis[$i]->methode ."</td>
 
-						<td> <a href='". $apis[$i]->uri ."' target=_blank>Voir le code</a></td>
+						<td> <a href='". $apis[$i]->uri ."' target=_blank class='btn btn-orange'>Voir le code</a></td>
 
 					
 		
@@ -79,7 +79,7 @@
                <thead>
 				<tr>
                 	<TH>#</TH>
-					<TH>Application</TH>
+					<TH>Fonction</TH>
 					<TH>Composant</TH>
 					<TH>Entite</TH>
 					<TH>Methode</TH>

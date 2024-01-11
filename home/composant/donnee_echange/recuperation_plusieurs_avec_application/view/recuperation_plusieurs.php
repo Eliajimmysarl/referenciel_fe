@@ -39,10 +39,10 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
-					<TH>Application</TH>
+					<TH>Donnee TDE</TH>
+					<TH>Fonction</TH>
 					<TH>Composant</TH>
 					<TH>Entite</TH>
-					<TH>Nom</TH>
 					<TH>Types</TH>
 					<TH>Description</TH>
 					<TH></TH>
@@ -60,13 +60,14 @@
 
 						<td>$j</td>
 
+						<td>". $donnee_echanges[$i]->nom ."</td>
+
 						<td > " . $donnee_echanges[$i]->application_nom ."</td>
 
 						<td>". $donnee_echanges[$i]->composant_nom ."</td>
 
 						<td>". $donnee_echanges[$i]->entite_nom ."</td>
 
-						<td>". $donnee_echanges[$i]->nom ."</td>
 
 						<td>". $donnee_echanges[$i]->types ."</td>
 
@@ -83,10 +84,10 @@
             <thead>
 				<tr>
 				    <TH>#</TH>
-					<TH>Application</TH>
+					<TH>Donnee TDE</TH>
+					<TH>Fonction</TH>
 					<TH>Composant</TH>
 					<TH>Entite</TH>
-					<TH>Nom</TH>
 					<TH>Types</TH>
 					<TH>Description</TH>
 					<TH></TH>

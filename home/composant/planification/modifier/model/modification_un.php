@@ -8,9 +8,11 @@
 
     $composant_id=$_POST['composant_id'];
 
+    $application_id=$_POST['application_id'];
+
     $remarque=$_POST['remarque'];
 
-    $statut=$_POST['statut'];
+    $status=$_POST['status'];
 
     $date_debut=$_POST['date_debut'];
 
@@ -23,9 +25,11 @@
 
         'composant_id' => $composant_id,
 
+        'application_id' => $application_id,
+
         'remarque'=> $remarque,
 
-        'statut'=> $statut,
+        'status'=> $status,
 
         'date_debut'=> $date_debut,
 
@@ -35,10 +39,10 @@
     );    
 
     $result=curl_put($uri, $token,$data);
-        
+        echo json_encode($data);
         $planifications=json_decode($result);
 
-        $code =  $planification->code;
+        $code =  $planifications->code;
 
         if($code ==200)
         

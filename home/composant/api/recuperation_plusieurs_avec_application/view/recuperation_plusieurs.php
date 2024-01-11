@@ -39,12 +39,13 @@
 			<thead>
 				<tr>
 					<TH>#</TH>
+					<TH>Uri</TH>
 					<TH>Application</TH>
 					<TH>Composant</TH>
 					<TH>Entite</TH>
 					<TH>Methode</TH>
-					<TH>Uri</TH>
-					<TH></TH>
+				
+				
 				</tr>
 			</thead>
 			<tbody>
@@ -59,6 +60,8 @@
 
 						<td>$j</td>
 
+						<td>". $apis[$i]->uri ."</td>
+
 						<td > " . $apis[$i]->application_nom ."</td>
 
 						<td>". $apis[$i]->composant_nom ."</td>
@@ -67,12 +70,7 @@
 
 						<td>". $apis[$i]->methode ."</td>
 
-						<td>". $apis[$i]->uri ."</td>
-
 					
-		
-									
-					<td> <a href='?page=recuperation_un_api&id=". $apis[$i]->id ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Detail</a></td>
 			
 					</tr>";
 						         
@@ -82,12 +80,13 @@
             <thead>
 				<tr>
                     <TH>#</TH>
+					<TH>Uri</TH>
 					<TH>Application</TH>
 					<TH>Composant</TH>
 					<TH>Entite</TH>
 					<TH>Methode</TH>
-					<TH>Uri</TH>
-					<TH></TH>
+					
+			
 	
 				</tr>
 			</thead>

@@ -36,11 +36,11 @@
 			<thead>
 				<tr>
 				    <TH>#</TH>
-					<TH>Application</TH>
+					<TH>Composant</TH>
+					<TH>Fonction</TH>
+					<TH>Entite</TH>
 					<TH>Couche</TH>
 					<TH>Platforme</TH>
-					<TH>Entite</TH>
-					<TH>Nom</TH>
 					<TH>Description</TH>
 					<TH>Url code</TH>
 				</tr>
@@ -57,23 +57,33 @@
                			 <tr class='odd gradeX'>
 
 							<td>$j</td>
-
+							<td>". $composants[$i]->nom ."</td>
 							<td > " . $composants[$i]->application_nom ."</td>
+
+							<td>". $composants[$i]->entite_nom ."</td>
+
+							
 
 							<td>". $composants[$i]->couche ."</td>
 
 							<td>". $composants[$i]->plateforme ."</td>
 
-							<td>". $composants[$i]->entite_nom ."</td>
-
-							<td>". $composants[$i]->nom ."</td>
+							
 
 							<td>". $composants[$i]->descriptions ."</td>
 							
 							<td><a href='". $composants[$i]->url_code ."' target=_blank>Voir le code</a></td>
 
-							<td><a href='?page=recuperation_un&id=". $composants[$i]->id_composant ."'  class='btn btn-default btn-sm btn-icon icon-left'><i class='entypo-info'></i>Profile</a></td>
-		
+							<td><button class='btn btn-info' ><a  href='". $composants[$i]->url_code ."' target=_blank  class='link-danger'>Voir le code</a></button></td>
+					 		
+							<td><form  method='POST' action='index.php?demande=recuperation_avec_composant_tde' class='form'>
+										<input type='hidden' name='composant_id'  value='". $composants[$i]->id_composant ."' class='form-control'>
+										<input type='submit' class='btn btn-info' value='Voir'> </form> </td>
+
+										<td><form  method='POST' action='index.php?demande=recuperation_avec_composant_api' class='form'>
+										<input type='hidden' name='composant_id'  value='". $composants[$i]->id_composant ."' class='form-control'>
+										<input type='submit' class='btn btn-info' value='Voir'> </form></td>
+									
 						</tr>";
 						         
 				}
@@ -82,13 +92,16 @@
                <thead>
 				<tr>
                     <TH>#</TH>
-					<TH>Application</TH>
+					<TH>Composant</TH>
+					<TH>Fonction</TH>
+					<TH>Entite</TH>
 					<TH>Couche</TH>
 					<TH>Platforme</TH>
-					<TH>Entite</TH>
-					<TH>Nom</TH>
+					
 					<TH>Description</TH>
 					<TH>Url code</TH>
+					<TH>TDE</TH>
+					<TH>API</TH>
 				</tr>
 			</thead>
 		</table>

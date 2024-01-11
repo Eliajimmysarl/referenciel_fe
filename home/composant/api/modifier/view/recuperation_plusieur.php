@@ -17,7 +17,7 @@
 	</ol>
 								
 	<br/>
-	<a href='?page=ajouter_api'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>/<a href='?page=recuperes_api_application'  class='btn btn-primary btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par application</a> /<a href='?page=recuperes_api_composant'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par composant</a>	
+	<a href='?page=ajouter_api'  class='btn btn-success btn-sm btn-icon icon-left'><i class='entypo-plus'></i>Ajouter</a>/<a href='?page=recuperes_api_application'  class='btn btn-primary btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par Fonction</a> /<a href='?page=recuperes_api_composant'  class='btn btn-info btn-sm btn-icon icon-left'><i class='entypo-pencil'></i>Recuperer par composant</a>	
 		<script type="text/javascript">
 			jQuery( document ).ready( function( $ ) {
 				var $table1 = jQuery( '#table-1' );
@@ -68,7 +68,7 @@
 
 						<td>". $apis[$i]->methode ."</td>
 
-						<td> <a href='". $apis[$i]->uri ."' target=_blank>Voir le code</a></td>
+						<td> <a href='". $apis[$i]->uri ."' target=_blank class='btn btn-orange'>Voir le code</a></td>
 
 		
 						

@@ -21,8 +21,8 @@
 					
 					<tbody>
 					<tr>
-					<td>Nom : </td>
-					<td>Application :</td>
+					<TH>Entite</TH>
+					<TH>Fonction</TH>
 					<td>Description:</td>
 					<td>Composant: </td>
 					<td>Donnée persistante: </td>
