@@ -16,7 +16,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant\acteur\recuperation_plusieurs_avec_acteur\view\demande_recuperation.php'); 
+            require_once('composant/acteur/recuperation_plusieurs_avec_acteur/view/demande_recuperation.php'); 
         }
     else
         {
