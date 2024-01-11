@@ -15,7 +15,7 @@ $result=curl_get($uri, $token);
         {  
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant\composant_processus\recuperer_plusieurs\view\recuperation_plusieurs.php'); 
+            require_once('composant/composant_processus/recuperer_plusieurs/view/recuperation_plusieurs.php'); 
         }
         else
         {
